@@ -1,0 +1,38 @@
+## NODE char_osiris Character "Osiris" "Book of the Dead" "spell 1"
+summary: God of the afterlife, resurrection, and fertility; murdered and restored, ruler of the Duat.
+
+## NODE char_isis Character "Isis" "Book of the Dead" "spell 1"
+summary: Goddess of magic, sister and wife of Osiris, mother of Horus.
+
+## NODE char_set Character "Set" "Book of the Dead" "spell 1"
+summary: God of chaos and storms, slayer of Osiris, adversary of Horus.
+
+## NODE char_horus Character "Horus" "Book of the Dead" "spell 1"
+summary: Falcon-headed sky god, son of Osiris and Isis, avenger of his father.
+
+## NODE char_anubis Character "Anubis" "Book of the Dead" "spell 125"
+summary: Jackal-headed god of mummification and guide of the dead in the Duat.
+
+## NODE place_duat Place "The Duat" "Book of the Dead" "spell 125"
+summary: The Egyptian underworld, realm of the dead through which the sun travels at night.
+
+## NODE event_weighing Event "Weighing of the Heart" "Book of the Dead" "spell 125"
+summary: The judgment of the deceased, whose heart is weighed against the feather of Ma'at.
+
+## NODE concept_maat Concept "Ma'at" "Book of the Dead" "spell 125"
+summary: The cosmic order, truth, and justice, personified as a goddess and symbolized by a feather.
+
+## NODE obj_ankh Object "Ankh" "Book of the Dead" "spell 1"
+summary: The symbol of life, held by gods and offered to the king.
+
+## EDGE edge_osiris_spouse char_osiris SPOUSE_OF char_isis "Book of the Dead" "spell 1"
+## EDGE edge_horus_child char_horus CHILD_OF char_osiris "Book of the Dead" "spell 1"
+## EDGE edge_osiris_fought char_osiris FOUGHT char_set "Book of the Dead" "spell 1"
+## EDGE edge_horus_fought char_horus FOUGHT char_set "Book of the Dead" "spell 1"
+## EDGE edge_set_transformed char_set TRANSFORMED_INTO char_osiris "Book of the Dead" "spell 1"
+## EDGE edge_weighing_place event_weighing TOOK_PLACE_AT place_duat "Book of the Dead" "spell 125"
+## EDGE edge_anubis_guards char_anubis GUARDS place_duat "Book of the Dead" "spell 125"
+## EDGE edge_weighing_maat event_weighing ASSOCIATED_WITH concept_maat "Book of the Dead" "spell 125"
+## EDGE edge_anubis_weighing char_anubis MET event_weighing "Book of the Dead" "spell 125"
+## EDGE edge_osiris_ruler char_osiris RULER_OF place_duat "Book of the Dead" "spell 1"
+## EDGE edge_osiris_ankh char_osiris ASSOCIATED_WITH obj_ankh "Book of the Dead" "spell 1"

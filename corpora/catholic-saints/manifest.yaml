@@ -1,0 +1,15 @@
+# Stub manifest — Catholic saints corpus.
+# Not yet seeded; kept so the corpus registry and tests can enumerate it.
+id: catholic-saints
+name: "Catholic Saints"
+language: en
+sources: []
+extraction:
+  node_type_hints: ["Character", "Place", "Object", "Event", "Concept"]
+narrative_style:
+  tone: "reverent, hagiographic narrator, not academic"
+  length_seconds: 180
+voice:
+  provider: elevenlabs
+  voice_id: "${GRAPHODYSSEE_DEFAULT_VOICE_ID}"
+license_note: "Saint datasets may have unclear licensing; keep attribution visible."

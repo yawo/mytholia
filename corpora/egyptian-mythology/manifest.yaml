@@ -1,0 +1,35 @@
+id: egyptian-mythology
+name: "Egyptian Mythology"
+language: en
+sources:
+  - type: web_scrape
+    tool: crawl4ai
+    seed_urls:
+      - "https://en.wikisource.org/wiki/Ancient_Egyptian_Anthology"
+  - type: search_augmented
+    tool: tavily
+    queries:
+      - "Osiris Isis Set Horus myth primary sources"
+      - "Duat weighing of the heart Book of the Dead primary text"
+      - "Anubis Ma'at Egyptian cosmology sources"
+extraction:
+  prompt_override: extraction_prompt.md
+  node_type_hints: ["Character", "Place", "Object", "Event", "Concept"]
+narrative_style:
+  tone: "reverent, mythic narrator, not academic"
+  length_seconds: 180
+voice:
+  provider: elevenlabs
+  voice_id: "${GRAPHODYSSEE_DEFAULT_VOICE_ID}"
+relation_types:
+  - CHILD_OF
+  - SPOUSE_OF
+  - FOUGHT
+  - MET
+  - TOOK_PLACE_AT
+  - WORSHIPPED_AS
+  - GUARDS
+  - TRANSFORMED_INTO
+  - RULER_OF
+  - ASSOCIATED_WITH
+license_note: "Cite source per-passage; respect site ToS and robots.txt."

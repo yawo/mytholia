@@ -1,0 +1,34 @@
+id: greek-odyssey
+name: "Greek Mythology: The Odyssey"
+language: en
+sources:
+  - type: web_scrape
+    tool: crawl4ai
+    seed_urls:
+      - "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0133"
+  - type: search_augmented
+    tool: tavily
+    queries:
+      - "Odyssey primary source passages Odysseus genealogy"
+      - "Ithaca Cicones Lotus-eaters Cyclops primary text"
+extraction:
+  prompt_override: extraction_prompt.md
+  node_type_hints: ["Character", "Place", "Object", "Event", "Concept"]
+narrative_style:
+  tone: "reverent, mythic narrator, not academic"
+  length_seconds: 180
+voice:
+  provider: elevenlabs
+  voice_id: "${GRAPHODYSSEE_DEFAULT_VOICE_ID}"
+relation_types:
+  - CHILD_OF
+  - SPOUSE_OF
+  - FOUGHT
+  - MET
+  - TOOK_PLACE_AT
+  - WORSHIPPED_AS
+  - GUARDS
+  - TRANSFORMED_INTO
+  - RULER_OF
+  - ASSOCIATED_WITH
+license_note: "Perseus Digital Library content is CC-licensed; cite source per-passage."

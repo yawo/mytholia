@@ -1,0 +1,40 @@
+## NODE char_odysseus Character "Odysseus" "Odyssey" "book 9"
+summary: King of Ithaca, son of Laertes and Anticleia, hero of the Trojan War and protagonist of the Odyssey.
+
+## NODE char_penelope Character "Penelope" "Odyssey" "book 1"
+summary: Wife of Odysseus and queen of Ithaca, known for her fidelity and cleverness.
+
+## NODE char_telemachus Character "Telemachus" "Odyssey" "book 1"
+summary: Son of Odysseus and Penelope, who searches for his father in the early books.
+
+## NODE char_laertes Character "Laertes" "Odyssey" "book 24"
+summary: Father of Odysseus and former king of Ithaca.
+
+## NODE place_ithaca Place "Ithaca" "Odyssey" "book 1"
+summary: The island kingdom of Odysseus on the Ionian coast.
+
+## NODE place_troy Place "Troy" "Iliad" "book 1"
+summary: The walled city besieged by the Greeks for ten years.
+
+## NODE event_trojan_war Event "The Trojan War" "Iliad" "book 1"
+summary: A ten-year war between Greeks and Trojans, triggered by the abduction of Helen.
+
+## NODE obj_bow Object "Bow of Odysseus" "Odyssey" "book 21"
+summary: The great bow of Odysseus, used in the contest of the axes.
+
+## NODE concept_xenia Concept "Xenia" "Odyssey" "book 9"
+summary: The Greek code of guest-friendship, a sacred bond between host and guest.
+
+## NODE char_polyphemus Character "Polyphemus" "Odyssey" "book 9"
+summary: A Cyclops, son of Poseidon, blinded by Odysseus.
+
+## EDGE edge_odysseus_spouse char_odysseus SPOUSE_OF char_penelope "Odyssey" "book 1"
+## EDGE edge_odysseus_child char_odysseus CHILD_OF char_laertes "Odyssey" "book 24"
+## EDGE edge_telemachus_child char_telemachus CHILD_OF char_odysseus "Odyssey" "book 1"
+## EDGE edge_odysseus_ruler char_odysseus RULER_OF place_ithaca "Odyssey" "book 1"
+## EDGE edge_trojan_war_place event_trojan_war TOOK_PLACE_AT place_troy "Iliad" "book 1"
+## EDGE edge_odysseus_fought char_odysseus FOUGHT char_polyphemus "Odyssey" "book 9"
+## EDGE edge_polyphemus_guards char_polyphemus GUARDS place_troy "Odyssey" "book 9"
+## EDGE edge_odysseus_met char_odysseus MET char_polyphemus "Odyssey" "book 9"
+## EDGE edge_odysseus_bow char_odysseus ASSOCIATED_WITH obj_bow "Odyssey" "book 21"
+## EDGE edge_odysseus_xenia char_odysseus ASSOCIATED_WITH concept_xenia "Odyssey" "book 9"

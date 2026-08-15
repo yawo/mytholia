@@ -1,0 +1,14 @@
+# Stub manifest — Greek Iliad corpus.
+# Not yet seeded; kept so the corpus registry and tests can enumerate it.
+id: greek-iliad
+name: "Greek Mythology: The Iliad"
+language: en
+sources: []
+extraction:
+  node_type_hints: ["Character", "Place", "Object", "Event", "Concept"]
+narrative_style:
+  tone: "reverent, mythic narrator, not academic"
+  length_seconds: 180
+voice:
+  provider: elevenlabs
+  voice_id: "${GRAPHODYSSEE_DEFAULT_VOICE_ID}"
