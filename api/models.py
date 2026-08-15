@@ -70,9 +70,8 @@ class SourceRef(BaseModel):
     location: str | None = Field(
         default=None,
         description=(
-        "Free-form locator within the source: "
-        "book/line range, chapter, URL fragment, etc."
-    ),
+            "Free-form locator within the source: book/line range, chapter, URL fragment, etc."
+        ),
     )
 
 
@@ -110,9 +109,8 @@ class GraphEdge(BaseModel):
     relation: str = Field(
         ...,
         description=(
-        "Relation label, SCREAMING_SNAKE_CASE, from the corpus controlled list "
-        "(AGENTS.md §4)."
-    ),
+            "Relation label, SCREAMING_SNAKE_CASE, from the corpus controlled list (AGENTS.md §4)."
+        ),
     )
     corpus_id: str = Field(..., description="kebab-case corpus identifier this edge belongs to.")
     label: str = Field(default="", description="Human-readable relation label for display.")

@@ -7,6 +7,9 @@ Sprint 0 stub: a deterministic templating generator runs offline so the
 ``/podcast`` endpoint is exercisable without API calls. Real Claude
 generation is wired behind the same ``NarrativeGenerator`` interface in
 later sprints (AGENTS.md §13 cost control).
+
+i18n: script headings/labels are localized via the ``locale`` argument, which
+defaults to French (fr). Mirrors the frontend dictionaries.
 """
 
 from __future__ import annotations
@@ -15,6 +18,7 @@ import logging
 from abc import ABC, abstractmethod
 from typing import TYPE_CHECKING
 
+from api.i18n import DEFAULT_LOCALE, Locale
 from api.retrieval.hybrid_search import neighbor_edges
 
 if TYPE_CHECKING:
@@ -22,12 +26,42 @@ if TYPE_CHECKING:
 
 log = logging.getLogger(__name__)
 
+# Localized template strings per locale. Mirrors frontend/src/i18n/locales/.
+_NARRATIVE_STRINGS: dict[Locale, dict[str, str]] = {
+    "fr": {
+        "tone_label": "Ton",
+        "relations_heading": "Relations et événements",
+        "sources_heading": "Sources",
+        "fallback_intro": "Voici l'histoire de {label}, un {type}.",
+        "source_marker": "[source : {text}{loc}]",
+    },
+    "en": {
+        "tone_label": "Tone",
+        "relations_heading": "Relations and events",
+        "sources_heading": "Sources",
+        "fallback_intro": "This is the story of {label}, a {type}.",
+        "source_marker": "[source: {text}{loc}]",
+    },
+}
+
+
+def _s(locale: Locale, key: str) -> str:
+    return _NARRATIVE_STRINGS.get(locale, _NARRATIVE_STRINGS[DEFAULT_LOCALE]).get(
+        key, _NARRATIVE_STRINGS[DEFAULT_LOCALE][key]
+    )
+
 
 class NarrativeGenerator(ABC):
     """Interface for narrative generation (AGENTS.md §5, §6)."""
 
     @abstractmethod
-    def generate(self, manifest: CorpusManifest, node: GraphNode, subgraph: GraphData) -> str:
+    def generate(
+        self,
+        manifest: CorpusManifest,
+        node: GraphNode,
+        subgraph: GraphData,
+        locale: Locale = DEFAULT_LOCALE,
+    ) -> str:
         raise NotImplementedError
 
 
@@ -37,10 +71,17 @@ class ClaudeNarrativeGenerator(NarrativeGenerator):
     Sprint 0 stub: raises when ``ANTHROPIC_API_KEY`` is absent so callers fall
     back to the deterministic generator. The real call respects
     ``manifest.narrative_style`` and grounds the script in the subgraph's
-    ``source_refs`` (no invented mythology, AGENTS.md §10).
+    ``source_refs`` (no invented mythology, AGENTS.md §10). The prompt would
+    be localized via the ``locale`` argument.
     """
 
-    def generate(self, manifest: CorpusManifest, node: GraphNode, subgraph: GraphData) -> str:
+    def generate(
+        self,
+        manifest: CorpusManifest,
+        node: GraphNode,
+        subgraph: GraphData,
+        locale: Locale = DEFAULT_LOCALE,
+    ) -> str:
         import os
 
         if not os.environ.get("ANTHROPIC_API_KEY"):
@@ -58,20 +99,28 @@ class TemplateNarrativeGenerator(NarrativeGenerator):
     is absent, it is omitted rather than filled in (AGENTS.md §10).
     """
 
-    def generate(self, manifest: CorpusManifest, node: GraphNode, subgraph: GraphData) -> str:
+    def generate(
+        self,
+        manifest: CorpusManifest,
+        node: GraphNode,
+        subgraph: GraphData,
+        locale: Locale = DEFAULT_LOCALE,
+    ) -> str:
         tone = manifest.narrative_style.tone
         lines: list[str] = []
         lines.append(f"[{node.label}]")  # title marker for the narrator
-        lines.append(f"(Tone: {tone}.)")
+        lines.append(f"({_s(locale, 'tone_label')}: {tone}.)")
         lines.append("")
 
-        intro = node.summary.strip() or f"This is the story of {node.label}, a {node.type.lower()}."
+        intro = node.summary.strip() or _s(locale, "fallback_intro").format(
+            label=node.label, type=node.type.lower()
+        )
         lines.append(intro)
         lines.append("")
 
         edges = neighbor_edges(subgraph, node.id)
         if edges:
-            lines.append("Relations and events:")
+            lines.append(f"{_s(locale, 'relations_heading')} :")
             for edge in edges:
                 direction = "→"
                 other_id = edge.target if edge.source == node.id else edge.source
@@ -83,12 +132,14 @@ class TemplateNarrativeGenerator(NarrativeGenerator):
                     lines.append(f"    {edge.summary}")
                 for ref in edge.source_refs:
                     loc = f" ({ref.location})" if ref.location else ""
-                    lines.append(f"    [source: {ref.text}{loc}]")
+                    lines.append(
+                        "    " + _s(locale, "source_marker").format(text=ref.text, loc=loc)
+                    )
             lines.append("")
 
         # Source provenance for the node itself (AGENTS.md §4, §10).
         if node.source_refs:
-            lines.append("Sources:")
+            lines.append(f"{_s(locale, 'sources_heading')} :")
             for ref in node.source_refs:
                 loc = f" ({ref.location})" if ref.location else ""
                 lines.append(f"  • {ref.text}{loc}")

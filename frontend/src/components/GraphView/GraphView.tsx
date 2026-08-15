@@ -1,9 +1,11 @@
 // GraphView: presentational component rendering a corpus's graph.
 // AGENTS.md §10: GraphView is presentational; data fetching lives in api/client.ts.
 // Corpus-agnostic: renders whatever nodes/edges it receives — no corpus names.
+// i18n: loading/empty/aria strings from the dictionary.
 
 import { useMemo } from "react";
 import type { GraphData, GraphNode } from "../../api/types";
+import { useI18n } from "../../i18n";
 
 interface GraphViewProps {
   graph: GraphData | null;
@@ -22,6 +24,7 @@ const TYPE_COLORS: Record<string, string> = {
 };
 
 export function GraphView({ graph, selectedNodeId, onSelectNode, loading }: GraphViewProps) {
+  const { t } = useI18n();
   const nodes = graph?.nodes ?? [];
   const edges = graph?.edges ?? [];
 
@@ -40,26 +43,26 @@ export function GraphView({ graph, selectedNodeId, onSelectNode, loading }: Grap
   }, [nodes]);
 
   if (loading) {
-    return <div className="graph-loading">Loading graph…</div>;
+    return <div className="graph-loading">{t.graph.loading}</div>;
   }
   if (nodes.length === 0) {
-    return <div className="graph-empty">No graph data. Select a corpus.</div>;
+    return <div className="graph-empty">{t.graph.empty}</div>;
   }
 
   return (
-    <svg width="500" height="500" className="graph-view" role="img" aria-label="Knowledge graph">
+    <svg width="500" height="500" className="graph-view" role="img" aria-label={t.graph.ariaLabel}>
       {/* edges */}
       {edges.map((e) => {
         const s = positions[e.source];
-        const t = positions[e.target];
-        if (!s || !t) return null;
+        const tPos = positions[e.target];
+        if (!s || !tPos) return null;
         return (
           <line
             key={e.id}
             x1={s.x}
             y1={s.y}
-            x2={t.x}
-            y2={t.y}
+            x2={tPos.x}
+            y2={tPos.y}
             stroke="#999"
             strokeWidth={1.5}
             markerEnd="url(#arrow)"

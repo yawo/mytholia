@@ -106,9 +106,9 @@ class SearchAugmentedStrategy(SourceStrategy):
             return []
         log.info(
             (
-            "[%s] search_augmented strategy (%s) has %d queries; "
-            "live search deferred to later sprint"
-        ),
+                "[%s] search_augmented strategy (%s) has %d queries; "
+                "live search deferred to later sprint"
+            ),
             manifest.id,
             self.tool,
             len(self.queries),

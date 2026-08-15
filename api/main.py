@@ -17,7 +17,7 @@ from api.routers import graph, podcast
 
 app = FastAPI(
     title="GraphOdyssée API",
-    description="Interactive mythology knowledge-graph explorer (GraphRAG).",
+    description="Explorateur interactif de graphe de connaissances mythologiques (GraphRAG).",
     version="0.1.0",
 )
 
