@@ -1,0 +1,77 @@
+## NODE char_legba Character "Papa Legba" "Lwa" "Rada"
+summary: Gatekeeper lwa who stands at the spiritual crossroads; intermediary between humanity and the spirit world; invoked first in every ceremony; associated with dogs and the crossroads.
+
+## NODE char_damballa Character "Damballah Wedo" "Lwa" "Rada"
+summary: Creator lwa of the Rada family; serpent spirit of the sky and waters; associated with wisdom, purity, and creation; offerings include white foods and eggs.
+
+## NODE char_erzulie_freda Character "Erzulie Freda" "Lwa" "Rada"
+summary: Rada lwa of love, beauty, and luxury; associated with weeping, jewelry, and the color pink; syncretized with the Mater Dolorosa.
+
+## NODE char_erzulie_dantor Character "Erzulie Dantor" "Lwa" "Petwo"
+summary: Petwo lwa of fierce protection and motherhood; warrior spirit; syncretized with Our Lady of Sorrows; protector of women and children.
+
+## NODE char_baron_samedi Character "Baron Samedi" "Lwa" "Gede"
+summary: Head of the Gede family; lwa of death and the cemetery; guardian of the crossroads between life and death; depicted in a top hat and dark glasses.
+
+## NODE char_maman_brigitte Character "Maman Brigitte" "Lwa" "Gede"
+summary: Consort of Baron Samedi; lwa of cemeteries and death; guards graves and the dead; associated with hot pepper rum.
+
+## NODE char_ogou Character "Ogou" "Lwa" "Rada"
+summary: Lwa of war, iron, and fire; defender of Rada values though he carries weaponry; syncretized with Saint James the Greater.
+
+## NODE char_kalfu Character "Kalfou (Kalfu Legba)" "Lwa" "Petwo"
+summary: Petwo counterpart of Papa Legba; trickster lwa who controls the crossroads and the forces of mischief; causes accidents that alter destiny.
+
+## NODE char_agwe Character "Agwe" "Lwa" "Rada"
+summary: Rada lwa of the sea and marine life; sovereign of the waters; associated with ships, the ocean, and drowned souls.
+
+## NODE place_ginen Place "Ginen" "Lwa" "afterlife"
+summary: The spiritual homeland across the sea in Vodou cosmology; origin and destination of the lwa and the ancestors; Africa as the sacred source.
+
+## NODE place_peristil Place "Peristil" "Lwa" "temple"
+summary: The Vodou temple where ceremonies are held; contains the poto mitan (center post) through which the lwa descend during possession.
+
+## NODE place_crossroads Place "The Crossroads" "Lwa" "ritual"
+summary: The liminal space between worlds where Legba and Kalfu stand; the threshold between the seen and unseen realms.
+
+## NODE obj_poto_mitan Object "Poto Mitan" "Lwa" "temple"
+summary: The central pillar of the peristil; the axis mundi through which lwa descend to mount their devotees during ceremonies.
+
+## NODE obj_veve Object "Veve" "Lwa" "ritual"
+summary: Ritual drawings made on the ground with cornmeal to invoke a specific lwa; each lwa has a distinctive veve pattern.
+
+## NODE event_possession Event "Spirit Possession" "Divine Horsemen" "ritual"
+summary: The central ritual event of Vodou in which a lwa mounts a practitioner (the horse); the possessed person becomes the vessel for the spirit.
+
+## NODE event_transatlantic Event "The Middle Passage" "Divine Horsemen" "history"
+summary: The transatlantic voyage that brought enslaved Africans to Saint-Domingue (Haiti); the crucible in which Vodou was forged from West African religions and Catholicism.
+
+## NODE concept_rada Concept "Rada" "Lwa" "nanchon"
+summary: The cool, sweet-tempered family of lwa rooted in West African (Dahomey) traditions; includes Legba, Damballah, and Agwe; lwa rasin (root lwa).
+
+## NODE concept_petwo Concept "Petwo" "Lwa" "nanchon"
+summary: The hot, volatile family of lwa rooted in the Creole experience of slavery and revolution; includes Erzulie Dantor and Kalfou; associated with fire and power.
+
+## NODE concept_gede Concept "Gede" "Lwa" "family"
+summary: The family of lwa associated with death, the cemetery, and sexuality; led by Baron Samedi and Maman Brigitte; known for merriment and irreverence.
+
+## EDGE edge_legba_guards_crossroads char_legba GUARDS place_crossroads "Lwa" "Rada"
+## EDGE edge_baron_guards_cemetery char_baron_samedi GUARDS place_ginen "Lwa" "Gede"
+## EDGE edge_baron_spouse char_baron_samedi SPOUSE_OF char_maman_brigitte "Lwa" "Gede"
+## EDGE edge_damballa_spouse char_damballa SPOUSE_OF char_erzulie_freda "Lwa" "Rada"
+## EDGE edge_legba_worshipped char_legba WORSHIPPED_AS char_agwe "Lwa" "syncretism"
+## EDGE edge_legba_met char_legba MET char_damballa "Lwa" "Rada"
+## EDGE edge_legba_fought char_legba FOUGHT char_kalfu "Lwa" "crossroads"
+## EDGE edge_kalfu_guards char_kalfu GUARDS place_crossroads "Lwa" "Petwo"
+## EDGE edge_possession_place event_possession TOOK_PLACE_AT place_peristil "Divine Horsemen" "ritual"
+## EDGE edge_poto_mitan_event obj_poto_mitan ASSOCIATED_WITH event_possession "Divine Horsemen" "ritual"
+## EDGE edge_veve_associated obj_veve ASSOCIATED_WITH char_legba "Lwa" "ritual"
+## EDGE edge_rada_concept char_legba ASSOCIATED_WITH concept_rada "Lwa" "nanchon"
+## EDGE edge_petwo_concept char_kalfu ASSOCIATED_WITH concept_petwo "Lwa" "nanchon"
+## EDGE edge_gede_concept char_baron_samedi ASSOCIATED_WITH concept_gede "Lwa" "family"
+## EDGE edge_damballa_rada char_damballa ASSOCIATED_WITH concept_rada "Lwa" "Rada"
+## EDGE edge_erzulie_dantor_petwo char_erzulie_dantor ASSOCIATED_WITH concept_petwo "Lwa" "Petwo"
+## EDGE edge_ogou_met char_ogou MET char_legba "Lwa" "Rada"
+## EDGE edge_agwe_ruler char_agwe RULER_OF place_ginen "Lwa" "sea"
+## EDGE edge_transatlantic_concept event_transatlantic ASSOCIATED_WITH concept_petwo "Divine Horsemen" "history"
+## EDGE edge_legba_rada char_legba CHILD_OF concept_rada "Lwa" "nanchon"

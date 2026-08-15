@@ -3,7 +3,7 @@
 Per AGENTS.md §9, both the Greek and Egyptian fixtures are required and used by
 every test touching the pipeline or API. These fixtures wire the fixture text
 into ``data/raw/{corpus_id}/`` so the corpus-agnostic pipeline can run
-end-to-end offline (AGENTS.md §13).
+end-to-end offline (AGENTS.md §13). All six seeded corpora are wired here.
 """
 
 from __future__ import annotations
@@ -27,8 +27,16 @@ for _k in (
 REPO_ROOT = Path(__file__).resolve().parent.parent
 FIXTURES = REPO_ROOT / "tests" / "fixtures"
 
-#: (corpus_id, fixture_dir_name) pairs — both corpora required (AGENTS.md §9).
-CORPUS_FIXTURES = [("greek-odyssey", "greek"), ("egyptian-mythology", "egyptian")]
+#: (corpus_id, fixture_dir_name) pairs. All seeded corpora are wired here so
+#: every corpus is validated (AGENTS.md §9: at least two, both required).
+CORPUS_FIXTURES = [
+    ("greek-odyssey", "greek"),
+    ("egyptian-mythology", "egyptian"),
+    ("greek-iliad", "greek-iliad"),
+    ("catholic-saints", "catholic-saints"),
+    ("hindu-mythology", "hindu-mythology"),
+    ("vodou", "vodou"),
+]
 
 
 @pytest.fixture()
@@ -84,7 +92,7 @@ def client(isolated_data):
     from api.retrieval.graph_store import NetworkXGraphStore, set_store
     from pipeline.corpus_loader import run_pipeline
 
-    # Build both corpora graphs first (AGENTS.md §9: both required).
+    # Build all corpora graphs first (AGENTS.md §9).
     for corpus_id, _ in CORPUS_FIXTURES:
         run_pipeline(corpus_id)
 

@@ -1,10 +1,22 @@
-# Stub manifest — Catholic saints corpus.
-# Not yet seeded; kept so the corpus registry and tests can enumerate it.
 id: catholic-saints
 name: "Catholic Saints"
 language: en
-sources: []
+sources:
+  - type: web_scrape
+    tool: crawl4ai
+    seed_urls:
+      - "https://sacred-texts.com/chr/lots/index.htm"
+      - "https://en.wikipedia.org/wiki/Golden_Legend"
+      - "https://en.wikipedia.org/wiki/List_of_Catholic_saints"
+  - type: search_augmented
+    tool: tavily
+    queries:
+      - "Saint Peter Saint Paul hagiography primary source Butler Lives of Saints"
+      - "Saint Francis of Assisi Saint Thomas Aquinas biography primary text"
+      - "Golden Legend Jacobus de Voragine saints medieval hagiography"
+      - "Catholic saints martyrdom miracles primary sources"
 extraction:
+  prompt_override: extraction_prompt.md
   node_type_hints: ["Character", "Place", "Object", "Event", "Concept"]
 narrative_style:
   tone: "reverent, hagiographic narrator, not academic"
@@ -12,4 +24,15 @@ narrative_style:
 voice:
   provider: elevenlabs
   voice_id: "${GRAPHODYSSEE_DEFAULT_VOICE_ID}"
-license_note: "Saint datasets may have unclear licensing; keep attribution visible."
+relation_types:
+  - CHILD_OF
+  - SPOUSE_OF
+  - FOUGHT
+  - MET
+  - TOOK_PLACE_AT
+  - WORSHIPPED_AS
+  - GUARDS
+  - TRANSFORMED_INTO
+  - RULER_OF
+  - ASSOCIATED_WITH
+license_note: "Butler's Lives of the Saints (1894 Benziger ed.) is public domain via Sacred Texts; Wikipedia CC-BY-SA. Cite source per-passage."

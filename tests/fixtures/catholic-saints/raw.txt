@@ -1,0 +1,59 @@
+## NODE char_peter Character "Saint Peter" "Butler's Lives of the Saints" "June 29"
+summary: Apostle and first Pope; originally a fisherman named Simon, renamed Peter (the Rock) by Christ; crucified upside down in Rome.
+
+## NODE char_paul Character "Saint Paul" "Butler's Lives of the Saints" "June 29"
+summary: Apostle to the Gentiles; originally Saul of Tarsus, a persecutor of Christians who converted on the road to Damascus; martyred in Rome.
+
+## NODE char_francis Character "Saint Francis of Assisi" "Butler's Lives of the Saints" "October 4"
+summary: Founder of the Franciscan Order; son of a wealthy merchant who embraced poverty; known for preaching to animals and the Canticle of the Sun.
+
+## NODE char_thomas_aquinas Character "Saint Thomas Aquinas" "Butler's Lives of the Saints" "January 28"
+summary: Dominican friar and theologian; author of the Summa Theologica; the leading scholastic philosopher of the Catholic Church.
+
+## NODE char_mary Character "Virgin Mary" "Golden Legend" "Assumption"
+summary: Mother of Jesus; venerated as the Theotokos (God-bearer); assumed body and soul into heaven.
+
+## NODE char_patrick Character "Saint Patrick" "Butler's Lives of the Saints" "March 17"
+summary: Apostle of Ireland; enslaved as a youth, he returned to convert the Irish; associated with the shamrock and the expulsion of snakes.
+
+## NODE place_rome Place "Rome" "Butler's Lives of the Saints" "June 29"
+summary: The Eternal City; site of the martyrdoms of Peter and Paul; center of the Catholic Church.
+
+## NODE place_assisi Place "Assisi" "Butler's Lives of the Saints" "October 4"
+summary: Italian town in Umbria; birthplace of Saint Francis and Saint Clare.
+
+## NODE place_damascus Place "Damascus" "Acts of the Apostles" "chapter 9"
+summary: City where Saul of Tarsus experienced his blinding conversion on the road; renamed Paul.
+
+## NODE place_irish_sea Place "The Irish Sea" "Butler's Lives of the Saints" "March 17"
+summary: Waters crossed by Saint Patrick on his mission to Ireland.
+
+## NODE event_martyrdom_peter Event "Martyrdom of Saint Peter" "Butler's Lives of the Saints" "June 29"
+summary: The crucifixion of Peter in Rome under Emperor Nero; he asked to be crucified upside down, deeming himself unworthy to die as Christ did.
+
+## NODE event_conversion_paul Event "Conversion of Saint Paul" "Acts of the Apostles" "chapter 9"
+summary: Saul's blinding vision of the risen Christ on the road to Damascus, transforming him from persecutor to apostle.
+
+## NODE event_council_nicaea Event "Council of Nicaea" "Golden Legend" "325 AD"
+summary: The first ecumenical council (325 AD) that affirmed the divinity of Christ and produced the Nicene Creed.
+
+## NODE obj_keys Object "Keys of Heaven" "Golden Legend" "Matthew 16:19"
+summary: The keys given to Peter by Christ, symbolizing his authority to bind and loose; a symbol of the papacy.
+
+## NODE concept_canonization Concept "Canonization" "Golden Legend" "process"
+summary: The process by which the Catholic Church declares a person a saint, recognizing their heroic virtue and intercessory power.
+
+## EDGE edge_peter_martyrdom char_peter ASSOCIATED_WITH event_martyrdom_peter "Butler's Lives of the Saints" "June 29"
+## EDGE edge_peter_martyrdom_place event_martyrdom_peter TOOK_PLACE_AT place_rome "Butler's Lives of the Saints" "June 29"
+## EDGE edge_peter_keys char_peter ASSOCIATED_WITH obj_keys "Golden Legend" "Matthew 16:19"
+## EDGE edge_peter_ruler char_peter RULER_OF place_rome "Golden Legend" "papacy"
+## EDGE edge_paul_conversion char_paul ASSOCIATED_WITH event_conversion_paul "Acts of the Apostles" "chapter 9"
+## EDGE edge_conversion_place event_conversion_paul TOOK_PLACE_AT place_damascus "Acts of the Apostles" "chapter 9"
+## EDGE edge_paul_met_peter char_paul MET char_peter "Acts of the Apostles" "chapter 15"
+## EDGE edge_francis_birthplace char_francis ASSOCIATED_WITH place_assisi "Butler's Lives of the Saints" "October 4"
+## EDGE edge_francis_worshipped char_francis WORSHIPPED_AS char_mary "Golden Legend" "Canticle of the Sun"
+## EDGE edge_patrick_mission char_patrick TOOK_PLACE_AT place_irish_sea "Butler's Lives of the Saints" "March 17"
+## EDGE edge_thomas_worshipped char_thomas_aquinas WORSHIPPED_AS char_mary "Summa Theologica" "theology"
+## EDGE edge_nicaea_concept event_council_nicaea ASSOCIATED_WITH concept_canonization "Golden Legend" "325 AD"
+## EDGE edge_mary_worshipped char_mary WORSHIPPED_AS char_mary "Golden Legend" "Theotokos"
+## EDGE edge_peter_fought char_peter FOUGHT char_paul "Acts of the Apostles" "Galatians 2"

@@ -1,0 +1,39 @@
+id: vodou
+name: "Haitian Vodou"
+language: en
+sources:
+  - type: web_scrape
+    tool: crawl4ai
+    seed_urls:
+      - "https://en.wikipedia.org/wiki/Lwa"
+      - "https://en.wikipedia.org/wiki/Papa_Legba"
+      - "https://en.wikipedia.org/wiki/Rada_lwa"
+      - "http://faculty.webster.edu/corbetre/haiti/voodoo/listlwa.htm"
+  - type: search_augmented
+    tool: tavily
+    queries:
+      - "Haitian Vodou lwa Papa Legba Baron Samedi Damballa Erzulie traditions"
+      - "Vodou Rada Petwo lwa families Gede spirits oral tradition"
+      - "Lwa veve ritual syncretism Catholic saints Vodou"
+      - "Maya Deren Divine Horsemen Vodou spirits Haitian religion"
+extraction:
+  prompt_override: extraction_prompt.md
+  node_type_hints: ["Character", "Place", "Object", "Event", "Concept"]
+narrative_style:
+  tone: "reverent, mythic narrator, not academic"
+  length_seconds: 180
+voice:
+  provider: elevenlabs
+  voice_id: "${GRAPHODYSSEE_DEFAULT_VOICE_ID}"
+relation_types:
+  - CHILD_OF
+  - SPOUSE_OF
+  - FOUGHT
+  - MET
+  - TOOK_PLACE_AT
+  - WORSHIPPED_AS
+  - GUARDS
+  - TRANSFORMED_INTO
+  - RULER_OF
+  - ASSOCIATED_WITH
+license_note: "Vodou is an oral-tradition religion; primary sources are scholarly ethnographies (Deren, Brown). Wikipedia CC-BY-SA. Respect the tradition; cite scholarly sources per-passage."

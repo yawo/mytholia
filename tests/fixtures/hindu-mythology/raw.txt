@@ -1,0 +1,90 @@
+## NODE char_rama Character "Rama" "Ramayana" "Bala Kanda"
+summary: Seventh avatar of Vishnu; prince of Ayodhya; hero of the Ramayana, exiled to the forest with his wife Sita.
+
+## NODE char_sita Character "Sita" "Ramayana" "Aranya Kanda"
+summary: Wife of Rama and avatar of Lakshmi; abducted by Ravana and rescued after a great war; embodiment of devotion and purity.
+
+## NODE char_hanuman Character "Hanuman" "Ramayana" "Kishkindha Kanda"
+summary: Vanara (monkey) devotee of Rama; son of Vayu; leapt to Lanka and found Sita; embodiment of bhakti (devotion).
+
+## NODE char_ravana Character "Ravana" "Ramayana" "Aranya Kanda"
+summary: Ten-headed demon king of Lanka; devotee of Shiva; abducted Sita, provoking the war with Rama.
+
+## NODE char_krishna Character "Krishna" "Mahabharata" "Bhagavad Gita"
+summary: Eighth avatar of Vishnu; charioteer and guide of Arjuna; speaker of the Bhagavad Gita; central figure of Hindu devotion.
+
+## NODE char_arjuna Character "Arjuna" "Mahabharata" "Bhagavad Gita"
+summary: Greatest archer of the Pandavas; cousin and friend of Krishna; faces moral crisis before the Kurukshetra War, resolved by Krishna's teaching.
+
+## NODE char_shiva Character "Shiva" "Puranas" "Shiva Purana"
+summary: The Destroyer in the Trimurti; lord of meditation, yoga, and transformation; his dance (tandava) sustains and destroys the cosmos.
+
+## NODE char_vishnu Character "Vishnu" "Puranas" "Vishnu Purana"
+summary: The Preserver in the Trimurti; descends as avatars (Rama, Krishna) to restore dharma; reclines on the cosmic serpent Shesha.
+
+## NODE char_brahma Character "Brahma" "Puranas" "Brahma Purana"
+summary: The Creator in the Trimurti; emerged from the lotus growing from Vishnu's navel; father of the Vedas.
+
+## NODE char_indra Character "Indra" "Rig Veda" "Mandala 1"
+summary: King of the gods and god of thunder and war in the Vedas; wielder of the vajra (thunderbolt); slayer of the serpent Vritra.
+
+## NODE char_vasuki Character "Vasuki" "Mahabharata" "Adi Parva"
+summary: King of the nagas (serpents); used as the churning rope in the churning of the ocean of milk (Samudra Manthan).
+
+## NODE place_ayodhya Place "Ayodhya" "Ramayana" "Bala Kanda"
+summary: Sacred city and birthplace of Rama; capital of the kingdom of Kosala; one of the seven holy cities of Hinduism.
+
+## NODE place_lanka Place "Lanka" "Ramayana" "Yuddha Kanda"
+summary: Island kingdom of Ravana; site of the great battle where Rama and his army defeated Ravana to rescue Sita.
+
+## NODE place_bhogavati Place "Bhogavati" "Mahabharata" "Adi Parva"
+summary: Subterranean capital of the nagas in Patala; ruled by Vasuki; described as a jeweled city in the Mahabharata.
+
+## NODE place_kurukshetra Place "Kurukshetra" "Mahabharata" "Bhagavad Gita"
+summary: The battlefield where the Kurukshetra War between the Pandavas and Kauravas was fought; Krishna delivered the Bhagavad Gita here.
+
+## NODE event_kurukshetra_war Event "Kurukshetra War" "Mahabharata" "Bhishma Parva"
+summary: The great war between the Pandavas and Kauravas; central event of the Mahabharata; Krishna's Bhagavad Gita precedes the battle.
+
+## NODE event_abduction_sita Event "Abduction of Sita" "Ramayana" "Aranya Kanda"
+summary: Ravana's kidnapping of Sita from the forest, disguised as a golden deer's ruse; triggered the Ramayana's war.
+
+## NODE event_samudra_manthan Event "Churning of the Ocean of Milk" "Mahabharata" "Adi Parva"
+summary: The gods and asuras churned the cosmic ocean using Vasuki and Mount Mandara to obtain amrita (the nectar of immortality).
+
+## NODE obj_chakra Object "Sudarshana Chakra" "Mahabharata" "Vishnu Purana"
+summary: The spinning discus weapon of Vishnu, wielded by Krishna; a symbol of cosmic order and divine power.
+
+## NODE obj_bow_rama Object "Bow of Rama" "Ramayana" "Bala Kanda"
+summary: The divine bow (Sharanga/Kodanda) wielded by Rama; used to defeat Ravana and complete his exile.
+
+## NODE concept_dharma Concept "Dharma" "Mahabharata" "Bhagavad Gita"
+summary: The cosmic law of righteousness, duty, and moral order; the central ethical concept Krishna teaches Arjuna.
+
+## NODE concept_karma Concept "Karma" "Bhagavad Gita" "chapter 2"
+summary: The law of cause and effect across lifetimes; action and its consequences binding the soul to samsara.
+
+## NODE concept_trimurti Concept "Trimurti" "Puranas" "cosmology"
+summary: The triad of Brahma (creator), Vishnu (preserver), and Shiva (destroyer) that governs the cycle of cosmic creation and dissolution.
+
+## EDGE edge_rama_spouse char_rama SPOUSE_OF char_sita "Ramayana" "Bala Kanda"
+## EDGE edge_rama_child char_rama CHILD_OF char_vishnu "Ramayana" "avatar"
+## EDGE edge_sita_child char_sita CHILD_OF char_vishnu "Ramayana" "avatar"
+## EDGE edge_hanuman_child char_hanuman CHILD_OF char_vishnu "Ramayana" "Vayu"
+## EDGE edge_krishna_child char_krishna CHILD_OF char_vishnu "Mahabharata" "avatar"
+## EDGE edge_rama_fought char_rama FOUGHT char_ravana "Ramayana" "Yuddha Kanda"
+## EDGE edge_hanuman_fought char_hanuman FOUGHT char_ravana "Ramayana" "Yuddha Kanda"
+## EDGE edge_abduction_place event_abduction_sita TOOK_PLACE_AT place_lanka "Ramayana" "Aranya Kanda"
+## EDGE edge_war_place event_kurukshetra_war TOOK_PLACE_AT place_kurukshetra "Mahabharata" "Bhishma Parva"
+## EDGE edge_krishna_met char_krishna MET char_arjuna "Mahabharata" "Bhagavad Gita"
+## EDGE edge_rama_ruler char_rama RULER_OF place_ayodhya "Ramayana" "Bala Kanda"
+## EDGE edge_ravana_ruler char_ravana RULER_OF place_lanka "Ramayana" "Aranya Kanda"
+## EDGE edge_vasuki_ruler char_vasuki RULER_OF place_bhogavati "Mahabharata" "Adi Parva"
+## EDGE edge_rama_bow char_rama ASSOCIATED_WITH obj_bow_rama "Ramayana" "Bala Kanda"
+## EDGE edge_krishna_chakra char_krishna ASSOCIATED_WITH obj_chakra "Mahabharata" "Vishnu Purana"
+## EDGE edge_arjuna_dharma char_arjuna ASSOCIATED_WITH concept_dharma "Bhagavad Gita" "chapter 2"
+## EDGE edge_arjuna_karma char_arjuna ASSOCIATED_WITH concept_karma "Bhagavad Gita" "chapter 2"
+## EDGE edge_trimurti char_brahma ASSOCIATED_WITH concept_trimurti "Puranas" "cosmology"
+## EDGE edge_churning_event char_vasuki ASSOCIATED_WITH event_samudra_manthan "Mahabharata" "Adi Parva"
+## EDGE edge_indra_met char_indra MET char_vishnu "Rig Veda" "Mandala 1"
+## EDGE edge_shiva_worshipped char_shiva WORSHIPPED_AS char_ravana "Ramayana" "devotion"

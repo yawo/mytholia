@@ -1,0 +1,40 @@
+id: hindu-mythology
+name: "Hindu Mythology"
+language: en
+sources:
+  - type: web_scrape
+    tool: crawl4ai
+    seed_urls:
+      - "https://sacred-texts.com/hin/index.htm"
+      - "https://en.wikipedia.org/wiki/Ramayana"
+      - "https://en.wikipedia.org/wiki/Mahabharata"
+      - "https://en.wikipedia.org/wiki/Hindu_mythology"
+  - type: search_augmented
+    tool: tavily
+    queries:
+      - "Ramayana Rama Sita Hanuman Ravana primary source Valmiki"
+      - "Mahabharata Krishna Arjuna Bhagavad Gita primary text"
+      - "Vedas Indra Agni Soma Varuna Rig Veda deities"
+      - "Shiva Vishnu Brahma Trimurti Hindu mythology Puranas"
+      - "Hindu mythology nagas Vasuki Bhogavati Patala"
+extraction:
+  prompt_override: extraction_prompt.md
+  node_type_hints: ["Character", "Place", "Object", "Event", "Concept"]
+narrative_style:
+  tone: "reverent, mythic narrator, not academic"
+  length_seconds: 180
+voice:
+  provider: elevenlabs
+  voice_id: "${GRAPHODYSSEE_DEFAULT_VOICE_ID}"
+relation_types:
+  - CHILD_OF
+  - SPOUSE_OF
+  - FOUGHT
+  - MET
+  - TOOK_PLACE_AT
+  - WORSHIPPED_AS
+  - GUARDS
+  - TRANSFORMED_INTO
+  - RULER_OF
+  - ASSOCIATED_WITH
+license_note: "Sacred Texts Archive public-domain translations (Griffith etc.); Wikipedia CC-BY-SA. Cite source per-passage."

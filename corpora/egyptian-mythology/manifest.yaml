@@ -5,13 +5,17 @@ sources:
   - type: web_scrape
     tool: crawl4ai
     seed_urls:
-      - "https://en.wikisource.org/wiki/Ancient_Egyptian_Anthology"
+      - "https://sacred-texts.com/egy/ebod/index.htm"
+      - "https://en.wikipedia.org/wiki/Book_of_the_Dead"
+      - "https://en.wikipedia.org/wiki/Pyramid_Texts"
+      - "https://en.wikipedia.org/wiki/Ancient_Egyptian_funerary_texts"
   - type: search_augmented
     tool: tavily
     queries:
-      - "Osiris Isis Set Horus myth primary sources"
-      - "Duat weighing of the heart Book of the Dead primary text"
-      - "Anubis Ma'at Egyptian cosmology sources"
+      - "Osiris Isis Set Horus myth primary sources Book of the Dead"
+      - "Duat weighing of the heart Ma'at Anubis primary text"
+      - "Ra Apep sun barge underworld journey Egyptian mythology"
+      - "Pyramid Texts Unas spells afterlife Egyptian"
 extraction:
   prompt_override: extraction_prompt.md
   node_type_hints: ["Character", "Place", "Object", "Event", "Concept"]
@@ -32,4 +36,4 @@ relation_types:
   - TRANSFORMED_INTO
   - RULER_OF
   - ASSOCIATED_WITH
-license_note: "Cite source per-passage; respect site ToS and robots.txt."
+license_note: "Sacred Texts Archive public-domain translations; Wikipedia CC-BY-SA. Cite source per-passage."

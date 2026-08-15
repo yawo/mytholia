@@ -1,0 +1,63 @@
+## NODE char_achilles Character "Achilles" "Iliad" "book 1"
+summary: Greatest Greek warrior in the Trojan War, son of the goddess Thetis and the mortal Peleus; his rage is the subject of the Iliad.
+
+## NODE char_hector Character "Hector" "Iliad" "book 6"
+summary: Prince of Troy and its greatest defender; son of Priam, slain by Achilles in single combat.
+
+## NODE char_priam Character "Priam" "Iliad" "book 24"
+summary: King of Troy during the war; father of Hector and Paris; ransoms his son's body from Achilles.
+
+## NODE char_paris Character "Paris" "Iliad" "book 3"
+summary: Trojan prince whose abduction of Helen sparked the Trojan War; judged the beauty contest that started it all.
+
+## NODE char_helen Character "Helen" "Iliad" "book 3"
+summary: Wife of Menelaus, taken to Troy by Paris; her face launched a thousand ships.
+
+## NODE char_agamemnon Character "Agamemnon" "Iliad" "book 1"
+summary: King of Mycenae and commander of the Greek forces; his quarrel with Achilles drives the Iliad's plot.
+
+## NODE char_thetis Character "Thetis" "Iliad" "book 1"
+summary: Sea goddess, mother of Achilles; intercedes with Zeus on her son's behalf.
+
+## NODE char_zeus Character "Zeus" "Iliad" "book 1"
+summary: King of the gods who weighs the fates of Greeks and Trojans on his golden scales.
+
+## NODE char_athena Character "Athena" "Iliad" "book 1"
+summary: Goddess of wisdom and warfare; champion of the Greeks, especially Achilles and Diomedes.
+
+## NODE char_patroclus Character "Patroclus" "Iliad" "book 16"
+summary: Achilles' closest companion; wore Achilles' armor into battle and was slain by Hector.
+
+## NODE place_troy Place "Troy" "Iliad" "book 1"
+summary: The walled city of King Priam, besieged by the Greeks for ten years.
+
+## NODE place_mycenae Place "Mycenae" "Iliad" "book 1"
+summary: The fortified city of Agamemnon, the muster point of the Greek expedition.
+
+## NODE event_trojan_war Event "The Trojan War" "Iliad" "book 1"
+summary: A ten-year siege of Troy by the Greek forces, triggered by Paris's abduction of Helen.
+
+## NODE event_duel_hector Event "Duel of Achilles and Hector" "Iliad" "book 22"
+summary: The climactic single combat outside the walls of Troy in which Achilles kills Hector.
+
+## NODE obj_armor Object "Armor of Achilles" "Iliad" "book 18"
+summary: Divine armor forged by Hephaestus for Achilles after Patroclus fell wearing his original set.
+
+## NODE concept_kleos Concept "Kleos" "Iliad" "book 9"
+summary: The Greek concept of glory and immortal fame won through heroic deeds in battle.
+
+## EDGE edge_achilles_child char_achilles CHILD_OF char_thetis "Iliad" "book 1"
+## EDGE edge_hector_child char_hector CHILD_OF char_priam "Iliad" "book 6"
+## EDGE edge_paris_child char_paris CHILD_OF char_priam "Iliad" "book 3"
+## EDGE edge_paris_spouse char_paris SPOUSE_OF char_helen "Iliad" "book 3"
+## EDGE edge_trojan_war_place event_trojan_war TOOK_PLACE_AT place_troy "Iliad" "book 1"
+## EDGE edge_agamemnon_ruler char_agamemnon RULER_OF place_mycenae "Iliad" "book 1"
+## EDGE edge_priam_ruler char_priam RULER_OF place_troy "Iliad" "book 6"
+## EDGE edge_achilles_fought char_achilles FOUGHT char_hector "Iliad" "book 22"
+## EDGE edge_duel_place event_duel_hector TOOK_PLACE_AT place_troy "Iliad" "book 22"
+## EDGE edge_achilles_associated_armor char_achilles ASSOCIATED_WITH obj_armor "Iliad" "book 18"
+## EDGE edge_achilles_kleos char_achilles ASSOCIATED_WITH concept_kleos "Iliad" "book 9"
+## EDGE edge_patroclus_met char_patroclus MET char_achilles "Iliad" "book 16"
+## EDGE edge_athena_met char_athena MET char_achilles "Iliad" "book 1"
+## EDGE edge_thetis_met char_thetis MET char_zeus "Iliad" "book 1"
+## EDGE edge_patroclus_fought char_patroclus FOUGHT char_hector "Iliad" "book 16"
