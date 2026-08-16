@@ -108,6 +108,9 @@ def main(argv: list[str] | None = None) -> int:
             print(cid)
         return 0
 
+    if not args.corpus:
+        parser.error("--corpus is required unless --list is used")
+
     try:
         out = run_pipeline(args.corpus, corpora_dir)
     except FileNotFoundError as e:

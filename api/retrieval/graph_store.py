@@ -71,11 +71,12 @@ class GraphStore(ABC):
         raise NotImplementedError
 
 
-def _load_manifest_summary(corpus_id: str) -> CorpusSummary | None:
+def _load_manifest_summary(corpus_id: str, corpora_dir: Path | None = None) -> CorpusSummary | None:
     """Load a lightweight summary from a corpus manifest (corpus-agnostic)."""
     from api.models import CorpusManifest
 
-    path = CORPORA_DIR / corpus_id / "manifest.yaml"
+    root = corpora_dir or CORPORA_DIR
+    path = root / corpus_id / "manifest.yaml"
     if not path.exists():
         return None
     manifest = CorpusManifest.from_file(path)
@@ -131,7 +132,7 @@ class NetworkXGraphStore(GraphStore):
         for child in sorted(self.corpora_dir.iterdir()):
             if not child.is_dir() or not (child / "manifest.yaml").exists():
                 continue
-            summary = _load_manifest_summary(child.name)
+            summary = _load_manifest_summary(child.name, self.corpora_dir)
             if summary is None:
                 continue
             data = self._load_graph_data(child.name)

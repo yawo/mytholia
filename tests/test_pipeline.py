@@ -133,13 +133,20 @@ def test_list_corpus_ids_includes_both(repo_root: Path) -> None:
 
 def test_build_graph_rejects_dangling_edge(tmp_path: Path) -> None:
     """build_graph raises on an edge referencing a missing node (integrity)."""
-    from api.models import CorpusManifest, GraphEdge, GraphNode
+    from api.models import CorpusManifest, GraphEdge, GraphNode, SourceRef
 
     manifest = CorpusManifest(id="test-corpus", name="Test")
-    n = GraphNode(id="n1", type="Character", corpus_id="test-corpus", label="A")
+    refs = [SourceRef(text="Test Source", location="fixture")]
+    n = GraphNode(id="n1", type="Character", corpus_id="test-corpus", label="A", source_refs=refs)
     # edge references n2 which does not exist
     e = GraphEdge(
-        id="e1", source="n1", target="n2", relation="MET", corpus_id="test-corpus", label="met"
+        id="e1",
+        source="n1",
+        target="n2",
+        relation="MET",
+        corpus_id="test-corpus",
+        label="met",
+        source_refs=refs,
     )
     from pipeline.build_graph import build_graph
 
@@ -149,10 +156,43 @@ def test_build_graph_rejects_dangling_edge(tmp_path: Path) -> None:
 
 def test_build_graph_rejects_cross_corpus_node() -> None:
     """A node whose corpus_id doesn't match the manifest is rejected."""
+    from api.models import CorpusManifest, GraphNode, SourceRef
+    from pipeline.build_graph import build_graph
+
+    manifest = CorpusManifest(id="test-corpus", name="Test")
+    n = GraphNode(
+        id="n1",
+        type="Character",
+        corpus_id="other-corpus",
+        label="A",
+        source_refs=[SourceRef(text="Test Source", location="fixture")],
+    )
+    with pytest.raises(ValueError, match="corpus_id"):
+        build_graph(manifest, [n], [])
+
+
+def test_build_graph_rejects_unsourced_node() -> None:
+    """A node without source_refs is rejected to preserve traceability."""
     from api.models import CorpusManifest, GraphNode
     from pipeline.build_graph import build_graph
 
     manifest = CorpusManifest(id="test-corpus", name="Test")
-    n = GraphNode(id="n1", type="Character", corpus_id="other-corpus", label="A")
-    with pytest.raises(ValueError, match="corpus_id"):
+    n = GraphNode(id="n1", type="Character", corpus_id="test-corpus", label="A")
+
+    with pytest.raises(ValueError, match="no source_refs"):
         build_graph(manifest, [n], [])
+
+
+def test_build_graph_rejects_unsourced_edge() -> None:
+    """An edge without source_refs is rejected to preserve traceability."""
+    from api.models import CorpusManifest, GraphEdge, GraphNode, SourceRef
+    from pipeline.build_graph import build_graph
+
+    manifest = CorpusManifest(id="test-corpus", name="Test")
+    refs = [SourceRef(text="Test Source", location="fixture")]
+    n1 = GraphNode(id="n1", type="Character", corpus_id="test-corpus", label="A", source_refs=refs)
+    n2 = GraphNode(id="n2", type="Character", corpus_id="test-corpus", label="B", source_refs=refs)
+    e = GraphEdge(id="e1", source="n1", target="n2", relation="MET", corpus_id="test-corpus")
+
+    with pytest.raises(ValueError, match="no source_refs"):
+        build_graph(manifest, [n1, n2], [e])
