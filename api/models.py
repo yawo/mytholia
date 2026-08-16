@@ -252,6 +252,59 @@ class CorpusSummary(BaseModel):
     license_note: str | None = None
 
 
+class CorpusDetail(BaseModel):
+    """Full corpus metadata for the /corpora/{corpus_id} endpoint.
+
+    Includes the controlled relation vocabulary and narrative style so the
+    frontend can render legends and UI without hardcoding anything
+    (AGENTS.md §2, §4).
+    """
+
+    model_config = ConfigDict(extra="allow")
+
+    id: str
+    name: str
+    language: str = "en"
+    node_count: int = 0
+    edge_count: int = 0
+    relation_types: list[str] = Field(default_factory=list)
+    narrative_tone: str = ""
+    narrative_length_seconds: int = 180
+    voice_provider: str = "elevenlabs"
+    license_note: str | None = None
+
+
+class GraphStats(BaseModel):
+    """Statistics for a corpus graph (node-type distribution, totals)."""
+
+    model_config = ConfigDict(extra="allow")
+
+    corpus_id: str
+    total_nodes: int
+    total_edges: int
+    node_type_counts: dict[str, int] = Field(default_factory=dict)
+    relation_type_counts: dict[str, int] = Field(default_factory=dict)
+
+
+class SearchResult(BaseModel):
+    """A search hit: the node plus a relevance score."""
+
+    model_config = ConfigDict(extra="allow")
+
+    node: GraphNode
+    score: float
+
+
+class HealthStatus(BaseModel):
+    """Health check response with diagnostic info."""
+
+    model_config = ConfigDict(extra="allow")
+
+    status: str = "ok"
+    corpus_count: int = 0
+    store_backend: str = "networkx"
+
+
 class PodcastRequest(BaseModel):
     """Request body for /podcast."""
 

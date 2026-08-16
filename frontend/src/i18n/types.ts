@@ -19,6 +19,11 @@ export interface Dictionary {
     selectCorpus: string;
     nodeCount: string; // e.g. "{count} nodes" — use {count} as placeholder
     language: string;
+    searchPlaceholder: string;
+    searchResults: string; // "{count} results"
+    searchNoResults: string;
+    errorLoading: string;
+    legend: string;
   };
   graph: {
     loading: string;

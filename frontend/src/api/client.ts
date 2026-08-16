@@ -3,10 +3,13 @@
 
 import { useEffect, useState } from "react";
 import type {
+  CorpusDetail,
   CorpusSummary,
   GraphData,
   GraphNode,
+  GraphStats,
   PodcastResponse,
+  SearchResult,
 } from "./types";
 
 const API_BASE = "/api";
@@ -46,9 +49,18 @@ export function useCorpora(): { data: CorpusSummary[] | null; error: string | nu
   useEffect(() => {
     let active = true;
     getJSON<CorpusSummary[]>("/corpora")
-      .then((d) => active && (setData(d), setError(null)))
-      .catch((e: unknown) => active && setError(String(e)))
-      .finally(() => active && setLoading(false));
+      .then((d) => {
+        if (active) {
+          setData(d);
+          setError(null);
+        }
+      })
+      .catch((e: unknown) => {
+        if (active) setError(String(e));
+      })
+      .finally(() => {
+        if (active) setLoading(false);
+      });
     return () => {
       active = false;
     };
@@ -72,9 +84,18 @@ export function useGraph(corpusId: string | null): {
     let active = true;
     setLoading(true);
     getJSON<GraphData>("/graph", { corpus_id: corpusId })
-      .then((d) => active && (setData(d), setError(null)))
-      .catch((e: unknown) => active && setError(String(e)))
-      .finally(() => active && setLoading(false));
+      .then((d) => {
+        if (active) {
+          setData(d);
+          setError(null);
+        }
+      })
+      .catch((e: unknown) => {
+        if (active) setError(String(e));
+      })
+      .finally(() => {
+        if (active) setLoading(false);
+      });
     return () => {
       active = false;
     };
@@ -98,14 +119,70 @@ export function useSubgraph(
     let active = true;
     setLoading(true);
     getJSON<GraphData>("/subgraph", { corpus_id: corpusId, node_id: nodeId, radius: String(radius) })
-      .then((d) => active && (setData(d), setError(null)))
-      .catch((e: unknown) => active && setError(String(e)))
-      .finally(() => active && setLoading(false));
+      .then((d) => {
+        if (active) {
+          setData(d);
+          setError(null);
+        }
+      })
+      .catch((e: unknown) => {
+        if (active) setError(String(e));
+      })
+      .finally(() => {
+        if (active) setLoading(false);
+      });
     return () => {
       active = false;
     };
   }, [corpusId, nodeId, radius]);
   return { data, error, loading };
+}
+
+export function useSearch(
+  corpusId: string | null,
+  query: string,
+  limit = 10
+): { data: SearchResult[] | null; loading: boolean } {
+  const [data, setData] = useState<SearchResult[] | null>(null);
+  const [loading, setLoading] = useState(false);
+  useEffect(() => {
+    if (!corpusId || query.trim().length < 2) {
+      setData(null);
+      return;
+    }
+    let active = true;
+    setLoading(true);
+    // Debounce: wait 300ms after the user stops typing before searching.
+    const timer = setTimeout(() => {
+      getJSON<SearchResult[]>("/search", {
+        corpus_id: corpusId,
+        q: query.trim(),
+        limit: String(limit),
+      })
+        .then((d) => {
+          if (active) setData(d);
+        })
+        .catch(() => {
+          if (active) setData(null);
+        })
+        .finally(() => {
+          if (active) setLoading(false);
+        });
+    }, 300);
+    return () => {
+      active = false;
+      clearTimeout(timer);
+    };
+  }, [corpusId, query, limit]);
+  return { data, loading };
+}
+
+export async function fetchCorpusDetail(corpusId: string): Promise<CorpusDetail> {
+  return getJSON<CorpusDetail>(`/corpora/${corpusId}`);
+}
+
+export async function fetchGraphStats(corpusId: string): Promise<GraphStats> {
+  return getJSON<GraphStats>("/graph/stats", { corpus_id: corpusId });
 }
 
 export async function fetchNode(corpusId: string, nodeId: string): Promise<GraphNode> {

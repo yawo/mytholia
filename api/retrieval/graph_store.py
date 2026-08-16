@@ -15,7 +15,7 @@ from abc import ABC, abstractmethod
 from pathlib import Path
 from typing import TYPE_CHECKING
 
-from api.models import CorpusSummary, GraphData, GraphNode
+from api.models import CorpusDetail, CorpusManifest, CorpusSummary, GraphData, GraphNode, GraphStats
 
 if TYPE_CHECKING:
     pass
@@ -54,6 +54,18 @@ class GraphStore(ABC):
     @abstractmethod
     def get_subgraph(self, corpus_id: str, node_id: str, radius: int = 1) -> GraphData:
         """Return the local subgraph around a node within ``radius`` hops."""
+        raise NotImplementedError
+
+    def get_corpus_detail(self, corpus_id: str) -> CorpusDetail | None:
+        """Return full metadata for a single corpus (optional override)."""
+        return None
+
+    def get_stats(self, corpus_id: str) -> GraphStats:
+        """Return node-type and relation-type distribution (optional override)."""
+        raise NotImplementedError
+
+    def get_neighbors(self, corpus_id: str, node_id: str) -> GraphData:
+        """Return direct neighbors of a node (optional override)."""
         raise NotImplementedError
 
 
@@ -128,6 +140,59 @@ class NetworkXGraphStore(GraphStore):
 
     def get_graph(self, corpus_id: str) -> GraphData:
         return self._load_graph_data(corpus_id)
+
+    def get_corpus_detail(self, corpus_id: str) -> CorpusDetail | None:
+        """Return full metadata for a single corpus (AGENTS.md §4, §5)."""
+        path = self.corpora_dir / corpus_id / "manifest.yaml"
+        if not path.exists():
+            return None
+        manifest = CorpusManifest.from_file(path)
+        data = self._load_graph_data(corpus_id)
+        return CorpusDetail(
+            id=manifest.id,
+            name=manifest.name,
+            language=manifest.language,
+            node_count=len(data.nodes),
+            edge_count=len(data.edges),
+            relation_types=manifest.relation_types,
+            narrative_tone=manifest.narrative_style.tone,
+            narrative_length_seconds=manifest.narrative_style.length_seconds,
+            voice_provider=manifest.voice.provider,
+            license_note=manifest.license_note,
+        )
+
+    def get_stats(self, corpus_id: str) -> GraphStats:
+        """Return node-type and relation-type distribution for a corpus."""
+        data = self._load_graph_data(corpus_id)
+        node_type_counts: dict[str, int] = {}
+        for n in data.nodes:
+            node_type_counts[n.type] = node_type_counts.get(n.type, 0) + 1
+        relation_type_counts: dict[str, int] = {}
+        for e in data.edges:
+            relation_type_counts[e.relation] = relation_type_counts.get(e.relation, 0) + 1
+        return GraphStats(
+            corpus_id=corpus_id,
+            total_nodes=len(data.nodes),
+            total_edges=len(data.edges),
+            node_type_counts=node_type_counts,
+            relation_type_counts=relation_type_counts,
+        )
+
+    def get_neighbors(self, corpus_id: str, node_id: str) -> GraphData:
+        """Return only the direct neighbors of a node (radius=1, no ego_graph)."""
+        data = self._load_graph_data(corpus_id)
+        neighbor_ids: set[str] = set()
+        for e in data.edges:
+            if e.source == node_id:
+                neighbor_ids.add(e.target)
+            if e.target == node_id:
+                neighbor_ids.add(e.source)
+        if not neighbor_ids:
+            return GraphData(corpus_id=corpus_id)
+        all_ids = {node_id} | neighbor_ids
+        sub_nodes = [n for n in data.nodes if n.id in all_ids]
+        sub_edges = [e for e in data.edges if e.source in all_ids and e.target in all_ids]
+        return GraphData(corpus_id=corpus_id, nodes=sub_nodes, edges=sub_edges)
 
     def get_node(self, corpus_id: str, node_id: str) -> GraphNode | None:
         data = self._load_graph_data(corpus_id)
@@ -211,10 +276,20 @@ def get_store() -> GraphStore:
         _store = CypherGraphStore(uri=uri)
     else:
         _store = NetworkXGraphStore()
+    _store_backend = "cypher" if uri else "networkx"
     return _store
+
+
+_store_backend: str = "networkx"
+
+
+def get_store_backend() -> str:
+    """Return the name of the active store backend (for /health)."""
+    return _store_backend
 
 
 def set_store(store: GraphStore) -> None:
     """Override the store (used by tests to inject an in-memory store)."""
-    global _store
+    global _store, _store_backend
     _store = store
+    _store_backend = type(store).__name__

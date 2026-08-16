@@ -7,6 +7,11 @@ const en: Dictionary = {
     selectCorpus: "Select a corpus…",
     nodeCount: "{count} nodes",
     language: "Language",
+    searchPlaceholder: "Search nodes…",
+    searchResults: "{count} results",
+    searchNoResults: "No results.",
+    errorLoading: "Error loading data.",
+    legend: "Legend",
   },
   graph: {
     loading: "Loading graph…",

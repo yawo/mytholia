@@ -7,6 +7,11 @@ const fr: Dictionary = {
     selectCorpus: "Choisir un corpus…",
     nodeCount: "{count} nœuds",
     language: "Langue",
+    searchPlaceholder: "Rechercher un nœud…",
+    searchResults: "{count} résultats",
+    searchNoResults: "Aucun résultat.",
+    errorLoading: "Erreur lors du chargement.",
+    legend: "Légende",
   },
   graph: {
     loading: "Chargement du graphe…",

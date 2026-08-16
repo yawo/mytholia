@@ -44,6 +44,32 @@ export interface CorpusSummary {
   license_note?: string | null;
 }
 
+export interface CorpusDetail {
+  id: string;
+  name: string;
+  language: string;
+  node_count: number;
+  edge_count: number;
+  relation_types: string[];
+  narrative_tone: string;
+  narrative_length_seconds: number;
+  voice_provider: string;
+  license_note?: string | null;
+}
+
+export interface GraphStats {
+  corpus_id: string;
+  total_nodes: number;
+  total_edges: number;
+  node_type_counts: Record<string, number>;
+  relation_type_counts: Record<string, number>;
+}
+
+export interface SearchResult {
+  node: GraphNode;
+  score: number;
+}
+
 export interface PodcastResponse {
   corpus_id: string;
   entity_id: string;

@@ -10,6 +10,7 @@ import { describe, it, expect } from "vitest";
 import { render, screen, fireEvent } from "@testing-library/react";
 import { GraphView } from "../../../frontend/src/components/GraphView/GraphView";
 import { Sidebar } from "../../../frontend/src/components/Sidebar/Sidebar";
+import { Legend } from "../../../frontend/src/components/Legend/Legend";
 import { I18nProvider } from "../../../frontend/src/i18n";
 import type { GraphData, GraphNode } from "../../../frontend/src/api/types";
 
@@ -126,5 +127,32 @@ describe("Sidebar empty state", () => {
   it("renders the localized select-node prompt (fr)", () => {
     renderWithI18n(<Sidebar corpusId="greek-odyssey" node={null} />);
     expect(screen.getByText("Sélectionnez un nœud pour voir ses détails.")).toBeTruthy();
+  });
+});
+
+describe("Legend", () => {
+  it("renders all five node types with localized labels (fr)", () => {
+    renderWithI18n(<Legend />);
+    // fr default: all five types should appear
+    expect(screen.getByText("Légende")).toBeTruthy();
+    expect(screen.getByText("Personnage")).toBeTruthy();
+    expect(screen.getByText("Lieu")).toBeTruthy();
+    expect(screen.getByText("Objet")).toBeTruthy();
+    expect(screen.getByText("Événement")).toBeTruthy();
+    expect(screen.getByText("Concept")).toBeTruthy();
+  });
+
+  it("switches to English labels when locale is en", () => {
+    const original = window.localStorage.getItem("graphodyssee-locale");
+    window.localStorage.setItem("graphodyssee-locale", "en");
+    renderWithI18n(<Legend />);
+    expect(screen.getByText("Legend")).toBeTruthy();
+    expect(screen.getByText("Character")).toBeTruthy();
+    expect(screen.getByText("Place")).toBeTruthy();
+    if (original === null) {
+      window.localStorage.removeItem("graphodyssee-locale");
+    } else {
+      window.localStorage.setItem("graphodyssee-locale", original);
+    }
   });
 });

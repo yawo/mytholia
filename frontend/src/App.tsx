@@ -8,15 +8,17 @@ import { useState } from "react";
 import { useCorpora, useGraph } from "./api/client";
 import { GraphView } from "./components/GraphView";
 import { Sidebar } from "./components/Sidebar";
+import { SearchBox } from "./components/Search";
+import { Legend } from "./components/Legend";
 import type { GraphNode } from "./api/types";
 import { useI18n, format } from "./i18n";
 import type { Locale } from "./i18n/types";
 
 export default function App() {
   const { t, locale, setLocale } = useI18n();
-  const { data: corpora, loading: corporaLoading } = useCorpora();
+  const { data: corpora, loading: corporaLoading, error: corporaError } = useCorpora();
   const [corpusId, setCorpusId] = useState<string | null>(null);
-  const { data: graph, loading: graphLoading } = useGraph(corpusId);
+  const { data: graph, loading: graphLoading, error: graphError } = useGraph(corpusId);
   const [selectedNode, setSelectedNode] = useState<GraphNode | null>(null);
 
   return (
@@ -49,13 +51,23 @@ export default function App() {
           <option value="en">English</option>
         </select>
       </header>
+      {corporaError && <div className="error-banner">{t.app.errorLoading} {corporaError}</div>}
       <main>
-        <GraphView
-          graph={graph}
-          selectedNodeId={selectedNode?.id ?? null}
-          onSelectNode={setSelectedNode}
-          loading={graphLoading}
-        />
+        <div className="graph-panel">
+          {corpusId && (
+            <div className="graph-toolbar">
+              <SearchBox corpusId={corpusId} onSelectNode={setSelectedNode} />
+              <Legend />
+            </div>
+          )}
+          {graphError && <div className="error-banner">{t.app.errorLoading}</div>}
+          <GraphView
+            graph={graph}
+            selectedNodeId={selectedNode?.id ?? null}
+            onSelectNode={setSelectedNode}
+            loading={graphLoading}
+          />
+        </div>
         {corpusId && <Sidebar corpusId={corpusId} node={selectedNode} />}
       </main>
     </div>

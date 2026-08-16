@@ -13,6 +13,8 @@ from __future__ import annotations
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
+from api.models import HealthStatus
+from api.retrieval.graph_store import get_store, get_store_backend
 from api.routers import graph, podcast
 
 app = FastAPI(
@@ -34,9 +36,15 @@ app.include_router(graph.router, prefix="/api")
 app.include_router(podcast.router, prefix="/api")
 
 
-@app.get("/health", tags=["meta"])
-def health() -> dict[str, str]:
-    return {"status": "ok"}
+@app.get("/health", response_model=HealthStatus, tags=["meta"])
+def health() -> HealthStatus:
+    """Health check with diagnostic info: corpus count and store backend."""
+    try:
+        corpora = get_store().list_corpora()
+        count = len(corpora)
+    except Exception:
+        count = 0
+    return HealthStatus(status="ok", corpus_count=count, store_backend=get_store_backend())
 
 
 @app.get("/", tags=["meta"])
