@@ -63,7 +63,7 @@ export function GraphView({ graph, selectedNodeId, onSelectNode, loading }: Grap
             y1={s.y}
             x2={tPos.x}
             y2={tPos.y}
-            stroke="#999"
+            className="graph-edge"
             strokeWidth={1.5}
             markerEnd="url(#arrow)"
           />
@@ -71,7 +71,7 @@ export function GraphView({ graph, selectedNodeId, onSelectNode, loading }: Grap
       })}
       <defs>
         <marker id="arrow" markerWidth="8" markerHeight="8" refX="12" refY="3" orient="auto">
-          <path d="M0,0 L6,3 L0,6 Z" fill="#999" />
+          <path className="graph-arrow" d="M0,0 L6,3 L0,6 Z" />
         </marker>
       </defs>
       {/* nodes */}
@@ -79,7 +79,7 @@ export function GraphView({ graph, selectedNodeId, onSelectNode, loading }: Grap
         const p = positions[node.id];
         const isSelected = node.id === selectedNodeId;
         return (
-          <g key={node.id} transform={`translate(${p.x}, ${p.y})`} onClick={() => onSelectNode(node)}>
+          <g className="graph-node" key={node.id} transform={`translate(${p.x}, ${p.y})`} onClick={() => onSelectNode(node)}>
             <circle
               r={isSelected ? 16 : 12}
               fill={TYPE_COLORS[node.type] ?? "#999"}

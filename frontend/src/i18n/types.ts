@@ -16,9 +16,15 @@ export type NodeTypeKey = "Character" | "Place" | "Object" | "Event" | "Concept"
 export interface Dictionary {
   app: {
     title: string;
+    tagline: string;
     selectCorpus: string;
     nodeCount: string; // e.g. "{count} nodes" — use {count} as placeholder
     language: string;
+    theme: string;
+    darkTheme: string;
+    lightTheme: string;
+    switchToDarkTheme: string;
+    switchToLightTheme: string;
     searchPlaceholder: string;
     searchResults: string; // "{count} results"
     searchNoResults: string;

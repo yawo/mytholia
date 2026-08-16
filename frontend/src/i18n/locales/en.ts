@@ -4,9 +4,15 @@ import type { Dictionary } from "../types";
 const en: Dictionary = {
   app: {
     title: "GraphOdyssée",
+    tagline: "GraphRAG Mythology Explorer",
     selectCorpus: "Select a corpus…",
     nodeCount: "{count} nodes",
     language: "Language",
+    theme: "Theme",
+    darkTheme: "Dark",
+    lightTheme: "Light",
+    switchToDarkTheme: "Switch to dark theme",
+    switchToLightTheme: "Switch to light theme",
     searchPlaceholder: "Search nodes…",
     searchResults: "{count} results",
     searchNoResults: "No results.",
