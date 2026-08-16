@@ -1,0 +1,847 @@
+{
+  "corpus_id": "norse-mythology",
+  "nodes": [
+    {
+      "id": "char_odin",
+      "type": "Character",
+      "corpus_id": "norse-mythology",
+      "label": "Odin",
+      "summary": "All-Father and king of the Aesir; god of wisdom, war, poetry, and death; sacrificed his eye at Mimir's Well and hung from Yggdrasil to gain the runes.",
+      "source_refs": [
+        {
+          "text": "Prose Edda",
+          "location": "Gylfaginning"
+        }
+      ]
+    },
+    {
+      "id": "char_thor",
+      "type": "Character",
+      "corpus_id": "norse-mythology",
+      "label": "Thor",
+      "summary": "God of thunder, son of Odin and the earth goddess Jord; protector of Midgard and humanity; wields the hammer Mjolnir against giants; the strongest of the gods.",
+      "source_refs": [
+        {
+          "text": "Prose Edda",
+          "location": "Gylfaginning"
+        }
+      ]
+    },
+    {
+      "id": "char_loki",
+      "type": "Character",
+      "corpus_id": "norse-mythology",
+      "label": "Loki",
+      "summary": "Trickster god, blood-brother of Odin; a shape-shifter of giant (jotun) origin; father of monsters and instigator of Baldur's death; bound by the gods until Ragnarok.",
+      "source_refs": [
+        {
+          "text": "Prose Edda",
+          "location": "Gylfaginning"
+        }
+      ]
+    },
+    {
+      "id": "char_frigg",
+      "type": "Character",
+      "corpus_id": "norse-mythology",
+      "label": "Frigg",
+      "summary": "Wife of Odin and queen of the Aesir; goddess of marriage, motherhood, and prophecy; mother of Baldur; tried to protect him from all things but failed with the mistletoe.",
+      "source_refs": [
+        {
+          "text": "Prose Edda",
+          "location": "Gylfaginning"
+        }
+      ]
+    },
+    {
+      "id": "char_baldur",
+      "type": "Character",
+      "corpus_id": "norse-mythology",
+      "label": "Baldur",
+      "summary": "God of light, beauty, and renewal; son of Odin and Frigg; slain by a mistletoe arrow guided by Loki; his death is the first omen of Ragnarok.",
+      "source_refs": [
+        {
+          "text": "Prose Edda",
+          "location": "Gylfaginning"
+        }
+      ]
+    },
+    {
+      "id": "char_freyr",
+      "type": "Character",
+      "corpus_id": "norse-mythology",
+      "label": "Freyr",
+      "summary": "God of fertility, prosperity, and peace; a Vanir hostage among the Aesir; son of Njord; ruler of Alfheim; wields a ship that folds into a pocket and a sword that fights on its own.",
+      "source_refs": [
+        {
+          "text": "Prose Edda",
+          "location": "Gylfaginning"
+        }
+      ]
+    },
+    {
+      "id": "char_freya",
+      "type": "Character",
+      "corpus_id": "norse-mythology",
+      "label": "Freya",
+      "summary": "Goddess of love, beauty, and war; sister of Freyr; rides to battle and claims half the slain; rides a chariot drawn by cats; taught seidr (magic) to the Aesir.",
+      "source_refs": [
+        {
+          "text": "Prose Edda",
+          "location": "Gylfaginning"
+        }
+      ]
+    },
+    {
+      "id": "char_njord",
+      "type": "Character",
+      "corpus_id": "norse-mythology",
+      "label": "Njord",
+      "summary": "God of the sea, wind, and fishing; a Vanir; father of Freyr and Freya; lives at Noatun (ship enclosure); associated with wealth from the sea.",
+      "source_refs": [
+        {
+          "text": "Prose Edda",
+          "location": "Gylfaginning"
+        }
+      ]
+    },
+    {
+      "id": "char_tyr",
+      "type": "Character",
+      "corpus_id": "norse-mythology",
+      "label": "Tyr",
+      "summary": "God of war, justice, and law; sacrificed his hand to bind the wolf Fenrir; one-handed god of the Aesir.",
+      "source_refs": [
+        {
+          "text": "Prose Edda",
+          "location": "Gylfaginning"
+        }
+      ]
+    },
+    {
+      "id": "char_heimdall",
+      "type": "Character",
+      "corpus_id": "norse-mythology",
+      "label": "Heimdall",
+      "summary": "Watchman of the gods; guardian of the Bifrost bridge to Asgard; has senses so keen he can hear grass growing; will blow the Gjallarhorn at Ragnarok.",
+      "source_refs": [
+        {
+          "text": "Prose Edda",
+          "location": "Gylfaginning"
+        }
+      ]
+    },
+    {
+      "id": "char_hel",
+      "type": "Character",
+      "corpus_id": "norse-mythology",
+      "label": "Hel",
+      "summary": "Daughter of Loki; ruler of the underworld realm Hel; receives those who die of sickness or old age; half her body is livid, half normal.",
+      "source_refs": [
+        {
+          "text": "Prose Edda",
+          "location": "Gylfaginning"
+        }
+      ]
+    },
+    {
+      "id": "char_fenrir",
+      "type": "Character",
+      "corpus_id": "norse-mythology",
+      "label": "Fenrir",
+      "summary": "Monstrous wolf, son of Loki; bound by the gods with the magical fetter Gleipnir; will break free at Ragnarok and slay Odin.",
+      "source_refs": [
+        {
+          "text": "Prose Edda",
+          "location": "Gylfaginning"
+        }
+      ]
+    },
+    {
+      "id": "char_jormungandr",
+      "type": "Character",
+      "corpus_id": "norse-mythology",
+      "label": "Jormungandr",
+      "summary": "The Midgard Serpent, son of Loki; a world-encircling sea serpent; Thor's great adversary; will rise from the sea at Ragnarok and poison the sky.",
+      "source_refs": [
+        {
+          "text": "Prose Edda",
+          "location": "Gylfaginning"
+        }
+      ]
+    },
+    {
+      "id": "char_sleipnir",
+      "type": "Character",
+      "corpus_id": "norse-mythology",
+      "label": "Sleipnir",
+      "summary": "Odin's eight-legged steed, the fastest of all horses; offspring of Loki (as a mare) and the stallion Svadilfari.",
+      "source_refs": [
+        {
+          "text": "Prose Edda",
+          "location": "Gylfaginning"
+        }
+      ]
+    },
+    {
+      "id": "place_asgard",
+      "type": "Place",
+      "corpus_id": "norse-mythology",
+      "label": "Asgard",
+      "summary": "The realm of the Aesir gods; located at the top of the world tree Yggdrasil; connected to Midgard by the rainbow bridge Bifrost.",
+      "source_refs": [
+        {
+          "text": "Prose Edda",
+          "location": "Gylfaginning"
+        }
+      ]
+    },
+    {
+      "id": "place_midgard",
+      "type": "Place",
+      "corpus_id": "norse-mythology",
+      "label": "Midgard",
+      "summary": "The realm of humans, encircled by the world serpent Jormungandr; surrounded by an ocean and connected to Asgard by the Bifrost bridge.",
+      "source_refs": [
+        {
+          "text": "Prose Edda",
+          "location": "Gylfaginning"
+        }
+      ]
+    },
+    {
+      "id": "place_jotunheim",
+      "type": "Place",
+      "corpus_id": "norse-mythology",
+      "label": "Jotunheim",
+      "summary": "The realm of the giants (jotnar), east of Midgard; a land of rock, ice, and wilderness; the sworn enemies of the Aesir dwell here.",
+      "source_refs": [
+        {
+          "text": "Prose Edda",
+          "location": "Gylfaginning"
+        }
+      ]
+    },
+    {
+      "id": "place_yggdrasil",
+      "type": "Place",
+      "corpus_id": "norse-mythology",
+      "label": "Yggdrasil",
+      "summary": "The World Tree, an ash whose roots and branches connect all nine worlds; three roots lead to Asgard, Jotunheim, and Hel; the Norns tend it daily.",
+      "source_refs": [
+        {
+          "text": "Poetic Edda",
+          "location": "Voluspa"
+        }
+      ]
+    },
+    {
+      "id": "place_valhalla",
+      "type": "Place",
+      "corpus_id": "norse-mythology",
+      "label": "Valhalla",
+      "summary": "Odin's great hall in Asgard where slain warriors (einherjar) feast and train for Ragnarok; 540 doors; roofed with shields and spears.",
+      "source_refs": [
+        {
+          "text": "Prose Edda",
+          "location": "Gylfaginning"
+        }
+      ]
+    },
+    {
+      "id": "place_hel",
+      "type": "Place",
+      "corpus_id": "norse-mythology",
+      "label": "Hel",
+      "summary": "The underworld realm of the dead, ruled by the goddess Hel; where those who die of sickness or old age go; a cold and misty place.",
+      "source_refs": [
+        {
+          "text": "Prose Edda",
+          "location": "Gylfaginning"
+        }
+      ]
+    },
+    {
+      "id": "obj_mjolnir",
+      "type": "Object",
+      "corpus_id": "norse-mythology",
+      "label": "Mjolnir",
+      "summary": "Thor's hammer, forged by the dwarf brothers Sindri and Brokkr; the greatest of weapons; returns to the thrower's hand; protects gods and humans from giants.",
+      "source_refs": [
+        {
+          "text": "Prose Edda",
+          "location": "Skaldskaparmal"
+        }
+      ]
+    },
+    {
+      "id": "obj_gungnir",
+      "type": "Object",
+      "corpus_id": "norse-mythology",
+      "label": "Gungnir",
+      "summary": "Odin's magical spear, forged by dwarves; never misses its target; Odin hurled it over an army to claim the slain for himself.",
+      "source_refs": [
+        {
+          "text": "Prose Edda",
+          "location": "Gylfaginning"
+        }
+      ]
+    },
+    {
+      "id": "obj_gleipnir",
+      "type": "Object",
+      "corpus_id": "norse-mythology",
+      "label": "Gleipnir",
+      "summary": "The magical fetter that binds Fenrir; made by dwarves from impossible ingredients (a cat's footfall, a woman's beard, a fish's breath, etc.); thin as a silk ribbon but unbreakable.",
+      "source_refs": [
+        {
+          "text": "Prose Edda",
+          "location": "Gylfaginning"
+        }
+      ]
+    },
+    {
+      "id": "obj_gjallarhorn",
+      "type": "Object",
+      "corpus_id": "norse-mythology",
+      "label": "Gjallarhorn",
+      "summary": "Heimdall's horn, which he will blow to alert the gods when the giants march on Asgard at Ragnarok; its sound can be heard across all nine worlds.",
+      "source_refs": [
+        {
+          "text": "Prose Edda",
+          "location": "Gylfaginning"
+        }
+      ]
+    },
+    {
+      "id": "event_ragnarok",
+      "type": "Event",
+      "corpus_id": "norse-mythology",
+      "label": "Ragnarok",
+      "summary": "The doom of the gods; the final battle in which Fenrir kills Odin, Thor and Jormungandr slay each other, the world is consumed by fire, and a new world rises from the sea.",
+      "source_refs": [
+        {
+          "text": "Poetic Edda",
+          "location": "Voluspa"
+        }
+      ]
+    },
+    {
+      "id": "event_baldur_death",
+      "type": "Event",
+      "corpus_id": "norse-mythology",
+      "label": "Death of Baldur",
+      "summary": "The gods amused themselves throwing weapons at the invulnerable Baldur; Loki tricked the blind god Hod into throwing a mistletoe dart, the one thing Frigg had not sworn to spare him; Baldur's death begins the chain leading to Ragnarok.",
+      "source_refs": [
+        {
+          "text": "Prose Edda",
+          "location": "Gylfaginning"
+        }
+      ]
+    },
+    {
+      "id": "event_aesir_vanir_war",
+      "type": "Event",
+      "corpus_id": "norse-mythology",
+      "label": "Aesir-Vanir War",
+      "summary": "The first war between the two tribes of gods; ended with a truce and the exchange of hostages (Njord, Freyr, and Freya went to the Aesir); the gods spat into a vessel, creating the wise being Kvasir.",
+      "source_refs": [
+        {
+          "text": "Prose Edda",
+          "location": "Gylfaginning"
+        }
+      ]
+    },
+    {
+      "id": "concept_wyrd",
+      "type": "Concept",
+      "corpus_id": "norse-mythology",
+      "label": "Wyrd (Urd)",
+      "summary": "The Norse concept of fate or destiny; woven by the Norns (Urd, Verdandi, Skuld) at the base of Yggdrasil; even the gods are subject to fate and cannot escape Ragnarok.",
+      "source_refs": [
+        {
+          "text": "Poetic Edda",
+          "location": "Voluspa"
+        }
+      ]
+    },
+    {
+      "id": "concept_einherjar",
+      "type": "Concept",
+      "corpus_id": "norse-mythology",
+      "label": "Einherjar",
+      "summary": "The chosen slain warriors taken by Odin (via valkyries) or Freya to Valhalla or Folkvangr; they fight and feast daily, awaiting Ragnarok to fight beside the gods.",
+      "source_refs": [
+        {
+          "text": "Prose Edda",
+          "location": "Gylfaginning"
+        }
+      ]
+    },
+    {
+      "id": "concept_valkyries",
+      "type": "Concept",
+      "corpus_id": "norse-mythology",
+      "label": "Valkyries",
+      "summary": "Female warrior spirits who serve Odin; choose who dies and who lives in battle; bring the slain to Valhalla; ride wolves and horses through the sky.",
+      "source_refs": [
+        {
+          "text": "Poetic Edda",
+          "location": "Voluspa"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge_odin_spouse",
+      "source": "char_odin",
+      "target": "char_frigg",
+      "relation": "SPOUSE_OF",
+      "corpus_id": "norse-mythology",
+      "label": "Spouse Of",
+      "source_refs": [
+        {
+          "text": "Prose Edda",
+          "location": "Gylfaginning"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_thor_child",
+      "source": "char_thor",
+      "target": "char_odin",
+      "relation": "CHILD_OF",
+      "corpus_id": "norse-mythology",
+      "label": "Child Of",
+      "source_refs": [
+        {
+          "text": "Prose Edda",
+          "location": "Gylfaginning"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_baldur_child",
+      "source": "char_baldur",
+      "target": "char_odin",
+      "relation": "CHILD_OF",
+      "corpus_id": "norse-mythology",
+      "label": "Child Of",
+      "source_refs": [
+        {
+          "text": "Prose Edda",
+          "location": "Gylfaginning"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_baldur_mother",
+      "source": "char_baldur",
+      "target": "char_frigg",
+      "relation": "CHILD_OF",
+      "corpus_id": "norse-mythology",
+      "label": "Child Of",
+      "source_refs": [
+        {
+          "text": "Prose Edda",
+          "location": "Gylfaginning"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_freyr_child",
+      "source": "char_freyr",
+      "target": "char_njord",
+      "relation": "CHILD_OF",
+      "corpus_id": "norse-mythology",
+      "label": "Child Of",
+      "source_refs": [
+        {
+          "text": "Prose Edda",
+          "location": "Gylfaginning"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_freya_child",
+      "source": "char_freya",
+      "target": "char_njord",
+      "relation": "CHILD_OF",
+      "corpus_id": "norse-mythology",
+      "label": "Child Of",
+      "source_refs": [
+        {
+          "text": "Prose Edda",
+          "location": "Gylfaginning"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_hel_child",
+      "source": "char_hel",
+      "target": "char_loki",
+      "relation": "CHILD_OF",
+      "corpus_id": "norse-mythology",
+      "label": "Child Of",
+      "source_refs": [
+        {
+          "text": "Prose Edda",
+          "location": "Gylfaginning"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_fenrir_child",
+      "source": "char_fenrir",
+      "target": "char_loki",
+      "relation": "CHILD_OF",
+      "corpus_id": "norse-mythology",
+      "label": "Child Of",
+      "source_refs": [
+        {
+          "text": "Prose Edda",
+          "location": "Gylfaginning"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_jormungandr_child",
+      "source": "char_jormungandr",
+      "target": "char_loki",
+      "relation": "CHILD_OF",
+      "corpus_id": "norse-mythology",
+      "label": "Child Of",
+      "source_refs": [
+        {
+          "text": "Prose Edda",
+          "location": "Gylfaginning"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_odin_sleipnir",
+      "source": "char_odin",
+      "target": "char_sleipnir",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "norse-mythology",
+      "label": "Associated With",
+      "source_refs": [
+        {
+          "text": "Prose Edda",
+          "location": "Gylfaginning"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_odin_ruler",
+      "source": "char_odin",
+      "target": "place_asgard",
+      "relation": "RULER_OF",
+      "corpus_id": "norse-mythology",
+      "label": "Ruler Of",
+      "source_refs": [
+        {
+          "text": "Prose Edda",
+          "location": "Gylfaginning"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_hel_ruler",
+      "source": "char_hel",
+      "target": "place_hel",
+      "relation": "RULER_OF",
+      "corpus_id": "norse-mythology",
+      "label": "Ruler Of",
+      "source_refs": [
+        {
+          "text": "Prose Edda",
+          "location": "Gylfaginning"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_thor_mjolnir",
+      "source": "char_thor",
+      "target": "obj_mjolnir",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "norse-mythology",
+      "label": "Associated With",
+      "source_refs": [
+        {
+          "text": "Prose Edda",
+          "location": "Skaldskaparmal"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_odin_gungnir",
+      "source": "char_odin",
+      "target": "obj_gungnir",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "norse-mythology",
+      "label": "Associated With",
+      "source_refs": [
+        {
+          "text": "Prose Edda",
+          "location": "Gylfaginning"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_loki_baldur",
+      "source": "char_loki",
+      "target": "event_baldur_death",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "norse-mythology",
+      "label": "Associated With",
+      "source_refs": [
+        {
+          "text": "Prose Edda",
+          "location": "Gylfaginning"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_baldur_death_place",
+      "source": "event_baldur_death",
+      "target": "place_asgard",
+      "relation": "TOOK_PLACE_AT",
+      "corpus_id": "norse-mythology",
+      "label": "Took Place At",
+      "source_refs": [
+        {
+          "text": "Prose Edda",
+          "location": "Gylfaginning"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_thor_fought_jormungandr",
+      "source": "char_thor",
+      "target": "char_jormungandr",
+      "relation": "FOUGHT",
+      "corpus_id": "norse-mythology",
+      "label": "Fought",
+      "source_refs": [
+        {
+          "text": "Prose Edda",
+          "location": "Gylfaginning"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_odin_fought_fenrir",
+      "source": "char_odin",
+      "target": "char_fenrir",
+      "relation": "FOUGHT",
+      "corpus_id": "norse-mythology",
+      "label": "Fought",
+      "source_refs": [
+        {
+          "text": "Poetic Edda",
+          "location": "Voluspa"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_ragnarok_place",
+      "source": "event_ragnarok",
+      "target": "place_midgard",
+      "relation": "TOOK_PLACE_AT",
+      "corpus_id": "norse-mythology",
+      "label": "Took Place At",
+      "source_refs": [
+        {
+          "text": "Poetic Edda",
+          "location": "Voluspa"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_heimdall_guards",
+      "source": "char_heimdall",
+      "target": "place_asgard",
+      "relation": "GUARDS",
+      "corpus_id": "norse-mythology",
+      "label": "Guards",
+      "source_refs": [
+        {
+          "text": "Prose Edda",
+          "location": "Gylfaginning"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_heimdall_horn",
+      "source": "char_heimdall",
+      "target": "obj_gjallarhorn",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "norse-mythology",
+      "label": "Associated With",
+      "source_refs": [
+        {
+          "text": "Prose Edda",
+          "location": "Gylfaginning"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_fenrir_bound",
+      "source": "char_fenrir",
+      "target": "obj_gleipnir",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "norse-mythology",
+      "label": "Associated With",
+      "source_refs": [
+        {
+          "text": "Prose Edda",
+          "location": "Gylfaginning"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_odin_valhalla",
+      "source": "char_odin",
+      "target": "place_valhalla",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "norse-mythology",
+      "label": "Associated With",
+      "source_refs": [
+        {
+          "text": "Prose Edda",
+          "location": "Gylfaginning"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_yggdrasil_asgard",
+      "source": "place_yggdrasil",
+      "target": "place_asgard",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "norse-mythology",
+      "label": "Associated With",
+      "source_refs": [
+        {
+          "text": "Poetic Edda",
+          "location": "Voluspa"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_ragnarok_wyrd",
+      "source": "event_ragnarok",
+      "target": "concept_wyrd",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "norse-mythology",
+      "label": "Associated With",
+      "source_refs": [
+        {
+          "text": "Poetic Edda",
+          "location": "Voluspa"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_odin_einherjar",
+      "source": "char_odin",
+      "target": "concept_einherjar",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "norse-mythology",
+      "label": "Associated With",
+      "source_refs": [
+        {
+          "text": "Prose Edda",
+          "location": "Gylfaginning"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_freya_valkyries",
+      "source": "char_freya",
+      "target": "concept_valkyries",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "norse-mythology",
+      "label": "Associated With",
+      "source_refs": [
+        {
+          "text": "Prose Edda",
+          "location": "Gylfaginning"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_tyr_fenrir",
+      "source": "char_tyr",
+      "target": "char_fenrir",
+      "relation": "FOUGHT",
+      "corpus_id": "norse-mythology",
+      "label": "Fought",
+      "source_refs": [
+        {
+          "text": "Prose Edda",
+          "location": "Gylfaginning"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_freyr_alfheim",
+      "source": "char_freyr",
+      "target": "place_asgard",
+      "relation": "RULER_OF",
+      "corpus_id": "norse-mythology",
+      "label": "Ruler Of",
+      "source_refs": [
+        {
+          "text": "Prose Edda",
+          "location": "Gylfaginning"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_loki_met",
+      "source": "char_loki",
+      "target": "char_odin",
+      "relation": "MET",
+      "corpus_id": "norse-mythology",
+      "label": "Met",
+      "source_refs": [
+        {
+          "text": "Prose Edda",
+          "location": "Gylfaginning"
+        }
+      ],
+      "summary": ""
+    }
+  ]
+}

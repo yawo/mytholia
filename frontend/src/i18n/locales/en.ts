@@ -1,5 +1,5 @@
 // English dictionary.
-import type { Dictionary } from "./types";
+import type { Dictionary } from "../types";
 
 const en: Dictionary = {
   app: {

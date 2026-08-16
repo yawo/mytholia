@@ -1,0 +1,758 @@
+{
+  "corpus_id": "egyptian-mythology",
+  "nodes": [
+    {
+      "id": "char_osiris",
+      "type": "Character",
+      "corpus_id": "egyptian-mythology",
+      "label": "Osiris",
+      "summary": "God of the afterlife, resurrection, and fertility; murdered and restored, ruler of the Duat.",
+      "source_refs": [
+        {
+          "text": "Book of the Dead",
+          "location": "spell 1"
+        }
+      ]
+    },
+    {
+      "id": "char_isis",
+      "type": "Character",
+      "corpus_id": "egyptian-mythology",
+      "label": "Isis",
+      "summary": "Goddess of magic, sister and wife of Osiris, mother of Horus.",
+      "source_refs": [
+        {
+          "text": "Book of the Dead",
+          "location": "spell 1"
+        }
+      ]
+    },
+    {
+      "id": "char_set",
+      "type": "Character",
+      "corpus_id": "egyptian-mythology",
+      "label": "Set",
+      "summary": "God of chaos and storms, slayer of Osiris, adversary of Horus.",
+      "source_refs": [
+        {
+          "text": "Book of the Dead",
+          "location": "spell 1"
+        }
+      ]
+    },
+    {
+      "id": "char_horus",
+      "type": "Character",
+      "corpus_id": "egyptian-mythology",
+      "label": "Horus",
+      "summary": "Falcon-headed sky god, son of Osiris and Isis, avenger of his father.",
+      "source_refs": [
+        {
+          "text": "Book of the Dead",
+          "location": "spell 1"
+        }
+      ]
+    },
+    {
+      "id": "char_anubis",
+      "type": "Character",
+      "corpus_id": "egyptian-mythology",
+      "label": "Anubis",
+      "summary": "Jackal-headed god of mummification and guide of the dead in the Duat.",
+      "source_refs": [
+        {
+          "text": "Book of the Dead",
+          "location": "spell 125"
+        }
+      ]
+    },
+    {
+      "id": "place_duat",
+      "type": "Place",
+      "corpus_id": "egyptian-mythology",
+      "label": "The Duat",
+      "summary": "The Egyptian underworld, realm of the dead through which the sun travels at night.",
+      "source_refs": [
+        {
+          "text": "Book of the Dead",
+          "location": "spell 125"
+        }
+      ]
+    },
+    {
+      "id": "event_weighing",
+      "type": "Event",
+      "corpus_id": "egyptian-mythology",
+      "label": "Weighing of the Heart",
+      "summary": "The judgment of the deceased, whose heart is weighed against the feather of Ma'at.",
+      "source_refs": [
+        {
+          "text": "Book of the Dead",
+          "location": "spell 125"
+        }
+      ]
+    },
+    {
+      "id": "concept_maat",
+      "type": "Concept",
+      "corpus_id": "egyptian-mythology",
+      "label": "Ma'at",
+      "summary": "The cosmic order, truth, and justice, personified as a goddess and symbolized by a feather.",
+      "source_refs": [
+        {
+          "text": "Book of the Dead",
+          "location": "spell 125"
+        }
+      ]
+    },
+    {
+      "id": "obj_ankh",
+      "type": "Object",
+      "corpus_id": "egyptian-mythology",
+      "label": "Ankh",
+      "summary": "The symbol of life, held by gods and offered to the king.",
+      "source_refs": [
+        {
+          "text": "Book of the Dead",
+          "location": "spell 1"
+        }
+      ]
+    },
+    {
+      "id": "char_ra",
+      "type": "Character",
+      "corpus_id": "egyptian-mythology",
+      "label": "Ra",
+      "summary": "The sun god, creator and king of the gods; sails his solar barge across the sky by day and through the underworld by night; fought the serpent Apep/Apophis each night.",
+      "source_refs": [
+        {
+          "text": "Book of the Dead",
+          "location": "spell 1"
+        }
+      ]
+    },
+    {
+      "id": "char_thoth",
+      "type": "Character",
+      "corpus_id": "egyptian-mythology",
+      "label": "Thoth",
+      "summary": "Ibis-headed god of wisdom, writing, and magic; scribe of the gods; records the result of the weighing of the heart; inventor of hieroglyphs and patron of scribes.",
+      "source_refs": [
+        {
+          "text": "Book of the Dead",
+          "location": "spell 125"
+        }
+      ]
+    },
+    {
+      "id": "char_apep",
+      "type": "Character",
+      "corpus_id": "egyptian-mythology",
+      "label": "Apep (Apophis)",
+      "summary": "The chaos serpent; enemy of Ra; attempts to devour the solar barge each night in the underworld; embodiment of chaos and darkness, defeated but never destroyed.",
+      "source_refs": [
+        {
+          "text": "Book of the Dead",
+          "location": "spell 125"
+        }
+      ]
+    },
+    {
+      "id": "char_nut",
+      "type": "Character",
+      "corpus_id": "egyptian-mythology",
+      "label": "Nut",
+      "summary": "The sky goddess; arches over the earth as a naked woman covered in stars; mother of Osiris, Isis, Set, and Nephthys; swallows the sun each evening and gives birth to it each morning.",
+      "source_refs": [
+        {
+          "text": "Book of the Dead",
+          "location": "spell 1"
+        }
+      ]
+    },
+    {
+      "id": "char_geb",
+      "type": "Character",
+      "corpus_id": "egyptian-mythology",
+      "label": "Geb",
+      "summary": "The earth god; father of Osiris, Isis, Set, and Nephthys; separated from his wife Nut by Shu, the air god; laughter causes earthquakes.",
+      "source_refs": [
+        {
+          "text": "Book of the Dead",
+          "location": "spell 1"
+        }
+      ]
+    },
+    {
+      "id": "char_bastet",
+      "type": "Character",
+      "corpus_id": "egyptian-mythology",
+      "label": "Bastet",
+      "summary": "Cat goddess of home, fertility, and protection; daughter of Ra; her cult center was Bubastis; fierce protector against evil and disease.",
+      "source_refs": [
+        {
+          "text": "Book of the Dead",
+          "location": "tradition"
+        }
+      ]
+    },
+    {
+      "id": "char_ptah",
+      "type": "Character",
+      "corpus_id": "egyptian-mythology",
+      "label": "Ptah",
+      "summary": "Creator god of Memphis; god of craftsmen and architects; created the world through the heart and the tongue (thought and speech); patron of artisans.",
+      "source_refs": [
+        {
+          "text": "Book of the Dead",
+          "location": "tradition"
+        }
+      ]
+    },
+    {
+      "id": "char_ammit",
+      "type": "Character",
+      "corpus_id": "egyptian-mythology",
+      "label": "Ammit",
+      "summary": "The devourer; a chimera of crocodile, lion, and hippopotamus; waits beside the scales of Ma'at during the weighing of the heart; devours the souls of the unworthy.",
+      "source_refs": [
+        {
+          "text": "Book of the Dead",
+          "location": "spell 125"
+        }
+      ]
+    },
+    {
+      "id": "place_heliopolis",
+      "type": "Place",
+      "corpus_id": "egyptian-mythology",
+      "label": "Heliopolis",
+      "summary": "The great solar city; cult center of Ra and the Ennead; where the creation myth of Atum and the first gods was told; one of the oldest religious sites in Egypt.",
+      "source_refs": [
+        {
+          "text": "Book of the Dead",
+          "location": "tradition"
+        }
+      ]
+    },
+    {
+      "id": "place_field_reeds",
+      "type": "Place",
+      "corpus_id": "egyptian-mythology",
+      "label": "Field of Reeds (Aaru)",
+      "summary": "The Egyptian paradise; the heavenly afterlife realm for the justified dead; an eternal version of the Nile valley where the worthy cultivate and feast.",
+      "source_refs": [
+        {
+          "text": "Book of the Dead",
+          "location": "spell 125"
+        }
+      ]
+    },
+    {
+      "id": "obj_solar_barge",
+      "type": "Object",
+      "corpus_id": "egyptian-mythology",
+      "label": "Solar Barge of Ra",
+      "summary": "The boat on which Ra travels through the sky by day and the underworld by night; defended by gods against Apep; the dead assist in its defense.",
+      "source_refs": [
+        {
+          "text": "Book of the Dead",
+          "location": "spell 1"
+        }
+      ]
+    },
+    {
+      "id": "obj_feather_maat",
+      "type": "Object",
+      "corpus_id": "egyptian-mythology",
+      "label": "Feather of Ma'at",
+      "summary": "The white feather of truth against which the deceased's heart is weighed; if the heart is lighter, the soul is justified; if heavier, it is devoured by Ammit.",
+      "source_refs": [
+        {
+          "text": "Book of the Dead",
+          "location": "spell 125"
+        }
+      ]
+    },
+    {
+      "id": "event_night_journey",
+      "type": "Event",
+      "corpus_id": "egyptian-mythology",
+      "label": "Ra's Night Journey",
+      "summary": "Each night Ra's solar barge descends into the Duat; he battles Apep, passes through twelve gates guarded by serpents, and is reborn at dawn; the dead can aid his passage.",
+      "source_refs": [
+        {
+          "text": "Book of the Dead",
+          "location": "spell 1"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge_osiris_spouse",
+      "source": "char_osiris",
+      "target": "char_isis",
+      "relation": "SPOUSE_OF",
+      "corpus_id": "egyptian-mythology",
+      "label": "Spouse Of",
+      "source_refs": [
+        {
+          "text": "Book of the Dead",
+          "location": "spell 1"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_horus_child",
+      "source": "char_horus",
+      "target": "char_osiris",
+      "relation": "CHILD_OF",
+      "corpus_id": "egyptian-mythology",
+      "label": "Child Of",
+      "source_refs": [
+        {
+          "text": "Book of the Dead",
+          "location": "spell 1"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_osiris_fought",
+      "source": "char_osiris",
+      "target": "char_set",
+      "relation": "FOUGHT",
+      "corpus_id": "egyptian-mythology",
+      "label": "Fought",
+      "source_refs": [
+        {
+          "text": "Book of the Dead",
+          "location": "spell 1"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_horus_fought",
+      "source": "char_horus",
+      "target": "char_set",
+      "relation": "FOUGHT",
+      "corpus_id": "egyptian-mythology",
+      "label": "Fought",
+      "source_refs": [
+        {
+          "text": "Book of the Dead",
+          "location": "spell 1"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_set_transformed",
+      "source": "char_set",
+      "target": "char_osiris",
+      "relation": "TRANSFORMED_INTO",
+      "corpus_id": "egyptian-mythology",
+      "label": "Transformed Into",
+      "source_refs": [
+        {
+          "text": "Book of the Dead",
+          "location": "spell 1"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_weighing_place",
+      "source": "event_weighing",
+      "target": "place_duat",
+      "relation": "TOOK_PLACE_AT",
+      "corpus_id": "egyptian-mythology",
+      "label": "Took Place At",
+      "source_refs": [
+        {
+          "text": "Book of the Dead",
+          "location": "spell 125"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_anubis_guards",
+      "source": "char_anubis",
+      "target": "place_duat",
+      "relation": "GUARDS",
+      "corpus_id": "egyptian-mythology",
+      "label": "Guards",
+      "source_refs": [
+        {
+          "text": "Book of the Dead",
+          "location": "spell 125"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_weighing_maat",
+      "source": "event_weighing",
+      "target": "concept_maat",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "egyptian-mythology",
+      "label": "Associated With",
+      "source_refs": [
+        {
+          "text": "Book of the Dead",
+          "location": "spell 125"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_anubis_weighing",
+      "source": "char_anubis",
+      "target": "event_weighing",
+      "relation": "MET",
+      "corpus_id": "egyptian-mythology",
+      "label": "Met",
+      "source_refs": [
+        {
+          "text": "Book of the Dead",
+          "location": "spell 125"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_osiris_ruler",
+      "source": "char_osiris",
+      "target": "place_duat",
+      "relation": "RULER_OF",
+      "corpus_id": "egyptian-mythology",
+      "label": "Ruler Of",
+      "source_refs": [
+        {
+          "text": "Book of the Dead",
+          "location": "spell 1"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_osiris_ankh",
+      "source": "char_osiris",
+      "target": "obj_ankh",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "egyptian-mythology",
+      "label": "Associated With",
+      "source_refs": [
+        {
+          "text": "Book of the Dead",
+          "location": "spell 1"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_osiris_child",
+      "source": "char_osiris",
+      "target": "char_geb",
+      "relation": "CHILD_OF",
+      "corpus_id": "egyptian-mythology",
+      "label": "Child Of",
+      "source_refs": [
+        {
+          "text": "Book of the Dead",
+          "location": "spell 1"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_isis_child",
+      "source": "char_isis",
+      "target": "char_geb",
+      "relation": "CHILD_OF",
+      "corpus_id": "egyptian-mythology",
+      "label": "Child Of",
+      "source_refs": [
+        {
+          "text": "Book of the Dead",
+          "location": "spell 1"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_set_child",
+      "source": "char_set",
+      "target": "char_geb",
+      "relation": "CHILD_OF",
+      "corpus_id": "egyptian-mythology",
+      "label": "Child Of",
+      "source_refs": [
+        {
+          "text": "Book of the Dead",
+          "location": "spell 1"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_horus_child_2",
+      "source": "char_horus",
+      "target": "char_osiris",
+      "relation": "CHILD_OF",
+      "corpus_id": "egyptian-mythology",
+      "label": "Child Of",
+      "source_refs": [
+        {
+          "text": "Book of the Dead",
+          "location": "spell 1"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_ra_apep",
+      "source": "char_ra",
+      "target": "char_apep",
+      "relation": "FOUGHT",
+      "corpus_id": "egyptian-mythology",
+      "label": "Fought",
+      "source_refs": [
+        {
+          "text": "Book of the Dead",
+          "location": "spell 125"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_ra_solar_barge",
+      "source": "char_ra",
+      "target": "obj_solar_barge",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "egyptian-mythology",
+      "label": "Associated With",
+      "source_refs": [
+        {
+          "text": "Book of the Dead",
+          "location": "spell 1"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_night_journey_event",
+      "source": "char_ra",
+      "target": "event_night_journey",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "egyptian-mythology",
+      "label": "Associated With",
+      "source_refs": [
+        {
+          "text": "Book of the Dead",
+          "location": "spell 1"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_night_journey_place",
+      "source": "event_night_journey",
+      "target": "place_duat",
+      "relation": "TOOK_PLACE_AT",
+      "corpus_id": "egyptian-mythology",
+      "label": "Took Place At",
+      "source_refs": [
+        {
+          "text": "Book of the Dead",
+          "location": "spell 1"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_thoth_weighing",
+      "source": "char_thoth",
+      "target": "event_weighing",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "egyptian-mythology",
+      "label": "Associated With",
+      "source_refs": [
+        {
+          "text": "Book of the Dead",
+          "location": "spell 125"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_ammit_weighing",
+      "source": "char_ammit",
+      "target": "event_weighing",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "egyptian-mythology",
+      "label": "Associated With",
+      "source_refs": [
+        {
+          "text": "Book of the Dead",
+          "location": "spell 125"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_feather_maat_obj",
+      "source": "obj_feather_maat",
+      "target": "concept_maat",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "egyptian-mythology",
+      "label": "Associated With",
+      "source_refs": [
+        {
+          "text": "Book of the Dead",
+          "location": "spell 125"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_weighing_feather",
+      "source": "event_weighing",
+      "target": "obj_feather_maat",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "egyptian-mythology",
+      "label": "Associated With",
+      "source_refs": [
+        {
+          "text": "Book of the Dead",
+          "location": "spell 125"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_field_reeds_place",
+      "source": "place_field_reeds",
+      "target": "event_weighing",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "egyptian-mythology",
+      "label": "Associated With",
+      "source_refs": [
+        {
+          "text": "Book of the Dead",
+          "location": "spell 125"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_osiris_field",
+      "source": "char_osiris",
+      "target": "place_field_reeds",
+      "relation": "RULER_OF",
+      "corpus_id": "egyptian-mythology",
+      "label": "Ruler Of",
+      "source_refs": [
+        {
+          "text": "Book of the Dead",
+          "location": "spell 1"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_nut_geb",
+      "source": "char_nut",
+      "target": "char_geb",
+      "relation": "SPOUSE_OF",
+      "corpus_id": "egyptian-mythology",
+      "label": "Spouse Of",
+      "source_refs": [
+        {
+          "text": "Book of the Dead",
+          "location": "spell 1"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_bastet_ra",
+      "source": "char_bastet",
+      "target": "char_ra",
+      "relation": "CHILD_OF",
+      "corpus_id": "egyptian-mythology",
+      "label": "Child Of",
+      "source_refs": [
+        {
+          "text": "Book of the Dead",
+          "location": "tradition"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_ptah_heliopolis",
+      "source": "char_ptah",
+      "target": "place_heliopolis",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "egyptian-mythology",
+      "label": "Associated With",
+      "source_refs": [
+        {
+          "text": "Book of the Dead",
+          "location": "tradition"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_anubis_ammit",
+      "source": "char_anubis",
+      "target": "char_ammit",
+      "relation": "MET",
+      "corpus_id": "egyptian-mythology",
+      "label": "Met",
+      "source_refs": [
+        {
+          "text": "Book of the Dead",
+          "location": "spell 125"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_ra_heliopolis",
+      "source": "char_ra",
+      "target": "place_heliopolis",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "egyptian-mythology",
+      "label": "Associated With",
+      "source_refs": [
+        {
+          "text": "Book of the Dead",
+          "location": "tradition"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_thoth_ammit",
+      "source": "char_thoth",
+      "target": "char_ammit",
+      "relation": "MET",
+      "corpus_id": "egyptian-mythology",
+      "label": "Met",
+      "source_refs": [
+        {
+          "text": "Book of the Dead",
+          "location": "spell 125"
+        }
+      ],
+      "summary": ""
+    }
+  ]
+}

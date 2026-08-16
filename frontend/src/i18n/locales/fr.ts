@@ -1,5 +1,5 @@
 // French dictionary — the primary locale for GraphOdyssée.
-import type { Dictionary } from "./types";
+import type { Dictionary } from "../types";
 
 const fr: Dictionary = {
   app: {

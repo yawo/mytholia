@@ -1,0 +1,412 @@
+{
+  "corpus_id": "catholic-saints",
+  "nodes": [
+    {
+      "id": "char_peter",
+      "type": "Character",
+      "corpus_id": "catholic-saints",
+      "label": "Saint Peter",
+      "summary": "Apostle and first Pope; originally a fisherman named Simon, renamed Peter (the Rock) by Christ; crucified upside down in Rome.",
+      "source_refs": [
+        {
+          "text": "Butler's Lives of the Saints",
+          "location": "June 29"
+        }
+      ]
+    },
+    {
+      "id": "char_paul",
+      "type": "Character",
+      "corpus_id": "catholic-saints",
+      "label": "Saint Paul",
+      "summary": "Apostle to the Gentiles; originally Saul of Tarsus, a persecutor of Christians who converted on the road to Damascus; martyred in Rome.",
+      "source_refs": [
+        {
+          "text": "Butler's Lives of the Saints",
+          "location": "June 29"
+        }
+      ]
+    },
+    {
+      "id": "char_francis",
+      "type": "Character",
+      "corpus_id": "catholic-saints",
+      "label": "Saint Francis of Assisi",
+      "summary": "Founder of the Franciscan Order; son of a wealthy merchant who embraced poverty; known for preaching to animals and the Canticle of the Sun.",
+      "source_refs": [
+        {
+          "text": "Butler's Lives of the Saints",
+          "location": "October 4"
+        }
+      ]
+    },
+    {
+      "id": "char_thomas_aquinas",
+      "type": "Character",
+      "corpus_id": "catholic-saints",
+      "label": "Saint Thomas Aquinas",
+      "summary": "Dominican friar and theologian; author of the Summa Theologica; the leading scholastic philosopher of the Catholic Church.",
+      "source_refs": [
+        {
+          "text": "Butler's Lives of the Saints",
+          "location": "January 28"
+        }
+      ]
+    },
+    {
+      "id": "char_mary",
+      "type": "Character",
+      "corpus_id": "catholic-saints",
+      "label": "Virgin Mary",
+      "summary": "Mother of Jesus; venerated as the Theotokos (God-bearer); assumed body and soul into heaven.",
+      "source_refs": [
+        {
+          "text": "Golden Legend",
+          "location": "Assumption"
+        }
+      ]
+    },
+    {
+      "id": "char_patrick",
+      "type": "Character",
+      "corpus_id": "catholic-saints",
+      "label": "Saint Patrick",
+      "summary": "Apostle of Ireland; enslaved as a youth, he returned to convert the Irish; associated with the shamrock and the expulsion of snakes.",
+      "source_refs": [
+        {
+          "text": "Butler's Lives of the Saints",
+          "location": "March 17"
+        }
+      ]
+    },
+    {
+      "id": "place_rome",
+      "type": "Place",
+      "corpus_id": "catholic-saints",
+      "label": "Rome",
+      "summary": "The Eternal City; site of the martyrdoms of Peter and Paul; center of the Catholic Church.",
+      "source_refs": [
+        {
+          "text": "Butler's Lives of the Saints",
+          "location": "June 29"
+        }
+      ]
+    },
+    {
+      "id": "place_assisi",
+      "type": "Place",
+      "corpus_id": "catholic-saints",
+      "label": "Assisi",
+      "summary": "Italian town in Umbria; birthplace of Saint Francis and Saint Clare.",
+      "source_refs": [
+        {
+          "text": "Butler's Lives of the Saints",
+          "location": "October 4"
+        }
+      ]
+    },
+    {
+      "id": "place_damascus",
+      "type": "Place",
+      "corpus_id": "catholic-saints",
+      "label": "Damascus",
+      "summary": "City where Saul of Tarsus experienced his blinding conversion on the road; renamed Paul.",
+      "source_refs": [
+        {
+          "text": "Acts of the Apostles",
+          "location": "chapter 9"
+        }
+      ]
+    },
+    {
+      "id": "place_irish_sea",
+      "type": "Place",
+      "corpus_id": "catholic-saints",
+      "label": "The Irish Sea",
+      "summary": "Waters crossed by Saint Patrick on his mission to Ireland.",
+      "source_refs": [
+        {
+          "text": "Butler's Lives of the Saints",
+          "location": "March 17"
+        }
+      ]
+    },
+    {
+      "id": "event_martyrdom_peter",
+      "type": "Event",
+      "corpus_id": "catholic-saints",
+      "label": "Martyrdom of Saint Peter",
+      "summary": "The crucifixion of Peter in Rome under Emperor Nero; he asked to be crucified upside down, deeming himself unworthy to die as Christ did.",
+      "source_refs": [
+        {
+          "text": "Butler's Lives of the Saints",
+          "location": "June 29"
+        }
+      ]
+    },
+    {
+      "id": "event_conversion_paul",
+      "type": "Event",
+      "corpus_id": "catholic-saints",
+      "label": "Conversion of Saint Paul",
+      "summary": "Saul's blinding vision of the risen Christ on the road to Damascus, transforming him from persecutor to apostle.",
+      "source_refs": [
+        {
+          "text": "Acts of the Apostles",
+          "location": "chapter 9"
+        }
+      ]
+    },
+    {
+      "id": "event_council_nicaea",
+      "type": "Event",
+      "corpus_id": "catholic-saints",
+      "label": "Council of Nicaea",
+      "summary": "The first ecumenical council (325 AD) that affirmed the divinity of Christ and produced the Nicene Creed.",
+      "source_refs": [
+        {
+          "text": "Golden Legend",
+          "location": "325 AD"
+        }
+      ]
+    },
+    {
+      "id": "obj_keys",
+      "type": "Object",
+      "corpus_id": "catholic-saints",
+      "label": "Keys of Heaven",
+      "summary": "The keys given to Peter by Christ, symbolizing his authority to bind and loose; a symbol of the papacy.",
+      "source_refs": [
+        {
+          "text": "Golden Legend",
+          "location": "Matthew 16:19"
+        }
+      ]
+    },
+    {
+      "id": "concept_canonization",
+      "type": "Concept",
+      "corpus_id": "catholic-saints",
+      "label": "Canonization",
+      "summary": "The process by which the Catholic Church declares a person a saint, recognizing their heroic virtue and intercessory power.",
+      "source_refs": [
+        {
+          "text": "Golden Legend",
+          "location": "process"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge_peter_martyrdom",
+      "source": "char_peter",
+      "target": "event_martyrdom_peter",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "catholic-saints",
+      "label": "Associated With",
+      "source_refs": [
+        {
+          "text": "Butler's Lives of the Saints",
+          "location": "June 29"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_peter_martyrdom_place",
+      "source": "event_martyrdom_peter",
+      "target": "place_rome",
+      "relation": "TOOK_PLACE_AT",
+      "corpus_id": "catholic-saints",
+      "label": "Took Place At",
+      "source_refs": [
+        {
+          "text": "Butler's Lives of the Saints",
+          "location": "June 29"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_peter_keys",
+      "source": "char_peter",
+      "target": "obj_keys",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "catholic-saints",
+      "label": "Associated With",
+      "source_refs": [
+        {
+          "text": "Golden Legend",
+          "location": "Matthew 16:19"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_peter_ruler",
+      "source": "char_peter",
+      "target": "place_rome",
+      "relation": "RULER_OF",
+      "corpus_id": "catholic-saints",
+      "label": "Ruler Of",
+      "source_refs": [
+        {
+          "text": "Golden Legend",
+          "location": "papacy"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_paul_conversion",
+      "source": "char_paul",
+      "target": "event_conversion_paul",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "catholic-saints",
+      "label": "Associated With",
+      "source_refs": [
+        {
+          "text": "Acts of the Apostles",
+          "location": "chapter 9"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_conversion_place",
+      "source": "event_conversion_paul",
+      "target": "place_damascus",
+      "relation": "TOOK_PLACE_AT",
+      "corpus_id": "catholic-saints",
+      "label": "Took Place At",
+      "source_refs": [
+        {
+          "text": "Acts of the Apostles",
+          "location": "chapter 9"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_paul_met_peter",
+      "source": "char_paul",
+      "target": "char_peter",
+      "relation": "MET",
+      "corpus_id": "catholic-saints",
+      "label": "Met",
+      "source_refs": [
+        {
+          "text": "Acts of the Apostles",
+          "location": "chapter 15"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_francis_birthplace",
+      "source": "char_francis",
+      "target": "place_assisi",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "catholic-saints",
+      "label": "Associated With",
+      "source_refs": [
+        {
+          "text": "Butler's Lives of the Saints",
+          "location": "October 4"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_francis_worshipped",
+      "source": "char_francis",
+      "target": "char_mary",
+      "relation": "WORSHIPPED_AS",
+      "corpus_id": "catholic-saints",
+      "label": "Worshipped As",
+      "source_refs": [
+        {
+          "text": "Golden Legend",
+          "location": "Canticle of the Sun"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_patrick_mission",
+      "source": "char_patrick",
+      "target": "place_irish_sea",
+      "relation": "TOOK_PLACE_AT",
+      "corpus_id": "catholic-saints",
+      "label": "Took Place At",
+      "source_refs": [
+        {
+          "text": "Butler's Lives of the Saints",
+          "location": "March 17"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_thomas_worshipped",
+      "source": "char_thomas_aquinas",
+      "target": "char_mary",
+      "relation": "WORSHIPPED_AS",
+      "corpus_id": "catholic-saints",
+      "label": "Worshipped As",
+      "source_refs": [
+        {
+          "text": "Summa Theologica",
+          "location": "theology"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_nicaea_concept",
+      "source": "event_council_nicaea",
+      "target": "concept_canonization",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "catholic-saints",
+      "label": "Associated With",
+      "source_refs": [
+        {
+          "text": "Golden Legend",
+          "location": "325 AD"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_mary_worshipped",
+      "source": "char_mary",
+      "target": "char_mary",
+      "relation": "WORSHIPPED_AS",
+      "corpus_id": "catholic-saints",
+      "label": "Worshipped As",
+      "source_refs": [
+        {
+          "text": "Golden Legend",
+          "location": "Theotokos"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_peter_fought",
+      "source": "char_peter",
+      "target": "char_paul",
+      "relation": "FOUGHT",
+      "corpus_id": "catholic-saints",
+      "label": "Fought",
+      "source_refs": [
+        {
+          "text": "Acts of the Apostles",
+          "location": "Galatians 2"
+        }
+      ],
+      "summary": ""
+    }
+  ]
+}
