@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GraphOdyssée</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <div id="app" class="app-shell">
+      <header class="topbar">
+        <h1>GraphOdyssée</h1>
+        <select id="corpus-select" aria-label="Choisir un corpus">
+          <option value="">Choisir un corpus</option>
+        </select>
+        <select id="language-select" aria-label="Langue">
+          <option value="fr">Français</option>
+          <option value="en">English</option>
+        </select>
+      </header>
+      <section id="message" class="message" hidden></section>
+      <main class="layout">
+        <section class="graph-panel">
+          <div class="toolbar">
+            <input id="search-input" type="search" placeholder="Rechercher un nœud…" disabled />
+            <div id="legend" class="legend"></div>
+          </div>
+          <svg id="graph" class="graph" viewBox="0 0 800 560" role="img" aria-label="Graphe de connaissances"></svg>
+        </section>
+        <aside id="sidebar" class="sidebar">
+          <p>Sélectionnez un corpus, puis cliquez sur un nœud.</p>
+        </aside>
+      </main>
+    </div>
+    <script type="module" src="/static/app.js"></script>
+  </body>
+</html>

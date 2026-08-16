@@ -11,6 +11,7 @@ shows how FalkorDB/Memgraph would slot in behind the same ``GraphStore`` ABC.
 from __future__ import annotations
 
 import logging
+import os
 from abc import ABC, abstractmethod
 from pathlib import Path
 from typing import TYPE_CHECKING
@@ -23,9 +24,10 @@ if TYPE_CHECKING:
 log = logging.getLogger(__name__)
 
 #: Root for processed graph output (mirrors pipeline.build_graph).
-DATA_PROCESSED_DIR = Path(__file__).resolve().parent.parent.parent / "data" / "processed"
+REPO_ROOT = Path(__file__).resolve().parent.parent.parent
+DATA_PROCESSED_DIR = Path(os.environ.get("DATA_PROCESSED_DIR", REPO_ROOT / "data" / "processed"))
 #: Root for corpora manifests.
-CORPORA_DIR = Path(__file__).resolve().parent.parent.parent / "corpora"
+CORPORA_DIR = Path(os.environ.get("CORPORA_DIR", REPO_ROOT / "corpora"))
 
 
 class GraphStore(ABC):
@@ -240,8 +242,20 @@ class CypherGraphStore(GraphStore):
     either backend — no Neo4j dependency needed.
     """
 
-    def __init__(self, uri: str | None = None) -> None:
+    def __init__(
+        self,
+        uri: str | None = None,
+        *,
+        provider: str | None = None,
+        database: str | None = None,
+        username: str | None = None,
+        password: str | None = None,
+    ) -> None:
         self.uri = uri
+        self.provider = provider or os.environ.get("GRAPH_DB_PROVIDER", "falkordb")
+        self.database = database or os.environ.get("GRAPH_DB_NAME", "graphodyssee")
+        self.username = username or os.environ.get("GRAPH_DB_USER")
+        self.password = password or os.environ.get("GRAPH_DB_PASSWORD")
 
     def list_corpora(self) -> list[CorpusSummary]:
         raise NotImplementedError("CypherGraphStore is wired up in sprint 2 (V2)")
@@ -255,6 +269,12 @@ class CypherGraphStore(GraphStore):
     def get_subgraph(self, corpus_id: str, node_id: str, radius: int = 1) -> GraphData:
         raise NotImplementedError("CypherGraphStore is wired up in sprint 2 (V2)")
 
+    def get_stats(self, corpus_id: str) -> GraphStats:
+        raise NotImplementedError("CypherGraphStore is wired up in sprint 2 (V2)")
+
+    def get_neighbors(self, corpus_id: str, node_id: str) -> GraphData:
+        raise NotImplementedError("CypherGraphStore is wired up in sprint 2 (V2)")
+
 
 _store: GraphStore | None = None
 
@@ -265,18 +285,23 @@ def get_store() -> GraphStore:
     Selects CypherGraphStore when ``GRAPH_DB_URI`` is set, else the V1
     NetworkXGraphStore. Routers depend only on this function.
     """
-    global _store
+    global _store, _store_backend
     if _store is not None:
         return _store
-    import os
 
+    backend = os.environ.get("GRAPH_STORE_BACKEND", "").strip().lower()
     uri = os.environ.get("GRAPH_DB_URI")
-    if uri:
-        log.info("using CypherGraphStore (V2) with GRAPH_DB_URI")
-        _store = CypherGraphStore(uri=uri)
+    use_cypher = backend in {"cypher", "falkordb", "memgraph"} or bool(uri)
+    if use_cypher:
+        log.info("using CypherGraphStore (V2)")
+        _store = CypherGraphStore(
+            uri=uri,
+            provider=os.environ.get("GRAPH_DB_PROVIDER") or backend or None,
+        )
+        _store_backend = "cypher"
     else:
         _store = NetworkXGraphStore()
-    _store_backend = "cypher" if uri else "networkx"
+        _store_backend = "networkx"
     return _store
 
 
