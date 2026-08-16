@@ -75,3 +75,31 @@ summary: The family of lwa associated with death, the cemetery, and sexuality; l
 ## EDGE edge_agwe_ruler char_agwe RULER_OF place_ginen "Lwa" "sea"
 ## EDGE edge_transatlantic_concept event_transatlantic ASSOCIATED_WITH concept_petwo "Divine Horsemen" "history"
 ## EDGE edge_legba_rada char_legba CHILD_OF concept_rada "Lwa" "nanchon"
+
+## NODE char_ayizan Character "Ayizan" "Lwa" "Rada"
+summary: Rada lwa of initiation, purification, and the marketplace; associated with palm fronds and the first step of a Vodou ceremony; protector of the peristil and ritual purity.
+
+## NODE char_azaka Character "Azaka Mede" "Lwa" "Rada"
+summary: Lwa of agriculture, the countryside, and farmers; depicted as a peasant with a straw hat and a makout (straw bag); gentle and generous; associated with Saint Isidore.
+
+## NODE char_simbi Character "Simbi" "Lwa" "Rada"
+summary: Lwa of fresh water, magic, and sorcery; associated with springs and rivers; appears as a water snake; patron of herbalists and diviners; a Rada family lwa.
+
+## NODE char_marassa Character "The Marassa" "Lwa" "Rada"
+summary: The divine twins of Vodou; lwa of children, duality, and abundance; represented by three arms crossed; the first to receive offerings after Legba; embody the sacred nature of doubling.
+
+## NODE event_haitian_revolution Event "The Haitian Revolution" "Divine Horsemen" "history"
+summary: The 1791-1804 revolution that ended slavery in Saint-Domingue and created Haiti; Vodou ceremony at Bois Caiman played a catalytic role; Ogou and Erzulie Dantor are associated with the revolutionary struggle.
+
+## EDGE edge_ayizan_rada char_ayizan ASSOCIATED_WITH concept_rada "Lwa" "Rada"
+## EDGE edge_azaka_rada char_azaka ASSOCIATED_WITH concept_rada "Lwa" "Rada"
+## EDGE edge_simbi_water char_simbi RULER_OF place_ginen "Lwa" "Rada"
+## EDGE edge_marassa_legba char_marassa MET char_legba "Lwa" "Rada"
+## EDGE edge_ayizan_peristil char_ayizan GUARDS place_peristil "Lwa" "Rada"
+## EDGE edge_ogou_revolution char_ogou ASSOCIATED_WITH event_haitian_revolution "Divine Horsemen" "history"
+## EDGE edge_erzulie_dantor_revolution char_erzulie_dantor ASSOCIATED_WITH event_haitian_revolution "Divine Horsemen" "history"
+## EDGE edge_revolution_place event_haitian_revolution TOOK_PLACE_AT place_ginen "Divine Horsemen" "history"
+## EDGE edge_simbi_rada char_simbi ASSOCIATED_WITH concept_rada "Lwa" "Rada"
+## EDGE edge_marassa_children char_marassa ASSOCIATED_WITH concept_rada "Lwa" "Rada"
+## EDGE edge_azaka_met char_azaka MET char_legba "Lwa" "Rada"
+## EDGE edge_simbi_met char_simbi MET char_agwe "Lwa" "Rada"

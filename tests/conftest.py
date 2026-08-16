@@ -36,6 +36,10 @@ CORPUS_FIXTURES = [
     ("catholic-saints", "catholic-saints"),
     ("hindu-mythology", "hindu-mythology"),
     ("vodou", "vodou"),
+    ("norse-mythology", "norse-mythology"),
+    ("japanese-mythology", "japanese-mythology"),
+    ("mesopotamian-mythology", "mesopotamian-mythology"),
+    ("celtic-mythology", "celtic-mythology"),
 ]
 
 

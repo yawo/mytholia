@@ -1,0 +1,39 @@
+id: mesopotamian-mythology
+name: "Mesopotamian Mythology"
+language: en
+sources:
+  - type: web_scrape
+    tool: crawl4ai
+    seed_urls:
+      - "https://en.wikipedia.org/wiki/Epic_of_Gilgamesh"
+      - "https://en.wikipedia.org/wiki/En%C5%ABma_Eli%C5%A1"
+      - "https://en.wikipedia.org/wiki/Mesopotamian_mythology"
+      - "https://en.wikipedia.org/wiki/Ishtar"
+  - type: search_augmented
+    tool: tavily
+    queries:
+      - "Epic of Gilgamesh Enkidu primary source text translation"
+      - "Enuma Elish Marduk Tiamat creation myth primary source"
+      - "Ishtar descent underworld Inanna Mesopotamian mythology text"
+      - "Mesopotamian gods Anu Enlil Enki Ea pantheon primary sources"
+extraction:
+  prompt_override: extraction_prompt.md
+  node_type_hints: ["Character", "Place", "Object", "Event", "Concept"]
+narrative_style:
+  tone: "reverent, mythic narrator, not academic"
+  length_seconds: 180
+voice:
+  provider: elevenlabs
+  voice_id: "${GRAPHODYSSEE_DEFAULT_VOICE_ID}"
+relation_types:
+  - CHILD_OF
+  - SPOUSE_OF
+  - FOUGHT
+  - MET
+  - TOOK_PLACE_AT
+  - WORSHIPPED_AS
+  - GUARDS
+  - TRANSFORMED_INTO
+  - RULER_OF
+  - ASSOCIATED_WITH
+license_note: "Wikipedia CC-BY-SA; scholarly translations (Dalley, George) referenced. Cite source per-passage."

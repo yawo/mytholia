@@ -1,0 +1,40 @@
+id: celtic-mythology
+name: "Celtic Mythology"
+language: en
+sources:
+  - type: web_scrape
+    tool: crawl4ai
+    seed_urls:
+      - "https://sacred-texts.com/neu/celt/index.htm"
+      - "https://en.wikipedia.org/wiki/Irish_mythology"
+      - "https://en.wikipedia.org/wiki/Mythological_Cycle"
+      - "https://en.wikipedia.org/wiki/Tuatha_D%C3%A9_Danann"
+  - type: search_augmented
+    tool: tavily
+    queries:
+      - "Tuatha De Danann Dagda Lugh Brigid Morrigan primary source text"
+      - "Cath Maige Tuired Battle of Moytura Irish mythology primary text"
+      - "Tain Bo Cuailnge Cuchulainn Ulster Cycle primary source"
+      - "Mabinogion Welsh mythology Rhiannon Pwyll primary text"
+      - "Lebor Gabala Erenn Book of Invasions Irish mythology"
+extraction:
+  prompt_override: extraction_prompt.md
+  node_type_hints: ["Character", "Place", "Object", "Event", "Concept"]
+narrative_style:
+  tone: "reverent, mythic narrator, not academic"
+  length_seconds: 180
+voice:
+  provider: elevenlabs
+  voice_id: "${GRAPHODYSSEE_DEFAULT_VOICE_ID}"
+relation_types:
+  - CHILD_OF
+  - SPOUSE_OF
+  - FOUGHT
+  - MET
+  - TOOK_PLACE_AT
+  - WORSHIPPED_AS
+  - GUARDS
+  - TRANSFORMED_INTO
+  - RULER_OF
+  - ASSOCIATED_WITH
+license_note: "Sacred Texts Archive public-domain Celtic folklore texts; Wikipedia CC-BY-SA. Cite source per-passage."

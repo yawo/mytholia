@@ -88,3 +88,47 @@ summary: The triad of Brahma (creator), Vishnu (preserver), and Shiva (destroyer
 ## EDGE edge_churning_event char_vasuki ASSOCIATED_WITH event_samudra_manthan "Mahabharata" "Adi Parva"
 ## EDGE edge_indra_met char_indra MET char_vishnu "Rig Veda" "Mandala 1"
 ## EDGE edge_shiva_worshipped char_shiva WORSHIPPED_AS char_ravana "Ramayana" "devotion"
+
+## NODE char_durga Character "Durga" "Devi Mahatmya" "chapter 2"
+summary: The warrior goddess; a form of Devi/Shakti; mounted on a lion or tiger; slew the buffalo demon Mahishasura when no male god could; embodiment of divine feminine power.
+
+## NODE char_ganesha Character "Ganesha" "Ganesha Purana" "tradition"
+summary: Elephant-headed god of beginnings, wisdom, and obstacle-removal; son of Shiva and Parvati; invoked at the start of any undertaking; scribe of the Mahabharata.
+
+## NODE char_parvati Character "Parvati" "Shiva Purana" "tradition"
+summary: Daughter of the mountain Himalaya; wife of Shiva; mother of Ganesha and Kartikeya; the benign aspect of the Great Goddess (Devi); embodiment of ascetic power and devotion.
+
+## NODE char_kartikeya Character "Kartikeya (Murugan)" "Skanda Purana" "tradition"
+summary: God of war; son of Shiva and Parvati; commander of the divine army; rides a peacock; slew the demon Tarakasura; widely worshipped in South India.
+
+## NODE char_mahishasura Character "Mahishasura" "Devi Mahatmya" "chapter 2"
+summary: Buffalo demon; received a boon that no man could slay; conquered the three worlds; slain by the goddess Durga in a great battle; embodiment of demonic arrogance.
+
+## NODE char_tarakasura Character "Tarakasura" "Skanda Purana" "tradition"
+summary: Demon who received a boon that only a son of Shiva could kill him; conquered the heavens; slain by Kartikeya, who was born specifically to defeat him.
+
+## NODE char_bhishma Character "Bhishma" "Mahabharata" "Bhishma Parva"
+summary: Grand patriarch of the Kuru dynasty; took a vow of lifelong celibacy (brahmacharya) so his father could marry; commander of the Kaurava army; fell on a bed of arrows.
+
+## NODE char_draupadi Character "Draupadi" "Mahabharata" "Adi Parva"
+summary: Wife of the five Pandava brothers; born from fire; princess of Panchala; her humiliation in the dice game triggered the Kurukshetra War; embodiment of feminine honor.
+
+## NODE place_patala Place "Patala" "Mahabharata" "Adi Parva"
+summary: The netherworld in Hindu cosmology; subterranean realm of the nagas; seven layers below the earth; where Bhogavati is located.
+
+## NODE obj_gada Object "Gada of Bhima" "Mahabharata" "tradition"
+summary: The mighty mace wielded by Bhima, the strongest of the Pandavas; used in the Kurukshetra War; symbol of raw physical strength.
+
+## EDGE edge_ganesha_child char_ganesha CHILD_OF char_shiva "Ganesha Purana" "tradition"
+## EDGE edge_ganesha_mother char_ganesha CHILD_OF char_parvati "Ganesha Purana" "tradition"
+## EDGE edge_kartikeya_child char_kartikeya CHILD_OF char_shiva "Skanda Purana" "tradition"
+## EDGE edge_parvati_spouse char_parvati SPOUSE_OF char_shiva "Shiva Purana" "tradition"
+## EDGE edge_durga_fought char_durga FOUGHT char_mahishasura "Devi Mahatmya" "chapter 2"
+## EDGE edge_kartikeya_fought char_kartikeya FOUGHT char_tarakasura "Skanda Purana" "tradition"
+## EDGE edge_durga_worshipped char_durga WORSHIPPED_AS char_parvati "Devi Mahatmya" "tradition"
+## EDGE edge_draupadi_spouse char_draupadi SPOUSE_OF char_arjuna "Mahabharata" "Adi Parva"
+## EDGE edge_bhishma_met char_bhishma MET char_krishna "Mahabharata" "Bhishma Parva"
+## EDGE edge_krishna_draupadi char_krishna MET char_draupadi "Mahabharata" "Adi Parva"
+## EDGE edge_patala_bhogavati place_patala ASSOCIATED_WITH place_bhogavati "Mahabharata" "Adi Parva"
+## EDGE edge_ganesha_wisdom char_ganesha ASSOCIATED_WITH concept_dharma "Ganesha Purana" "tradition"
+## EDGE edge_durga_krishna char_durga ASSOCIATED_WITH char_vishnu "Devi Mahatmya" "tradition"

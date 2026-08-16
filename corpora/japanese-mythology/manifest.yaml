@@ -1,0 +1,39 @@
+id: japanese-mythology
+name: "Japanese Mythology (Shinto)"
+language: en
+sources:
+  - type: web_scrape
+    tool: crawl4ai
+    seed_urls:
+      - "https://sacred-texts.com/shi/kj/index.htm"
+      - "https://en.wikipedia.org/wiki/Kojiki"
+      - "https://en.wikipedia.org/wiki/Nihon_Shoki"
+      - "https://en.wikipedia.org/wiki/Japanese_mythology"
+  - type: search_augmented
+    tool: tavily
+    queries:
+      - "Kojiki Izanagi Izanami creation myth primary source text"
+      - "Amaterasu Susanoo Tsukuyomi Japanese mythology primary sources"
+      - "Nihon Shoki Yomi underworld Japanese mythology"
+      - "Orochi myth Susanoo Kusanagi no Tsurugi Japanese primary text"
+extraction:
+  prompt_override: extraction_prompt.md
+  node_type_hints: ["Character", "Place", "Object", "Event", "Concept"]
+narrative_style:
+  tone: "reverent, mythic narrator, not academic"
+  length_seconds: 180
+voice:
+  provider: elevenlabs
+  voice_id: "${GRAPHODYSSEE_DEFAULT_VOICE_ID}"
+relation_types:
+  - CHILD_OF
+  - SPOUSE_OF
+  - FOUGHT
+  - MET
+  - TOOK_PLACE_AT
+  - WORSHIPPED_AS
+  - GUARDS
+  - TRANSFORMED_INTO
+  - RULER_OF
+  - ASSOCIATED_WITH
+license_note: "Sacred Texts Archive public-domain translation of the Kojiki (Chamberlain 1882); Wikipedia CC-BY-SA. Cite source per-passage."

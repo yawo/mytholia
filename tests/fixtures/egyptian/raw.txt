@@ -36,3 +36,63 @@ summary: The symbol of life, held by gods and offered to the king.
 ## EDGE edge_anubis_weighing char_anubis MET event_weighing "Book of the Dead" "spell 125"
 ## EDGE edge_osiris_ruler char_osiris RULER_OF place_duat "Book of the Dead" "spell 1"
 ## EDGE edge_osiris_ankh char_osiris ASSOCIATED_WITH obj_ankh "Book of the Dead" "spell 1"
+
+## NODE char_ra Character "Ra" "Book of the Dead" "spell 1"
+summary: The sun god, creator and king of the gods; sails his solar barge across the sky by day and through the underworld by night; fought the serpent Apep/Apophis each night.
+
+## NODE char_thoth Character "Thoth" "Book of the Dead" "spell 125"
+summary: Ibis-headed god of wisdom, writing, and magic; scribe of the gods; records the result of the weighing of the heart; inventor of hieroglyphs and patron of scribes.
+
+## NODE char_apep Character "Apep (Apophis)" "Book of the Dead" "spell 125"
+summary: The chaos serpent; enemy of Ra; attempts to devour the solar barge each night in the underworld; embodiment of chaos and darkness, defeated but never destroyed.
+
+## NODE char_nut Character "Nut" "Book of the Dead" "spell 1"
+summary: The sky goddess; arches over the earth as a naked woman covered in stars; mother of Osiris, Isis, Set, and Nephthys; swallows the sun each evening and gives birth to it each morning.
+
+## NODE char_geb Character "Geb" "Book of the Dead" "spell 1"
+summary: The earth god; father of Osiris, Isis, Set, and Nephthys; separated from his wife Nut by Shu, the air god; laughter causes earthquakes.
+
+## NODE char_bastet Character "Bastet" "Book of the Dead" "tradition"
+summary: Cat goddess of home, fertility, and protection; daughter of Ra; her cult center was Bubastis; fierce protector against evil and disease.
+
+## NODE char_ptah Character "Ptah" "Book of the Dead" "tradition"
+summary: Creator god of Memphis; god of craftsmen and architects; created the world through the heart and the tongue (thought and speech); patron of artisans.
+
+## NODE char_ammit Character "Ammit" "Book of the Dead" "spell 125"
+summary: The devourer; a chimera of crocodile, lion, and hippopotamus; waits beside the scales of Ma'at during the weighing of the heart; devours the souls of the unworthy.
+
+## NODE place_heliopolis Place "Heliopolis" "Book of the Dead" "tradition"
+summary: The great solar city; cult center of Ra and the Ennead; where the creation myth of Atum and the first gods was told; one of the oldest religious sites in Egypt.
+
+## NODE place_field_reeds Place "Field of Reeds (Aaru)" "Book of the Dead" "spell 125"
+summary: The Egyptian paradise; the heavenly afterlife realm for the justified dead; an eternal version of the Nile valley where the worthy cultivate and feast.
+
+## NODE obj_solar_barge Object "Solar Barge of Ra" "Book of the Dead" "spell 1"
+summary: The boat on which Ra travels through the sky by day and the underworld by night; defended by gods against Apep; the dead assist in its defense.
+
+## NODE obj_feather_maat Object "Feather of Ma'at" "Book of the Dead" "spell 125"
+summary: The white feather of truth against which the deceased's heart is weighed; if the heart is lighter, the soul is justified; if heavier, it is devoured by Ammit.
+
+## NODE event_night_journey Event "Ra's Night Journey" "Book of the Dead" "spell 1"
+summary: Each night Ra's solar barge descends into the Duat; he battles Apep, passes through twelve gates guarded by serpents, and is reborn at dawn; the dead can aid his passage.
+
+## EDGE edge_osiris_child char_osiris CHILD_OF char_geb "Book of the Dead" "spell 1"
+## EDGE edge_isis_child char_isis CHILD_OF char_geb "Book of the Dead" "spell 1"
+## EDGE edge_set_child char_set CHILD_OF char_geb "Book of the Dead" "spell 1"
+## EDGE edge_horus_child_2 char_horus CHILD_OF char_osiris "Book of the Dead" "spell 1"
+## EDGE edge_ra_apep char_ra FOUGHT char_apep "Book of the Dead" "spell 125"
+## EDGE edge_ra_solar_barge char_ra ASSOCIATED_WITH obj_solar_barge "Book of the Dead" "spell 1"
+## EDGE edge_night_journey_event char_ra ASSOCIATED_WITH event_night_journey "Book of the Dead" "spell 1"
+## EDGE edge_night_journey_place event_night_journey TOOK_PLACE_AT place_duat "Book of the Dead" "spell 1"
+## EDGE edge_thoth_weighing char_thoth ASSOCIATED_WITH event_weighing "Book of the Dead" "spell 125"
+## EDGE edge_ammit_weighing char_ammit ASSOCIATED_WITH event_weighing "Book of the Dead" "spell 125"
+## EDGE edge_feather_maat_obj obj_feather_maat ASSOCIATED_WITH concept_maat "Book of the Dead" "spell 125"
+## EDGE edge_weighing_feather event_weighing ASSOCIATED_WITH obj_feather_maat "Book of the Dead" "spell 125"
+## EDGE edge_field_reeds_place place_field_reeds ASSOCIATED_WITH event_weighing "Book of the Dead" "spell 125"
+## EDGE edge_osiris_field char_osiris RULER_OF place_field_reeds "Book of the Dead" "spell 1"
+## EDGE edge_nut_geb char_nut SPOUSE_OF char_geb "Book of the Dead" "spell 1"
+## EDGE edge_bastet_ra char_bastet CHILD_OF char_ra "Book of the Dead" "tradition"
+## EDGE edge_ptah_heliopolis char_ptah ASSOCIATED_WITH place_heliopolis "Book of the Dead" "tradition"
+## EDGE edge_anubis_ammit char_anubis MET char_ammit "Book of the Dead" "spell 125"
+## EDGE edge_ra_heliopolis char_ra ASSOCIATED_WITH place_heliopolis "Book of the Dead" "tradition"
+## EDGE edge_thoth_ammit char_thoth MET char_ammit "Book of the Dead" "spell 125"

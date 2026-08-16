@@ -1,0 +1,125 @@
+## NODE char_dagda Character "The Dagda" "Cath Maige Tuired" "Second Battle"
+summary: "The Good God"; chief of the Tuatha De Danann; god of druidry, fertility, and abundance; possesses the never-emptying cauldron, the club that kills and revives, and a magical harp.
+
+## NODE char_lugh Character "Lugh" "Cath Maige Tuired" "Second Battle"
+summary: "The Many-Skilled"; god of light, arts, and warfare; son of Cian and Ethniu; joined the Tuatha De Danann and slew the Fomorian king Balor with a sling stone; instituted the Lughnasadh festival.
+
+## NODE char_morrigan Character "The Morrigan" "Cath Maige Tuired" "Second Battle"
+summary: Phantom queen and goddess of war, fate, and death; shape-shifter who appears as a crow; incites warriors to battle and chooses who dies; one of the Tuatha De Danann.
+
+## NODE char_nuada Character "Nuada" "Cath Maige Tuired" "First Battle"
+summary: First king of the Tuatha De Danann; lost his arm in the First Battle of Mag Tuired and was replaced as king (no blemished man could rule); given a silver arm by Dian Cecht; restored by Miach.
+
+## NODE char_brigid Character "Brigid" "Lebor Gabala Erenn" "tradition"
+summary: Daughter of the Dagda; goddess of poetry, healing, and smithcraft; patroness of the bards; associated with the sacred flame and holy wells; later syncretized with Saint Brigid of Kildare.
+
+## NODE char_manannan Character "Manannan mac Lir" "Mythological Cycle" "tradition"
+summary: God of the sea and the Otherworld; son of Lir; guardian of the passage between worlds; rides the waves in a chariot; possesses the crane-skin bag of treasures and the self-renewing pigs.
+
+## NODE char_balor Character "Balor" "Cath Maige Tuired" "Second Battle"
+summary: King of the Fomorians; a giant with a destructive eye that slays all it gazes upon; grandfather of Lugh; slain by Lugh with a sling stone through his evil eye in the Second Battle of Mag Tuired.
+
+## NODE char_bres Character "Bres" "Cath Maige Tuired" "Second Battle"
+summary: Half-Fomorian king of the Tuatha De Danann; beautiful but oppressive ruler who imposed tribute on the gods; deposed for his tyranny; led the Fomorians in the Second Battle of Mag Tuired.
+
+## NODE char_cuchulainn Character "Cuchulainn" "Tain Bo Cuailnge" "Ulster Cycle"
+summary: The Hound of Ulster; greatest hero of the Ulster Cycle; son of Lugh; defended Ulster single-handedly against Queen Medb's army in the Tain; subject to the warp-spasm (riastrad) in battle.
+
+## NODE char_medb Character "Queen Medb" "Tain Bo Cuailnge" "Ulster Cycle"
+summary: Queen of Connacht; initiated the Tain Bo Cuailnge (Cattle Raid of Cooley) to equal her husband's wealth; commanded the armies of Connacht against Cuchulainn and Ulster.
+
+## NODE char_ogma Character "Ogma" "Lebor Gabala Erenn" "tradition"
+summary: Son of the Dagda; god of eloquence, writing, and warriors; credited with inventing the Ogham alphabet; the champion of the Tuatha De Danann in battle.
+
+## NODE char_dian_cecht Character "Dian Cecht" "Cath Maige Tuired" "First Battle"
+summary: God of healing and medicine; made Nuada's silver arm; killed his own son Miach out of jealousy when Miach fully restored Nuada's flesh arm.
+
+## NODE char_aengus Character "Aengus Og" "Mythological Cycle" "tradition"
+summary: God of love and youth; son of the Dagda and Boann; his kisses turn into birds; tricked his father out of the Bru na Boinne (Newgrange) through a clever wordplay.
+
+## NODE char_danu Concept "Danu" "Lebor Gabala Erenn" "tradition"
+summary: Mother goddess of the Tuatha De Danann ("People of the Goddess Danu"); ancestral deity of the gods of Ireland; her nature is obscure but her name is foundational.
+
+## NODE place_tara Place "Hill of Tara" "Lebor Gabala Erenn" "tradition"
+summary: Sacred hill and seat of the High Kings of Ireland; where the Tuatha De Danann ruled before the Milesians; the inauguration place of Irish kings; a nexus of political and mythic power.
+
+## NODE place_mag_tuired Place "Mag Tuired" "Cath Maige Tuired" "Second Battle"
+summary: The plain where two great battles were fought between the Tuatha De Danann and the Fomorians; the First Battle gained Ireland from the Fir Bolg; the Second defeated the Fomorians forever.
+
+## NODE place_sidhe Place "Sidhe (Fairy Mounds)" "Lebor Gabala Erenn" "tradition"
+summary: The Otherworld dwelling-places of the Tuatha De Danann after their retreat from the mortal world; burial mounds and hills that are portals to the Otherworld (Tir na nOg); where the aos si dwell.
+
+## NODE place_tir_na_nog Place "Tir na nOg" "Mythological Cycle" "tradition"
+summary: The Land of Youth; the Otherworld beyond the western sea; where the Tuatha De Danann withdrew; a realm of eternal youth, beauty, and feasting; no sickness or death exists there.
+
+## NODE place_bru_na_boinne Place "Bru na Boinne" "Mythological Cycle" "tradition"
+summary: The great passage tombs at Newgrange on the Boyne; dwelling of the Dagda and then Aengus; associated with the winter solstice illumination; one of the most sacred sites in Irish mythology.
+
+## NODE obj_cauldron Object "The Cauldron of the Dagda" "Cath Maige Tuired" "Second Battle"
+summary: One of the Four Treasures of the Tuatha De Danann; never runs empty; no one leaves it unsatisfied; a symbol of abundance and hospitality; one of the great hallows of Ireland.
+
+## NODE obj_spear_lugh Object "The Spear of Lugh" "Cath Maige Tuired" "Second Battle"
+summary: One of the Four Treasures; the flashing spear that guarantees victory in battle; Lugh used it to slay Balor; it must be kept in a cauldron of water to keep it from igniting.
+
+## NODE obj_sword_nuada Object "The Sword of Nuada" "Cath Maige Tuired" "First Battle"
+summary: One of the Four Treasures; the sword of Nuada; no one escapes it once it is drawn; a symbol of just kingship and martial prowess.
+
+## NODE obj_stone_fal Object "The Stone of Fal" "Lebor Gabala Erenn" "tradition"
+summary: One of the Four Treasures; the Lia Fail (Stone of Destiny) at Tara; cries out when the rightful king of Ireland stands upon it; the symbolic foundation of Irish sovereignty.
+
+## NODE obj_gae_bolga Object "The Gae Bolga" "Tain Bo Cuailnge" "Ulster Cycle"
+summary: Cuchulainn's terrible barbed spear; given by his teacher Scathach; enters the body and barbs spread, making it impossible to remove without cutting through the flesh; used to slay his foster-brother Ferdiad.
+
+## NODE event_battle_mag_tuired_1 Event "First Battle of Mag Tuired" "Cath Maige Tuired" "First Battle"
+summary: The Tuatha De Danann defeated the Fir Bolg and took Ireland; Nuada lost his arm in this battle and was replaced as king by Bres because a blemished man could not rule.
+
+## NODE event_battle_mag_tuired_2 Event "Second Battle of Mag Tuired" "Cath Maige Tuired" "Second Battle"
+summary: The Tuatha De Danann defeated the Fomorians; Lugh killed Balor with a sling stone through his destructive eye; the Fomorian oppression of tribute was ended; the Tuatha established their rule.
+
+## NODE event_tain Event "Tain Bo Cuailnge" "Tain Bo Cuailnge" "Ulster Cycle"
+summary: The Cattle Raid of Cooley; Queen Medb of Connacht sought the Brown Bull of Cooley; Cuchulainn single-handedly defended Ulster against the armies of Connacht; the greatest tale of the Ulster Cycle.
+
+## NODE event_children_lir Event "The Children of Lir" "Aided Chlainne Lir" "tradition"
+summary: The four children of Lir (Fionnuala, Aodh, Fiachra, Conn) were turned into swans by their jealous stepmother Aoife and cursed to wander Irish waters for 900 years; one of the Three Sorrows of Irish storytelling.
+
+## NODE concept_geis Concept "Geis (plural: Geasa)" "Tain Bo Cuailnge" "Ulster Cycle"
+summary: A sacred prohibition or taboo binding a person; breaking a geis brings supernatural ruin; Cuchulainn was bound by geasa he could not break without his own death; central to Celtic tragic narrative.
+
+## NODE concept_otherworld Concept "The Otherworld" "Mythological Cycle" "tradition"
+summary: The Celtic realm of the gods and the dead; accessible through sidhe mounds, water, or journeys west; a place of eternal youth, feasting, and music; where the Tuatha De Danann withdrew.
+
+## NODE concept_tuatha Concept "Tuatha De Danann" "Lebor Gabala Erenn" "tradition"
+summary: The People of the Goddess Danu; the pre-Christian gods of Ireland; rulers of Ireland before the Milesians; skilled in magic, druidry, and arts; they withdrew into the sidhe and became the aos si (fairy folk).
+
+## EDGE edge_lugh_child char_lugh CHILD_OF char_dagda "Cath Maige Tuired" "Second Battle"
+## EDGE edge_brigid_child char_brigid CHILD_OF char_dagda "Lebor Gabala Erenn" "tradition"
+## EDGE edge_aengus_child char_aengus CHILD_OF char_dagda "Mythological Cycle" "tradition"
+## EDGE edge_ogma_child char_ogma CHILD_OF char_dagda "Lebor Gabala Erenn" "tradition"
+## EDGE edge_lugh_balor char_lugh CHILD_OF char_balor "Cath Maige Tuired" "Second Battle"
+## EDGE edge_lugh_fought_balor char_lugh FOUGHT char_balor "Cath Maige Tuired" "Second Battle"
+## EDGE edge_battle2_place event_battle_mag_tuired_2 TOOK_PLACE_AT place_mag_tuired "Cath Maige Tuired" "Second Battle"
+## EDGE edge_battle1_place event_battle_mag_tuired_1 TOOK_PLACE_AT place_mag_tuired "Cath Maige Tuired" "First Battle"
+## EDGE edge_dagda_ruler char_dagda RULER_OF place_tara "Lebor Gabala Erenn" "tradition"
+## EDGE edge_nuada_ruler char_nuada RULER_OF place_tara "Cath Maige Tuired" "First Battle"
+## EDGE edge_dagda_cauldron char_dagda ASSOCIATED_WITH obj_cauldron "Cath Maige Tuired" "Second Battle"
+## EDGE edge_lugh_spear char_lugh ASSOCIATED_WITH obj_spear_lugh "Cath Maige Tuired" "Second Battle"
+## EDGE edge_nuada_sword char_nuada ASSOCIATED_WITH obj_sword_nuada "Cath Maige Tuired" "First Battle"
+## EDGE edge_stone_fal_tara obj_stone_fal ASSOCIATED_WITH place_tara "Lebor Gabala Erenn" "tradition"
+## EDGE edge_cuchulainn_child char_cuchulainn CHILD_OF char_lugh "Tain Bo Cuailnge" "Ulster Cycle"
+## EDGE edge_cuchulainn_spear char_cuchulainn ASSOCIATED_WITH obj_gae_bolga "Tain Bo Cuailnge" "Ulster Cycle"
+## EDGE edge_cuchulainn_medb char_cuchulainn FOUGHT char_medb "Tain Bo Cuailnge" "Ulster Cycle"
+## EDGE edge_tain_place event_tain TOOK_PLACE_AT place_tara "Tain Bo Cuailnge" "Ulster Cycle"
+## EDGE edge_dagda_bru char_dagda ASSOCIATED_WITH place_bru_na_boinne "Mythological Cycle" "tradition"
+## EDGE edge_aengus_bru char_aengus ASSOCIATED_WITH place_bru_na_boinne "Mythological Cycle" "tradition"
+## EDGE edge_morrigan_battle char_morrigan ASSOCIATED_WITH event_battle_mag_tuired_2 "Cath Maige Tuired" "Second Battle"
+## EDGE edge_manannan_otherworld char_manannan ASSOCIATED_WITH place_tir_na_nog "Mythological Cycle" "tradition"
+## EDGE edge_bres_fought char_bres FOUGHT char_lugh "Cath Maige Tuired" "Second Battle"
+## EDGE edge_bres_ruler char_bres RULER_OF place_tara "Cath Maige Tuired" "First Battle"
+## EDGE edge_tuatha_concept char_dagda ASSOCIATED_WITH concept_tuatha "Lebor Gabala Erenn" "tradition"
+## EDGE edge_danu_tuatha char_danu ASSOCIATED_WITH concept_tuatha "Lebor Gabala Erenn" "tradition"
+## EDGE edge_otherworld_sidhe place_sidhe ASSOCIATED_WITH concept_otherworld "Lebor Gabala Erenn" "tradition"
+## EDGE edge_tir_na_nog_otherworld place_tir_na_nog ASSOCIATED_WITH concept_otherworld "Mythological Cycle" "tradition"
+## EDGE edge_cuchulainn_geis char_cuchulainn ASSOCIATED_WITH concept_geis "Tain Bo Cuailnge" "Ulster Cycle"
+## EDGE edge_morrigan_cuchulainn char_morrigan MET char_cuchulainn "Tain Bo Cuailnge" "Ulster Cycle"
+## EDGE edge_oghaam_obj char_ogma ASSOCIATED_WITH obj_sword_nuada "Lebor Gabala Erenn" "tradition"
+## EDGE edge_dian_cecht_nuada char_dian_cecht MET char_nuada "Cath Maige Tuired" "First Battle"

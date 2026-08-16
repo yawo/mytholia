@@ -1,0 +1,120 @@
+## NODE char_odin Character "Odin" "Prose Edda" "Gylfaginning"
+summary: All-Father and king of the Aesir; god of wisdom, war, poetry, and death; sacrificed his eye at Mimir's Well and hung from Yggdrasil to gain the runes.
+
+## NODE char_thor Character "Thor" "Prose Edda" "Gylfaginning"
+summary: God of thunder, son of Odin and the earth goddess Jord; protector of Midgard and humanity; wields the hammer Mjolnir against giants; the strongest of the gods.
+
+## NODE char_loki Character "Loki" "Prose Edda" "Gylfaginning"
+summary: Trickster god, blood-brother of Odin; a shape-shifter of giant (jotun) origin; father of monsters and instigator of Baldur's death; bound by the gods until Ragnarok.
+
+## NODE char_frigg Character "Frigg" "Prose Edda" "Gylfaginning"
+summary: Wife of Odin and queen of the Aesir; goddess of marriage, motherhood, and prophecy; mother of Baldur; tried to protect him from all things but failed with the mistletoe.
+
+## NODE char_baldur Character "Baldur" "Prose Edda" "Gylfaginning"
+summary: God of light, beauty, and renewal; son of Odin and Frigg; slain by a mistletoe arrow guided by Loki; his death is the first omen of Ragnarok.
+
+## NODE char_freyr Character "Freyr" "Prose Edda" "Gylfaginning"
+summary: God of fertility, prosperity, and peace; a Vanir hostage among the Aesir; son of Njord; ruler of Alfheim; wields a ship that folds into a pocket and a sword that fights on its own.
+
+## NODE char_freya Character "Freya" "Prose Edda" "Gylfaginning"
+summary: Goddess of love, beauty, and war; sister of Freyr; rides to battle and claims half the slain; rides a chariot drawn by cats; taught seidr (magic) to the Aesir.
+
+## NODE char_njord Character "Njord" "Prose Edda" "Gylfaginning"
+summary: God of the sea, wind, and fishing; a Vanir; father of Freyr and Freya; lives at Noatun (ship enclosure); associated with wealth from the sea.
+
+## NODE char_tyr Character "Tyr" "Prose Edda" "Gylfaginning"
+summary: God of war, justice, and law; sacrificed his hand to bind the wolf Fenrir; one-handed god of the Aesir.
+
+## NODE char_heimdall Character "Heimdall" "Prose Edda" "Gylfaginning"
+summary: Watchman of the gods; guardian of the Bifrost bridge to Asgard; has senses so keen he can hear grass growing; will blow the Gjallarhorn at Ragnarok.
+
+## NODE char_hel Character "Hel" "Prose Edda" "Gylfaginning"
+summary: Daughter of Loki; ruler of the underworld realm Hel; receives those who die of sickness or old age; half her body is livid, half normal.
+
+## NODE char_fenrir Character "Fenrir" "Prose Edda" "Gylfaginning"
+summary: Monstrous wolf, son of Loki; bound by the gods with the magical fetter Gleipnir; will break free at Ragnarok and slay Odin.
+
+## NODE char_jormungandr Character "Jormungandr" "Prose Edda" "Gylfaginning"
+summary: The Midgard Serpent, son of Loki; a world-encircling sea serpent; Thor's great adversary; will rise from the sea at Ragnarok and poison the sky.
+
+## NODE char_sleipnir Character "Sleipnir" "Prose Edda" "Gylfaginning"
+summary: Odin's eight-legged steed, the fastest of all horses; offspring of Loki (as a mare) and the stallion Svadilfari.
+
+## NODE place_asgard Place "Asgard" "Prose Edda" "Gylfaginning"
+summary: The realm of the Aesir gods; located at the top of the world tree Yggdrasil; connected to Midgard by the rainbow bridge Bifrost.
+
+## NODE place_midgard Place "Midgard" "Prose Edda" "Gylfaginning"
+summary: The realm of humans, encircled by the world serpent Jormungandr; surrounded by an ocean and connected to Asgard by the Bifrost bridge.
+
+## NODE place_jotunheim Place "Jotunheim" "Prose Edda" "Gylfaginning"
+summary: The realm of the giants (jotnar), east of Midgard; a land of rock, ice, and wilderness; the sworn enemies of the Aesir dwell here.
+
+## NODE place_yggdrasil Place "Yggdrasil" "Poetic Edda" "Voluspa"
+summary: The World Tree, an ash whose roots and branches connect all nine worlds; three roots lead to Asgard, Jotunheim, and Hel; the Norns tend it daily.
+
+## NODE place_valhalla Place "Valhalla" "Prose Edda" "Gylfaginning"
+summary: Odin's great hall in Asgard where slain warriors (einherjar) feast and train for Ragnarok; 540 doors; roofed with shields and spears.
+
+## NODE place_hel Place "Hel" "Prose Edda" "Gylfaginning"
+summary: The underworld realm of the dead, ruled by the goddess Hel; where those who die of sickness or old age go; a cold and misty place.
+
+## NODE obj_mjolnir Object "Mjolnir" "Prose Edda" "Skaldskaparmal"
+summary: Thor's hammer, forged by the dwarf brothers Sindri and Brokkr; the greatest of weapons; returns to the thrower's hand; protects gods and humans from giants.
+
+## NODE obj_gungnir Object "Gungnir" "Prose Edda" "Gylfaginning"
+summary: Odin's magical spear, forged by dwarves; never misses its target; Odin hurled it over an army to claim the slain for himself.
+
+## NODE obj_gleipnir Object "Gleipnir" "Prose Edda" "Gylfaginning"
+summary: The magical fetter that binds Fenrir; made by dwarves from impossible ingredients (a cat's footfall, a woman's beard, a fish's breath, etc.); thin as a silk ribbon but unbreakable.
+
+## NODE obj_gjallarhorn Object "Gjallarhorn" "Prose Edda" "Gylfaginning"
+summary: Heimdall's horn, which he will blow to alert the gods when the giants march on Asgard at Ragnarok; its sound can be heard across all nine worlds.
+
+## NODE event_ragnarok Event "Ragnarok" "Poetic Edda" "Voluspa"
+summary: The doom of the gods; the final battle in which Fenrir kills Odin, Thor and Jormungandr slay each other, the world is consumed by fire, and a new world rises from the sea.
+
+## NODE event_baldur_death Event "Death of Baldur" "Prose Edda" "Gylfaginning"
+summary: The gods amused themselves throwing weapons at the invulnerable Baldur; Loki tricked the blind god Hod into throwing a mistletoe dart, the one thing Frigg had not sworn to spare him; Baldur's death begins the chain leading to Ragnarok.
+
+## NODE event_aesir_vanir_war Event "Aesir-Vanir War" "Prose Edda" "Gylfaginning"
+summary: The first war between the two tribes of gods; ended with a truce and the exchange of hostages (Njord, Freyr, and Freya went to the Aesir); the gods spat into a vessel, creating the wise being Kvasir.
+
+## NODE concept_wyrd Concept "Wyrd (Urd)" "Poetic Edda" "Voluspa"
+summary: The Norse concept of fate or destiny; woven by the Norns (Urd, Verdandi, Skuld) at the base of Yggdrasil; even the gods are subject to fate and cannot escape Ragnarok.
+
+## NODE concept_einherjar Concept "Einherjar" "Prose Edda" "Gylfaginning"
+summary: The chosen slain warriors taken by Odin (via valkyries) or Freya to Valhalla or Folkvangr; they fight and feast daily, awaiting Ragnarok to fight beside the gods.
+
+## NODE concept_valkyries Concept "Valkyries" "Poetic Edda" "Voluspa"
+summary: Female warrior spirits who serve Odin; choose who dies and who lives in battle; bring the slain to Valhalla; ride wolves and horses through the sky.
+
+## EDGE edge_odin_spouse char_odin SPOUSE_OF char_frigg "Prose Edda" "Gylfaginning"
+## EDGE edge_thor_child char_thor CHILD_OF char_odin "Prose Edda" "Gylfaginning"
+## EDGE edge_baldur_child char_baldur CHILD_OF char_odin "Prose Edda" "Gylfaginning"
+## EDGE edge_baldur_mother char_baldur CHILD_OF char_frigg "Prose Edda" "Gylfaginning"
+## EDGE edge_freyr_child char_freyr CHILD_OF char_njord "Prose Edda" "Gylfaginning"
+## EDGE edge_freya_child char_freya CHILD_OF char_njord "Prose Edda" "Gylfaginning"
+## EDGE edge_hel_child char_hel CHILD_OF char_loki "Prose Edda" "Gylfaginning"
+## EDGE edge_fenrir_child char_fenrir CHILD_OF char_loki "Prose Edda" "Gylfaginning"
+## EDGE edge_jormungandr_child char_jormungandr CHILD_OF char_loki "Prose Edda" "Gylfaginning"
+## EDGE edge_odin_sleipnir char_odin ASSOCIATED_WITH char_sleipnir "Prose Edda" "Gylfaginning"
+## EDGE edge_odin_ruler char_odin RULER_OF place_asgard "Prose Edda" "Gylfaginning"
+## EDGE edge_hel_ruler char_hel RULER_OF place_hel "Prose Edda" "Gylfaginning"
+## EDGE edge_thor_mjolnir char_thor ASSOCIATED_WITH obj_mjolnir "Prose Edda" "Skaldskaparmal"
+## EDGE edge_odin_gungnir char_odin ASSOCIATED_WITH obj_gungnir "Prose Edda" "Gylfaginning"
+## EDGE edge_loki_baldur char_loki ASSOCIATED_WITH event_baldur_death "Prose Edda" "Gylfaginning"
+## EDGE edge_baldur_death_place event_baldur_death TOOK_PLACE_AT place_asgard "Prose Edda" "Gylfaginning"
+## EDGE edge_thor_fought_jormungandr char_thor FOUGHT char_jormungandr "Prose Edda" "Gylfaginning"
+## EDGE edge_odin_fought_fenrir char_odin FOUGHT char_fenrir "Poetic Edda" "Voluspa"
+## EDGE edge_ragnarok_place event_ragnarok TOOK_PLACE_AT place_midgard "Poetic Edda" "Voluspa"
+## EDGE edge_heimdall_guards char_heimdall GUARDS place_asgard "Prose Edda" "Gylfaginning"
+## EDGE edge_heimdall_horn char_heimdall ASSOCIATED_WITH obj_gjallarhorn "Prose Edda" "Gylfaginning"
+## EDGE edge_fenrir_bound char_fenrir ASSOCIATED_WITH obj_gleipnir "Prose Edda" "Gylfaginning"
+## EDGE edge_odin_valhalla char_odin ASSOCIATED_WITH place_valhalla "Prose Edda" "Gylfaginning"
+## EDGE edge_yggdrasil_asgard place_yggdrasil ASSOCIATED_WITH place_asgard "Poetic Edda" "Voluspa"
+## EDGE edge_ragnarok_wyrd event_ragnarok ASSOCIATED_WITH concept_wyrd "Poetic Edda" "Voluspa"
+## EDGE edge_odin_einherjar char_odin ASSOCIATED_WITH concept_einherjar "Prose Edda" "Gylfaginning"
+## EDGE edge_freya_valkyries char_freya ASSOCIATED_WITH concept_valkyries "Prose Edda" "Gylfaginning"
+## EDGE edge_tyr_fenrir char_tyr FOUGHT char_fenrir "Prose Edda" "Gylfaginning"
+## EDGE edge_freyr_alfheim char_freyr RULER_OF place_asgard "Prose Edda" "Gylfaginning"
+## EDGE edge_loki_met char_loki MET char_odin "Prose Edda" "Gylfaginning"

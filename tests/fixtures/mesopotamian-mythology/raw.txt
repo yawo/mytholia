@@ -1,0 +1,117 @@
+## NODE char_marduk Character "Marduk" "Enuma Elish" "Tablet IV"
+summary: Patron god of Babylon and king of the gods; son of Ea and Damkina; slew the chaos dragon Tiamat and created the world from her body; wielder of the winds and the bow; assigned the fates.
+
+## NODE char_tiamat Character "Tiamat" "Enuma Elish" "Tablet I"
+summary: The primeval salt-water dragon of chaos; mother of the first gods; her slaughter by Marduk created heaven and earth; the personification of primordial chaos.
+
+## NODE char_ea Character "Ea (Enki)" "Enuma Elish" "Tablet I"
+summary: God of wisdom, fresh water, and creation; son of Anu; father of Marduk; slew Apsu (the freshwater ocean) and built his temple within him; protector of humanity and giver of arts.
+
+## NODE char_anu Character "Anu" "Enuma Elish" "Tablet I"
+summary: Sky god and ancient king of the gods; son of Anshar and Kishar; father of Ea; his city was Uruk; gradually superseded by Enlil and then Marduk in the pantheon hierarchy.
+
+## NODE char_enlil Character "Enlil" "Mesopotamian mythology" "tradition"
+summary: God of wind, storm, and the Tablet of Destinies; lord of the air; chief god of the Sumerian pantheon; separated heaven from earth; caused the Great Flood in Atrahasis.
+
+## NODE char_ishtar Character "Ishtar (Inanna)" "Descent of Ishtar" "Tablet I"
+summary: Goddess of love, war, and fertility; the Morning and Evening Star; daughter of Anu; descended to the underworld and was held dead until freed by Ea's intervention; the Akkadian name for Sumerian Inanna.
+
+## NODE char_gilgamesh Character "Gilgamesh" "Epic of Gilgamesh" "Tablet I"
+summary: King of Uruk, two-thirds divine and one-third human; hero of the world's oldest epic; built the walls of Uruk; sought immortality after the death of his companion Enkidu and failed.
+
+## NODE char_enkidu Character "Enkidu" "Epic of Gilgamesh" "Tablet I"
+summary: Wild man created by the gods to equal Gilgamesh; civilized by the priestess Shamhat; became Gilgamesh's closest companion; slew Humbaba and the Bull of Heaven; died by divine decree.
+
+## NODE char_shamash Character "Shamash (Utu)" "Epic of Gilgamesh" "Tablet III"
+summary: Sun god, god of justice and truth; patron of Gilgamesh and Enkidu in their quest; illuminated the path to the Cedar Forest; the Sumerian Utu.
+
+## NODE char_utnapishtim Character "Utnapishtim" "Epic of Gilgamesh" "Tablet X"
+summary: The Mesopotamian flood survivor, analogous to Noah; warned by Ea to build a great boat; survived the Great Flood and was granted immortality; told Gilgamesh the secret of the flood plant.
+
+## NODE char_ereshkigal Character "Ereshkigal" "Descent of Ishtar" "Tablet I"
+summary: Queen of the underworld (Kur/Irkalla); sister of Ishtar; rules the land of the dead where all eventually go; wife of Nergal; demanded Ishtar be held in the underworld.
+
+## NODE char_nergal Character "Nergal" "Mesopotamian mythology" "tradition"
+summary: God of war, plague, and the underworld; husband of Ereshkigal; became lord of the dead after descending to the underworld and refusing to leave.
+
+## NODE char_kingu Character "Kingu" "Enuma Elish" "Tablet I"
+summary: Tiamat's consort and general; given the Tablet of Destinies by Tiamat; defeated by Marduk; his blood was used to create humanity as servants of the gods.
+
+## NODE char_humbaba Character "Humbaba" "Epic of Gilgamesh" "Tablet V"
+summary: The terrifying guardian of the Cedar Forest, appointed by Enlil; slain by Gilgamesh and Enkidu who cut down the sacred cedars; his death angered the gods.
+
+## NODE char_bull_heaven Character "Bull of Heaven" "Epic of Gilgamesh" "Tablet VI"
+summary: A divine beast sent by Ishtar to punish Gilgamesh for rejecting her advances; caused drought and destruction in Uruk; slain by Gilgamesh and Enkidu, angering the gods.
+
+## NODE place_uruk Place "Uruk" "Epic of Gilgamesh" "Tablet I"
+summary: The great walled city ruled by Gilgamesh; one of the oldest cities in the world; home of the temple of Ishtar (Eanna); its walls were built by Gilgamesh himself.
+
+## NODE place_cedar_forest Place "The Cedar Forest" "Epic of Gilgamesh" "Tablet V"
+summary: A sacred forest guarded by Humbaba; located in the Cedar Mountain (Lebanon); Gilgamesh and Enkidu traveled there to cut timber and prove their heroism.
+
+## NODE place_abzu Place "Abzu (Apsu)" "Enuma Elish" "Tablet I"
+summary: The primeval freshwater ocean beneath the earth; personified as the god Apsu; dwelling of Ea/Enki; the source of all fresh water and wisdom.
+
+## NODE place_kur Place "Kur (Irkalla)" "Descent of Ishtar" "Tablet I"
+summary: The Mesopotamian underworld; ruled by Ereshkigal; a dark, dusty realm where the dead eat dust and wear feathers; all souls descend here regardless of their deeds.
+
+## NODE obj_tablet_destinies Object "Tablet of Destinies" "Enuma Elish" "Tablet IV"
+summary: A clay tablet inscribed with cuneiform that confers supreme authority over the universe; held by Enlil, then by Tiamat (given to Kingu), and finally seized by Marduk after his victory.
+
+## NODE obj_marduk_bow Object "Bow of Marduk" "Enuma Elish" "Tablet IV"
+summary: Marduk's great bow, fashioned to slay Tiamat; net to trap her and winds to inflate her body; his primary weapon in the cosmic battle of creation.
+
+## NODE event_marduk_tiamat Event "Battle of Marduk and Tiamat" "Enuma Elish" "Tablet IV"
+summary: Marduk trapped Tiamat in his net, filled her with wind, and shot her with an arrow; from her split body he fashioned heaven and earth, establishing cosmic order.
+
+## NODE event_gilgamesh_cedar Event "Journey to the Cedar Forest" "Epic of Gilgamesh" "Tablet III"
+summary: Gilgamesh and Enkidu's quest to the Cedar Forest to slay Humbaba and cut the sacred cedars; blessed by Shamash; they killed Humbaba and enraged Enlil.
+
+## NODE event_flood Event "The Great Flood" "Epic of Gilgamesh" "Tablet XI"
+summary: The gods sent a flood to destroy humanity; Ea warned Utnapishtim, who built a boat and saved all living things; after the flood, the gods regretted their decision and granted Utnapishtim immortality.
+
+## NODE event_ishtar_descent Event "Descent of Ishtar" "Descent of Ishtar" "Tablet I"
+summary: Ishtar descended to the underworld to challenge her sister Ereshkigal; was stripped and held dead, causing all fertility to cease on earth; freed by Ea's creation, the kurgarru and kalaturru.
+
+## NODE event_creation Event "Creation of Humanity" "Enuma Elish" "Tablet VI"
+summary: Marduk created humans from the blood of the slain Kingu, mixed with clay; humans were made to serve the gods and lighten their labor; this act established the human-god relationship.
+
+## NODE concept_me Concept "Me (Divine Decrees)" "Mesopotamian mythology" "tradition"
+summary: The divine decrees and laws that govern civilization; gifts of the gods that structure society, kingship, arts, and crafts; Inanna/Ishtar brought the me to Uruk from Enki.
+
+## NODE concept_kingship Concept "Kingship" "Mesopotamian mythology" "tradition"
+summary: The divine right to rule, descended from heaven; kings are chosen by the gods (especially Enlil and Marduk); the king is the steward of the gods on earth, maintaining order.
+
+## EDGE edge_marduk_child char_marduk CHILD_OF char_ea "Enuma Elish" "Tablet I"
+## EDGE edge_ea_child char_ea CHILD_OF char_anu "Enuma Elish" "Tablet I"
+## EDGE edge_kingu_spouse char_tiamat SPOUSE_OF char_kingu "Enuma Elish" "Tablet I"
+## EDGE edge_ereshkigal_spouse char_ereshkigal SPOUSE_OF char_nergal "Mesopotamian mythology" "tradition"
+## EDGE edge_ishtar_child char_ishtar CHILD_OF char_anu "Descent of Ishtar" "Tablet I"
+## EDGE edge_gilgamesh_enkidu char_gilgamesh MET char_enkidu "Epic of Gilgamesh" "Tablet II"
+## EDGE edge_gilgamesh_fought_humbaba char_gilgamesh FOUGHT char_humbaba "Epic of Gilgamesh" "Tablet V"
+## EDGE edge_enkidu_fought_humbaba char_enkidu FOUGHT char_humbaba "Epic of Gilgamesh" "Tablet V"
+## EDGE edge_cedar_place event_gilgamesh_cedar TOOK_PLACE_AT place_cedar_forest "Epic of Gilgamesh" "Tablet III"
+## EDGE edge_humbaba_guards char_humbaba GUARDS place_cedar_forest "Epic of Gilgamesh" "Tablet V"
+## EDGE edge_gilgamesh_ruler char_gilgamesh RULER_OF place_uruk "Epic of Gilgamesh" "Tablet I"
+## EDGE edge_gilgamesh_bull char_gilgamesh FOUGHT char_bull_heaven "Epic of Gilgamesh" "Tablet VI"
+## EDGE edge_enkidu_bull char_enkidu FOUGHT char_bull_heaven "Epic of Gilgamesh" "Tablet VI"
+## EDGE edge_gilgamesh_utnapishtim char_gilgamesh MET char_utnapishtim "Epic of Gilgamesh" "Tablet X"
+## EDGE edge_ea_abzu char_ea ASSOCIATED_WITH place_abzu "Enuma Elish" "Tablet I"
+## EDGE edge_ereshkigal_ruler char_ereshkigal RULER_OF place_kur "Descent of Ishtar" "Tablet I"
+## EDGE edge_ishtar_descent_event char_ishtar ASSOCIATED_WITH event_ishtar_descent "Descent of Ishtar" "Tablet I"
+## EDGE edge_ishtar_descent_place event_ishtar_descent TOOK_PLACE_AT place_kur "Descent of Ishtar" "Tablet I"
+## EDGE edge_marduk_tiamat_event char_marduk ASSOCIATED_WITH event_marduk_tiamat "Enuma Elish" "Tablet IV"
+## EDGE edge_marduk_bow_obj char_marduk ASSOCIATED_WITH obj_marduk_bow "Enuma Elish" "Tablet IV"
+## EDGE edge_tablet_destinies_marduk char_marduk ASSOCIATED_WITH obj_tablet_destinies "Enuma Elish" "Tablet IV"
+## EDGE edge_enlil_tablet char_enlil ASSOCIATED_WITH obj_tablet_destinies "Mesopotamian mythology" "tradition"
+## EDGE edge_kingu_tablet char_kingu ASSOCIATED_WITH obj_tablet_destinies "Enuma Elish" "Tablet I"
+## EDGE edge_creation_event event_creation TOOK_PLACE_AT place_uruk "Enuma Elish" "Tablet VI"
+## EDGE edge_flood_event event_flood TOOK_PLACE_AT place_uruk "Epic of Gilgamesh" "Tablet XI"
+## EDGE edge_utnapishtim_flood char_utnapishtim ASSOCIATED_WITH event_flood "Epic of Gilgamesh" "Tablet XI"
+## EDGE edge_shamash_gilgamesh char_shamash MET char_gilgamesh "Epic of Gilgamesh" "Tablet III"
+## EDGE edge_ishtar_me char_ishtar ASSOCIATED_WITH concept_me "Mesopotamian mythology" "tradition"
+## EDGE edge_ea_me char_ea ASSOCIATED_WITH concept_me "Mesopotamian mythology" "tradition"
+## EDGE edge_marduk_kingship char_marduk ASSOCIATED_WITH concept_kingship "Enuma Elish" "Tablet VI"
+## EDGE edge_enlil_flood char_enlil ASSOCIATED_WITH event_flood "Epic of Gilgamesh" "Tablet XI"
+## EDGE edge_marduk_fought char_marduk FOUGHT char_tiamat "Enuma Elish" "Tablet IV"
+## EDGE edge_ishtar_ereshkigal char_ishtar MET char_ereshkigal "Descent of Ishtar" "Tablet I"

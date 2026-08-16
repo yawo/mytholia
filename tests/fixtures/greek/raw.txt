@@ -38,3 +38,61 @@ summary: A Cyclops, son of Poseidon, blinded by Odysseus.
 ## EDGE edge_odysseus_met char_odysseus MET char_polyphemus "Odyssey" "book 9"
 ## EDGE edge_odysseus_bow char_odysseus ASSOCIATED_WITH obj_bow "Odyssey" "book 21"
 ## EDGE edge_odysseus_xenia char_odysseus ASSOCIATED_WITH concept_xenia "Odyssey" "book 9"
+
+## NODE char_athena Character "Athena" "Odyssey" "book 13"
+summary: Goddess of wisdom and warfare; daughter of Zeus; champion and guide of Odysseus throughout his journey home; disguises herself as Mentor.
+
+## NODE char_poseidon Character "Poseidon" "Odyssey" "book 9"
+summary: God of the sea and earthquakes; father of the Cyclops Polyphemus; delays Odysseus's return for a decade in vengeance for blinding his son.
+
+## NODE char_zeus Character "Zeus" "Odyssey" "book 1"
+summary: King of the gods, ruler of the sky; decrees Odysseus's fate; sends Hermes to Calypso to release Odysseus.
+
+## NODE char_circe Character "Circe" "Odyssey" "book 10"
+summary: Sorceress on the island of Aeaea; turned Odysseus's men into swine; became Odysseus's lover and guide for a year; daughter of the sun god Helios.
+
+## NODE char_calypso Character "Calypso" "Odyssey" "book 5"
+summary: Sea nymph on the island of Ogygia; held Odysseus captive for seven years; offered him immortality to stay; released him by Zeus's command.
+
+## NODE char_hermes Character "Hermes" "Odyssey" "book 5"
+summary: Messenger god; sent by Zeus to tell Calypso to release Odysseus; gave Odysseus the herb moly to resist Circe's magic.
+
+## NODE place_aeaea Place "Aeaea" "Odyssey" "book 10"
+summary: The island home of the sorceress Circe; where Odysseus's men were turned into swine and where he stayed for a year.
+
+## NODE place_ogygia Place "Ogygia" "Odyssey" "book 5"
+summary: The island home of the nymph Calypso; where Odysseus was held for seven years; a remote, hidden island far from all.
+
+## NODE place_underworld Place "The Underworld (Hades)" "Odyssey" "book 11"
+summary: The realm of the dead; Odysseus journeys here to consult the prophet Tiresias; meets his mother, Achilles, and Agamemnon among the dead.
+
+## NODE char_tiresias Character "Tiresias" "Odyssey" "book 11"
+summary: The blind prophet of Thebes; Odysseus consults him in the underworld; foretells the rest of his journey and warns of the cattle of the sun god.
+
+## NODE event_blinding Event "Blinding of Polyphemus" "Odyssey" "book 9"
+summary: Odysseus and his men drive a heated stake into the eye of the Cyclops Polyphemus, allowing them to escape his cave; this act provokes Poseidon's wrath.
+
+## NODE event_return Event "The nostos of Odysseus" "Odyssey" "book 23"
+summary: Odysseus's twenty-year return from Troy to Ithaca; he disguises himself as a beggar, wins the bow contest, slaughters the suitors, and is reunited with Penelope.
+
+## NODE concept_nostos Concept "Nostos" "Odyssey" "book 1"
+summary: The Greek concept of homecoming; the central theme of the Odyssey; a perilous sea journey fraught with divine obstacles and the temptation of forgetting one's homeland.
+
+## EDGE edge_athena_met char_athena MET char_odysseus "Odyssey" "book 13"
+## EDGE edge_athena_odysseus char_athena ASSOCIATED_WITH char_odysseus "Odyssey" "book 13"
+## EDGE edge_poseidon_odysseus char_poseidon FOUGHT char_odysseus "Odyssey" "book 9"
+## EDGE edge_polyphemus_child char_polyphemus CHILD_OF char_poseidon "Odyssey" "book 9"
+## EDGE edge_blinding_event char_odysseus ASSOCIATED_WITH event_blinding "Odyssey" "book 9"
+## EDGE edge_blinding_place event_blinding TOOK_PLACE_AT place_ithaca "Odyssey" "book 9"
+## EDGE edge_circe_met char_circe MET char_odysseus "Odyssey" "book 10"
+## EDGE edge_circe_place char_circe ASSOCIATED_WITH place_aeaea "Odyssey" "book 10"
+## EDGE edge_calypso_met char_calypso MET char_odysseus "Odyssey" "book 5"
+## EDGE edge_calypso_place char_calypso ASSOCIATED_WITH place_ogygia "Odyssey" "book 5"
+## EDGE edge_hermes_met char_hermes MET char_odysseus "Odyssey" "book 10"
+## EDGE edge_tiresias_met char_odysseus MET char_tiresias "Odyssey" "book 11"
+## EDGE edge_tiresias_place char_tiresias ASSOCIATED_WITH place_underworld "Odyssey" "book 11"
+## EDGE edge_odysseus_underworld char_odysseus ASSOCIATED_WITH place_underworld "Odyssey" "book 11"
+## EDGE edge_return_event char_odysseus ASSOCIATED_WITH event_return "Odyssey" "book 23"
+## EDGE edge_return_place event_return TOOK_PLACE_AT place_ithaca "Odyssey" "book 23"
+## EDGE edge_odysseus_nostos char_odysseus ASSOCIATED_WITH concept_nostos "Odyssey" "book 1"
+## EDGE edge_zeus_ruler char_zeus RULER_OF place_ithaca "Odyssey" "book 1"

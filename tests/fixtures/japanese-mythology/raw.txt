@@ -1,0 +1,112 @@
+## NODE char_izanagi Character "Izanagi" "Kojiki" "Kamiumi"
+summary: The male primordial god ("He Who Invites"); with his sister-wife Izanami created the Japanese archipelago and the kami; father of Amaterasu, Tsukuyomi, and Susanoo from his purification.
+
+## NODE char_izanami Character "Izanami" "Kojiki" "Kamiumi"
+summary: The female primordial goddess ("She Who Invites"); co-creator of Japan and the kami; died giving birth to the fire god Kagutsuchi and descended to Yomi, the underworld.
+
+## NODE char_amaterasu Character "Amaterasu" "Kojiki" "Amaterasu"
+summary: Sun goddess and supreme deity of Shinto; born from Izanagi's left eye; ruler of Takamagahara (Plain of High Heaven); ancestor of the Japanese imperial family.
+
+## NODE char_susanoo Character "Susanoo" "Kojiki" "Susanoo"
+summary: Storm god and brother of Amaterasu; born from Izanagi's nose; banished from heaven for his violence; slew the eight-headed serpent Orochi and recovered the Kusanagi sword.
+
+## NODE char_tsukuyomi Character "Tsukuyomi" "Kojiki" "Kamiumi"
+summary: Moon god, born from Izanagi's right eye; sibling of Amaterasu and Susanoo; ruler of the night; separated from Amaterasu after killing the food goddess Uke Mochi.
+
+## NODE char_uzume Character "Ame-no-Uzume" "Kojiki" "Ama-no-Iwato"
+summary: Goddess of dawn, mirth, and revelry; performed a lewd dance outside Amaterasu's cave that drew the sun goddess out, restoring light to the world; prototype of Kagura dance.
+
+## NODE char_inari Character "Inari" "Nihon Shoki" "tradition"
+summary: Kami of rice, agriculture, prosperity, and foxes; patron of merchants and craftsmen; associated with kitsune (fox messengers); one of the most venerated kami in Japan.
+
+## NODE char_raijin Character "Raijin" "Nihon Shoki" "tradition"
+summary: Kami of thunder, lightning, and storms; depicted with drums surrounded by a circle of drums; beats them to create thunder; often paired with Fujin, the wind god.
+
+## NODE char_okuninushi Character "Okuninushi" "Kojiki" "Kuni-yuzuri"
+summary: Descendant of Susanoo; god of nation-building, medicine, and agriculture; ruler of the earthly realm who ceded Japan to the heavenly kami; associated with Izumo Taisha.
+
+## NODE char_sarutahiko Character "Sarutahiko" "Kojiki" "Tenson korin"
+summary: Earthly kami who guided the heavenly descent of Ninigi (Amaterasu's grandson); a giant with a fearsome face; guardian of crossroads and paths; husband of Ame-no-Uzume.
+
+## NODE char_ninigi Character "Ninigi-no-Mikoto" "Kojiki" "Tenson korin"
+summary: Grandson of Amaterasu; descended from Takamagahara to earth to rule; brought the Three Sacred Treasures (mirror, sword, jewel); ancestor of Emperor Jimmu.
+
+## NODE char_orochi Character "Yamata no Orochi" "Kojiki" "Orochi"
+summary: An eight-headed, eight-tailed serpent dragon that terrorized the province of Izumo; slain by Susanoo, who found the Kusanagi sword inside its tail.
+
+## NODE place_takamagahara Place "Takamagahara" "Kojiki" "Kamiumi"
+summary: The Plain of High Heaven; celestial realm of the heavenly kami; ruled by Amaterasu; from which Ninigi descended to earth.
+
+## NODE place_yomi Place "Yomi" "Kojiki" "Yomi"
+summary: The Japanese underworld/land of the dead; Izanagi traveled here to retrieve Izanami but fled when he saw her rotting corpse; death and impurity entered the world through Yomi.
+
+## NODE place_onogoro Place "Onogoro Island" "Kojiki" "Kuniumi"
+summary: The first island created by Izanagi and Izanami; formed when they stirred the primordial sea with the jeweled spear and dripped brine from its tip.
+
+## NODE place_izumo Place "Izumo" "Kojiki" "Kuni-yuzuri"
+summary: Sacred province associated with Okuninushi and Susanoo; site of Izumo Taisha, one of the most ancient and important Shinto shrines; the land ceded to the heavenly kami.
+
+## NODE obj_nuhoko Object "Ame-no-Nuhoko" "Kojiki" "Kuniumi"
+summary: The Heavenly Jeweled Spear given to Izanagi and Izanami; used to churn the primordial sea and create Onogoro, the first island.
+
+## NODE obj_kusanagi Object "Kusanagi no Tsurugi" "Kojiki" "Orochi"
+summary: The sacred grass-cutting sword found by Susanoo inside the tail of Orochi; one of the Three Sacred Treasures of Japan; given to Amaterasu and later to the imperial line.
+
+## NODE obj_mirror Object "Yata no Kagami" "Nihon Shoki" "Tenson korin"
+summary: The sacred mirror, one of the Three Sacred Treasures; representing wisdom and Amaterasu's radiance; given to Ninigi as a representative of Amaterasu herself.
+
+## NODE obj_magatama Object "Yasakani no Magatama" "Kojiki" "Ama-no-Iwato"
+summary: The sacred curved jewel, one of the Three Sacred Treasures; hung outside Amaterasu's cave to lure her out; symbolizing benevolence and the spirit of the kami.
+
+## NODE event_kuniumi Event "Kuniumi (Birth of the Land)" "Kojiki" "Kuniumi"
+summary: The creation of the Japanese archipelago by Izanagi and Izanami; they stirred the sea with the jeweled spear, and Onogoro Island formed from the dripping brine.
+
+## NODE event_cave Event "Amaterasu's Retreat to the Cave" "Kojiki" "Ama-no-Iwato"
+summary: After Susanoo's rampage, Amaterasu hid in a cave, plunging the world into darkness; Ame-no-Uzume's dance drew her out, restoring light; the mirror and jewels were hung to lure her.
+
+## NODE event_orochi Event "Slaying of Orochi" "Kojiki" "Orochi"
+summary: Susanoo saved the maiden Kushinada-hime by getting the eight-headed serpent Orochi drunk on sake, then slew it; inside its tail he found the Kusanagi sword.
+
+## NODE event_yomi Event "Izanagi's Journey to Yomi" "Kojiki" "Yomi"
+summary: After Izanami's death, Izanagi traveled to Yomi to retrieve her; she had eaten the food of the underworld and could not leave; he saw her rotting body and fled, sealing the entrance.
+
+## NODE event_tenson Event "Tenson Korin (Descent of the Heavenly Grandson)" "Kojiki" "Tenson korin"
+summary: Ninigi, grandson of Amaterasu, descended from Takamagahara to earth with the Three Sacred Treasures to rule Japan; Sarutahiko guided him; establishes the divine origin of the imperial line.
+
+## NODE concept_musubi Concept "Musubi" "Kojiki" "cosmology"
+summary: The spiritual power of growth, harmony, and vitality; a fundamental Shinto concept represented by kami such as Takami-Musubi and Kami-Musubi; the creative force that binds all things.
+
+## NODE concept_kami Concept "Kami" "Kojiki" "cosmology"
+summary: The spirits, deities, or divine forces of Shinto; inhabit all natural phenomena, ancestors, and sacred places; there are said to be eight million kami; the central concept of Shinto.
+
+## NODE concept_kannagara Concept "Kannagara" "Nihon Shoki" "tradition"
+summary: The Way of the Kami; the natural order of living in harmony with the kami; following the divine will through ritual, purity, and gratitude; the essence of Shinto practice.
+
+## EDGE edge_izanagi_spouse char_izanagi SPOUSE_OF char_izanami "Kojiki" "Kamiumi"
+## EDGE edge_amaterasu_child char_amaterasu CHILD_OF char_izanagi "Kojiki" "Kamiumi"
+## EDGE edge_susanoo_child char_susanoo CHILD_OF char_izanagi "Kojiki" "Kamiumi"
+## EDGE edge_tsukuyomi_child char_tsukuyomi CHILD_OF char_izanagi "Kojiki" "Kamiumi"
+## EDGE edge_ninigi_child char_ninigi CHILD_OF char_amaterasu "Kojiki" "Tenson korin"
+## EDGE edge_susanoo_fought char_susanoo FOUGHT char_orochi "Kojiki" "Orochi"
+## EDGE edge_orochi_place event_orochi TOOK_PLACE_AT place_izumo "Kojiki" "Orochi"
+## EDGE edge_kuniumi_place event_kuniumi TOOK_PLACE_AT place_onogoro "Kojiki" "Kuniumi"
+## EDGE edge_yomi_place event_yomi TOOK_PLACE_AT place_yomi "Kojiki" "Yomi"
+## EDGE edge_izanagi_yomi char_izanagi ASSOCIATED_WITH event_yomi "Kojiki" "Yomi"
+## EDGE edge_izanami_yomi char_izanami ASSOCIATED_WITH place_yomi "Kojiki" "Yomi"
+## EDGE edge_amaterasu_ruler char_amaterasu RULER_OF place_takamagahara "Kojiki" "Kamiumi"
+## EDGE edge_amaterasu_cave char_amaterasu ASSOCIATED_WITH event_cave "Kojiki" "Ama-no-Iwato"
+## EDGE edge_uzume_cave char_uzume ASSOCIATED_WITH event_cave "Kojiki" "Ama-no-Iwato"
+## EDGE edge_cave_place event_cave TOOK_PLACE_AT place_takamagahara "Kojiki" "Ama-no-Iwato"
+## EDGE edge_izanagi_nuhoko char_izanagi ASSOCIATED_WITH obj_nuhoko "Kojiki" "Kuniumi"
+## EDGE edge_susanoo_kusanagi char_susanoo ASSOCIATED_WITH obj_kusanagi "Kojiki" "Orochi"
+## EDGE edge_ninigi_mirror char_ninigi ASSOCIATED_WITH obj_mirror "Nihon Shoki" "Tenson korin"
+## EDGE edge_ninigi_magatama char_ninigi ASSOCIATED_WITH obj_magatama "Kojiki" "Ama-no-Iwato"
+## EDGE edge_susanoo_kusanagi_gift char_susanoo MET char_amaterasu "Kojiki" "Orochi"
+## EDGE edge_ninigi_descent event_tenson TOOK_PLACE_AT place_izumo "Kojiki" "Tenson korin"
+## EDGE edge_sarutahiko_ninigi char_sarutahiko MET char_ninigi "Kojiki" "Tenson korin"
+## EDGE edge_okuninushi_izumo char_okuninushi RULER_OF place_izumo "Kojiki" "Kuni-yuzuri"
+## EDGE edge_sarutahiko_spouse char_sarutahiko SPOUSE_OF char_uzume "Kojiki" "Tenson korin"
+## EDGE edge_raijin_storms char_raijin ASSOCIATED_WITH concept_kami "Nihon Shoki" "tradition"
+## EDGE edge_inari_kami char_inari ASSOCIATED_WITH concept_kami "Nihon Shoki" "tradition"
+## EDGE edge_amaterasu_musubi char_amaterasu ASSOCIATED_WITH concept_musubi "Kojiki" "cosmology"
+## EDGE edge_kannagara_amaterasu char_amaterasu ASSOCIATED_WITH concept_kannagara "Nihon Shoki" "tradition"
