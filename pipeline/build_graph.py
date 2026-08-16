@@ -34,7 +34,8 @@ def build_graph(
     Performs corpus-agnostic integrity checks:
       - every edge references nodes that exist in this corpus;
       - node/edge ``corpus_id`` matches the manifest id;
-      - no duplicate node or edge ids.
+      - no duplicate node or edge ids;
+      - every node and edge has at least one source reference.
     """
     node_ids = {n.id for n in nodes}
     seen_nodes: set[str] = set()
@@ -47,6 +48,8 @@ def build_graph(
             )
         if node.id in seen_nodes:
             raise ValueError(f"duplicate node id {node.id!r}")
+        if not node.source_refs:
+            raise ValueError(f"node {node.id!r} has no source_refs")
         seen_nodes.add(node.id)
 
     for edge in edges:
@@ -56,6 +59,8 @@ def build_graph(
             )
         if edge.id in seen_edges:
             raise ValueError(f"duplicate edge id {edge.id!r}")
+        if not edge.source_refs:
+            raise ValueError(f"edge {edge.id!r} has no source_refs")
         seen_edges.add(edge.id)
         if edge.source not in node_ids:
             raise ValueError(f"edge {edge.id!r} references unknown source node {edge.source!r}")

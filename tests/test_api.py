@@ -6,6 +6,8 @@ The client fixture builds both corpora first (conftest.py).
 
 from __future__ import annotations
 
+from pathlib import Path
+
 import pytest
 
 from tests.conftest import CORPUS_FIXTURES
@@ -100,3 +102,23 @@ def test_podcast_404_unknown_entity(client):
         "/api/podcast", json={"corpus_id": "greek-odyssey", "entity_id": "no-such-entity"}
     )
     assert r.status_code == 404
+
+
+def test_networkx_store_uses_injected_corpora_dir(tmp_path: Path) -> None:
+    """NetworkXGraphStore lists manifests from its configured corpora_dir."""
+    from api.retrieval.graph_store import NetworkXGraphStore
+
+    corpus_id = "test-corpus"
+    corpus_dir = tmp_path / "corpora" / corpus_id
+    corpus_dir.mkdir(parents=True)
+    (corpus_dir / "manifest.yaml").write_text(
+        "id: test-corpus\nname: Test Corpus\nlanguage: en\n", encoding="utf-8"
+    )
+
+    store = NetworkXGraphStore(
+        processed_dir=tmp_path / "processed", corpora_dir=tmp_path / "corpora"
+    )
+    summaries = store.list_corpora()
+
+    assert [summary.id for summary in summaries] == [corpus_id]
+    assert summaries[0].name == "Test Corpus"
