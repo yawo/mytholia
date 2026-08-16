@@ -1,10 +1,10 @@
-"""Extract stage: turn raw text into graph nodes/edges via Claude.
+"""Extract stage: turn raw text into graph nodes/edges via an OpenAI-compatible AI.
 
 Corpus-agnostic (AGENTS.md §2, §5). A single default extraction prompt is used
 unless a corpus supplies an ``extraction_prompt.md`` override in its manifest.
 No deity name, entity type, or relation label is hardcoded here.
 
-Sprint 0: real Claude extraction is wired behind an ``Extractor`` interface but
+An OpenAI-compatible extractor is wired behind an ``Extractor`` interface but
 defaults to a deterministic rule-based extractor so the pipeline runs
 end-to-end offline on fixtures. The deterministic extractor parses a simple,
 human-readable text format (see ``_parse_marker_format``) so fixtures can
@@ -76,12 +76,11 @@ class Extractor(ABC):
         raise NotImplementedError
 
 
-class ClaudeExtractor(Extractor):
-    """Real extraction via Claude structured JSON output.
+class OpenAICompatibleExtractor(Extractor):
+    """Extraction via an OpenAI-compatible chat completions API.
 
-    Sprint 0 stub: when the Anthropic SDK or ``ANTHROPIC_API_KEY`` is absent,
-    it raises so callers can fall back to the deterministic extractor. The real
-    call is wired in later sprints behind the same interface.
+    When ``OPENAI_API_KEY``, ``OPENAI_BASE_URL``, and ``OPENAI_MODEL`` are absent,
+    callers fall back to the deterministic fixture extractor.
     """
 
     def __init__(self, prompt_override: str | None = None, corpus_dir: Path | None = None) -> None:
@@ -98,16 +97,51 @@ class ClaudeExtractor(Extractor):
     def extract(
         self, manifest: CorpusManifest, docs: list[dict]
     ) -> tuple[list[GraphNode], list[GraphEdge]]:
-        # Sprint 0: do not call the paid API in the hot path/tests (AGENTS.md §13).
         import os
 
-        if not os.environ.get("ANTHROPIC_API_KEY"):
-            raise RuntimeError(
-                "ANTHROPIC_API_KEY not set; Claude extraction unavailable in Sprint 0"
+        import httpx
+
+        api_key = os.environ.get("OPENAI_API_KEY")
+        base_url = os.environ.get("OPENAI_BASE_URL")
+        model = os.environ.get("OPENAI_MODEL")
+        if not (api_key and base_url and model):
+            raise RuntimeError("OpenAI-compatible extraction is not configured")
+
+        prompt = self._prompt()
+        content = json.dumps(
+            {
+                "manifest": manifest.model_dump(),
+                "documents": docs,
+                "instructions": prompt,
+            },
+            ensure_ascii=False,
+        )
+        payload = {
+            "model": model,
+            "messages": [
+                {
+                    "role": "system",
+                    "content": (
+                        "Extract only grounded graph facts. Return strict JSON with "
+                        "nodes and edges arrays matching the provided schema."
+                    ),
+                },
+                {"role": "user", "content": content},
+            ],
+            "temperature": 0.0,
+        }
+        headers = {"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"}
+        with httpx.Client(timeout=120.0) as client:
+            response = client.post(
+                f"{base_url.rstrip('/')}/chat/completions", json=payload, headers=headers
             )
-        # When a key is present, the real Claude call would happen here in a
-        # later sprint, using self._prompt() and emitting GraphNode/GraphEdge.
-        raise NotImplementedError("Live Claude extraction is wired up in a later sprint")
+            response.raise_for_status()
+        data = response.json()
+        try:
+            generated = data["choices"][0]["message"]["content"]
+        except (KeyError, IndexError, TypeError) as exc:
+            raise RuntimeError("OpenAI-compatible extraction response was missing content") from exc
+        return parse_json_payload(str(generated))
 
 
 class FixtureExtractor(Extractor):
@@ -212,14 +246,18 @@ class FixtureExtractor(Extractor):
 def extractor_for(manifest: CorpusManifest) -> Extractor:
     """Pick an extractor for a manifest.
 
-    Uses ``ClaudeExtractor`` when an API key is available, else the
+    Uses ``OpenAICompatibleExtractor`` when configured, else the
     deterministic ``FixtureExtractor`` so the pipeline runs offline (Sprint 0).
     """
     import os
 
     corpus_dir = Path(__file__).resolve().parent.parent / "corpora" / manifest.id
-    if os.environ.get("ANTHROPIC_API_KEY"):
-        return ClaudeExtractor(
+    if (
+        os.environ.get("OPENAI_API_KEY")
+        and os.environ.get("OPENAI_BASE_URL")
+        and os.environ.get("OPENAI_MODEL")
+    ):
+        return OpenAICompatibleExtractor(
             prompt_override=manifest.extraction.prompt_override,
             corpus_dir=corpus_dir,
         )

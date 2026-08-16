@@ -16,6 +16,7 @@ data/raw/*
 !data/raw/.gitkeep
 data/processed/*
 !data/processed/.gitkeep
+data/podcasts/
 
 # Frontend
 frontend/node_modules/

@@ -311,6 +311,10 @@ class PodcastRequest(BaseModel):
     corpus_id: str
     entity_id: str
     length_seconds: int | None = None
+    force: bool = Field(
+        default=False,
+        description="Regenerate the script and audio even when a cached podcast exists.",
+    )
 
 
 class PodcastResponse(BaseModel):
@@ -321,3 +325,4 @@ class PodcastResponse(BaseModel):
     script: str
     audio_url: str | None = None
     length_seconds: int = 180
+    cached: bool = False

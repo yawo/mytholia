@@ -16,7 +16,9 @@ import pytest
 
 # Ensure no live API calls happen during tests (AGENTS.md §13).
 for _k in (
-    "ANTHROPIC_API_KEY",
+    "OPENAI_API_KEY",
+    "OPENAI_BASE_URL",
+    "OPENAI_MODEL",
     "ELEVENLABS_API_KEY",
     "QWEN_TTS_API_KEY",
     "TAVILY_API_KEY",
@@ -66,6 +68,7 @@ def isolated_data(tmp_path: Path, monkeypatch) -> Path:
     processed_root.mkdir(parents=True, exist_ok=True)
 
     # Point the pipeline + store at the temp tree.
+    import api.generation.podcast_cache as cache_mod
     import api.retrieval.graph_store as store_mod
     import pipeline.build_graph as build_mod
     import pipeline.scrape as scrape_mod
@@ -73,6 +76,7 @@ def isolated_data(tmp_path: Path, monkeypatch) -> Path:
     monkeypatch.setattr(scrape_mod, "DATA_RAW_DIR", raw_root)
     monkeypatch.setattr(build_mod, "DATA_PROCESSED_DIR", processed_root)
     monkeypatch.setattr(store_mod, "DATA_PROCESSED_DIR", processed_root)
+    monkeypatch.setattr(cache_mod, "PODCAST_CACHE_DIR", data_root / "podcasts")
     return data_root
 
 

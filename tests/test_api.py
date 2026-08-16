@@ -92,6 +92,28 @@ def test_podcast_endpoint_returns_script(client, corpus_id: str, fixture_name: s
     assert len(body["script"]) > 0
 
 
+def test_podcast_endpoint_reuses_cache(client):
+    r = client.get("/api/graph", params={"corpus_id": "greek-odyssey"})
+    node_id = r.json()["nodes"][0]["id"]
+
+    first = client.post("/api/podcast", json={"corpus_id": "greek-odyssey", "entity_id": node_id})
+    assert first.status_code == 200
+    assert first.json()["cached"] is False
+
+    second = client.post("/api/podcast", json={"corpus_id": "greek-odyssey", "entity_id": node_id})
+    assert second.status_code == 200
+    assert second.json()["cached"] is True
+    assert second.json()["script"] == first.json()["script"]
+    assert second.json()["audio_url"] == first.json()["audio_url"]
+
+    forced = client.post(
+        "/api/podcast",
+        json={"corpus_id": "greek-odyssey", "entity_id": node_id, "force": True},
+    )
+    assert forced.status_code == 200
+    assert forced.json()["cached"] is False
+
+
 def test_podcast_404_unknown_corpus(client):
     r = client.post("/api/podcast", json={"corpus_id": "no-such-corpus", "entity_id": "x"})
     assert r.status_code == 404

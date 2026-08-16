@@ -13,6 +13,7 @@ import logging
 from fastapi import APIRouter, Header, HTTPException
 
 from api.generation.narrative import generator_for
+from api.generation.podcast_cache import load_cached_podcast, save_cached_podcast
 from api.generation.tts import provider_for
 from api.i18n import parse_accept_language, t
 from api.models import PodcastRequest, PodcastResponse
@@ -57,6 +58,12 @@ def generate_podcast(
             ),
         )
 
+    length = req.length_seconds or manifest.narrative_style.length_seconds
+    if not req.force:
+        cached = load_cached_podcast(req.corpus_id, req.entity_id, locale, length)
+        if cached is not None:
+            return cached.model_copy(update={"cached": True})
+
     subgraph = store.get_subgraph(req.corpus_id, req.entity_id, radius=1)
     generator = generator_for(manifest)
     script = generator.generate(manifest, node, subgraph, locale=locale)
@@ -68,11 +75,13 @@ def generate_podcast(
         log.info("[%s] TTS provider not yet implemented; returning script only", manifest.id)
         audio_url = None
 
-    length = req.length_seconds or manifest.narrative_style.length_seconds
-    return PodcastResponse(
+    response = PodcastResponse(
         corpus_id=req.corpus_id,
         entity_id=req.entity_id,
         script=script,
         audio_url=audio_url,
         length_seconds=length,
+        cached=False,
     )
+    save_cached_podcast(response, locale)
+    return response

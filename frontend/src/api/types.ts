@@ -76,4 +76,5 @@ export interface PodcastResponse {
   script: string;
   audio_url: string | null;
   length_seconds: number;
+  cached: boolean;
 }
