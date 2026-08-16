@@ -192,11 +192,13 @@ export async function fetchNode(corpusId: string, nodeId: string): Promise<Graph
 export async function generatePodcast(
   corpusId: string,
   entityId: string,
-  lengthSeconds?: number
+  lengthSeconds?: number,
+  force = false
 ): Promise<PodcastResponse> {
   return postJSON<PodcastResponse>("/podcast", {
     corpus_id: corpusId,
     entity_id: entityId,
     length_seconds: lengthSeconds ?? null,
+    force,
   });
 }

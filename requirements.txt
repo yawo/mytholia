@@ -8,7 +8,7 @@ networkx>=3.2
 pytest>=8.0
 httpx>=0.27
 # Optional / later-sprint dependencies (not required for Sprint 0):
-# anthropic
+# openai-compatible providers use the existing httpx dependency
 # elevenlabs
 # qdrant-client
 # crawl4ai

@@ -1,12 +1,12 @@
-"""Narrative generation: subgraph → podcast-style script (Claude).
+"""Narrative generation: subgraph → podcast-style script.
 
 Corpus-agnostic (AGENTS.md §6). Respects ``narrative_style`` from the corpus
 manifest — no tone, length, or deity name is hardcoded.
 
-Sprint 0 stub: a deterministic templating generator runs offline so the
-``/podcast`` endpoint is exercisable without API calls. Real Claude
-generation is wired behind the same ``NarrativeGenerator`` interface in
-later sprints (AGENTS.md §13 cost control).
+An OpenAI-compatible chat-completions backend is available when
+``OPENAI_API_KEY``, ``OPENAI_BASE_URL``, and ``OPENAI_MODEL`` are configured.
+The deterministic template generator remains the offline fallback so tests and
+local development never require paid API calls.
 
 i18n: script headings/labels are localized via the ``locale`` argument, which
 defaults to French (fr). Mirrors the frontend dictionaries.
@@ -14,9 +14,13 @@ defaults to French (fr). Mirrors the frontend dictionaries.
 
 from __future__ import annotations
 
+import json
 import logging
+import os
 from abc import ABC, abstractmethod
 from typing import TYPE_CHECKING
+
+import httpx
 
 from api.i18n import DEFAULT_LOCALE, Locale
 from api.retrieval.hybrid_search import neighbor_edges
@@ -26,7 +30,6 @@ if TYPE_CHECKING:
 
 log = logging.getLogger(__name__)
 
-# Localized template strings per locale. Mirrors frontend/src/i18n/locales/.
 _NARRATIVE_STRINGS: dict[Locale, dict[str, str]] = {
     "fr": {
         "tone_label": "Ton",
@@ -65,15 +68,13 @@ class NarrativeGenerator(ABC):
         raise NotImplementedError
 
 
-class ClaudeNarrativeGenerator(NarrativeGenerator):
-    """Real narrative generation via Claude (AGENTS.md §6).
+class OpenAICompatibleNarrativeGenerator(NarrativeGenerator):
+    """Narrative generation via an OpenAI-compatible chat completions API."""
 
-    Sprint 0 stub: raises when ``ANTHROPIC_API_KEY`` is absent so callers fall
-    back to the deterministic generator. The real call respects
-    ``manifest.narrative_style`` and grounds the script in the subgraph's
-    ``source_refs`` (no invented mythology, AGENTS.md §10). The prompt would
-    be localized via the ``locale`` argument.
-    """
+    def __init__(self, api_key: str, base_url: str, model: str) -> None:
+        self.api_key = api_key
+        self.base_url = base_url.rstrip("/")
+        self.model = model
 
     def generate(
         self,
@@ -82,22 +83,50 @@ class ClaudeNarrativeGenerator(NarrativeGenerator):
         subgraph: GraphData,
         locale: Locale = DEFAULT_LOCALE,
     ) -> str:
-        import os
-
-        if not os.environ.get("ANTHROPIC_API_KEY"):
-            raise RuntimeError(
-                "ANTHROPIC_API_KEY not set; Claude narrative unavailable in Sprint 0"
+        payload = {
+            "model": self.model,
+            "messages": [
+                {
+                    "role": "system",
+                    "content": (
+                        "You write concise mythology podcast scripts grounded only in "
+                        "the supplied knowledge graph JSON. Do not add any claim unless "
+                        "it is supported by source_refs. Preserve source markers."
+                    ),
+                },
+                {
+                    "role": "user",
+                    "content": json.dumps(
+                        {
+                            "locale": locale,
+                            "corpus_id": manifest.id,
+                            "corpus_name": manifest.name,
+                            "style": manifest.narrative_style.model_dump(),
+                            "entity": node.model_dump(),
+                            "subgraph": subgraph.model_dump(),
+                        },
+                        ensure_ascii=False,
+                    ),
+                },
+            ],
+            "temperature": 0.4,
+        }
+        headers = {"Authorization": f"Bearer {self.api_key}", "Content-Type": "application/json"}
+        with httpx.Client(timeout=60.0) as client:
+            response = client.post(
+                f"{self.base_url}/chat/completions", json=payload, headers=headers
             )
-        raise NotImplementedError("Live Claude narrative is wired up in a later sprint")
+            response.raise_for_status()
+        data = response.json()
+        try:
+            content = data["choices"][0]["message"]["content"]
+        except (KeyError, IndexError, TypeError) as exc:
+            raise RuntimeError("OpenAI-compatible narrative response was missing content") from exc
+        return str(content).strip()
 
 
 class TemplateNarrativeGenerator(NarrativeGenerator):
-    """Deterministic, offline narrative generator.
-
-    Produces a short script grounded strictly in the subgraph's nodes, edges,
-    and their ``source_refs``. It never invents facts: if a relation or summary
-    is absent, it is omitted rather than filled in (AGENTS.md §10).
-    """
+    """Deterministic, offline narrative generator."""
 
     def generate(
         self,
@@ -108,7 +137,7 @@ class TemplateNarrativeGenerator(NarrativeGenerator):
     ) -> str:
         tone = manifest.narrative_style.tone
         lines: list[str] = []
-        lines.append(f"[{node.label}]")  # title marker for the narrator
+        lines.append(f"[{node.label}]")
         lines.append(f"({_s(locale, 'tone_label')}: {tone}.)")
         lines.append("")
 
@@ -137,7 +166,6 @@ class TemplateNarrativeGenerator(NarrativeGenerator):
                     )
             lines.append("")
 
-        # Source provenance for the node itself (AGENTS.md §4, §10).
         if node.source_refs:
             lines.append(f"{_s(locale, 'sources_heading')} :")
             for ref in node.source_refs:
@@ -149,8 +177,9 @@ class TemplateNarrativeGenerator(NarrativeGenerator):
 
 def generator_for(manifest: CorpusManifest) -> NarrativeGenerator:
     """Pick a narrative generator for a manifest (corpus-agnostic)."""
-    import os
-
-    if os.environ.get("ANTHROPIC_API_KEY"):
-        return ClaudeNarrativeGenerator()
+    api_key = os.environ.get("OPENAI_API_KEY")
+    base_url = os.environ.get("OPENAI_BASE_URL")
+    model = os.environ.get("OPENAI_MODEL")
+    if api_key and base_url and model:
+        return OpenAICompatibleNarrativeGenerator(api_key=api_key, base_url=base_url, model=model)
     return TemplateNarrativeGenerator()
