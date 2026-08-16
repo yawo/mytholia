@@ -1,0 +1,890 @@
+{
+  "corpus_id": "celtic-mythology",
+  "nodes": [
+    {
+      "id": "char_dagda",
+      "type": "Character",
+      "corpus_id": "celtic-mythology",
+      "label": "The Dagda",
+      "summary": "\"The Good God\"; chief of the Tuatha De Danann; god of druidry, fertility, and abundance; possesses the never-emptying cauldron, the club that kills and revives, and a magical harp.",
+      "source_refs": [
+        {
+          "text": "Cath Maige Tuired",
+          "location": "Second Battle"
+        }
+      ]
+    },
+    {
+      "id": "char_lugh",
+      "type": "Character",
+      "corpus_id": "celtic-mythology",
+      "label": "Lugh",
+      "summary": "\"The Many-Skilled\"; god of light, arts, and warfare; son of Cian and Ethniu; joined the Tuatha De Danann and slew the Fomorian king Balor with a sling stone; instituted the Lughnasadh festival.",
+      "source_refs": [
+        {
+          "text": "Cath Maige Tuired",
+          "location": "Second Battle"
+        }
+      ]
+    },
+    {
+      "id": "char_morrigan",
+      "type": "Character",
+      "corpus_id": "celtic-mythology",
+      "label": "The Morrigan",
+      "summary": "Phantom queen and goddess of war, fate, and death; shape-shifter who appears as a crow; incites warriors to battle and chooses who dies; one of the Tuatha De Danann.",
+      "source_refs": [
+        {
+          "text": "Cath Maige Tuired",
+          "location": "Second Battle"
+        }
+      ]
+    },
+    {
+      "id": "char_nuada",
+      "type": "Character",
+      "corpus_id": "celtic-mythology",
+      "label": "Nuada",
+      "summary": "First king of the Tuatha De Danann; lost his arm in the First Battle of Mag Tuired and was replaced as king (no blemished man could rule); given a silver arm by Dian Cecht; restored by Miach.",
+      "source_refs": [
+        {
+          "text": "Cath Maige Tuired",
+          "location": "First Battle"
+        }
+      ]
+    },
+    {
+      "id": "char_brigid",
+      "type": "Character",
+      "corpus_id": "celtic-mythology",
+      "label": "Brigid",
+      "summary": "Daughter of the Dagda; goddess of poetry, healing, and smithcraft; patroness of the bards; associated with the sacred flame and holy wells; later syncretized with Saint Brigid of Kildare.",
+      "source_refs": [
+        {
+          "text": "Lebor Gabala Erenn",
+          "location": "tradition"
+        }
+      ]
+    },
+    {
+      "id": "char_manannan",
+      "type": "Character",
+      "corpus_id": "celtic-mythology",
+      "label": "Manannan mac Lir",
+      "summary": "God of the sea and the Otherworld; son of Lir; guardian of the passage between worlds; rides the waves in a chariot; possesses the crane-skin bag of treasures and the self-renewing pigs.",
+      "source_refs": [
+        {
+          "text": "Mythological Cycle",
+          "location": "tradition"
+        }
+      ]
+    },
+    {
+      "id": "char_balor",
+      "type": "Character",
+      "corpus_id": "celtic-mythology",
+      "label": "Balor",
+      "summary": "King of the Fomorians; a giant with a destructive eye that slays all it gazes upon; grandfather of Lugh; slain by Lugh with a sling stone through his evil eye in the Second Battle of Mag Tuired.",
+      "source_refs": [
+        {
+          "text": "Cath Maige Tuired",
+          "location": "Second Battle"
+        }
+      ]
+    },
+    {
+      "id": "char_bres",
+      "type": "Character",
+      "corpus_id": "celtic-mythology",
+      "label": "Bres",
+      "summary": "Half-Fomorian king of the Tuatha De Danann; beautiful but oppressive ruler who imposed tribute on the gods; deposed for his tyranny; led the Fomorians in the Second Battle of Mag Tuired.",
+      "source_refs": [
+        {
+          "text": "Cath Maige Tuired",
+          "location": "Second Battle"
+        }
+      ]
+    },
+    {
+      "id": "char_cuchulainn",
+      "type": "Character",
+      "corpus_id": "celtic-mythology",
+      "label": "Cuchulainn",
+      "summary": "The Hound of Ulster; greatest hero of the Ulster Cycle; son of Lugh; defended Ulster single-handedly against Queen Medb's army in the Tain; subject to the warp-spasm (riastrad) in battle.",
+      "source_refs": [
+        {
+          "text": "Tain Bo Cuailnge",
+          "location": "Ulster Cycle"
+        }
+      ]
+    },
+    {
+      "id": "char_medb",
+      "type": "Character",
+      "corpus_id": "celtic-mythology",
+      "label": "Queen Medb",
+      "summary": "Queen of Connacht; initiated the Tain Bo Cuailnge (Cattle Raid of Cooley) to equal her husband's wealth; commanded the armies of Connacht against Cuchulainn and Ulster.",
+      "source_refs": [
+        {
+          "text": "Tain Bo Cuailnge",
+          "location": "Ulster Cycle"
+        }
+      ]
+    },
+    {
+      "id": "char_ogma",
+      "type": "Character",
+      "corpus_id": "celtic-mythology",
+      "label": "Ogma",
+      "summary": "Son of the Dagda; god of eloquence, writing, and warriors; credited with inventing the Ogham alphabet; the champion of the Tuatha De Danann in battle.",
+      "source_refs": [
+        {
+          "text": "Lebor Gabala Erenn",
+          "location": "tradition"
+        }
+      ]
+    },
+    {
+      "id": "char_dian_cecht",
+      "type": "Character",
+      "corpus_id": "celtic-mythology",
+      "label": "Dian Cecht",
+      "summary": "God of healing and medicine; made Nuada's silver arm; killed his own son Miach out of jealousy when Miach fully restored Nuada's flesh arm.",
+      "source_refs": [
+        {
+          "text": "Cath Maige Tuired",
+          "location": "First Battle"
+        }
+      ]
+    },
+    {
+      "id": "char_aengus",
+      "type": "Character",
+      "corpus_id": "celtic-mythology",
+      "label": "Aengus Og",
+      "summary": "God of love and youth; son of the Dagda and Boann; his kisses turn into birds; tricked his father out of the Bru na Boinne (Newgrange) through a clever wordplay.",
+      "source_refs": [
+        {
+          "text": "Mythological Cycle",
+          "location": "tradition"
+        }
+      ]
+    },
+    {
+      "id": "char_danu",
+      "type": "Concept",
+      "corpus_id": "celtic-mythology",
+      "label": "Danu",
+      "summary": "Mother goddess of the Tuatha De Danann (\"People of the Goddess Danu\"); ancestral deity of the gods of Ireland; her nature is obscure but her name is foundational.",
+      "source_refs": [
+        {
+          "text": "Lebor Gabala Erenn",
+          "location": "tradition"
+        }
+      ]
+    },
+    {
+      "id": "place_tara",
+      "type": "Place",
+      "corpus_id": "celtic-mythology",
+      "label": "Hill of Tara",
+      "summary": "Sacred hill and seat of the High Kings of Ireland; where the Tuatha De Danann ruled before the Milesians; the inauguration place of Irish kings; a nexus of political and mythic power.",
+      "source_refs": [
+        {
+          "text": "Lebor Gabala Erenn",
+          "location": "tradition"
+        }
+      ]
+    },
+    {
+      "id": "place_mag_tuired",
+      "type": "Place",
+      "corpus_id": "celtic-mythology",
+      "label": "Mag Tuired",
+      "summary": "The plain where two great battles were fought between the Tuatha De Danann and the Fomorians; the First Battle gained Ireland from the Fir Bolg; the Second defeated the Fomorians forever.",
+      "source_refs": [
+        {
+          "text": "Cath Maige Tuired",
+          "location": "Second Battle"
+        }
+      ]
+    },
+    {
+      "id": "place_sidhe",
+      "type": "Place",
+      "corpus_id": "celtic-mythology",
+      "label": "Sidhe (Fairy Mounds)",
+      "summary": "The Otherworld dwelling-places of the Tuatha De Danann after their retreat from the mortal world; burial mounds and hills that are portals to the Otherworld (Tir na nOg); where the aos si dwell.",
+      "source_refs": [
+        {
+          "text": "Lebor Gabala Erenn",
+          "location": "tradition"
+        }
+      ]
+    },
+    {
+      "id": "place_tir_na_nog",
+      "type": "Place",
+      "corpus_id": "celtic-mythology",
+      "label": "Tir na nOg",
+      "summary": "The Land of Youth; the Otherworld beyond the western sea; where the Tuatha De Danann withdrew; a realm of eternal youth, beauty, and feasting; no sickness or death exists there.",
+      "source_refs": [
+        {
+          "text": "Mythological Cycle",
+          "location": "tradition"
+        }
+      ]
+    },
+    {
+      "id": "place_bru_na_boinne",
+      "type": "Place",
+      "corpus_id": "celtic-mythology",
+      "label": "Bru na Boinne",
+      "summary": "The great passage tombs at Newgrange on the Boyne; dwelling of the Dagda and then Aengus; associated with the winter solstice illumination; one of the most sacred sites in Irish mythology.",
+      "source_refs": [
+        {
+          "text": "Mythological Cycle",
+          "location": "tradition"
+        }
+      ]
+    },
+    {
+      "id": "obj_cauldron",
+      "type": "Object",
+      "corpus_id": "celtic-mythology",
+      "label": "The Cauldron of the Dagda",
+      "summary": "One of the Four Treasures of the Tuatha De Danann; never runs empty; no one leaves it unsatisfied; a symbol of abundance and hospitality; one of the great hallows of Ireland.",
+      "source_refs": [
+        {
+          "text": "Cath Maige Tuired",
+          "location": "Second Battle"
+        }
+      ]
+    },
+    {
+      "id": "obj_spear_lugh",
+      "type": "Object",
+      "corpus_id": "celtic-mythology",
+      "label": "The Spear of Lugh",
+      "summary": "One of the Four Treasures; the flashing spear that guarantees victory in battle; Lugh used it to slay Balor; it must be kept in a cauldron of water to keep it from igniting.",
+      "source_refs": [
+        {
+          "text": "Cath Maige Tuired",
+          "location": "Second Battle"
+        }
+      ]
+    },
+    {
+      "id": "obj_sword_nuada",
+      "type": "Object",
+      "corpus_id": "celtic-mythology",
+      "label": "The Sword of Nuada",
+      "summary": "One of the Four Treasures; the sword of Nuada; no one escapes it once it is drawn; a symbol of just kingship and martial prowess.",
+      "source_refs": [
+        {
+          "text": "Cath Maige Tuired",
+          "location": "First Battle"
+        }
+      ]
+    },
+    {
+      "id": "obj_stone_fal",
+      "type": "Object",
+      "corpus_id": "celtic-mythology",
+      "label": "The Stone of Fal",
+      "summary": "One of the Four Treasures; the Lia Fail (Stone of Destiny) at Tara; cries out when the rightful king of Ireland stands upon it; the symbolic foundation of Irish sovereignty.",
+      "source_refs": [
+        {
+          "text": "Lebor Gabala Erenn",
+          "location": "tradition"
+        }
+      ]
+    },
+    {
+      "id": "obj_gae_bolga",
+      "type": "Object",
+      "corpus_id": "celtic-mythology",
+      "label": "The Gae Bolga",
+      "summary": "Cuchulainn's terrible barbed spear; given by his teacher Scathach; enters the body and barbs spread, making it impossible to remove without cutting through the flesh; used to slay his foster-brother Ferdiad.",
+      "source_refs": [
+        {
+          "text": "Tain Bo Cuailnge",
+          "location": "Ulster Cycle"
+        }
+      ]
+    },
+    {
+      "id": "event_battle_mag_tuired_1",
+      "type": "Event",
+      "corpus_id": "celtic-mythology",
+      "label": "First Battle of Mag Tuired",
+      "summary": "The Tuatha De Danann defeated the Fir Bolg and took Ireland; Nuada lost his arm in this battle and was replaced as king by Bres because a blemished man could not rule.",
+      "source_refs": [
+        {
+          "text": "Cath Maige Tuired",
+          "location": "First Battle"
+        }
+      ]
+    },
+    {
+      "id": "event_battle_mag_tuired_2",
+      "type": "Event",
+      "corpus_id": "celtic-mythology",
+      "label": "Second Battle of Mag Tuired",
+      "summary": "The Tuatha De Danann defeated the Fomorians; Lugh killed Balor with a sling stone through his destructive eye; the Fomorian oppression of tribute was ended; the Tuatha established their rule.",
+      "source_refs": [
+        {
+          "text": "Cath Maige Tuired",
+          "location": "Second Battle"
+        }
+      ]
+    },
+    {
+      "id": "event_tain",
+      "type": "Event",
+      "corpus_id": "celtic-mythology",
+      "label": "Tain Bo Cuailnge",
+      "summary": "The Cattle Raid of Cooley; Queen Medb of Connacht sought the Brown Bull of Cooley; Cuchulainn single-handedly defended Ulster against the armies of Connacht; the greatest tale of the Ulster Cycle.",
+      "source_refs": [
+        {
+          "text": "Tain Bo Cuailnge",
+          "location": "Ulster Cycle"
+        }
+      ]
+    },
+    {
+      "id": "event_children_lir",
+      "type": "Event",
+      "corpus_id": "celtic-mythology",
+      "label": "The Children of Lir",
+      "summary": "The four children of Lir (Fionnuala, Aodh, Fiachra, Conn) were turned into swans by their jealous stepmother Aoife and cursed to wander Irish waters for 900 years; one of the Three Sorrows of Irish storytelling.",
+      "source_refs": [
+        {
+          "text": "Aided Chlainne Lir",
+          "location": "tradition"
+        }
+      ]
+    },
+    {
+      "id": "concept_geis",
+      "type": "Concept",
+      "corpus_id": "celtic-mythology",
+      "label": "Geis (plural: Geasa)",
+      "summary": "A sacred prohibition or taboo binding a person; breaking a geis brings supernatural ruin; Cuchulainn was bound by geasa he could not break without his own death; central to Celtic tragic narrative.",
+      "source_refs": [
+        {
+          "text": "Tain Bo Cuailnge",
+          "location": "Ulster Cycle"
+        }
+      ]
+    },
+    {
+      "id": "concept_otherworld",
+      "type": "Concept",
+      "corpus_id": "celtic-mythology",
+      "label": "The Otherworld",
+      "summary": "The Celtic realm of the gods and the dead; accessible through sidhe mounds, water, or journeys west; a place of eternal youth, feasting, and music; where the Tuatha De Danann withdrew.",
+      "source_refs": [
+        {
+          "text": "Mythological Cycle",
+          "location": "tradition"
+        }
+      ]
+    },
+    {
+      "id": "concept_tuatha",
+      "type": "Concept",
+      "corpus_id": "celtic-mythology",
+      "label": "Tuatha De Danann",
+      "summary": "The People of the Goddess Danu; the pre-Christian gods of Ireland; rulers of Ireland before the Milesians; skilled in magic, druidry, and arts; they withdrew into the sidhe and became the aos si (fairy folk).",
+      "source_refs": [
+        {
+          "text": "Lebor Gabala Erenn",
+          "location": "tradition"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge_lugh_child",
+      "source": "char_lugh",
+      "target": "char_dagda",
+      "relation": "CHILD_OF",
+      "corpus_id": "celtic-mythology",
+      "label": "Child Of",
+      "source_refs": [
+        {
+          "text": "Cath Maige Tuired",
+          "location": "Second Battle"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_brigid_child",
+      "source": "char_brigid",
+      "target": "char_dagda",
+      "relation": "CHILD_OF",
+      "corpus_id": "celtic-mythology",
+      "label": "Child Of",
+      "source_refs": [
+        {
+          "text": "Lebor Gabala Erenn",
+          "location": "tradition"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_aengus_child",
+      "source": "char_aengus",
+      "target": "char_dagda",
+      "relation": "CHILD_OF",
+      "corpus_id": "celtic-mythology",
+      "label": "Child Of",
+      "source_refs": [
+        {
+          "text": "Mythological Cycle",
+          "location": "tradition"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_ogma_child",
+      "source": "char_ogma",
+      "target": "char_dagda",
+      "relation": "CHILD_OF",
+      "corpus_id": "celtic-mythology",
+      "label": "Child Of",
+      "source_refs": [
+        {
+          "text": "Lebor Gabala Erenn",
+          "location": "tradition"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_lugh_balor",
+      "source": "char_lugh",
+      "target": "char_balor",
+      "relation": "CHILD_OF",
+      "corpus_id": "celtic-mythology",
+      "label": "Child Of",
+      "source_refs": [
+        {
+          "text": "Cath Maige Tuired",
+          "location": "Second Battle"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_lugh_fought_balor",
+      "source": "char_lugh",
+      "target": "char_balor",
+      "relation": "FOUGHT",
+      "corpus_id": "celtic-mythology",
+      "label": "Fought",
+      "source_refs": [
+        {
+          "text": "Cath Maige Tuired",
+          "location": "Second Battle"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_battle2_place",
+      "source": "event_battle_mag_tuired_2",
+      "target": "place_mag_tuired",
+      "relation": "TOOK_PLACE_AT",
+      "corpus_id": "celtic-mythology",
+      "label": "Took Place At",
+      "source_refs": [
+        {
+          "text": "Cath Maige Tuired",
+          "location": "Second Battle"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_battle1_place",
+      "source": "event_battle_mag_tuired_1",
+      "target": "place_mag_tuired",
+      "relation": "TOOK_PLACE_AT",
+      "corpus_id": "celtic-mythology",
+      "label": "Took Place At",
+      "source_refs": [
+        {
+          "text": "Cath Maige Tuired",
+          "location": "First Battle"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_dagda_ruler",
+      "source": "char_dagda",
+      "target": "place_tara",
+      "relation": "RULER_OF",
+      "corpus_id": "celtic-mythology",
+      "label": "Ruler Of",
+      "source_refs": [
+        {
+          "text": "Lebor Gabala Erenn",
+          "location": "tradition"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_nuada_ruler",
+      "source": "char_nuada",
+      "target": "place_tara",
+      "relation": "RULER_OF",
+      "corpus_id": "celtic-mythology",
+      "label": "Ruler Of",
+      "source_refs": [
+        {
+          "text": "Cath Maige Tuired",
+          "location": "First Battle"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_dagda_cauldron",
+      "source": "char_dagda",
+      "target": "obj_cauldron",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "celtic-mythology",
+      "label": "Associated With",
+      "source_refs": [
+        {
+          "text": "Cath Maige Tuired",
+          "location": "Second Battle"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_lugh_spear",
+      "source": "char_lugh",
+      "target": "obj_spear_lugh",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "celtic-mythology",
+      "label": "Associated With",
+      "source_refs": [
+        {
+          "text": "Cath Maige Tuired",
+          "location": "Second Battle"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_nuada_sword",
+      "source": "char_nuada",
+      "target": "obj_sword_nuada",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "celtic-mythology",
+      "label": "Associated With",
+      "source_refs": [
+        {
+          "text": "Cath Maige Tuired",
+          "location": "First Battle"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_stone_fal_tara",
+      "source": "obj_stone_fal",
+      "target": "place_tara",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "celtic-mythology",
+      "label": "Associated With",
+      "source_refs": [
+        {
+          "text": "Lebor Gabala Erenn",
+          "location": "tradition"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_cuchulainn_child",
+      "source": "char_cuchulainn",
+      "target": "char_lugh",
+      "relation": "CHILD_OF",
+      "corpus_id": "celtic-mythology",
+      "label": "Child Of",
+      "source_refs": [
+        {
+          "text": "Tain Bo Cuailnge",
+          "location": "Ulster Cycle"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_cuchulainn_spear",
+      "source": "char_cuchulainn",
+      "target": "obj_gae_bolga",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "celtic-mythology",
+      "label": "Associated With",
+      "source_refs": [
+        {
+          "text": "Tain Bo Cuailnge",
+          "location": "Ulster Cycle"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_cuchulainn_medb",
+      "source": "char_cuchulainn",
+      "target": "char_medb",
+      "relation": "FOUGHT",
+      "corpus_id": "celtic-mythology",
+      "label": "Fought",
+      "source_refs": [
+        {
+          "text": "Tain Bo Cuailnge",
+          "location": "Ulster Cycle"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_tain_place",
+      "source": "event_tain",
+      "target": "place_tara",
+      "relation": "TOOK_PLACE_AT",
+      "corpus_id": "celtic-mythology",
+      "label": "Took Place At",
+      "source_refs": [
+        {
+          "text": "Tain Bo Cuailnge",
+          "location": "Ulster Cycle"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_dagda_bru",
+      "source": "char_dagda",
+      "target": "place_bru_na_boinne",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "celtic-mythology",
+      "label": "Associated With",
+      "source_refs": [
+        {
+          "text": "Mythological Cycle",
+          "location": "tradition"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_aengus_bru",
+      "source": "char_aengus",
+      "target": "place_bru_na_boinne",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "celtic-mythology",
+      "label": "Associated With",
+      "source_refs": [
+        {
+          "text": "Mythological Cycle",
+          "location": "tradition"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_morrigan_battle",
+      "source": "char_morrigan",
+      "target": "event_battle_mag_tuired_2",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "celtic-mythology",
+      "label": "Associated With",
+      "source_refs": [
+        {
+          "text": "Cath Maige Tuired",
+          "location": "Second Battle"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_manannan_otherworld",
+      "source": "char_manannan",
+      "target": "place_tir_na_nog",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "celtic-mythology",
+      "label": "Associated With",
+      "source_refs": [
+        {
+          "text": "Mythological Cycle",
+          "location": "tradition"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_bres_fought",
+      "source": "char_bres",
+      "target": "char_lugh",
+      "relation": "FOUGHT",
+      "corpus_id": "celtic-mythology",
+      "label": "Fought",
+      "source_refs": [
+        {
+          "text": "Cath Maige Tuired",
+          "location": "Second Battle"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_bres_ruler",
+      "source": "char_bres",
+      "target": "place_tara",
+      "relation": "RULER_OF",
+      "corpus_id": "celtic-mythology",
+      "label": "Ruler Of",
+      "source_refs": [
+        {
+          "text": "Cath Maige Tuired",
+          "location": "First Battle"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_tuatha_concept",
+      "source": "char_dagda",
+      "target": "concept_tuatha",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "celtic-mythology",
+      "label": "Associated With",
+      "source_refs": [
+        {
+          "text": "Lebor Gabala Erenn",
+          "location": "tradition"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_danu_tuatha",
+      "source": "char_danu",
+      "target": "concept_tuatha",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "celtic-mythology",
+      "label": "Associated With",
+      "source_refs": [
+        {
+          "text": "Lebor Gabala Erenn",
+          "location": "tradition"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_otherworld_sidhe",
+      "source": "place_sidhe",
+      "target": "concept_otherworld",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "celtic-mythology",
+      "label": "Associated With",
+      "source_refs": [
+        {
+          "text": "Lebor Gabala Erenn",
+          "location": "tradition"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_tir_na_nog_otherworld",
+      "source": "place_tir_na_nog",
+      "target": "concept_otherworld",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "celtic-mythology",
+      "label": "Associated With",
+      "source_refs": [
+        {
+          "text": "Mythological Cycle",
+          "location": "tradition"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_cuchulainn_geis",
+      "source": "char_cuchulainn",
+      "target": "concept_geis",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "celtic-mythology",
+      "label": "Associated With",
+      "source_refs": [
+        {
+          "text": "Tain Bo Cuailnge",
+          "location": "Ulster Cycle"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_morrigan_cuchulainn",
+      "source": "char_morrigan",
+      "target": "char_cuchulainn",
+      "relation": "MET",
+      "corpus_id": "celtic-mythology",
+      "label": "Met",
+      "source_refs": [
+        {
+          "text": "Tain Bo Cuailnge",
+          "location": "Ulster Cycle"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_oghaam_obj",
+      "source": "char_ogma",
+      "target": "obj_sword_nuada",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "celtic-mythology",
+      "label": "Associated With",
+      "source_refs": [
+        {
+          "text": "Lebor Gabala Erenn",
+          "location": "tradition"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_dian_cecht_nuada",
+      "source": "char_dian_cecht",
+      "target": "char_nuada",
+      "relation": "MET",
+      "corpus_id": "celtic-mythology",
+      "label": "Met",
+      "source_refs": [
+        {
+          "text": "Cath Maige Tuired",
+          "location": "First Battle"
+        }
+      ],
+      "summary": ""
+    }
+  ]
+}

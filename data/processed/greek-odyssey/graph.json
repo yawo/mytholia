@@ -1,0 +1,726 @@
+{
+  "corpus_id": "greek-odyssey",
+  "nodes": [
+    {
+      "id": "char_odysseus",
+      "type": "Character",
+      "corpus_id": "greek-odyssey",
+      "label": "Odysseus",
+      "summary": "King of Ithaca, son of Laertes and Anticleia, hero of the Trojan War and protagonist of the Odyssey.",
+      "source_refs": [
+        {
+          "text": "Odyssey",
+          "location": "book 9"
+        }
+      ]
+    },
+    {
+      "id": "char_penelope",
+      "type": "Character",
+      "corpus_id": "greek-odyssey",
+      "label": "Penelope",
+      "summary": "Wife of Odysseus and queen of Ithaca, known for her fidelity and cleverness.",
+      "source_refs": [
+        {
+          "text": "Odyssey",
+          "location": "book 1"
+        }
+      ]
+    },
+    {
+      "id": "char_telemachus",
+      "type": "Character",
+      "corpus_id": "greek-odyssey",
+      "label": "Telemachus",
+      "summary": "Son of Odysseus and Penelope, who searches for his father in the early books.",
+      "source_refs": [
+        {
+          "text": "Odyssey",
+          "location": "book 1"
+        }
+      ]
+    },
+    {
+      "id": "char_laertes",
+      "type": "Character",
+      "corpus_id": "greek-odyssey",
+      "label": "Laertes",
+      "summary": "Father of Odysseus and former king of Ithaca.",
+      "source_refs": [
+        {
+          "text": "Odyssey",
+          "location": "book 24"
+        }
+      ]
+    },
+    {
+      "id": "place_ithaca",
+      "type": "Place",
+      "corpus_id": "greek-odyssey",
+      "label": "Ithaca",
+      "summary": "The island kingdom of Odysseus on the Ionian coast.",
+      "source_refs": [
+        {
+          "text": "Odyssey",
+          "location": "book 1"
+        }
+      ]
+    },
+    {
+      "id": "place_troy",
+      "type": "Place",
+      "corpus_id": "greek-odyssey",
+      "label": "Troy",
+      "summary": "The walled city besieged by the Greeks for ten years.",
+      "source_refs": [
+        {
+          "text": "Iliad",
+          "location": "book 1"
+        }
+      ]
+    },
+    {
+      "id": "event_trojan_war",
+      "type": "Event",
+      "corpus_id": "greek-odyssey",
+      "label": "The Trojan War",
+      "summary": "A ten-year war between Greeks and Trojans, triggered by the abduction of Helen.",
+      "source_refs": [
+        {
+          "text": "Iliad",
+          "location": "book 1"
+        }
+      ]
+    },
+    {
+      "id": "obj_bow",
+      "type": "Object",
+      "corpus_id": "greek-odyssey",
+      "label": "Bow of Odysseus",
+      "summary": "The great bow of Odysseus, used in the contest of the axes.",
+      "source_refs": [
+        {
+          "text": "Odyssey",
+          "location": "book 21"
+        }
+      ]
+    },
+    {
+      "id": "concept_xenia",
+      "type": "Concept",
+      "corpus_id": "greek-odyssey",
+      "label": "Xenia",
+      "summary": "The Greek code of guest-friendship, a sacred bond between host and guest.",
+      "source_refs": [
+        {
+          "text": "Odyssey",
+          "location": "book 9"
+        }
+      ]
+    },
+    {
+      "id": "char_polyphemus",
+      "type": "Character",
+      "corpus_id": "greek-odyssey",
+      "label": "Polyphemus",
+      "summary": "A Cyclops, son of Poseidon, blinded by Odysseus.",
+      "source_refs": [
+        {
+          "text": "Odyssey",
+          "location": "book 9"
+        }
+      ]
+    },
+    {
+      "id": "char_athena",
+      "type": "Character",
+      "corpus_id": "greek-odyssey",
+      "label": "Athena",
+      "summary": "Goddess of wisdom and warfare; daughter of Zeus; champion and guide of Odysseus throughout his journey home; disguises herself as Mentor.",
+      "source_refs": [
+        {
+          "text": "Odyssey",
+          "location": "book 13"
+        }
+      ]
+    },
+    {
+      "id": "char_poseidon",
+      "type": "Character",
+      "corpus_id": "greek-odyssey",
+      "label": "Poseidon",
+      "summary": "God of the sea and earthquakes; father of the Cyclops Polyphemus; delays Odysseus's return for a decade in vengeance for blinding his son.",
+      "source_refs": [
+        {
+          "text": "Odyssey",
+          "location": "book 9"
+        }
+      ]
+    },
+    {
+      "id": "char_zeus",
+      "type": "Character",
+      "corpus_id": "greek-odyssey",
+      "label": "Zeus",
+      "summary": "King of the gods, ruler of the sky; decrees Odysseus's fate; sends Hermes to Calypso to release Odysseus.",
+      "source_refs": [
+        {
+          "text": "Odyssey",
+          "location": "book 1"
+        }
+      ]
+    },
+    {
+      "id": "char_circe",
+      "type": "Character",
+      "corpus_id": "greek-odyssey",
+      "label": "Circe",
+      "summary": "Sorceress on the island of Aeaea; turned Odysseus's men into swine; became Odysseus's lover and guide for a year; daughter of the sun god Helios.",
+      "source_refs": [
+        {
+          "text": "Odyssey",
+          "location": "book 10"
+        }
+      ]
+    },
+    {
+      "id": "char_calypso",
+      "type": "Character",
+      "corpus_id": "greek-odyssey",
+      "label": "Calypso",
+      "summary": "Sea nymph on the island of Ogygia; held Odysseus captive for seven years; offered him immortality to stay; released him by Zeus's command.",
+      "source_refs": [
+        {
+          "text": "Odyssey",
+          "location": "book 5"
+        }
+      ]
+    },
+    {
+      "id": "char_hermes",
+      "type": "Character",
+      "corpus_id": "greek-odyssey",
+      "label": "Hermes",
+      "summary": "Messenger god; sent by Zeus to tell Calypso to release Odysseus; gave Odysseus the herb moly to resist Circe's magic.",
+      "source_refs": [
+        {
+          "text": "Odyssey",
+          "location": "book 5"
+        }
+      ]
+    },
+    {
+      "id": "place_aeaea",
+      "type": "Place",
+      "corpus_id": "greek-odyssey",
+      "label": "Aeaea",
+      "summary": "The island home of the sorceress Circe; where Odysseus's men were turned into swine and where he stayed for a year.",
+      "source_refs": [
+        {
+          "text": "Odyssey",
+          "location": "book 10"
+        }
+      ]
+    },
+    {
+      "id": "place_ogygia",
+      "type": "Place",
+      "corpus_id": "greek-odyssey",
+      "label": "Ogygia",
+      "summary": "The island home of the nymph Calypso; where Odysseus was held for seven years; a remote, hidden island far from all.",
+      "source_refs": [
+        {
+          "text": "Odyssey",
+          "location": "book 5"
+        }
+      ]
+    },
+    {
+      "id": "place_underworld",
+      "type": "Place",
+      "corpus_id": "greek-odyssey",
+      "label": "The Underworld (Hades)",
+      "summary": "The realm of the dead; Odysseus journeys here to consult the prophet Tiresias; meets his mother, Achilles, and Agamemnon among the dead.",
+      "source_refs": [
+        {
+          "text": "Odyssey",
+          "location": "book 11"
+        }
+      ]
+    },
+    {
+      "id": "char_tiresias",
+      "type": "Character",
+      "corpus_id": "greek-odyssey",
+      "label": "Tiresias",
+      "summary": "The blind prophet of Thebes; Odysseus consults him in the underworld; foretells the rest of his journey and warns of the cattle of the sun god.",
+      "source_refs": [
+        {
+          "text": "Odyssey",
+          "location": "book 11"
+        }
+      ]
+    },
+    {
+      "id": "event_blinding",
+      "type": "Event",
+      "corpus_id": "greek-odyssey",
+      "label": "Blinding of Polyphemus",
+      "summary": "Odysseus and his men drive a heated stake into the eye of the Cyclops Polyphemus, allowing them to escape his cave; this act provokes Poseidon's wrath.",
+      "source_refs": [
+        {
+          "text": "Odyssey",
+          "location": "book 9"
+        }
+      ]
+    },
+    {
+      "id": "event_return",
+      "type": "Event",
+      "corpus_id": "greek-odyssey",
+      "label": "The nostos of Odysseus",
+      "summary": "Odysseus's twenty-year return from Troy to Ithaca; he disguises himself as a beggar, wins the bow contest, slaughters the suitors, and is reunited with Penelope.",
+      "source_refs": [
+        {
+          "text": "Odyssey",
+          "location": "book 23"
+        }
+      ]
+    },
+    {
+      "id": "concept_nostos",
+      "type": "Concept",
+      "corpus_id": "greek-odyssey",
+      "label": "Nostos",
+      "summary": "The Greek concept of homecoming; the central theme of the Odyssey; a perilous sea journey fraught with divine obstacles and the temptation of forgetting one's homeland.",
+      "source_refs": [
+        {
+          "text": "Odyssey",
+          "location": "book 1"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge_odysseus_spouse",
+      "source": "char_odysseus",
+      "target": "char_penelope",
+      "relation": "SPOUSE_OF",
+      "corpus_id": "greek-odyssey",
+      "label": "Spouse Of",
+      "source_refs": [
+        {
+          "text": "Odyssey",
+          "location": "book 1"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_odysseus_child",
+      "source": "char_odysseus",
+      "target": "char_laertes",
+      "relation": "CHILD_OF",
+      "corpus_id": "greek-odyssey",
+      "label": "Child Of",
+      "source_refs": [
+        {
+          "text": "Odyssey",
+          "location": "book 24"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_telemachus_child",
+      "source": "char_telemachus",
+      "target": "char_odysseus",
+      "relation": "CHILD_OF",
+      "corpus_id": "greek-odyssey",
+      "label": "Child Of",
+      "source_refs": [
+        {
+          "text": "Odyssey",
+          "location": "book 1"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_odysseus_ruler",
+      "source": "char_odysseus",
+      "target": "place_ithaca",
+      "relation": "RULER_OF",
+      "corpus_id": "greek-odyssey",
+      "label": "Ruler Of",
+      "source_refs": [
+        {
+          "text": "Odyssey",
+          "location": "book 1"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_trojan_war_place",
+      "source": "event_trojan_war",
+      "target": "place_troy",
+      "relation": "TOOK_PLACE_AT",
+      "corpus_id": "greek-odyssey",
+      "label": "Took Place At",
+      "source_refs": [
+        {
+          "text": "Iliad",
+          "location": "book 1"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_odysseus_fought",
+      "source": "char_odysseus",
+      "target": "char_polyphemus",
+      "relation": "FOUGHT",
+      "corpus_id": "greek-odyssey",
+      "label": "Fought",
+      "source_refs": [
+        {
+          "text": "Odyssey",
+          "location": "book 9"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_polyphemus_guards",
+      "source": "char_polyphemus",
+      "target": "place_troy",
+      "relation": "GUARDS",
+      "corpus_id": "greek-odyssey",
+      "label": "Guards",
+      "source_refs": [
+        {
+          "text": "Odyssey",
+          "location": "book 9"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_odysseus_met",
+      "source": "char_odysseus",
+      "target": "char_polyphemus",
+      "relation": "MET",
+      "corpus_id": "greek-odyssey",
+      "label": "Met",
+      "source_refs": [
+        {
+          "text": "Odyssey",
+          "location": "book 9"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_odysseus_bow",
+      "source": "char_odysseus",
+      "target": "obj_bow",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "greek-odyssey",
+      "label": "Associated With",
+      "source_refs": [
+        {
+          "text": "Odyssey",
+          "location": "book 21"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_odysseus_xenia",
+      "source": "char_odysseus",
+      "target": "concept_xenia",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "greek-odyssey",
+      "label": "Associated With",
+      "source_refs": [
+        {
+          "text": "Odyssey",
+          "location": "book 9"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_athena_met",
+      "source": "char_athena",
+      "target": "char_odysseus",
+      "relation": "MET",
+      "corpus_id": "greek-odyssey",
+      "label": "Met",
+      "source_refs": [
+        {
+          "text": "Odyssey",
+          "location": "book 13"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_athena_odysseus",
+      "source": "char_athena",
+      "target": "char_odysseus",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "greek-odyssey",
+      "label": "Associated With",
+      "source_refs": [
+        {
+          "text": "Odyssey",
+          "location": "book 13"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_poseidon_odysseus",
+      "source": "char_poseidon",
+      "target": "char_odysseus",
+      "relation": "FOUGHT",
+      "corpus_id": "greek-odyssey",
+      "label": "Fought",
+      "source_refs": [
+        {
+          "text": "Odyssey",
+          "location": "book 9"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_polyphemus_child",
+      "source": "char_polyphemus",
+      "target": "char_poseidon",
+      "relation": "CHILD_OF",
+      "corpus_id": "greek-odyssey",
+      "label": "Child Of",
+      "source_refs": [
+        {
+          "text": "Odyssey",
+          "location": "book 9"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_blinding_event",
+      "source": "char_odysseus",
+      "target": "event_blinding",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "greek-odyssey",
+      "label": "Associated With",
+      "source_refs": [
+        {
+          "text": "Odyssey",
+          "location": "book 9"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_blinding_place",
+      "source": "event_blinding",
+      "target": "place_ithaca",
+      "relation": "TOOK_PLACE_AT",
+      "corpus_id": "greek-odyssey",
+      "label": "Took Place At",
+      "source_refs": [
+        {
+          "text": "Odyssey",
+          "location": "book 9"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_circe_met",
+      "source": "char_circe",
+      "target": "char_odysseus",
+      "relation": "MET",
+      "corpus_id": "greek-odyssey",
+      "label": "Met",
+      "source_refs": [
+        {
+          "text": "Odyssey",
+          "location": "book 10"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_circe_place",
+      "source": "char_circe",
+      "target": "place_aeaea",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "greek-odyssey",
+      "label": "Associated With",
+      "source_refs": [
+        {
+          "text": "Odyssey",
+          "location": "book 10"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_calypso_met",
+      "source": "char_calypso",
+      "target": "char_odysseus",
+      "relation": "MET",
+      "corpus_id": "greek-odyssey",
+      "label": "Met",
+      "source_refs": [
+        {
+          "text": "Odyssey",
+          "location": "book 5"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_calypso_place",
+      "source": "char_calypso",
+      "target": "place_ogygia",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "greek-odyssey",
+      "label": "Associated With",
+      "source_refs": [
+        {
+          "text": "Odyssey",
+          "location": "book 5"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_hermes_met",
+      "source": "char_hermes",
+      "target": "char_odysseus",
+      "relation": "MET",
+      "corpus_id": "greek-odyssey",
+      "label": "Met",
+      "source_refs": [
+        {
+          "text": "Odyssey",
+          "location": "book 10"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_tiresias_met",
+      "source": "char_odysseus",
+      "target": "char_tiresias",
+      "relation": "MET",
+      "corpus_id": "greek-odyssey",
+      "label": "Met",
+      "source_refs": [
+        {
+          "text": "Odyssey",
+          "location": "book 11"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_tiresias_place",
+      "source": "char_tiresias",
+      "target": "place_underworld",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "greek-odyssey",
+      "label": "Associated With",
+      "source_refs": [
+        {
+          "text": "Odyssey",
+          "location": "book 11"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_odysseus_underworld",
+      "source": "char_odysseus",
+      "target": "place_underworld",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "greek-odyssey",
+      "label": "Associated With",
+      "source_refs": [
+        {
+          "text": "Odyssey",
+          "location": "book 11"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_return_event",
+      "source": "char_odysseus",
+      "target": "event_return",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "greek-odyssey",
+      "label": "Associated With",
+      "source_refs": [
+        {
+          "text": "Odyssey",
+          "location": "book 23"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_return_place",
+      "source": "event_return",
+      "target": "place_ithaca",
+      "relation": "TOOK_PLACE_AT",
+      "corpus_id": "greek-odyssey",
+      "label": "Took Place At",
+      "source_refs": [
+        {
+          "text": "Odyssey",
+          "location": "book 23"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_odysseus_nostos",
+      "source": "char_odysseus",
+      "target": "concept_nostos",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "greek-odyssey",
+      "label": "Associated With",
+      "source_refs": [
+        {
+          "text": "Odyssey",
+          "location": "book 1"
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "edge_zeus_ruler",
+      "source": "char_zeus",
+      "target": "place_ithaca",
+      "relation": "RULER_OF",
+      "corpus_id": "greek-odyssey",
+      "label": "Ruler Of",
+      "source_refs": [
+        {
+          "text": "Odyssey",
+          "location": "book 1"
+        }
+      ],
+      "summary": ""
+    }
+  ]
+}
