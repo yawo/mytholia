@@ -69,7 +69,7 @@ def generate_podcast(
 
     selected_engine = normalize_engine(req.engine)
     if req.engine is not None and selected_engine is None:
-        raise HTTPException(status_code=400, detail="Unsupported TTS engine")
+        raise HTTPException(status_code=400, detail=t("unsupported_tts_engine", locale=locale))
     selected_engine = selected_engine or default_engine_for(manifest)
     configured_engines = available_engines(manifest)
 
@@ -131,9 +131,14 @@ def list_podcast_engines(corpus_id: str) -> TTSEnginesResponse:
 
 
 @router.get("/podcast/audio/{corpus_id}/{filename}", response_model=None, tags=["podcast"])
-def get_podcast_audio(corpus_id: str, filename: str) -> FileResponse:
+def get_podcast_audio(
+    corpus_id: str,
+    filename: str,
+    accept_language: str | None = Header(default=None, alias="Accept-Language"),
+) -> FileResponse:
     """Serve generated podcast audio files from the podcast cache directory."""
     path = audio_path(corpus_id, filename)
     if not path.exists() or not path.is_file():
-        raise HTTPException(status_code=404, detail="Audio not found")
+        locale = parse_accept_language(accept_language)
+        raise HTTPException(status_code=404, detail=t("audio_not_found", locale=locale))
     return FileResponse(path, media_type="audio/mpeg")
