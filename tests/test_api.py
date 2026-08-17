@@ -129,6 +129,25 @@ def test_podcast_engines_reports_configuration(client, monkeypatch):
     assert engines["qwentts"]["configured"] is False
 
 
+def test_deepgram_model_for_locale_defaults_to_agathe_for_french(monkeypatch):
+    from api.generation.tts import deepgram_model_for_locale
+
+    monkeypatch.delenv("DEEPGRAM_TTS_MODEL", raising=False)
+    monkeypatch.delenv("DEEPGRAM_TTS_MODEL_FR", raising=False)
+
+    assert deepgram_model_for_locale("fr") == "aura-2-agathe-fr"
+    assert deepgram_model_for_locale("fr-FR") == "aura-2-agathe-fr"
+    assert deepgram_model_for_locale("en") == "aura-asteria-en"
+
+
+def test_deepgram_model_for_locale_allows_french_override(monkeypatch):
+    from api.generation.tts import deepgram_model_for_locale
+
+    monkeypatch.setenv("DEEPGRAM_TTS_MODEL_FR", "custom-french-model")
+
+    assert deepgram_model_for_locale("fr") == "custom-french-model"
+
+
 def test_podcast_rejects_unknown_engine(client):
     r = client.get("/api/graph", params={"corpus_id": "greek-odyssey"})
     node_id = r.json()["nodes"][0]["id"]

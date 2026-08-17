@@ -72,6 +72,19 @@ def _manifest_voice_id(manifest: CorpusManifest) -> str | None:
     return voice_id or _env("GRAPHODYSSEE_DEFAULT_VOICE_ID")
 
 
+def deepgram_model_for_locale(locale: str) -> str:
+    """Choose the Deepgram Aura voice model for the podcast locale.
+
+    French podcasts use Agathe's French Aura 2 voice by default, while English
+    and other locales keep the existing English default. Both can be overridden
+    without code changes via environment variables.
+    """
+    normalized = locale.strip().lower()
+    if normalized.startswith("fr"):
+        return _env("DEEPGRAM_TTS_MODEL_FR") or "aura-2-agathe-fr"
+    return _env("DEEPGRAM_TTS_MODEL") or "aura-asteria-en"
+
+
 def _safe_part(value: str) -> str:
     return "".join(ch if ch.isalnum() or ch in "-_" else "-" for ch in value)
 
@@ -103,7 +116,9 @@ class TTSProvider(ABC):
     engine: TTSEngine
 
     @abstractmethod
-    def synthesize(self, manifest: CorpusManifest, script: str, output_stem: str) -> str | None:
+    def synthesize(
+        self, manifest: CorpusManifest, script: str, output_stem: str, locale: str
+    ) -> str | None:
         """Return an audio URL/blob reference, or None if unavailable."""
         raise NotImplementedError
 
@@ -113,7 +128,9 @@ class DeepgramProvider(TTSProvider):
 
     engine: TTSEngine = "deepgram"
 
-    def synthesize(self, manifest: CorpusManifest, script: str, output_stem: str) -> str | None:
+    def synthesize(
+        self, manifest: CorpusManifest, script: str, output_stem: str, locale: str
+    ) -> str | None:
         from deepgram import DeepgramClient
 
         api_key = _env("DEEPGRAM_API_KEY")
@@ -121,7 +138,7 @@ class DeepgramProvider(TTSProvider):
             log.info("DEEPGRAM_API_KEY not set; Deepgram TTS skipped")
             return None
 
-        model = _env("DEEPGRAM_TTS_MODEL") or "aura-asteria-en"
+        model = deepgram_model_for_locale(locale)
         deepgram = DeepgramClient(api_key=api_key)
         chunks = deepgram.speak.v1.audio.generate(text=script, model=model)
         content = b"".join(bytes(chunk) for chunk in chunks)
@@ -133,7 +150,9 @@ class ElevenLabsProvider(TTSProvider):
 
     engine: TTSEngine = "elevenlabs"
 
-    def synthesize(self, manifest: CorpusManifest, script: str, output_stem: str) -> str | None:
+    def synthesize(
+        self, manifest: CorpusManifest, script: str, output_stem: str, locale: str
+    ) -> str | None:
         api_key = _env("ELEVENLABS_API_KEY")
         voice_id = _manifest_voice_id(manifest)
         if not api_key or not voice_id:
@@ -157,7 +176,9 @@ class QwenTTSProvider(TTSProvider):
 
     engine: TTSEngine = "qwentts"
 
-    def synthesize(self, manifest: CorpusManifest, script: str, output_stem: str) -> str | None:
+    def synthesize(
+        self, manifest: CorpusManifest, script: str, output_stem: str, locale: str
+    ) -> str | None:
         api_key = _env("QWEN_TTS_API_KEY")
         base_url = (
             _env("QWEN_TTS_BASE_URL") or "https://dashscope.aliyuncs.com/compatible-mode/v1"
@@ -183,7 +204,9 @@ class StubTTSProvider(TTSProvider):
 
     engine: TTSEngine = "deepgram"
 
-    def synthesize(self, manifest: CorpusManifest, script: str, output_stem: str) -> str | None:
+    def synthesize(
+        self, manifest: CorpusManifest, script: str, output_stem: str, locale: str
+    ) -> str | None:
         return f"stub://tts/{manifest.id}/{output_stem}.wav"
 
 

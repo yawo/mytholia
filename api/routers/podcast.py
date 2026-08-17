@@ -89,6 +89,7 @@ def generate_podcast(
             manifest,
             script,
             f"{locale}-{length}-{selected_engine}-{abs(hash(script)) & 0xFFFFFFFF:08x}",
+            locale,
         )
     except NotImplementedError:
         log.info("[%s] TTS provider not yet implemented; returning script only", manifest.id)

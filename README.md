@@ -67,6 +67,10 @@ python pipeline/corpus_loader.py --list
 
 This writes `data/processed/<corpus_id>/graph.json`.
 
+## Podcast voice defaults
+
+Deepgram is the default TTS engine when `DEEPGRAM_API_KEY` is configured. French podcasts (`Accept-Language: fr` or the default locale) use Deepgram Aura 2 Agathe (`aura-2-agathe-fr`) by default; English podcasts keep `aura-asteria-en`. Override these with `DEEPGRAM_TTS_MODEL_FR` and `DEEPGRAM_TTS_MODEL` when needed.
+
 ## Tests and checks
 
 ```bash
