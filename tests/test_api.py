@@ -152,6 +152,28 @@ def test_podcast_404_unknown_entity(client):
     assert r.status_code == 404
 
 
+def test_podcast_cache_defaults_to_tmp_on_serverless(monkeypatch):
+    """Serverless bundles are read-only, so the default cache must use tmp."""
+    import importlib
+    import tempfile
+
+    import api.generation.podcast_cache as cache_mod
+    import api.generation.tts as tts_mod
+
+    monkeypatch.delenv("PODCAST_CACHE_DIR", raising=False)
+    monkeypatch.setenv("VERCEL", "1")
+    cache_mod = importlib.reload(cache_mod)
+    tts_mod = importlib.reload(tts_mod)
+
+    expected = Path(tempfile.gettempdir()) / "graphodyssee" / "podcasts"
+    assert cache_mod.PODCAST_CACHE_DIR == expected
+    assert tts_mod._AUDIO_DIR == expected / "audio"
+
+    monkeypatch.delenv("VERCEL", raising=False)
+    importlib.reload(cache_mod)
+    importlib.reload(tts_mod)
+
+
 def test_networkx_store_uses_injected_corpora_dir(tmp_path: Path) -> None:
     """NetworkXGraphStore lists manifests from its configured corpora_dir."""
     from api.retrieval.graph_store import NetworkXGraphStore
