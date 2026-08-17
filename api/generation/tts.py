@@ -7,6 +7,7 @@ all required environment values for that engine are present.
 
 from __future__ import annotations
 
+import errno
 import logging
 import os
 import tempfile
@@ -32,11 +33,31 @@ def _default_podcast_cache_dir() -> Path:
     if configured:
         return Path(configured)
     if os.environ.get("VERCEL") or os.environ.get("AWS_LAMBDA_FUNCTION_NAME"):
-        return Path(tempfile.gettempdir()) / "graphodyssee" / "podcasts"
+        return _fallback_podcast_cache_dir()
     return Path("data/podcasts")
 
 
+def _fallback_podcast_cache_dir() -> Path:
+    return Path(tempfile.gettempdir()) / "graphodyssee" / "podcasts"
+
+
 _AUDIO_DIR = _default_podcast_cache_dir() / "audio"
+
+
+def _fallback_audio_dir() -> Path:
+    return _fallback_podcast_cache_dir() / "audio"
+
+
+def _writable_audio_dir() -> Path:
+    try:
+        _AUDIO_DIR.mkdir(parents=True, exist_ok=True)
+        return _AUDIO_DIR
+    except OSError as exc:
+        if exc.errno not in {errno.EROFS, errno.EACCES}:
+            raise
+        fallback = _fallback_audio_dir()
+        fallback.mkdir(parents=True, exist_ok=True)
+        return fallback
 
 
 def _env(name: str) -> str | None:
@@ -57,12 +78,15 @@ def _safe_part(value: str) -> str:
 
 def audio_path(corpus_id: str, filename: str) -> Path:
     """Resolve a generated audio filename for a corpus."""
-    return _AUDIO_DIR / _safe_part(corpus_id) / filename
+    primary = _AUDIO_DIR / _safe_part(corpus_id) / filename
+    if primary.exists():
+        return primary
+    return _fallback_audio_dir() / _safe_part(corpus_id) / filename
 
 
 def write_audio(corpus_id: str, stem: str, extension: str, content: bytes) -> str:
     """Persist synthesized audio and return a same-origin URL for the API."""
-    directory = _AUDIO_DIR / _safe_part(corpus_id)
+    directory = _writable_audio_dir() / _safe_part(corpus_id)
     directory.mkdir(parents=True, exist_ok=True)
     filename = f"{_safe_part(stem)}.{extension.lstrip('.')}"
     final_path = directory / filename

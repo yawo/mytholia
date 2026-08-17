@@ -192,3 +192,72 @@ def test_networkx_store_uses_injected_corpora_dir(tmp_path: Path) -> None:
 
     assert [summary.id for summary in summaries] == [corpus_id]
     assert summaries[0].name == "Test Corpus"
+
+
+def test_write_audio_falls_back_to_tmp_when_cache_dir_read_only(tmp_path, monkeypatch):
+    import errno
+
+    import api.generation.tts as tts_mod
+
+    read_only_audio = tmp_path / "bundle" / "data" / "podcasts" / "audio"
+    fallback_root = tmp_path / "tmp-podcasts"
+    monkeypatch.setattr(tts_mod, "_AUDIO_DIR", read_only_audio)
+    monkeypatch.setattr(tts_mod, "_fallback_podcast_cache_dir", lambda: fallback_root)
+
+    original_mkdir = Path.mkdir
+
+    def fake_mkdir(self, *args, **kwargs):
+        if self == read_only_audio:
+            raise OSError(errno.EROFS, "Read-only file system", str(self))
+        return original_mkdir(self, *args, **kwargs)
+
+    monkeypatch.setattr(Path, "mkdir", fake_mkdir)
+
+    audio_url = tts_mod.write_audio("catholic-saints", "episode", "mp3", b"audio")
+
+    assert audio_url == "/api/podcast/audio/catholic-saints/episode.mp3"
+    assert (fallback_root / "audio" / "catholic-saints" / "episode.mp3").read_bytes() == b"audio"
+    assert (
+        tts_mod.audio_path("catholic-saints", "episode.mp3")
+        == fallback_root / "audio" / "catholic-saints" / "episode.mp3"
+    )
+
+
+def test_save_cached_podcast_falls_back_to_tmp_when_cache_dir_read_only(tmp_path, monkeypatch):
+    import errno
+
+    import api.generation.podcast_cache as cache_mod
+    from api.models import PodcastResponse
+
+    read_only_cache = tmp_path / "bundle" / "data" / "podcasts"
+    fallback_root = tmp_path / "tmp-podcasts"
+    monkeypatch.setattr(cache_mod, "PODCAST_CACHE_DIR", read_only_cache)
+    monkeypatch.setattr(cache_mod, "fallback_podcast_cache_dir", lambda: fallback_root)
+
+    original_mkdir = Path.mkdir
+
+    def fake_mkdir(self, *args, **kwargs):
+        if self == read_only_cache:
+            raise OSError(errno.EROFS, "Read-only file system", str(self))
+        return original_mkdir(self, *args, **kwargs)
+
+    monkeypatch.setattr(Path, "mkdir", fake_mkdir)
+
+    response = PodcastResponse(
+        corpus_id="catholic-saints",
+        entity_id="saint_example",
+        script="Grounded script",
+        audio_url="/api/podcast/audio/catholic-saints/episode.mp3",
+        length_seconds=180,
+        engine="deepgram",
+        available_engines=[],
+        cached=False,
+    )
+
+    path = cache_mod.save_cached_podcast(response, "en")
+
+    assert path.is_relative_to(fallback_root)
+    assert (
+        cache_mod.load_cached_podcast("catholic-saints", "saint_example", "en", 180, "deepgram")
+        == response
+    )
