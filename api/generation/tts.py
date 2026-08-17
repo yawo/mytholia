@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import logging
 import os
+import tempfile
 from abc import ABC, abstractmethod
 from pathlib import Path
 from tempfile import NamedTemporaryFile
@@ -25,7 +26,17 @@ TTSEngine = Literal["deepgram", "elevenlabs", "qwentts"]
 SUPPORTED_TTS_ENGINES: tuple[TTSEngine, ...] = ("deepgram", "elevenlabs", "qwentts")
 DEFAULT_TTS_ENGINE: TTSEngine = "deepgram"
 
-_AUDIO_DIR = Path(os.environ.get("PODCAST_CACHE_DIR", "data/podcasts")) / "audio"
+
+def _default_podcast_cache_dir() -> Path:
+    configured = os.environ.get("PODCAST_CACHE_DIR")
+    if configured:
+        return Path(configured)
+    if os.environ.get("VERCEL") or os.environ.get("AWS_LAMBDA_FUNCTION_NAME"):
+        return Path(tempfile.gettempdir()) / "graphodyssee" / "podcasts"
+    return Path("data/podcasts")
+
+
+_AUDIO_DIR = _default_podcast_cache_dir() / "audio"
 
 
 def _env(name: str) -> str | None:

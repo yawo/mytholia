@@ -9,13 +9,30 @@ from __future__ import annotations
 import hashlib
 import json
 import os
+import tempfile
 from pathlib import Path
 from tempfile import NamedTemporaryFile
 
 from api.i18n import Locale
 from api.models import PodcastResponse
 
-PODCAST_CACHE_DIR = Path(os.environ.get("PODCAST_CACHE_DIR", "data/podcasts"))
+
+def default_podcast_cache_dir() -> Path:
+    """Return the default writable podcast cache directory.
+
+    Serverless deployments such as Vercel and AWS Lambda expose the application
+    bundle as read-only, so generated podcast cache files must live under the
+    platform temporary directory unless an explicit ``PODCAST_CACHE_DIR`` is set.
+    """
+    configured = os.environ.get("PODCAST_CACHE_DIR")
+    if configured:
+        return Path(configured)
+    if os.environ.get("VERCEL") or os.environ.get("AWS_LAMBDA_FUNCTION_NAME"):
+        return Path(tempfile.gettempdir()) / "graphodyssee" / "podcasts"
+    return Path("data/podcasts")
+
+
+PODCAST_CACHE_DIR = default_podcast_cache_dir()
 
 
 def _safe_part(value: str) -> str:
