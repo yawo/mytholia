@@ -1,7 +1,7 @@
 """Filesystem cache for generated podcast scripts and audio references.
 
-The cache is keyed by corpus, entity, locale, and requested length so repeated
-requests can reuse both generated text and the synthesized audio reference.
+The cache is keyed by corpus, entity, locale, requested length, and TTS engine so
+repeated requests can reuse both generated text and the synthesized audio reference.
 """
 
 from __future__ import annotations
@@ -22,18 +22,20 @@ def _safe_part(value: str) -> str:
     return "".join(ch if ch.isalnum() or ch in "-_" else "-" for ch in value)
 
 
-def cache_path(corpus_id: str, entity_id: str, locale: Locale, length_seconds: int) -> Path:
+def cache_path(
+    corpus_id: str, entity_id: str, locale: Locale, length_seconds: int, engine: str = "deepgram"
+) -> Path:
     """Return the JSON cache path for a podcast request."""
     entity_hash = hashlib.sha256(entity_id.encode("utf-8")).hexdigest()[:16]
-    filename = f"{_safe_part(locale)}-{length_seconds}-{entity_hash}.json"
+    filename = f"{_safe_part(locale)}-{length_seconds}-{_safe_part(engine)}-{entity_hash}.json"
     return PODCAST_CACHE_DIR / _safe_part(corpus_id) / filename
 
 
 def load_cached_podcast(
-    corpus_id: str, entity_id: str, locale: Locale, length_seconds: int
+    corpus_id: str, entity_id: str, locale: Locale, length_seconds: int, engine: str = "deepgram"
 ) -> PodcastResponse | None:
     """Load a cached podcast response, if present and still valid for the request."""
-    path = cache_path(corpus_id, entity_id, locale, length_seconds)
+    path = cache_path(corpus_id, entity_id, locale, length_seconds, engine)
     if not path.exists():
         return None
     data = json.loads(path.read_text(encoding="utf-8"))
@@ -45,7 +47,9 @@ def load_cached_podcast(
 
 def save_cached_podcast(response: PodcastResponse, locale: Locale) -> Path:
     """Persist a podcast response atomically and return its cache path."""
-    path = cache_path(response.corpus_id, response.entity_id, locale, response.length_seconds)
+    path = cache_path(
+        response.corpus_id, response.entity_id, locale, response.length_seconds, response.engine
+    )
     path.parent.mkdir(parents=True, exist_ok=True)
     payload = response.model_dump(mode="json")
     with NamedTemporaryFile("w", encoding="utf-8", dir=path.parent, delete=False) as fh:

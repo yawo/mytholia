@@ -70,11 +70,26 @@ export interface SearchResult {
   score: number;
 }
 
+export type PodcastEngine = "deepgram" | "elevenlabs" | "qwentts";
+
+export interface TTSEngineStatus {
+  engine: PodcastEngine;
+  configured: boolean;
+  default: boolean;
+}
+
+export interface TTSEnginesResponse {
+  corpus_id: string;
+  engines: TTSEngineStatus[];
+}
+
 export interface PodcastResponse {
   corpus_id: string;
   entity_id: string;
   script: string;
   audio_url: string | null;
   length_seconds: number;
+  engine: PodcastEngine;
+  available_engines: PodcastEngine[];
   cached: boolean;
 }

@@ -114,6 +114,32 @@ def test_podcast_endpoint_reuses_cache(client):
     assert forced.json()["cached"] is False
 
 
+def test_podcast_engines_reports_configuration(client, monkeypatch):
+    monkeypatch.setenv("DEEPGRAM_API_KEY", "test-deepgram-key")
+    monkeypatch.delenv("ELEVENLABS_API_KEY", raising=False)
+    monkeypatch.delenv("QWEN_TTS_API_KEY", raising=False)
+
+    r = client.get("/api/podcast/engines", params={"corpus_id": "greek-odyssey"})
+    assert r.status_code == 200
+    body = r.json()
+    engines = {engine["engine"]: engine for engine in body["engines"]}
+    assert engines["deepgram"]["configured"] is True
+    assert engines["deepgram"]["default"] is True
+    assert engines["elevenlabs"]["configured"] is False
+    assert engines["qwentts"]["configured"] is False
+
+
+def test_podcast_rejects_unknown_engine(client):
+    r = client.get("/api/graph", params={"corpus_id": "greek-odyssey"})
+    node_id = r.json()["nodes"][0]["id"]
+
+    r2 = client.post(
+        "/api/podcast",
+        json={"corpus_id": "greek-odyssey", "entity_id": node_id, "engine": "not-real"},
+    )
+    assert r2.status_code == 400
+
+
 def test_podcast_404_unknown_corpus(client):
     r = client.post("/api/podcast", json={"corpus_id": "no-such-corpus", "entity_id": "x"})
     assert r.status_code == 404

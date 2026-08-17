@@ -311,6 +311,10 @@ class PodcastRequest(BaseModel):
     corpus_id: str
     entity_id: str
     length_seconds: int | None = None
+    engine: str | None = Field(
+        default=None,
+        description="Optional TTS engine override: deepgram, elevenlabs, or qwentts.",
+    )
     force: bool = Field(
         default=False,
         description="Regenerate the script and audio even when a cached podcast exists.",
@@ -325,4 +329,21 @@ class PodcastResponse(BaseModel):
     script: str
     audio_url: str | None = None
     length_seconds: int = 180
+    engine: str = "deepgram"
+    available_engines: list[str] = Field(default_factory=list)
     cached: bool = False
+
+
+class TTSEngineStatus(BaseModel):
+    """A selectable text-to-speech engine and whether it is configured."""
+
+    engine: str
+    configured: bool
+    default: bool = False
+
+
+class TTSEnginesResponse(BaseModel):
+    """Response for /podcast/engines."""
+
+    corpus_id: str
+    engines: list[TTSEngineStatus]
