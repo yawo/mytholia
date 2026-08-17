@@ -3,9 +3,9 @@
 // Corpus-agnostic: does not assume any specific field like "spouse" exists.
 // i18n: all strings from the dictionary; node-type label localized.
 
-import { useState } from "react";
-import type { GraphNode, PodcastResponse } from "../../api/types";
-import { generatePodcast } from "../../api/client";
+import { useEffect, useState } from "react";
+import type { GraphNode, PodcastEngine, PodcastResponse, TTSEngineStatus } from "../../api/types";
+import { fetchPodcastEngines, generatePodcast } from "../../api/client";
 import { useI18n } from "../../i18n";
 import type { NodeTypeKey } from "../../i18n/types";
 
@@ -19,6 +19,25 @@ export function Sidebar({ corpusId, node }: SidebarProps) {
   const [loading, setLoading] = useState(false);
   const [podcast, setPodcast] = useState<PodcastResponse | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [engines, setEngines] = useState<TTSEngineStatus[]>([]);
+  const [selectedEngine, setSelectedEngine] = useState<PodcastEngine>("deepgram");
+
+  useEffect(() => {
+    let active = true;
+    fetchPodcastEngines(corpusId)
+      .then((res) => {
+        if (!active) return;
+        setEngines(res.engines);
+        const defaultEngine = res.engines.find((engine) => engine.default)?.engine ?? "deepgram";
+        setSelectedEngine(defaultEngine);
+      })
+      .catch(() => {
+        if (active) setEngines([]);
+      });
+    return () => {
+      active = false;
+    };
+  }, [corpusId]);
 
   if (!node) {
     return (
@@ -36,7 +55,7 @@ export function Sidebar({ corpusId, node }: SidebarProps) {
     setError(null);
     setPodcast(null);
     try {
-      const res = await generatePodcast(corpusId, node.id);
+      const res = await generatePodcast(corpusId, node.id, undefined, false, selectedEngine);
       setPodcast(res);
     } catch (e: unknown) {
       setError(String(e));
@@ -65,6 +84,22 @@ export function Sidebar({ corpusId, node }: SidebarProps) {
         </section>
       )}
 
+      <label className="podcast-engine-picker">
+        TTS engine
+        <select
+          value={selectedEngine}
+          onChange={(event) => setSelectedEngine(event.target.value as PodcastEngine)}
+          disabled={loading}
+        >
+          {engines.map((engine) => (
+            <option key={engine.engine} value={engine.engine} disabled={!engine.configured}>
+              {engine.engine}
+              {engine.configured ? "" : " (missing env)"}
+            </option>
+          ))}
+        </select>
+      </label>
+
       <button onClick={onGenerate} disabled={loading}>
         {loading ? t.sidebar.generating : t.sidebar.generatePodcast}
       </button>
@@ -73,6 +108,7 @@ export function Sidebar({ corpusId, node }: SidebarProps) {
       {podcast && (
         <section className="podcast-result">
           <h3>{t.sidebar.podcastScript}</h3>
+          <p className="podcast-engine">Engine: {podcast.engine}</p>
           <pre>{podcast.script}</pre>
           {podcast.audio_url && <audio controls src={podcast.audio_url} />}
         </section>

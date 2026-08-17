@@ -8,7 +8,9 @@ import type {
   GraphData,
   GraphNode,
   GraphStats,
+  PodcastEngine,
   PodcastResponse,
+  TTSEnginesResponse,
   SearchResult,
 } from "./types";
 
@@ -193,12 +195,18 @@ export async function generatePodcast(
   corpusId: string,
   entityId: string,
   lengthSeconds?: number,
-  force = false
+  force = false,
+  engine?: PodcastEngine
 ): Promise<PodcastResponse> {
   return postJSON<PodcastResponse>("/podcast", {
     corpus_id: corpusId,
     entity_id: entityId,
     length_seconds: lengthSeconds ?? null,
     force,
+    engine: engine ?? null,
   });
+}
+
+export async function fetchPodcastEngines(corpusId: string): Promise<TTSEnginesResponse> {
+  return getJSON<TTSEnginesResponse>("/podcast/engines", { corpus_id: corpusId });
 }
