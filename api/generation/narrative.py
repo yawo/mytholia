@@ -17,6 +17,7 @@ from __future__ import annotations
 import json
 import logging
 import os
+import re
 from abc import ABC, abstractmethod
 from typing import TYPE_CHECKING
 
@@ -36,6 +37,7 @@ _NARRATIVE_STRINGS: dict[Locale, dict[str, str]] = {
         "relations_heading": "Relations et événements",
         "sources_heading": "Sources",
         "fallback_intro": "Voici l'histoire de {label}, un {type}.",
+        "summary_intro": "Voici {label} : {summary}",
         "source_marker": "[source : {text}{loc}]",
     },
     "en": {
@@ -43,6 +45,7 @@ _NARRATIVE_STRINGS: dict[Locale, dict[str, str]] = {
         "relations_heading": "Relations and events",
         "sources_heading": "Sources",
         "fallback_intro": "This is the story of {label}, a {type}.",
+        "summary_intro": "This is {label}: {summary}",
         "source_marker": "[source: {text}{loc}]",
     },
 }
@@ -122,7 +125,7 @@ class OpenAICompatibleNarrativeGenerator(NarrativeGenerator):
             content = data["choices"][0]["message"]["content"]
         except (KeyError, IndexError, TypeError) as exc:
             raise RuntimeError("OpenAI-compatible narrative response was missing content") from exc
-        return str(content).strip()
+        return clean_audio_narration(str(content))
 
 
 class TemplateNarrativeGenerator(NarrativeGenerator):
@@ -135,14 +138,12 @@ class TemplateNarrativeGenerator(NarrativeGenerator):
         subgraph: GraphData,
         locale: Locale = DEFAULT_LOCALE,
     ) -> str:
-        tone = manifest.narrative_style.tone
         lines: list[str] = []
-        lines.append(f"[{node.label}]")
-        lines.append(f"({_s(locale, 'tone_label')}: {tone}.)")
-        lines.append("")
-
-        intro = node.summary.strip() or _s(locale, "fallback_intro").format(
-            label=node.label, type=node.type.lower()
+        summary = node.summary.strip()
+        intro = (
+            _s(locale, "summary_intro").format(label=node.label, summary=summary)
+            if summary
+            else _s(locale, "fallback_intro").format(label=node.label, type=node.type.lower())
         )
         lines.append(intro)
         lines.append("")
@@ -172,7 +173,31 @@ class TemplateNarrativeGenerator(NarrativeGenerator):
                 loc = f" ({ref.location})" if ref.location else ""
                 lines.append(f"  • {ref.text}{loc}")
 
-        return "\n".join(lines)
+        return clean_audio_narration("\n".join(lines))
+
+
+_STAGE_DIRECTION_RE = re.compile(r"^\s*(?:\*\*)?\s*[\[(].*?[\])]\s*(?:\*\*)?\s*:??\s*$")
+_MARKDOWN_EMPHASIS_RE = re.compile(r"\*\*(.*?)\*\*")
+
+
+def clean_audio_narration(script: str) -> str:
+    """Remove non-spoken stage directions and markdown from podcast narration."""
+    cleaned: list[str] = []
+    for raw_line in script.replace("\r\n", "\n").split("\n"):
+        line = raw_line.strip()
+        if not line:
+            if cleaned and cleaned[-1] != "":
+                cleaned.append("")
+            continue
+        if _STAGE_DIRECTION_RE.match(line) and not line.lower().startswith(
+            ("[source", "[source :")
+        ):
+            continue
+        line = _MARKDOWN_EMPHASIS_RE.sub(r"\1", line)
+        cleaned.append(line)
+    while cleaned and cleaned[-1] == "":
+        cleaned.pop()
+    return "\n".join(cleaned).strip()
 
 
 def generator_for(manifest: CorpusManifest) -> NarrativeGenerator:

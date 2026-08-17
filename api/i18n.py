@@ -23,6 +23,8 @@ _MESSAGES = {
         "tone_label": "Ton",
         "relations_heading": "Relations et événements",
         "sources_heading": "Sources",
+        "unsupported_tts_engine": "moteur vocal non pris en charge",
+        "audio_not_found": "audio introuvable",
     },
     "en": {
         "node_not_found": "node {node_id!r} not found in corpus {corpus_id!r}",
@@ -30,6 +32,8 @@ _MESSAGES = {
         "tone_label": "Tone",
         "relations_heading": "Relations and events",
         "sources_heading": "Sources",
+        "unsupported_tts_engine": "unsupported TTS engine",
+        "audio_not_found": "audio not found",
     },
 }
 

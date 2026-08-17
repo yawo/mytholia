@@ -97,9 +97,9 @@ def test_podcast_script_localized_fr(client, corpus_id: str, fixture_name: str):
     )
     assert r2.status_code == 200
     script = r2.json()["script"]
-    assert "Relations et événements" in script
-    assert "Sources" in script
-    assert "Ton" in script
+    assert "Ton" not in script
+    assert "**" not in script
+    assert "[Opening" not in script
 
 
 @pytest.mark.parametrize("corpus_id,fixture_name", CORPUS_FIXTURES)
@@ -114,8 +114,25 @@ def test_podcast_script_localized_en(client, corpus_id: str, fixture_name: str):
     )
     assert r2.status_code == 200
     script = r2.json()["script"]
-    assert "Relations and events" in script
-    assert "Sources" in script
-    assert "Tone" in script
+    assert "Tone" not in script
+    assert "**" not in script
+    assert "[Opening" not in script
     # French heading must NOT appear in the English script
     assert "Relations et événements" not in script
+
+
+def test_clean_audio_narration_removes_stage_directions_and_markdown():
+    from api.generation.narrative import clean_audio_narration
+
+    script = """**[Opening – reverent, mythic narrator]**
+**A spoken line** begins.
+
+[Music fades]
+The sourced narration continues."""
+
+    cleaned = clean_audio_narration(script)
+    assert "Opening" not in cleaned
+    assert "Music fades" not in cleaned
+    assert "**" not in cleaned
+    assert "A spoken line begins." in cleaned
+    assert "The sourced narration continues." in cleaned

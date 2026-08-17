@@ -10,9 +10,11 @@
     <div id="app" class="app-shell">
       <header class="topbar">
         <h1>GraphOdyssée</h1>
-        <select id="corpus-select" aria-label="Choisir un corpus">
+        <label class="select-label" for="corpus-select" id="corpus-label">Corpus</label>
+        <select id="corpus-select" aria-label="Corpus">
           <option value="">Choisir un corpus</option>
         </select>
+        <label class="select-label" for="language-select" id="language-label">Langue</label>
         <select id="language-select" aria-label="Langue">
           <option value="fr">Français</option>
           <option value="en">English</option>
@@ -25,7 +27,7 @@
             <input id="search-input" type="search" placeholder="Rechercher un nœud…" disabled />
             <div id="legend" class="legend"></div>
           </div>
-          <svg id="graph" class="graph" viewBox="0 0 800 560" role="img" aria-label="Graphe de connaissances"></svg>
+          <div id="graph" class="graph" role="img" aria-label="Graphe de connaissances"></div>
         </section>
         <aside id="sidebar" class="sidebar">
           <p>Sélectionnez un corpus, puis cliquez sur un nœud.</p>

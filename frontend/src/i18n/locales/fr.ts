@@ -29,7 +29,10 @@ const fr: Dictionary = {
     sources: "Sources",
     generatePodcast: "Générer le balado",
     generating: "Génération…",
-    podcastScript: "Script du balado",
+    podcastScript: "Texte du balado",
+    ttsEngine: "Moteur vocal",
+    missingEnv: "variables manquantes",
+    engine: "Moteur",
   },
   nodeTypes: {
     Character: "Personnage",

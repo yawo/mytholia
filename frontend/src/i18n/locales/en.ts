@@ -29,7 +29,10 @@ const en: Dictionary = {
     sources: "Sources",
     generatePodcast: "Generate Podcast",
     generating: "Generating…",
-    podcastScript: "Podcast script",
+    podcastScript: "Podcast text",
+    ttsEngine: "TTS engine",
+    missingEnv: "missing env",
+    engine: "Engine",
   },
   nodeTypes: {
     Character: "Character",

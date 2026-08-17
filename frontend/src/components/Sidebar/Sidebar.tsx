@@ -85,7 +85,7 @@ export function Sidebar({ corpusId, node }: SidebarProps) {
       )}
 
       <label className="podcast-engine-picker">
-        TTS engine
+        {t.sidebar.ttsEngine}
         <select
           value={selectedEngine}
           onChange={(event) => setSelectedEngine(event.target.value as PodcastEngine)}
@@ -94,7 +94,7 @@ export function Sidebar({ corpusId, node }: SidebarProps) {
           {engines.map((engine) => (
             <option key={engine.engine} value={engine.engine} disabled={!engine.configured}>
               {engine.engine}
-              {engine.configured ? "" : " (missing env)"}
+              {engine.configured ? "" : ` (${t.sidebar.missingEnv})`}
             </option>
           ))}
         </select>
@@ -108,7 +108,7 @@ export function Sidebar({ corpusId, node }: SidebarProps) {
       {podcast && (
         <section className="podcast-result">
           <h3>{t.sidebar.podcastScript}</h3>
-          <p className="podcast-engine">Engine: {podcast.engine}</p>
+          <p className="podcast-engine">{t.sidebar.engine}: {podcast.engine}</p>
           <pre>{podcast.script}</pre>
           {podcast.audio_url && <audio controls src={podcast.audio_url} />}
         </section>

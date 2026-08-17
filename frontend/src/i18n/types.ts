@@ -42,6 +42,9 @@ export interface Dictionary {
     generatePodcast: string;
     generating: string;
     podcastScript: string;
+    ttsEngine: string;
+    missingEnv: string;
+    engine: string;
   };
   nodeTypes: Record<NodeTypeKey, string>;
   errors: {
