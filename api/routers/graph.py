@@ -48,9 +48,13 @@ def get_corpus(
 
 
 @router.get("/graph", response_model=GraphData, tags=["graph"])
-def get_graph(corpus_id: str = Query(..., description="kebab-case corpus id")) -> GraphData:
+def get_graph(
+    corpus_id: str = Query(..., description="kebab-case corpus id"),
+    accept_language: str | None = Header(default=None, alias="Accept-Language"),
+) -> GraphData:
     """Return the full graph for a corpus."""
-    return get_store().get_graph(corpus_id)
+    locale = parse_accept_language(accept_language)
+    return get_store().get_graph(corpus_id, locale=locale)
 
 
 @router.get("/graph/stats", response_model=GraphStats, tags=["graph"])
@@ -66,11 +70,16 @@ def search_nodes(
     corpus_id: str = Query(...),
     q: str = Query(..., min_length=1, description="Search query"),
     limit: int = Query(10, ge=1, le=50),
+    accept_language: str | None = Header(default=None, alias="Accept-Language"),
 ) -> list[SearchResult]:
     """Search nodes within a corpus by keyword (hybrid: graph + keyword fusion)."""
     store = get_store()
     searcher = HybridSearch(store)
     nodes = searcher.search(corpus_id, q, limit=limit)
+    locale = parse_accept_language(accept_language)
+    if locale != "en":
+        localized = {node.id: node for node in store.get_graph(corpus_id, locale=locale).nodes}
+        nodes = [localized.get(node.id, node) for node in nodes]
     return [SearchResult(node=n, score=1.0) for n in nodes]
 
 
@@ -81,9 +90,9 @@ def get_character(
     accept_language: str | None = Header(default=None, alias="Accept-Language"),
 ) -> GraphNode:
     """Return a single node by id within a corpus."""
-    node = get_store().get_node(corpus_id, node_id)
+    locale = parse_accept_language(accept_language)
+    node = get_store().get_node(corpus_id, node_id, locale=locale)
     if node is None:
-        locale = parse_accept_language(accept_language)
         raise HTTPException(
             status_code=404,
             detail=t("node_not_found", locale=locale, node_id=node_id, corpus_id=corpus_id),
@@ -99,14 +108,14 @@ def get_neighbors(
 ) -> GraphData:
     """Return the direct neighbors of a node (faster than /subgraph for radius=1)."""
     store = get_store()
-    node = store.get_node(corpus_id, node_id)
+    locale = parse_accept_language(accept_language)
+    node = store.get_node(corpus_id, node_id, locale=locale)
     if node is None:
-        locale = parse_accept_language(accept_language)
         raise HTTPException(
             status_code=404,
             detail=t("node_not_found", locale=locale, node_id=node_id, corpus_id=corpus_id),
         )
-    return store.get_neighbors(corpus_id, node_id)
+    return store.get_neighbors(corpus_id, node_id, locale=locale)
 
 
 @router.get("/subgraph", response_model=GraphData, tags=["graph"])
@@ -118,11 +127,11 @@ def get_subgraph(
 ) -> GraphData:
     """Return the local subgraph around a node within ``radius`` hops."""
     store = get_store()
-    node = store.get_node(corpus_id, node_id)
+    locale = parse_accept_language(accept_language)
+    node = store.get_node(corpus_id, node_id, locale=locale)
     if node is None:
-        locale = parse_accept_language(accept_language)
         raise HTTPException(
             status_code=404,
             detail=t("node_not_found", locale=locale, node_id=node_id, corpus_id=corpus_id),
         )
-    return store.get_subgraph(corpus_id, node_id, radius=radius)
+    return store.get_subgraph(corpus_id, node_id, radius=radius, locale=locale)
