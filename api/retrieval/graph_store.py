@@ -16,6 +16,7 @@ from abc import ABC, abstractmethod
 from pathlib import Path
 from typing import TYPE_CHECKING
 
+from api.i18n import Locale
 from api.models import CorpusDetail, CorpusManifest, CorpusSummary, GraphData, GraphNode, GraphStats
 
 if TYPE_CHECKING:
@@ -44,17 +45,19 @@ class GraphStore(ABC):
         raise NotImplementedError
 
     @abstractmethod
-    def get_graph(self, corpus_id: str) -> GraphData:
+    def get_graph(self, corpus_id: str, locale: Locale = "en") -> GraphData:
         """Return the full graph for a corpus."""
         raise NotImplementedError
 
     @abstractmethod
-    def get_node(self, corpus_id: str, node_id: str) -> GraphNode | None:
+    def get_node(self, corpus_id: str, node_id: str, locale: Locale = "en") -> GraphNode | None:
         """Return a single node by id, or None."""
         raise NotImplementedError
 
     @abstractmethod
-    def get_subgraph(self, corpus_id: str, node_id: str, radius: int = 1) -> GraphData:
+    def get_subgraph(
+        self, corpus_id: str, node_id: str, radius: int = 1, locale: Locale = "en"
+    ) -> GraphData:
         """Return the local subgraph around a node within ``radius`` hops."""
         raise NotImplementedError
 
@@ -66,7 +69,7 @@ class GraphStore(ABC):
         """Return node-type and relation-type distribution (optional override)."""
         raise NotImplementedError
 
-    def get_neighbors(self, corpus_id: str, node_id: str) -> GraphData:
+    def get_neighbors(self, corpus_id: str, node_id: str, locale: Locale = "en") -> GraphData:
         """Return direct neighbors of a node (optional override)."""
         raise NotImplementedError
 
@@ -125,6 +128,20 @@ class NetworkXGraphStore(GraphStore):
         raw = json.loads(path.read_text(encoding="utf-8"))
         return GraphData.model_validate(raw)
 
+    @staticmethod
+    def _localized_graph(data: GraphData, locale: Locale) -> GraphData:
+        """Overlay locale-specific display text while preserving graph facts."""
+        if locale == "en":
+            return data
+
+        payload = data.model_dump()
+        for item in [*payload["nodes"], *payload["edges"]]:
+            localized = item.get("i18n", {}).get(locale, {})
+            for field in ("label", "summary"):
+                if localized.get(field):
+                    item[field] = localized[field]
+        return GraphData.model_validate(payload)
+
     def list_corpora(self) -> list[CorpusSummary]:
         summaries: list[CorpusSummary] = []
         if not self.corpora_dir.exists():
@@ -141,8 +158,8 @@ class NetworkXGraphStore(GraphStore):
             summaries.append(summary)
         return summaries
 
-    def get_graph(self, corpus_id: str) -> GraphData:
-        return self._load_graph_data(corpus_id)
+    def get_graph(self, corpus_id: str, locale: Locale = "en") -> GraphData:
+        return self._localized_graph(self._load_graph_data(corpus_id), locale)
 
     def get_corpus_detail(self, corpus_id: str) -> CorpusDetail | None:
         """Return full metadata for a single corpus (AGENTS.md §4, §5)."""
@@ -181,9 +198,9 @@ class NetworkXGraphStore(GraphStore):
             relation_type_counts=relation_type_counts,
         )
 
-    def get_neighbors(self, corpus_id: str, node_id: str) -> GraphData:
+    def get_neighbors(self, corpus_id: str, node_id: str, locale: Locale = "en") -> GraphData:
         """Return only the direct neighbors of a node (radius=1, no ego_graph)."""
-        data = self._load_graph_data(corpus_id)
+        data = self.get_graph(corpus_id, locale=locale)
         neighbor_ids: set[str] = set()
         for e in data.edges:
             if e.source == node_id:
@@ -197,20 +214,22 @@ class NetworkXGraphStore(GraphStore):
         sub_edges = [e for e in data.edges if e.source in all_ids and e.target in all_ids]
         return GraphData(corpus_id=corpus_id, nodes=sub_nodes, edges=sub_edges)
 
-    def get_node(self, corpus_id: str, node_id: str) -> GraphNode | None:
-        data = self._load_graph_data(corpus_id)
+    def get_node(self, corpus_id: str, node_id: str, locale: Locale = "en") -> GraphNode | None:
+        data = self.get_graph(corpus_id, locale=locale)
         for node in data.nodes:
             if node.id == node_id:
                 return node
         return None
 
-    def get_subgraph(self, corpus_id: str, node_id: str, radius: int = 1) -> GraphData:
+    def get_subgraph(
+        self, corpus_id: str, node_id: str, radius: int = 1, locale: Locale = "en"
+    ) -> GraphData:
         """Return nodes/edges within ``radius`` hops of ``node_id``.
 
         Uses NetworkX ego_graph when available; falls back to direct neighbors.
         """
         nx = self._import_nx()
-        data = self._load_graph_data(corpus_id)
+        data = self.get_graph(corpus_id, locale=locale)
 
         g = nx.MultiDiGraph()
         id_to_node = {n.id: n for n in data.nodes}
@@ -261,19 +280,21 @@ class CypherGraphStore(GraphStore):
     def list_corpora(self) -> list[CorpusSummary]:
         raise NotImplementedError("CypherGraphStore is wired up in sprint 2 (V2)")
 
-    def get_graph(self, corpus_id: str) -> GraphData:
+    def get_graph(self, corpus_id: str, locale: Locale = "en") -> GraphData:
         raise NotImplementedError("CypherGraphStore is wired up in sprint 2 (V2)")
 
-    def get_node(self, corpus_id: str, node_id: str) -> GraphNode | None:
+    def get_node(self, corpus_id: str, node_id: str, locale: Locale = "en") -> GraphNode | None:
         raise NotImplementedError("CypherGraphStore is wired up in sprint 2 (V2)")
 
-    def get_subgraph(self, corpus_id: str, node_id: str, radius: int = 1) -> GraphData:
+    def get_subgraph(
+        self, corpus_id: str, node_id: str, radius: int = 1, locale: Locale = "en"
+    ) -> GraphData:
         raise NotImplementedError("CypherGraphStore is wired up in sprint 2 (V2)")
 
     def get_stats(self, corpus_id: str) -> GraphStats:
         raise NotImplementedError("CypherGraphStore is wired up in sprint 2 (V2)")
 
-    def get_neighbors(self, corpus_id: str, node_id: str) -> GraphData:
+    def get_neighbors(self, corpus_id: str, node_id: str, locale: Locale = "en") -> GraphData:
         raise NotImplementedError("CypherGraphStore is wired up in sprint 2 (V2)")
 
 

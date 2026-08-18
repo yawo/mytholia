@@ -16,14 +16,20 @@ import type {
 
 const API_BASE = "/api";
 
-async function getJSON<T>(path: string, params?: Record<string, string>): Promise<T> {
+async function getJSON<T>(
+  path: string,
+  params?: Record<string, string>,
+  locale?: string
+): Promise<T> {
   const url = new URL(`${API_BASE}${path}`, window.location.origin);
   if (params) {
     for (const [k, v] of Object.entries(params)) {
       url.searchParams.set(k, v);
     }
   }
-  const res = await fetch(url.toString());
+  const res = await fetch(url.toString(), {
+    headers: locale ? { "Accept-Language": locale } : undefined,
+  });
   if (!res.ok) {
     const detail = await res.text();
     throw new Error(`${res.status}: ${detail}`);
@@ -70,7 +76,7 @@ export function useCorpora(): { data: CorpusSummary[] | null; error: string | nu
   return { data, error, loading };
 }
 
-export function useGraph(corpusId: string | null): {
+export function useGraph(corpusId: string | null, locale?: string): {
   data: GraphData | null;
   error: string | null;
   loading: boolean;
@@ -85,7 +91,7 @@ export function useGraph(corpusId: string | null): {
     }
     let active = true;
     setLoading(true);
-    getJSON<GraphData>("/graph", { corpus_id: corpusId })
+    getJSON<GraphData>("/graph", { corpus_id: corpusId }, locale)
       .then((d) => {
         if (active) {
           setData(d);
@@ -101,14 +107,15 @@ export function useGraph(corpusId: string | null): {
     return () => {
       active = false;
     };
-  }, [corpusId]);
+  }, [corpusId, locale]);
   return { data, error, loading };
 }
 
 export function useSubgraph(
   corpusId: string | null,
   nodeId: string | null,
-  radius = 1
+  radius = 1,
+  locale?: string
 ): { data: GraphData | null; error: string | null; loading: boolean } {
   const [data, setData] = useState<GraphData | null>(null);
   const [error, setError] = useState<string | null>(null);
@@ -120,7 +127,11 @@ export function useSubgraph(
     }
     let active = true;
     setLoading(true);
-    getJSON<GraphData>("/subgraph", { corpus_id: corpusId, node_id: nodeId, radius: String(radius) })
+    getJSON<GraphData>(
+      "/subgraph",
+      { corpus_id: corpusId, node_id: nodeId, radius: String(radius) },
+      locale
+    )
       .then((d) => {
         if (active) {
           setData(d);
@@ -136,14 +147,15 @@ export function useSubgraph(
     return () => {
       active = false;
     };
-  }, [corpusId, nodeId, radius]);
+  }, [corpusId, nodeId, radius, locale]);
   return { data, error, loading };
 }
 
 export function useSearch(
   corpusId: string | null,
   query: string,
-  limit = 10
+  limit = 10,
+  locale?: string
 ): { data: SearchResult[] | null; loading: boolean } {
   const [data, setData] = useState<SearchResult[] | null>(null);
   const [loading, setLoading] = useState(false);
@@ -156,11 +168,15 @@ export function useSearch(
     setLoading(true);
     // Debounce: wait 300ms after the user stops typing before searching.
     const timer = setTimeout(() => {
-      getJSON<SearchResult[]>("/search", {
-        corpus_id: corpusId,
-        q: query.trim(),
-        limit: String(limit),
-      })
+      getJSON<SearchResult[]>(
+        "/search",
+        {
+          corpus_id: corpusId,
+          q: query.trim(),
+          limit: String(limit),
+        },
+        locale
+      )
         .then((d) => {
           if (active) setData(d);
         })
@@ -175,7 +191,7 @@ export function useSearch(
       active = false;
       clearTimeout(timer);
     };
-  }, [corpusId, query, limit]);
+  }, [corpusId, query, limit, locale]);
   return { data, loading };
 }
 
@@ -187,8 +203,8 @@ export async function fetchGraphStats(corpusId: string): Promise<GraphStats> {
   return getJSON<GraphStats>("/graph/stats", { corpus_id: corpusId });
 }
 
-export async function fetchNode(corpusId: string, nodeId: string): Promise<GraphNode> {
-  return getJSON<GraphNode>(`/character/${nodeId}`, { corpus_id: corpusId });
+export async function fetchNode(corpusId: string, nodeId: string, locale?: string): Promise<GraphNode> {
+  return getJSON<GraphNode>(`/character/${nodeId}`, { corpus_id: corpusId }, locale);
 }
 
 export async function generatePodcast(

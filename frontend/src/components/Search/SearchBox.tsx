@@ -13,9 +13,9 @@ interface SearchBoxProps {
 }
 
 export function SearchBox({ corpusId, onSelectNode }: SearchBoxProps) {
-  const { t } = useI18n();
+  const { t, locale } = useI18n();
   const [query, setQuery] = useState("");
-  const { data: results, loading } = useSearch(corpusId, query);
+  const { data: results, loading } = useSearch(corpusId, query, 10, locale);
 
   return (
     <div className="search-box">

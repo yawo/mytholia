@@ -12,7 +12,13 @@
           "text": "Enuma Elish",
           "location": "Tablet IV"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Mardouk",
+          "summary": "Dieu patron de Babylone et roi des dieux ; fils d'Ea et Damkina; tua le dragon du chaos Tiamat et créa le monde à partir de son corps ; porteur des vents et de l'arc; assigné les destins."
+        }
+      }
     },
     {
       "id": "char_tiamat",
@@ -25,7 +31,13 @@
           "text": "Enuma Elish",
           "location": "Tablet I"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Tiamat",
+          "summary": "Le dragon d'eau salée primitif du chaos ; mère des premiers dieux ; son massacre par Marduk a créé le ciel et la terre ; la personnification du chaos primordial."
+        }
+      }
     },
     {
       "id": "char_ea",
@@ -38,7 +50,13 @@
           "text": "Enuma Elish",
           "location": "Tablet I"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Ea (Enki)",
+          "summary": "Dieu de la sagesse, de l'eau douce et de la création ; fils d'Anu; père de Mardouk ; il tua Apsu (l'océan d'eau douce) et construisit son temple en lui ; protecteur de l’humanité et donateur des arts."
+        }
+      }
     },
     {
       "id": "char_anu",
@@ -51,7 +69,13 @@
           "text": "Enuma Elish",
           "location": "Tablet I"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Anou",
+          "summary": "Dieu du ciel et ancien roi des dieux ; fils d'Anshar et Kishar; père d'Ea; sa ville était Uruk ; progressivement remplacé par Enlil puis Marduk dans la hiérarchie du panthéon."
+        }
+      }
     },
     {
       "id": "char_enlil",
@@ -64,7 +88,13 @@
           "text": "Mesopotamian mythology",
           "location": "tradition"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Enlil",
+          "summary": "Dieu du vent, de la tempête et de la Tablette des Destins ; seigneur de l'air; dieu principal du panthéon sumérien ; séparé le ciel de la terre; a provoqué la grande inondation à Atrahasis."
+        }
+      }
     },
     {
       "id": "char_ishtar",
@@ -77,7 +107,13 @@
           "text": "Descent of Ishtar",
           "location": "Tablet I"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Ishtar (Inanna)",
+          "summary": "Déesse de l'amour, de la guerre et de la fertilité ; l'étoile du matin et du soir ; fille d'Anu; est descendu aux enfers et a été retenu mort jusqu'à ce qu'il soit libéré par l'intervention d'Ea ; le nom akkadien du sumérien Inanna."
+        }
+      }
     },
     {
       "id": "char_gilgamesh",
@@ -90,7 +126,13 @@
           "text": "Epic of Gilgamesh",
           "location": "Tablet I"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Gilgamesh",
+          "summary": "Roi d'Uruk, aux deux tiers divin et à un tiers humain ; héros de la plus ancienne épopée du monde ; construit les murs d'Uruk; a cherché l'immortalité après la mort de son compagnon Enkidu et a échoué."
+        }
+      }
     },
     {
       "id": "char_enkidu",
@@ -103,7 +145,13 @@
           "text": "Epic of Gilgamesh",
           "location": "Tablet I"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Enkidu",
+          "summary": "Homme sauvage créé par les dieux pour égaler Gilgamesh ; civilisé par la prêtresse Shamhat ; est devenu le compagnon le plus proche de Gilgamesh ; tua Humbaba et le Taureau du Ciel ; est mort par décret divin."
+        }
+      }
     },
     {
       "id": "char_shamash",
@@ -116,7 +164,13 @@
           "text": "Epic of Gilgamesh",
           "location": "Tablet III"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Shamash (Outou)",
+          "summary": "Sun god, god of justice and truth ; patron of Gilgamesh and Enkidu in their quest ; illuminé le chemin vers la forêt de cèdres ; le sumérien Utu."
+        }
+      }
     },
     {
       "id": "char_utnapishtim",
@@ -129,7 +183,13 @@
           "text": "Epic of Gilgamesh",
           "location": "Tablet X"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Utnapishtim",
+          "summary": "Le survivant du déluge mésopotamien, analogue à Noé ; averti par Ea de construire un grand bateau; a survécu au Grand Déluge et a obtenu l'immortalité ; a révélé à Gilgamesh le secret de l'usine d'inondation."
+        }
+      }
     },
     {
       "id": "char_ereshkigal",
@@ -142,7 +202,13 @@
           "text": "Descent of Ishtar",
           "location": "Tablet I"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Ereshkigal",
+          "summary": "Reine des enfers (Kur/Irkalla) ; sœur d'Ishtar; gouverne le pays des morts où tous finissent par aller ; épouse de Nergal; a exigé qu'Ishtar soit détenu dans le monde souterrain."
+        }
+      }
     },
     {
       "id": "char_nergal",
@@ -155,7 +221,13 @@
           "text": "Mesopotamian mythology",
           "location": "tradition"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Nergal",
+          "summary": "Dieu de la guerre, de la peste et des enfers ; époux d'Ereshkigal; est devenu le seigneur des morts après être descendu aux enfers et avoir refusé de partir."
+        }
+      }
     },
     {
       "id": "char_kingu",
@@ -168,7 +240,13 @@
           "text": "Enuma Elish",
           "location": "Tablet I"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Kingu",
+          "summary": "Époux et général de Tiamat ; donné la Tablette des Destinées par Tiamat ; vaincu par Marduk; son sang a été utilisé pour créer l’humanité en tant que serviteurs des dieux."
+        }
+      }
     },
     {
       "id": "char_humbaba",
@@ -181,7 +259,13 @@
           "text": "Epic of Gilgamesh",
           "location": "Tablet V"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Humbaba",
+          "summary": "Le terrifiant gardien de la Forêt des Cèdres, nommé par Enlil ; tué par Gilgamesh et Enkidu qui coupèrent les cèdres sacrés ; sa mort a irrité les dieux."
+        }
+      }
     },
     {
       "id": "char_bull_heaven",
@@ -194,7 +278,13 @@
           "text": "Epic of Gilgamesh",
           "location": "Tablet VI"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Taureau du Ciel",
+          "summary": "Une bête divine envoyée par Ishtar pour punir Gilgamesh pour avoir rejeté ses avances ; provoqué la sécheresse et la destruction à Uruk ; tué par Gilgamesh et Enkidu, provoquant la colère des dieux."
+        }
+      }
     },
     {
       "id": "place_uruk",
@@ -207,7 +297,13 @@
           "text": "Epic of Gilgamesh",
           "location": "Tablet I"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Uruk",
+          "summary": "La grande ville fortifiée dirigée par Gilgamesh ; l'une des plus anciennes villes du monde ; maison du temple d'Ishtar (Eanna) ; ses murs ont été construits par Gilgamesh lui-même."
+        }
+      }
     },
     {
       "id": "place_cedar_forest",
@@ -220,7 +316,13 @@
           "text": "Epic of Gilgamesh",
           "location": "Tablet V"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "La forêt de cèdres",
+          "summary": "Une forêt sacrée gardée par Humbaba ; situé dans la Montagne des Cèdres (Liban) ; Gilgamesh et Enkidu s'y rendirent pour couper du bois et prouver leur héroïsme."
+        }
+      }
     },
     {
       "id": "place_abzu",
@@ -233,7 +335,13 @@
           "text": "Enuma Elish",
           "location": "Tablet I"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Abzu (Apsu)",
+          "summary": "L'océan d'eau douce primordial sous la terre ; personnifié comme le dieu Apsu; demeure d'Ea/Enki; la source de toute eau douce et de toute sagesse."
+        }
+      }
     },
     {
       "id": "place_kur",
@@ -246,7 +354,13 @@
           "text": "Descent of Ishtar",
           "location": "Tablet I"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Kur (Irkalla)",
+          "summary": "La pègre mésopotamienne ; gouverné par Ereshkigal ; un royaume sombre et poussiéreux où les morts mangent de la poussière et portent des plumes ; toutes les âmes descendent ici quels que soient leurs actes."
+        }
+      }
     },
     {
       "id": "obj_tablet_destinies",
@@ -259,7 +373,13 @@
           "text": "Enuma Elish",
           "location": "Tablet IV"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Tablette des Destins",
+          "summary": "Une tablette d'argile inscrite en caractères cunéiformes qui confère l'autorité suprême sur l'univers ; détenu par Enlil, puis par Tiamat (donné à Kingu), et enfin saisi par Marduk après sa victoire."
+        }
+      }
     },
     {
       "id": "obj_marduk_bow",
@@ -272,7 +392,13 @@
           "text": "Enuma Elish",
           "location": "Tablet IV"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Arc de Marduk",
+          "summary": "Le grand arc de Marduk, conçu pour tuer Tiamat ; un filet pour la piéger et des vents pour gonfler son corps ; son arme principale dans la bataille cosmique de la création."
+        }
+      }
     },
     {
       "id": "event_marduk_tiamat",
@@ -285,7 +411,13 @@
           "text": "Enuma Elish",
           "location": "Tablet IV"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Bataille de Marduk et Tiamat",
+          "summary": "Marduk a piégé Tiamat dans son filet, l'a remplie de vent et lui a tiré dessus avec une flèche ; À partir de son corps divisé, il façonna le ciel et la terre, établissant ainsi l'ordre cosmique."
+        }
+      }
     },
     {
       "id": "event_gilgamesh_cedar",
@@ -298,7 +430,13 @@
           "text": "Epic of Gilgamesh",
           "location": "Tablet III"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Voyage dans la forêt de cèdres",
+          "summary": "La quête de Gilgamesh et Enkidu dans la forêt de cèdres pour tuer Humbaba et couper les cèdres sacrés ; béni par Shamash; ils ont tué Humbaba et ont mis Enlil en colère."
+        }
+      }
     },
     {
       "id": "event_flood",
@@ -311,7 +449,13 @@
           "text": "Epic of Gilgamesh",
           "location": "Tablet XI"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "La grande inondation",
+          "summary": "Les dieux ont envoyé un déluge pour détruire l’humanité ; Ea avertit Utnapishtim, qui construisit un bateau et sauva tous les êtres vivants ; après le déluge, les dieux regrettèrent leur décision et accordèrent l'immortalité à Utnapishtim."
+        }
+      }
     },
     {
       "id": "event_ishtar_descent",
@@ -324,7 +468,13 @@
           "text": "Descent of Ishtar",
           "location": "Tablet I"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Descente d'Ishtar",
+          "summary": "Ishtar descendit aux enfers pour défier sa sœur Ereshkigal ; a été dépouillé et tenu mort, provoquant la cessation de toute fertilité sur terre ; libérés par la création d'Ea, le kurgarru et le kalaturru."
+        }
+      }
     },
     {
       "id": "event_creation",
@@ -337,7 +487,13 @@
           "text": "Enuma Elish",
           "location": "Tablet VI"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Création de l'humanité",
+          "summary": "Marduk a créé les humains à partir du sang de Kingu tué, mélangé à de l'argile. ; les humains ont été créés pour servir les dieux et alléger leur travail ; cet acte a établi la relation homme-dieu."
+        }
+      }
     },
     {
       "id": "concept_me",
@@ -350,7 +506,13 @@
           "text": "Mesopotamian mythology",
           "location": "tradition"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Moi (Décrets Divins)",
+          "summary": "Les décrets et lois divins qui régissent la civilisation ; les dons des dieux qui structurent la société, la royauté, les arts et l'artisanat ; Inanna/Ishtar m'a amené à Uruk depuis Enki."
+        }
+      }
     },
     {
       "id": "concept_kingship",
@@ -363,7 +525,13 @@
           "text": "Mesopotamian mythology",
           "location": "tradition"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Royauté",
+          "summary": "Le droit divin de gouverner, descendu du ciel ; les rois sont choisis par les dieux (notamment Enlil et Marduk) ; le roi est l'intendant des dieux sur terre et maintient l'ordre."
+        }
+      }
     }
   ],
   "edges": [
@@ -380,7 +548,12 @@
           "location": "Tablet I"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Enfant de"
+        }
+      }
     },
     {
       "id": "edge_ea_child",
@@ -395,7 +568,12 @@
           "location": "Tablet I"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Enfant de"
+        }
+      }
     },
     {
       "id": "edge_kingu_spouse",
@@ -410,7 +588,12 @@
           "location": "Tablet I"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Conjoint de"
+        }
+      }
     },
     {
       "id": "edge_ereshkigal_spouse",
@@ -425,7 +608,12 @@
           "location": "tradition"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Conjoint de"
+        }
+      }
     },
     {
       "id": "edge_ishtar_child",
@@ -440,7 +628,12 @@
           "location": "Tablet I"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Enfant de"
+        }
+      }
     },
     {
       "id": "edge_gilgamesh_enkidu",
@@ -455,7 +648,12 @@
           "location": "Tablet II"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Rencontré"
+        }
+      }
     },
     {
       "id": "edge_gilgamesh_fought_humbaba",
@@ -470,7 +668,12 @@
           "location": "Tablet V"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Combattu"
+        }
+      }
     },
     {
       "id": "edge_enkidu_fought_humbaba",
@@ -485,7 +688,12 @@
           "location": "Tablet V"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Combattu"
+        }
+      }
     },
     {
       "id": "edge_cedar_place",
@@ -500,7 +708,12 @@
           "location": "Tablet III"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "A eu lieu à"
+        }
+      }
     },
     {
       "id": "edge_humbaba_guards",
@@ -515,7 +728,12 @@
           "location": "Tablet V"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Gardes"
+        }
+      }
     },
     {
       "id": "edge_gilgamesh_ruler",
@@ -530,7 +748,12 @@
           "location": "Tablet I"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Souverain de"
+        }
+      }
     },
     {
       "id": "edge_gilgamesh_bull",
@@ -545,7 +768,12 @@
           "location": "Tablet VI"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Combattu"
+        }
+      }
     },
     {
       "id": "edge_enkidu_bull",
@@ -560,7 +788,12 @@
           "location": "Tablet VI"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Combattu"
+        }
+      }
     },
     {
       "id": "edge_gilgamesh_utnapishtim",
@@ -575,7 +808,12 @@
           "location": "Tablet X"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Rencontré"
+        }
+      }
     },
     {
       "id": "edge_ea_abzu",
@@ -590,7 +828,12 @@
           "location": "Tablet I"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
     },
     {
       "id": "edge_ereshkigal_ruler",
@@ -605,7 +848,12 @@
           "location": "Tablet I"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Souverain de"
+        }
+      }
     },
     {
       "id": "edge_ishtar_descent_event",
@@ -620,7 +868,12 @@
           "location": "Tablet I"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
     },
     {
       "id": "edge_ishtar_descent_place",
@@ -635,7 +888,12 @@
           "location": "Tablet I"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "A eu lieu à"
+        }
+      }
     },
     {
       "id": "edge_marduk_tiamat_event",
@@ -650,7 +908,12 @@
           "location": "Tablet IV"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
     },
     {
       "id": "edge_marduk_bow_obj",
@@ -665,7 +928,12 @@
           "location": "Tablet IV"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
     },
     {
       "id": "edge_tablet_destinies_marduk",
@@ -680,7 +948,12 @@
           "location": "Tablet IV"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
     },
     {
       "id": "edge_enlil_tablet",
@@ -695,7 +968,12 @@
           "location": "tradition"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
     },
     {
       "id": "edge_kingu_tablet",
@@ -710,7 +988,12 @@
           "location": "Tablet I"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
     },
     {
       "id": "edge_creation_event",
@@ -725,7 +1008,12 @@
           "location": "Tablet VI"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "A eu lieu à"
+        }
+      }
     },
     {
       "id": "edge_flood_event",
@@ -740,7 +1028,12 @@
           "location": "Tablet XI"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "A eu lieu à"
+        }
+      }
     },
     {
       "id": "edge_utnapishtim_flood",
@@ -755,7 +1048,12 @@
           "location": "Tablet XI"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
     },
     {
       "id": "edge_shamash_gilgamesh",
@@ -770,7 +1068,12 @@
           "location": "Tablet III"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Rencontré"
+        }
+      }
     },
     {
       "id": "edge_ishtar_me",
@@ -785,7 +1088,12 @@
           "location": "tradition"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
     },
     {
       "id": "edge_ea_me",
@@ -800,7 +1108,12 @@
           "location": "tradition"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
     },
     {
       "id": "edge_marduk_kingship",
@@ -815,7 +1128,12 @@
           "location": "Tablet VI"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
     },
     {
       "id": "edge_enlil_flood",
@@ -830,7 +1148,12 @@
           "location": "Tablet XI"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
     },
     {
       "id": "edge_marduk_fought",
@@ -845,7 +1168,12 @@
           "location": "Tablet IV"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Combattu"
+        }
+      }
     },
     {
       "id": "edge_ishtar_ereshkigal",
@@ -860,7 +1188,12 @@
           "location": "Tablet I"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Rencontré"
+        }
+      }
     }
   ]
 }

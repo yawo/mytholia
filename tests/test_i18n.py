@@ -53,6 +53,73 @@ def test_graph_error_defaults_to_fr_without_header(client):
     assert "introuvable" in r.json()["detail"]
 
 
+def test_networkx_store_overlays_localized_graph_text(tmp_path):
+    from api.retrieval.graph_store import NetworkXGraphStore
+
+    corpus_dir = tmp_path / "corpora" / "test-corpus"
+    corpus_dir.mkdir(parents=True)
+    (corpus_dir / "manifest.yaml").write_text(
+        "id: test-corpus\nname: Test Corpus\nlanguage: en\n", encoding="utf-8"
+    )
+    processed_dir = tmp_path / "processed" / "test-corpus"
+    processed_dir.mkdir(parents=True)
+    (processed_dir / "graph.json").write_text(
+        """
+{
+  "corpus_id": "test-corpus",
+  "nodes": [
+    {
+      "id": "char_hero",
+      "type": "Character",
+      "corpus_id": "test-corpus",
+      "label": "Hero",
+      "summary": "English summary.",
+      "source_refs": [{"text": "Source"}],
+      "i18n": {"fr": {"label": "Héros", "summary": "Résumé français."}}
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge_hero_place",
+      "source": "char_hero",
+      "target": "char_hero",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "test-corpus",
+      "label": "Associated With",
+      "source_refs": [{"text": "Source"}],
+      "i18n": {"fr": {"label": "Associé à"}}
+    }
+  ]
+}
+""",
+        encoding="utf-8",
+    )
+
+    store = NetworkXGraphStore(
+        processed_dir=tmp_path / "processed", corpora_dir=tmp_path / "corpora"
+    )
+    english = store.get_graph("test-corpus", locale="en")
+    french = store.get_graph("test-corpus", locale="fr")
+
+    assert english.nodes[0].summary == "English summary."
+    assert french.nodes[0].label == "Héros"
+    assert french.nodes[0].summary == "Résumé français."
+    assert french.edges[0].label == "Associé à"
+
+
+@pytest.mark.parametrize("corpus_id,fixture_name", CORPUS_FIXTURES[:2])
+def test_shipped_graph_payload_localized_fr(corpus_id: str, fixture_name: str):
+    """Graph labels and summaries switch to French via Accept-Language."""
+    from api.retrieval.graph_store import NetworkXGraphStore
+
+    store = NetworkXGraphStore()
+    english = store.get_graph(corpus_id, locale="en")
+    french = store.get_graph(corpus_id, locale="fr")
+
+    assert french.nodes[0].summary != english.nodes[0].summary
+    assert french.edges[0].label != english.edges[0].label
+
+
 def test_subgraph_error_localized(client):
     r = client.get(
         "/api/subgraph",

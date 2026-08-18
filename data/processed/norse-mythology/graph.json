@@ -12,7 +12,13 @@
           "text": "Prose Edda",
           "location": "Gylfaginning"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Odin",
+          "summary": "Père de Tout et roi des Ases ; dieu de la sagesse, de la guerre, de la poésie et de la mort ; a sacrifié son œil au puits de Mimir et s'est accroché à Yggdrasil pour gagner les runes."
+        }
+      }
     },
     {
       "id": "char_thor",
@@ -25,7 +31,13 @@
           "text": "Prose Edda",
           "location": "Gylfaginning"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Thor",
+          "summary": "Dieu du tonnerre, fils d'Odin et de la déesse de la terre Jord ; protecteur de Midgard et de l'humanité; brandit le marteau Mjolnir contre les géants ; le plus fort des dieux."
+        }
+      }
     },
     {
       "id": "char_loki",
@@ -38,7 +50,13 @@
           "text": "Prose Edda",
           "location": "Gylfaginning"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Loki",
+          "summary": "Dieu filou, frère de sang d'Odin ; un métamorphe d'origine géante (jotun); père des monstres et instigateur de la mort de Baldur ; lié par les dieux jusqu'au Ragnarok."
+        }
+      }
     },
     {
       "id": "char_frigg",
@@ -51,7 +69,13 @@
           "text": "Prose Edda",
           "location": "Gylfaginning"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Frig",
+          "summary": "Wife of Odin and queen of the Aesir ; déesse du mariage, de la maternité et de la prophétie ; mother of Baldur ; a essayé de le protéger de toutes choses mais a échoué avec le gui."
+        }
+      }
     },
     {
       "id": "char_baldur",
@@ -64,7 +88,13 @@
           "text": "Prose Edda",
           "location": "Gylfaginning"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Baldur",
+          "summary": "Dieu de lumière, de beauté et de renouveau ; fils d'Odin et Frigg; tué par une flèche de gui guidée par Loki ; sa mort est le premier présage du Ragnarok."
+        }
+      }
     },
     {
       "id": "char_freyr",
@@ -77,7 +107,13 @@
           "text": "Prose Edda",
           "location": "Gylfaginning"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Freyr",
+          "summary": "Dieu de fertilité, de prospérité et de paix ; un otage Vanir parmi les Ases ; fils de Njord; souverain d'Alfheim; brandit un navire qui se replie dans une poche et une épée qui se bat seule."
+        }
+      }
     },
     {
       "id": "char_freya",
@@ -90,7 +126,13 @@
           "text": "Prose Edda",
           "location": "Gylfaginning"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Freya",
+          "summary": "Déesse de l'amour, de la beauté et de la guerre ; sœur de Freyr ; part au combat et revendique la moitié des tués ; monte un char tiré par des chats ; a enseigné le seidr (magie) aux Ases."
+        }
+      }
     },
     {
       "id": "char_njord",
@@ -103,7 +145,13 @@
           "text": "Prose Edda",
           "location": "Gylfaginning"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Njord",
+          "summary": "Dieu de la mer, du vent et de la pêche ; un Vanir ; father of Freyr and Freya ; lives at Noatun (ship enclosure) ; associée aux richesses de la mer."
+        }
+      }
     },
     {
       "id": "char_tyr",
@@ -116,7 +164,13 @@
           "text": "Prose Edda",
           "location": "Gylfaginning"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Tyr",
+          "summary": "Dieu de la guerre, de la justice et du droit ; a sacrifié sa main pour lier le loup Fenrir ; dieu à une main des Ases."
+        }
+      }
     },
     {
       "id": "char_heimdall",
@@ -129,7 +183,13 @@
           "text": "Prose Edda",
           "location": "Gylfaginning"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Heimdall",
+          "summary": "Gardien des dieux ; gardien du pont Bifrost vers Asgard ; a des sens si aiguisés qu'il peut entendre l'herbe pousser ; fera sonner le Gjallarhorn à Ragnarok."
+        }
+      }
     },
     {
       "id": "char_hel",
@@ -142,7 +202,13 @@
           "text": "Prose Edda",
           "location": "Gylfaginning"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Hel",
+          "summary": "Fille de Loki ; souverain du royaume souterrain Hel; reçoit ceux qui meurent de maladie ou de vieillesse ; la moitié de son corps est livide, l’autre moitié normale."
+        }
+      }
     },
     {
       "id": "char_fenrir",
@@ -155,7 +221,13 @@
           "text": "Prose Edda",
           "location": "Gylfaginning"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Fenrir",
+          "summary": "Loup monstrueux, fils de Loki ; lié par les dieux avec l'entrave magique Gleipnir ; se libérera à Ragnarok et tuera Odin."
+        }
+      }
     },
     {
       "id": "char_jormungandr",
@@ -168,7 +240,13 @@
           "text": "Prose Edda",
           "location": "Gylfaginning"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Jormungandr",
+          "summary": "Le Serpent de Midgard, fils de Loki ; un serpent de mer encerclant le monde ; Le grand adversaire de Thor ; sortira de la mer à Ragnarok et empoisonnera le ciel."
+        }
+      }
     },
     {
       "id": "char_sleipnir",
@@ -181,7 +259,13 @@
           "text": "Prose Edda",
           "location": "Gylfaginning"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Sleipnir",
+          "summary": "Le coursier à huit pattes d'Odin, le plus rapide de tous les chevaux ; progéniture de Loki (en tant que jument) et de l'étalon Svadilfari."
+        }
+      }
     },
     {
       "id": "place_asgard",
@@ -194,7 +278,13 @@
           "text": "Prose Edda",
           "location": "Gylfaginning"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Asgard",
+          "summary": "Le royaume des dieux Ases ; situé au sommet de l'arbre du monde Yggdrasil ; relié à Midgard par le pont arc-en-ciel Bifrost."
+        }
+      }
     },
     {
       "id": "place_midgard",
@@ -207,7 +297,13 @@
           "text": "Prose Edda",
           "location": "Gylfaginning"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Midgard",
+          "summary": "Le royaume des humains, encerclé par le serpent mondial Jormungandr ; entouré par un océan et relié à Asgard par le pont Bifrost."
+        }
+      }
     },
     {
       "id": "place_jotunheim",
@@ -220,7 +316,13 @@
           "text": "Prose Edda",
           "location": "Gylfaginning"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Jotunheim",
+          "summary": "Le royaume des géants (jotnar), à l'est de Midgard ; une terre de roche, de glace et de nature sauvage ; les ennemis jurés des Ases habitent ici."
+        }
+      }
     },
     {
       "id": "place_yggdrasil",
@@ -233,7 +335,13 @@
           "text": "Poetic Edda",
           "location": "Voluspa"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Yggdrasil",
+          "summary": "L'Arbre du Monde, un frêne dont les racines et les branches relient les neuf mondes ; trois racines mènent à Asgard, Jotunheim et Hel ; les Norns s'en occupent quotidiennement."
+        }
+      }
     },
     {
       "id": "place_valhalla",
@@ -246,7 +354,13 @@
           "text": "Prose Edda",
           "location": "Gylfaginning"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Valhalla",
+          "summary": "la grande salle d'Odin à Asgard où les guerriers tués (einherjar) se régalent et s'entraînent pour le Ragnarok ; 540 portes ; couvert de boucliers et de lances."
+        }
+      }
     },
     {
       "id": "place_hel",
@@ -259,7 +373,13 @@
           "text": "Prose Edda",
           "location": "Gylfaginning"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Hel",
+          "summary": "Le royaume souterrain des morts, gouverné par la déesse Hel ; où vont ceux qui meurent de maladie ou de vieillesse ; un endroit froid et brumeux."
+        }
+      }
     },
     {
       "id": "obj_mjolnir",
@@ -272,7 +392,13 @@
           "text": "Prose Edda",
           "location": "Skaldskaparmal"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Mjölnir",
+          "summary": "Le marteau de Thor, forgé par les frères nains Sindri et Brokkr ; la plus grande des armes ; revient dans la main du lanceur ; protège les dieux et les humains des géants."
+        }
+      }
     },
     {
       "id": "obj_gungnir",
@@ -285,7 +411,13 @@
           "text": "Prose Edda",
           "location": "Gylfaginning"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Gungnir",
+          "summary": "La lance magique d'Odin, forgée par des nains ; ne manque jamais sa cible ; Odin le lança sur une armée pour récupérer les tués."
+        }
+      }
     },
     {
       "id": "obj_gleipnir",
@@ -298,7 +430,13 @@
           "text": "Prose Edda",
           "location": "Gylfaginning"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Gleipnir",
+          "summary": "L'entrave magique qui lie Fenrir ; fabriqué par des nains à partir d'ingrédients impossibles (un pas de chat, une barbe de femme, une haleine de poisson, etc.) ; fin comme un ruban de soie mais incassable."
+        }
+      }
     },
     {
       "id": "obj_gjallarhorn",
@@ -311,7 +449,13 @@
           "text": "Prose Edda",
           "location": "Gylfaginning"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Gjallarhorn",
+          "summary": "la corne de Heimdall, qu'il sonnera pour alerter les dieux lorsque les géants marcheront sur Asgard au Ragnarok ; son son peut être entendu dans les neuf mondes."
+        }
+      }
     },
     {
       "id": "event_ragnarok",
@@ -324,7 +468,13 @@
           "text": "Poetic Edda",
           "location": "Voluspa"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Ragnarök",
+          "summary": "Le destin des dieux ; la bataille finale dans laquelle Fenrir tue Odin, Thor et Jormungandr s'entretuent, le monde est consumé par le feu et un nouveau monde surgit de la mer."
+        }
+      }
     },
     {
       "id": "event_baldur_death",
@@ -337,7 +487,13 @@
           "text": "Prose Edda",
           "location": "Gylfaginning"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Mort de Baldur",
+          "summary": "Les dieux s'amusaient à lancer des armes sur l'invulnérable Baldur ; Loki a trompé le dieu aveugle Hod en lui faisant lancer une fléchette de gui, la seule chose que Frigg n'avait pas juré de lui épargner ; La mort de Baldur marque le début de la chaîne menant au Ragnarok."
+        }
+      }
     },
     {
       "id": "event_aesir_vanir_war",
@@ -350,7 +506,13 @@
           "text": "Prose Edda",
           "location": "Gylfaginning"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Guerre Ases-Vanir",
+          "summary": "La première guerre entre les deux tribus de dieux ; s'est terminé par une trêve et un échange d'otages (Njord, Freyr et Freya se sont rendus chez les Ases) ; les dieux crachèrent dans un récipient, créant le sage Kvasir."
+        }
+      }
     },
     {
       "id": "concept_wyrd",
@@ -363,7 +525,13 @@
           "text": "Poetic Edda",
           "location": "Voluspa"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Wyrd (Urd)",
+          "summary": "Le concept nordique du destin ou du destin ; tissé par les Nornes (Urd, Verdandi, Skuld) à la base d'Yggdrasil ; même les dieux sont soumis au destin et ne peuvent échapper au Ragnarok."
+        }
+      }
     },
     {
       "id": "concept_einherjar",
@@ -376,7 +544,13 @@
           "text": "Prose Edda",
           "location": "Gylfaginning"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Einherjar",
+          "summary": "Les guerriers tués choisis emmenés par Odin (via les valkyries) ou Freya au Valhalla ou à Folkvangr ; ils se battent et se régalent quotidiennement, en attendant que Ragnarok combatte aux côtés des dieux."
+        }
+      }
     },
     {
       "id": "concept_valkyries",
@@ -389,7 +563,13 @@
           "text": "Poetic Edda",
           "location": "Voluspa"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Valkyries",
+          "summary": "Esprits guerriers féminins qui servent Odin ; choisissez qui meurt et qui vit au combat ; amener les tués au Valhalla ; chevauchez des loups et des chevaux dans le ciel."
+        }
+      }
     }
   ],
   "edges": [
@@ -406,7 +586,12 @@
           "location": "Gylfaginning"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Conjoint de"
+        }
+      }
     },
     {
       "id": "edge_thor_child",
@@ -421,7 +606,12 @@
           "location": "Gylfaginning"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Enfant de"
+        }
+      }
     },
     {
       "id": "edge_baldur_child",
@@ -436,7 +626,12 @@
           "location": "Gylfaginning"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Enfant de"
+        }
+      }
     },
     {
       "id": "edge_baldur_mother",
@@ -451,7 +646,12 @@
           "location": "Gylfaginning"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Enfant de"
+        }
+      }
     },
     {
       "id": "edge_freyr_child",
@@ -466,7 +666,12 @@
           "location": "Gylfaginning"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Enfant de"
+        }
+      }
     },
     {
       "id": "edge_freya_child",
@@ -481,7 +686,12 @@
           "location": "Gylfaginning"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Enfant de"
+        }
+      }
     },
     {
       "id": "edge_hel_child",
@@ -496,7 +706,12 @@
           "location": "Gylfaginning"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Enfant de"
+        }
+      }
     },
     {
       "id": "edge_fenrir_child",
@@ -511,7 +726,12 @@
           "location": "Gylfaginning"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Enfant de"
+        }
+      }
     },
     {
       "id": "edge_jormungandr_child",
@@ -526,7 +746,12 @@
           "location": "Gylfaginning"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Enfant de"
+        }
+      }
     },
     {
       "id": "edge_odin_sleipnir",
@@ -541,7 +766,12 @@
           "location": "Gylfaginning"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
     },
     {
       "id": "edge_odin_ruler",
@@ -556,7 +786,12 @@
           "location": "Gylfaginning"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Souverain de"
+        }
+      }
     },
     {
       "id": "edge_hel_ruler",
@@ -571,7 +806,12 @@
           "location": "Gylfaginning"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Souverain de"
+        }
+      }
     },
     {
       "id": "edge_thor_mjolnir",
@@ -586,7 +826,12 @@
           "location": "Skaldskaparmal"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
     },
     {
       "id": "edge_odin_gungnir",
@@ -601,7 +846,12 @@
           "location": "Gylfaginning"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
     },
     {
       "id": "edge_loki_baldur",
@@ -616,7 +866,12 @@
           "location": "Gylfaginning"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
     },
     {
       "id": "edge_baldur_death_place",
@@ -631,7 +886,12 @@
           "location": "Gylfaginning"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "A eu lieu à"
+        }
+      }
     },
     {
       "id": "edge_thor_fought_jormungandr",
@@ -646,7 +906,12 @@
           "location": "Gylfaginning"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Combattu"
+        }
+      }
     },
     {
       "id": "edge_odin_fought_fenrir",
@@ -661,7 +926,12 @@
           "location": "Voluspa"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Combattu"
+        }
+      }
     },
     {
       "id": "edge_ragnarok_place",
@@ -676,7 +946,12 @@
           "location": "Voluspa"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "A eu lieu à"
+        }
+      }
     },
     {
       "id": "edge_heimdall_guards",
@@ -691,7 +966,12 @@
           "location": "Gylfaginning"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Gardes"
+        }
+      }
     },
     {
       "id": "edge_heimdall_horn",
@@ -706,7 +986,12 @@
           "location": "Gylfaginning"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
     },
     {
       "id": "edge_fenrir_bound",
@@ -721,7 +1006,12 @@
           "location": "Gylfaginning"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
     },
     {
       "id": "edge_odin_valhalla",
@@ -736,7 +1026,12 @@
           "location": "Gylfaginning"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
     },
     {
       "id": "edge_yggdrasil_asgard",
@@ -751,7 +1046,12 @@
           "location": "Voluspa"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
     },
     {
       "id": "edge_ragnarok_wyrd",
@@ -766,7 +1066,12 @@
           "location": "Voluspa"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
     },
     {
       "id": "edge_odin_einherjar",
@@ -781,7 +1086,12 @@
           "location": "Gylfaginning"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
     },
     {
       "id": "edge_freya_valkyries",
@@ -796,7 +1106,12 @@
           "location": "Gylfaginning"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
     },
     {
       "id": "edge_tyr_fenrir",
@@ -811,7 +1126,12 @@
           "location": "Gylfaginning"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Combattu"
+        }
+      }
     },
     {
       "id": "edge_freyr_alfheim",
@@ -826,7 +1146,12 @@
           "location": "Gylfaginning"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Souverain de"
+        }
+      }
     },
     {
       "id": "edge_loki_met",
@@ -841,7 +1166,12 @@
           "location": "Gylfaginning"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Rencontré"
+        }
+      }
     }
   ]
 }

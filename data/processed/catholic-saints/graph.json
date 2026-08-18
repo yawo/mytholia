@@ -12,7 +12,13 @@
           "text": "Butler's Lives of the Saints",
           "location": "June 29"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Saint Peter",
+          "summary": "Apôtre et premier pape ; à l'origine un pêcheur nommé Simon, rebaptisé Pierre (le Rocher) par le Christ ; crucifié la tête en bas à Rome."
+        }
+      }
     },
     {
       "id": "char_paul",
@@ -25,7 +31,13 @@
           "text": "Butler's Lives of the Saints",
           "location": "June 29"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Saint-Paul",
+          "summary": "Apôtre des Gentils ; à l'origine Saul de Tarse, persécuteur des chrétiens convertis sur la route de Damas ; martyrisé à Rome."
+        }
+      }
     },
     {
       "id": "char_francis",
@@ -38,7 +50,13 @@
           "text": "Butler's Lives of the Saints",
           "location": "October 4"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Saint François d'Assise",
+          "summary": "Fondateur de l'Ordre Franciscain; fils d'un riche marchand qui a embrassé la pauvreté; connu pour la prédication aux animaux et le Cantique du Soleil."
+        }
+      }
     },
     {
       "id": "char_thomas_aquinas",
@@ -51,7 +69,13 @@
           "text": "Butler's Lives of the Saints",
           "location": "January 28"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Saint Thomas d'Aquin",
+          "summary": "frère dominicain et théologien; auteur de la Somme Théologique ; le principal philosophe scolastique de l'Église catholique."
+        }
+      }
     },
     {
       "id": "char_mary",
@@ -64,7 +88,13 @@
           "text": "Golden Legend",
           "location": "Assumption"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Vierge Marie",
+          "summary": "Mère de Jésus ; vénéré comme la Theotokos (porteur de Dieu) ; assumé corps et âme au ciel."
+        }
+      }
     },
     {
       "id": "char_patrick",
@@ -77,7 +107,13 @@
           "text": "Butler's Lives of the Saints",
           "location": "March 17"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Saint-Patrick",
+          "summary": "Apôtre d'Irlande; réduit en esclavage dans sa jeunesse, il revint convertir les Irlandais ; associé au trèfle et à l'expulsion des serpents."
+        }
+      }
     },
     {
       "id": "place_rome",
@@ -90,7 +126,13 @@
           "text": "Butler's Lives of the Saints",
           "location": "June 29"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Rome",
+          "summary": "La Ville éternelle ; site des martyrs de Pierre et Paul ; centre de l’Église catholique."
+        }
+      }
     },
     {
       "id": "place_assisi",
@@ -103,7 +145,13 @@
           "text": "Butler's Lives of the Saints",
           "location": "October 4"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Assise",
+          "summary": "Ville italienne en Ombrie ; lieu de naissance de saint François et de sainte Claire."
+        }
+      }
     },
     {
       "id": "place_damascus",
@@ -116,7 +164,13 @@
           "text": "Acts of the Apostles",
           "location": "chapter 9"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Damas",
+          "summary": "Ville où Saul de Tarse connut sur la route sa conversion aveuglante ; renommé Paul."
+        }
+      }
     },
     {
       "id": "place_irish_sea",
@@ -129,7 +183,13 @@
           "text": "Butler's Lives of the Saints",
           "location": "March 17"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "La mer d'Irlande",
+          "summary": "Waters crossed by Saint Patrick on his mission to Ireland."
+        }
+      }
     },
     {
       "id": "event_martyrdom_peter",
@@ -142,7 +202,13 @@
           "text": "Butler's Lives of the Saints",
           "location": "June 29"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Martyre de saint Pierre",
+          "summary": "La crucifixion de Pierre à Rome sous l'empereur Néron ; il a demandé à être crucifié la tête en bas, se jugeant indigne de mourir comme le Christ."
+        }
+      }
     },
     {
       "id": "event_conversion_paul",
@@ -155,7 +221,13 @@
           "text": "Acts of the Apostles",
           "location": "chapter 9"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Conversion de saint Paul",
+          "summary": "La vision aveuglante de Saül du Christ ressuscité sur le chemin de Damas, le transformant de persécuteur en apôtre."
+        }
+      }
     },
     {
       "id": "event_council_nicaea",
@@ -168,7 +240,13 @@
           "text": "Golden Legend",
           "location": "325 AD"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Concile de Nicée",
+          "summary": "Le premier concile œcuménique (325 après JC) qui affirma la divinité du Christ et produisit le Credo de Nicée."
+        }
+      }
     },
     {
       "id": "obj_keys",
@@ -181,7 +259,13 @@
           "text": "Golden Legend",
           "location": "Matthew 16:19"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Clés du Ciel",
+          "summary": "Les clés données à Pierre par le Christ, symbolisant son autorité de lier et de délier ; un symbole de la papauté."
+        }
+      }
     },
     {
       "id": "concept_canonization",
@@ -194,7 +278,13 @@
           "text": "Golden Legend",
           "location": "process"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Canonisation",
+          "summary": "Processus par lequel l’Église catholique déclare une personne sainte, reconnaissant sa vertu héroïque et son pouvoir d’intercession."
+        }
+      }
     }
   ],
   "edges": [
@@ -211,7 +301,12 @@
           "location": "June 29"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
     },
     {
       "id": "edge_peter_martyrdom_place",
@@ -226,7 +321,12 @@
           "location": "June 29"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "A eu lieu à"
+        }
+      }
     },
     {
       "id": "edge_peter_keys",
@@ -241,7 +341,12 @@
           "location": "Matthew 16:19"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
     },
     {
       "id": "edge_peter_ruler",
@@ -256,7 +361,12 @@
           "location": "papacy"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Souverain de"
+        }
+      }
     },
     {
       "id": "edge_paul_conversion",
@@ -271,7 +381,12 @@
           "location": "chapter 9"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
     },
     {
       "id": "edge_conversion_place",
@@ -286,7 +401,12 @@
           "location": "chapter 9"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "A eu lieu à"
+        }
+      }
     },
     {
       "id": "edge_paul_met_peter",
@@ -301,7 +421,12 @@
           "location": "chapter 15"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Rencontré"
+        }
+      }
     },
     {
       "id": "edge_francis_birthplace",
@@ -316,7 +441,12 @@
           "location": "October 4"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
     },
     {
       "id": "edge_francis_worshipped",
@@ -331,7 +461,12 @@
           "location": "Canticle of the Sun"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Adoré comme"
+        }
+      }
     },
     {
       "id": "edge_patrick_mission",
@@ -346,7 +481,12 @@
           "location": "March 17"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "A eu lieu à"
+        }
+      }
     },
     {
       "id": "edge_thomas_worshipped",
@@ -361,7 +501,12 @@
           "location": "theology"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Adoré comme"
+        }
+      }
     },
     {
       "id": "edge_nicaea_concept",
@@ -376,7 +521,12 @@
           "location": "325 AD"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
     },
     {
       "id": "edge_mary_worshipped",
@@ -391,7 +541,12 @@
           "location": "Theotokos"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Adoré comme"
+        }
+      }
     },
     {
       "id": "edge_peter_fought",
@@ -406,7 +561,12 @@
           "location": "Galatians 2"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Combattu"
+        }
+      }
     }
   ]
 }

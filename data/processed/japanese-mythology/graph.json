@@ -12,7 +12,13 @@
           "text": "Kojiki",
           "location": "Kamiumi"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Izanagi",
+          "summary": "Le dieu primordial masculin (« Celui qui invite ») ; avec sa sœur-épouse Izanami créa l'archipel japonais et les kami ; père d'Amaterasu, Tsukuyomi et Susanoo de sa purification."
+        }
+      }
     },
     {
       "id": "char_izanami",
@@ -25,7 +31,13 @@
           "text": "Kojiki",
           "location": "Kamiumi"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Izanami",
+          "summary": "La déesse primordiale féminine (« Celle qui invite ») ; co-créateur du Japon et des kami ; mourut en donnant naissance au dieu du feu Kagutsuchi et descendit à Yomi, les enfers."
+        }
+      }
     },
     {
       "id": "char_amaterasu",
@@ -38,7 +50,13 @@
           "text": "Kojiki",
           "location": "Amaterasu"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Amaterasu",
+          "summary": "Déesse du Soleil et divinité suprême du shintoïsme ; né de l'œil gauche d'Izanagi ; souverain de Takamagahara (Plaine du Haut Ciel) ; ancêtre de la famille impériale japonaise."
+        }
+      }
     },
     {
       "id": "char_susanoo",
@@ -51,7 +69,13 @@
           "text": "Kojiki",
           "location": "Susanoo"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Susanoo",
+          "summary": "Dieu de la tempête et frère d'Amaterasu ; né du nez d'Izanagi ; banni du ciel pour sa violence ; tua le serpent à huit têtes Orochi et récupéra l'épée Kusanagi."
+        }
+      }
     },
     {
       "id": "char_tsukuyomi",
@@ -64,7 +88,13 @@
           "text": "Kojiki",
           "location": "Kamiumi"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Tsukuyomi",
+          "summary": "Dieu de la lune, né de l'œil droit d'Izanagi ; frère d'Amaterasu et Susanoo; maître de la nuit; séparé d'Amaterasu après avoir tué la déesse de la nourriture Uke Mochi."
+        }
+      }
     },
     {
       "id": "char_uzume",
@@ -77,7 +107,13 @@
           "text": "Kojiki",
           "location": "Ama-no-Iwato"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Ame-no-Uzume",
+          "summary": "Déesse de l'aube, de la gaieté et des réjouissances ; a exécuté une danse obscène à l'extérieur de la grotte d'Amaterasu qui a fait sortir la déesse du soleil, rétablissant la lumière dans le monde ; prototype de la danse Kagura."
+        }
+      }
     },
     {
       "id": "char_inari",
@@ -90,7 +126,13 @@
           "text": "Nihon Shoki",
           "location": "tradition"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Inari",
+          "summary": "Kami du riz, de l'agriculture, de la prospérité et des renards ; patron des commerçants et artisans ; associé aux kitsune (messagers renards); l'un des kami les plus vénérés du Japon."
+        }
+      }
     },
     {
       "id": "char_raijin",
@@ -103,7 +145,13 @@
           "text": "Nihon Shoki",
           "location": "tradition"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Raijin",
+          "summary": "Kami du tonnerre, des éclairs et des tempêtes ; représenté avec des tambours entourés d'un cercle de tambours ; les bat pour créer le tonnerre ; souvent associé à Fujin, le dieu du vent."
+        }
+      }
     },
     {
       "id": "char_okuninushi",
@@ -116,7 +164,13 @@
           "text": "Kojiki",
           "location": "Kuni-yuzuri"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Okuninushi",
+          "summary": "Descendant de Susanoo; dieu de l'édification de la nation, de la médecine et de l'agriculture ; souverain du royaume terrestre qui a cédé le Japon aux kami célestes ; associé à Izumo Taisha."
+        }
+      }
     },
     {
       "id": "char_sarutahiko",
@@ -129,7 +183,13 @@
           "text": "Kojiki",
           "location": "Tenson korin"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Sarutahiko",
+          "summary": "Kami terrestre qui a guidé la descente céleste de Ninigi (le petit-fils d'Amaterasu) ; un géant au visage effrayant ; gardien des carrefours et des chemins ; époux d'Ame-no-Uzume."
+        }
+      }
     },
     {
       "id": "char_ninigi",
@@ -142,7 +202,13 @@
           "text": "Kojiki",
           "location": "Tenson korin"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Ninigi-no-Mikoto",
+          "summary": "Petit-fils d'Amaterasu ; descendu de Takamagahara sur terre pour régner ; apporté les Trois Trésors Sacrés (miroir, épée, bijou) ; ancêtre de l'empereur Jimmu."
+        }
+      }
     },
     {
       "id": "char_orochi",
@@ -155,7 +221,13 @@
           "text": "Kojiki",
           "location": "Orochi"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Yamata no Orochi",
+          "summary": "Un dragon serpent à huit têtes et huit queues qui terrorisait la province d'Izumo ; tué par Susanoo, qui a trouvé l'épée Kusanagi à l'intérieur de sa queue."
+        }
+      }
     },
     {
       "id": "place_takamagahara",
@@ -168,7 +240,13 @@
           "text": "Kojiki",
           "location": "Kamiumi"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Takamagahara",
+          "summary": "La plaine du Haut Ciel ; royaume céleste des kami célestes ; gouverné par Amaterasu; d'où Ninigi est descendu sur terre."
+        }
+      }
     },
     {
       "id": "place_yomi",
@@ -181,7 +259,13 @@
           "text": "Kojiki",
           "location": "Yomi"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Yomi",
+          "summary": "La pègre japonaise/terre des morts ; Izanagi a voyagé ici pour récupérer Izanami mais s'est enfui lorsqu'il a vu son cadavre en décomposition ; la mort et l'impureté sont entrées dans le monde par Yomi."
+        }
+      }
     },
     {
       "id": "place_onogoro",
@@ -194,7 +278,13 @@
           "text": "Kojiki",
           "location": "Kuniumi"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Île d'Onogoro",
+          "summary": "La première île créée par Izanagi et Izanami ; formé lorsqu'ils remuèrent la mer primordiale avec la lance ornée de bijoux et firent couler de la saumure de sa pointe."
+        }
+      }
     },
     {
       "id": "place_izumo",
@@ -207,7 +297,13 @@
           "text": "Kojiki",
           "location": "Kuni-yuzuri"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Izumo",
+          "summary": "Province sacrée associée à Okuninushi et Susanoo ; site d'Izumo Taisha, l'un des sanctuaires shinto les plus anciens et les plus importants ; la terre cédée aux kami célestes."
+        }
+      }
     },
     {
       "id": "obj_nuhoko",
@@ -220,7 +316,13 @@
           "text": "Kojiki",
           "location": "Kuniumi"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Ame-no-Nuhoko",
+          "summary": "La lance céleste aux joyaux donnée à Izanagi et Izanami ; utilisé pour baratter la mer primordiale et créer Onogoro, la première île."
+        }
+      }
     },
     {
       "id": "obj_kusanagi",
@@ -233,7 +335,13 @@
           "text": "Kojiki",
           "location": "Orochi"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Kusanagi no Tsurugi",
+          "summary": "L'épée sacrée coupant l'herbe trouvée par Susanoo à l'intérieur de la queue d'Orochi ; l'un des trois trésors sacrés du Japon ; donné à Amaterasu et plus tard à la lignée impériale."
+        }
+      }
     },
     {
       "id": "obj_mirror",
@@ -246,7 +354,13 @@
           "text": "Nihon Shoki",
           "location": "Tenson korin"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Yata-no-Kagami",
+          "summary": "Le miroir sacré, l'un des Trois Trésors Sacrés ; représentant la sagesse et le rayonnement d'Amaterasu ; donné à Ninigi en tant que représentante d'Amaterasu elle-même."
+        }
+      }
     },
     {
       "id": "obj_magatama",
@@ -259,7 +373,13 @@
           "text": "Kojiki",
           "location": "Ama-no-Iwato"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Yasakani no Magatama",
+          "summary": "Le joyau sacré courbé, l'un des Trois Trésors Sacrés ; accroché à l'extérieur de la grotte d'Amaterasu pour l'attirer dehors ; symbolisant la bienveillance et l'esprit du kami."
+        }
+      }
     },
     {
       "id": "event_kuniumi",
@@ -272,7 +392,13 @@
           "text": "Kojiki",
           "location": "Kuniumi"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Kuniumi (Naissance de la terre)",
+          "summary": "La création de l'archipel japonais par Izanagi et Izanami ; ils remuèrent la mer avec la lance ornée de bijoux et l'île d'Onogoro se forma à partir de la saumure dégoulinante."
+        }
+      }
     },
     {
       "id": "event_cave",
@@ -285,7 +411,13 @@
           "text": "Kojiki",
           "location": "Ama-no-Iwato"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "La retraite d'Amaterasu dans la grotte",
+          "summary": "Après le déchaînement de Susanoo, Amaterasu se cacha dans une grotte, plongeant le monde dans les ténèbres ; La danse d'Ame-no-Uzume l'a fait sortir, rétablissant la lumière ; le miroir et les bijoux étaient accrochés pour l'attirer."
+        }
+      }
     },
     {
       "id": "event_orochi",
@@ -298,7 +430,13 @@
           "text": "Kojiki",
           "location": "Orochi"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Tuer d'Orochi",
+          "summary": "Susanoo a sauvé la jeune fille Kushinada-hime en enivrant le serpent à huit têtes Orochi avec du saké, puis l'a tué ; à l'intérieur de sa queue, il trouva l'épée Kusanagi."
+        }
+      }
     },
     {
       "id": "event_yomi",
@@ -311,7 +449,13 @@
           "text": "Kojiki",
           "location": "Yomi"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Le voyage d'Izanagi à Yomi",
+          "summary": "Après la mort d'Izanami, Izanagi s'est rendu à Yomi pour la récupérer ; elle avait mangé la nourriture des enfers et ne pouvait pas partir ; il a vu son corps en décomposition et s'est enfui, scellant l'entrée."
+        }
+      }
     },
     {
       "id": "event_tenson",
@@ -324,7 +468,13 @@
           "text": "Kojiki",
           "location": "Tenson korin"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Tenson Korin (Descente du petit-fils céleste)",
+          "summary": "Ninigi, petit-fils d'Amaterasu, descendit de Takamagahara sur terre avec les Trois Trésors Sacrés pour gouverner le Japon ; Sarutahiko le guida ; établit l'origine divine de la lignée impériale."
+        }
+      }
     },
     {
       "id": "concept_musubi",
@@ -337,7 +487,13 @@
           "text": "Kojiki",
           "location": "cosmology"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Musubi",
+          "summary": "Le pouvoir spirituel de croissance, d’harmonie et de vitalité ; un concept shinto fondamental représenté par des kami tels que Takami-Musubi et Kami-Musubi ; la force créatrice qui lie toutes choses."
+        }
+      }
     },
     {
       "id": "concept_kami",
@@ -350,7 +506,13 @@
           "text": "Kojiki",
           "location": "cosmology"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Kami",
+          "summary": "Les esprits, divinités ou forces divines du shintoïsme ; habiter tous les phénomènes naturels, ancêtres et lieux sacrés ; on dit qu'il y a huit millions de kami ; le concept central du shintoïsme."
+        }
+      }
     },
     {
       "id": "concept_kannagara",
@@ -363,7 +525,13 @@
           "text": "Nihon Shoki",
           "location": "tradition"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Kannagara",
+          "summary": "La Voie des Kami ; l'ordre naturel de vivre en harmonie avec les kami ; suivre la volonté divine à travers le rituel, la pureté et la gratitude ; l'essence de la pratique shinto."
+        }
+      }
     }
   ],
   "edges": [
@@ -380,7 +548,12 @@
           "location": "Kamiumi"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Conjoint de"
+        }
+      }
     },
     {
       "id": "edge_amaterasu_child",
@@ -395,7 +568,12 @@
           "location": "Kamiumi"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Enfant de"
+        }
+      }
     },
     {
       "id": "edge_susanoo_child",
@@ -410,7 +588,12 @@
           "location": "Kamiumi"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Enfant de"
+        }
+      }
     },
     {
       "id": "edge_tsukuyomi_child",
@@ -425,7 +608,12 @@
           "location": "Kamiumi"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Enfant de"
+        }
+      }
     },
     {
       "id": "edge_ninigi_child",
@@ -440,7 +628,12 @@
           "location": "Tenson korin"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Enfant de"
+        }
+      }
     },
     {
       "id": "edge_susanoo_fought",
@@ -455,7 +648,12 @@
           "location": "Orochi"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Combattu"
+        }
+      }
     },
     {
       "id": "edge_orochi_place",
@@ -470,7 +668,12 @@
           "location": "Orochi"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "A eu lieu à"
+        }
+      }
     },
     {
       "id": "edge_kuniumi_place",
@@ -485,7 +688,12 @@
           "location": "Kuniumi"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "A eu lieu à"
+        }
+      }
     },
     {
       "id": "edge_yomi_place",
@@ -500,7 +708,12 @@
           "location": "Yomi"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "A eu lieu à"
+        }
+      }
     },
     {
       "id": "edge_izanagi_yomi",
@@ -515,7 +728,12 @@
           "location": "Yomi"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
     },
     {
       "id": "edge_izanami_yomi",
@@ -530,7 +748,12 @@
           "location": "Yomi"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
     },
     {
       "id": "edge_amaterasu_ruler",
@@ -545,7 +768,12 @@
           "location": "Kamiumi"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Souverain de"
+        }
+      }
     },
     {
       "id": "edge_amaterasu_cave",
@@ -560,7 +788,12 @@
           "location": "Ama-no-Iwato"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
     },
     {
       "id": "edge_uzume_cave",
@@ -575,7 +808,12 @@
           "location": "Ama-no-Iwato"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
     },
     {
       "id": "edge_cave_place",
@@ -590,7 +828,12 @@
           "location": "Ama-no-Iwato"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "A eu lieu à"
+        }
+      }
     },
     {
       "id": "edge_izanagi_nuhoko",
@@ -605,7 +848,12 @@
           "location": "Kuniumi"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
     },
     {
       "id": "edge_susanoo_kusanagi",
@@ -620,7 +868,12 @@
           "location": "Orochi"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
     },
     {
       "id": "edge_ninigi_mirror",
@@ -635,7 +888,12 @@
           "location": "Tenson korin"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
     },
     {
       "id": "edge_ninigi_magatama",
@@ -650,7 +908,12 @@
           "location": "Ama-no-Iwato"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
     },
     {
       "id": "edge_susanoo_kusanagi_gift",
@@ -665,7 +928,12 @@
           "location": "Orochi"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Rencontré"
+        }
+      }
     },
     {
       "id": "edge_ninigi_descent",
@@ -680,7 +948,12 @@
           "location": "Tenson korin"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "A eu lieu à"
+        }
+      }
     },
     {
       "id": "edge_sarutahiko_ninigi",
@@ -695,7 +968,12 @@
           "location": "Tenson korin"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Rencontré"
+        }
+      }
     },
     {
       "id": "edge_okuninushi_izumo",
@@ -710,7 +988,12 @@
           "location": "Kuni-yuzuri"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Souverain de"
+        }
+      }
     },
     {
       "id": "edge_sarutahiko_spouse",
@@ -725,7 +1008,12 @@
           "location": "Tenson korin"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Conjoint de"
+        }
+      }
     },
     {
       "id": "edge_raijin_storms",
@@ -740,7 +1028,12 @@
           "location": "tradition"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
     },
     {
       "id": "edge_inari_kami",
@@ -755,7 +1048,12 @@
           "location": "tradition"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
     },
     {
       "id": "edge_amaterasu_musubi",
@@ -770,7 +1068,12 @@
           "location": "cosmology"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
     },
     {
       "id": "edge_kannagara_amaterasu",
@@ -785,7 +1088,12 @@
           "location": "tradition"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
     }
   ]
 }

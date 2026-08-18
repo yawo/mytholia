@@ -12,7 +12,13 @@
           "text": "Cath Maige Tuired",
           "location": "Second Battle"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Le Dagda",
+          "summary": "« Le Bon Dieu » ; chef des Tuatha De Danann ; dieu du druidisme, de la fertilité et de l'abondance ; possède le chaudron qui ne se vide jamais, la massue qui tue et ressuscite, et une harpe magique."
+        }
+      }
     },
     {
       "id": "char_lugh",
@@ -25,7 +31,13 @@
           "text": "Cath Maige Tuired",
           "location": "Second Battle"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Lugh",
+          "summary": "« Les nombreux qualifiés » ; dieu de la lumière, des arts et de la guerre ; fils de Cian et Ethniu; rejoignit les Tuatha De Danann et tua le roi fomorien Balor avec une fronde ; a institué le festival de Lughnasadh."
+        }
+      }
     },
     {
       "id": "char_morrigan",
@@ -38,7 +50,13 @@
           "text": "Cath Maige Tuired",
           "location": "Second Battle"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Le Morrigan",
+          "summary": "Reine fantôme et déesse de la guerre, du destin et de la mort ; métamorphe qui apparaît comme un corbeau; incite les guerriers à se battre et choisit qui meurt ; l'un des Tuatha De Danann."
+        }
+      }
     },
     {
       "id": "char_nuada",
@@ -51,7 +69,13 @@
           "text": "Cath Maige Tuired",
           "location": "First Battle"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Nuada",
+          "summary": "Premier roi des Tuatha De Danann ; a perdu son bras lors de la première bataille de Mag Tuired et a été remplacé comme roi (aucun homme imparfait ne pouvait régner) ; reçu un bras d'argent par Dian Cecht; restauré par Miach."
+        }
+      }
     },
     {
       "id": "char_brigid",
@@ -64,7 +88,13 @@
           "text": "Lebor Gabala Erenn",
           "location": "tradition"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Brigitte",
+          "summary": "Fille du Dagda ; déesse de la poésie, de la guérison et de la forge ; patronne des bardes ; associé à la flamme sacrée et aux puits sacrés; plus tard syncrétisé avec Sainte Brigitte de Kildare."
+        }
+      }
     },
     {
       "id": "char_manannan",
@@ -77,7 +107,13 @@
           "text": "Mythological Cycle",
           "location": "tradition"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Manannan mac Lir",
+          "summary": "Dieu de la mer et de l'Autre Monde ; fils de Lir; gardien du passage entre les mondes ; chevauche les vagues dans un char ; possède le sac de trésors en peau de grue et les cochons auto-renouvelables."
+        }
+      }
     },
     {
       "id": "char_balor",
@@ -90,7 +126,13 @@
           "text": "Cath Maige Tuired",
           "location": "Second Battle"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Balor",
+          "summary": "Roi des Fomoriens ; un géant avec un œil destructeur qui tue tout ce qu'il regarde ; grand-père de Lugh; tué par Lugh avec une fronde à travers son mauvais œil lors de la deuxième bataille de Mag Tuired."
+        }
+      }
     },
     {
       "id": "char_bres",
@@ -103,7 +145,13 @@
           "text": "Cath Maige Tuired",
           "location": "Second Battle"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Brès",
+          "summary": "Roi demi-fomorien des Tuatha De Danann ; un souverain beau mais oppressif qui imposait un tribut aux dieux ; déposé pour sa tyrannie; a mené les Fomoriens lors de la deuxième bataille de Mag Tuired."
+        }
+      }
     },
     {
       "id": "char_cuchulainn",
@@ -116,7 +164,13 @@
           "text": "Tain Bo Cuailnge",
           "location": "Ulster Cycle"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Cuchulainn",
+          "summary": "Le Chien d'Ulster ; le plus grand héros du cycle d'Ulster ; fils de Lugh; défendit l'Ulster à lui seul contre l'armée de la reine Medb dans le Tain ; sujet au spasme de distorsion (riastrad) au combat."
+        }
+      }
     },
     {
       "id": "char_medb",
@@ -129,7 +183,13 @@
           "text": "Tain Bo Cuailnge",
           "location": "Ulster Cycle"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Reine Medb",
+          "summary": "Reine du Connacht ; a lancé le Tain Bo Cuailnge (Raid de bétail de Cooley) pour égaler la richesse de son mari ; commanda les armées du Connacht contre Cuchulainn et l'Ulster."
+        }
+      }
     },
     {
       "id": "char_ogma",
@@ -142,7 +202,13 @@
           "text": "Lebor Gabala Erenn",
           "location": "tradition"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Ogma",
+          "summary": "Fils du Dagda ; dieu de l'éloquence, de l'écriture et des guerriers ; crédité d'avoir inventé l'alphabet Ogham ; le champion des Tuatha De Danann au combat."
+        }
+      }
     },
     {
       "id": "char_dian_cecht",
@@ -155,7 +221,13 @@
           "text": "Cath Maige Tuired",
           "location": "First Battle"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Diane Cecht",
+          "summary": "Dieu de guérison et de médecine ; made Nuada's silver arm ; a tué son propre fils Miach par jalousie lorsque Miach a entièrement restauré le bras de chair de Nuada."
+        }
+      }
     },
     {
       "id": "char_aengus",
@@ -168,7 +240,13 @@
           "text": "Mythological Cycle",
           "location": "tradition"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Aengus Og",
+          "summary": "Dieu d'amour et de jeunesse ; fils du Dagda et de Boann ; ses baisers se transforment en oiseaux ; a trompé son père du Bru na Boinne (Newgrange) grâce à un jeu de mots intelligent."
+        }
+      }
     },
     {
       "id": "char_danu",
@@ -181,7 +259,13 @@
           "text": "Lebor Gabala Erenn",
           "location": "tradition"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Danou",
+          "summary": "Déesse mère des Tuatha De Danann (\"Peuple de la Déesse Danu\"); divinité ancestrale des dieux d'Irlande; sa nature est obscure mais son nom est fondateur."
+        }
+      }
     },
     {
       "id": "place_tara",
@@ -194,7 +278,13 @@
           "text": "Lebor Gabala Erenn",
           "location": "tradition"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Colline de Tara",
+          "summary": "Colline sacrée et siège des hauts rois d'Irlande ; où les Tuatha De Danann régnaient avant les Milésiens ; le lieu d'inauguration des rois irlandais ; un lien de pouvoir politique et mythique."
+        }
+      }
     },
     {
       "id": "place_mag_tuired",
@@ -207,7 +297,13 @@
           "text": "Cath Maige Tuired",
           "location": "Second Battle"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Mag Tuired",
+          "summary": "La plaine où deux grandes batailles eurent lieu entre les Tuatha De Danann et les Fomoriens ; la première bataille a gagné l'Irlande sur le Fir Bolg ; le Second a vaincu les Fomoriens pour toujours."
+        }
+      }
     },
     {
       "id": "place_sidhe",
@@ -220,7 +316,13 @@
           "text": "Lebor Gabala Erenn",
           "location": "tradition"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Sidhe (Monticules de fées)",
+          "summary": "Les demeures de l'Autre Monde des Tuatha De Danann après leur retraite du monde des mortels ; des tumulus et des collines qui sont des portails vers l'Autre Monde (Tir na nOg) ; où habitent les aos si."
+        }
+      }
     },
     {
       "id": "place_tir_na_nog",
@@ -233,7 +335,13 @@
           "text": "Mythological Cycle",
           "location": "tradition"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Tir na nOg",
+          "summary": "Le pays de la jeunesse ; l'Autre Monde au-delà de la mer occidentale ; où les Tuatha De Danann se retirèrent ; un royaume de jeunesse éternelle, de beauté et de festin ; aucune maladie ni aucun décès n'y existent."
+        }
+      }
     },
     {
       "id": "place_bru_na_boinne",
@@ -246,7 +354,13 @@
           "text": "Mythological Cycle",
           "location": "tradition"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Bru na Boinné",
+          "summary": "Les grandes tombes à couloir de Newgrange sur la Boyne ; demeure du Dagda puis d'Aengus ; associé à l'illumination du solstice d'hiver; l'un des sites les plus sacrés de la mythologie irlandaise."
+        }
+      }
     },
     {
       "id": "obj_cauldron",
@@ -259,7 +373,13 @@
           "text": "Cath Maige Tuired",
           "location": "Second Battle"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Le Chaudron du Dagda",
+          "summary": "L'un des quatre trésors des Tuatha De Danann ; ne fonctionne jamais à vide ; personne ne le laisse insatisfait ; un symbole d'abondance et d'hospitalité ; l'une des grandes reliques de l'Irlande."
+        }
+      }
     },
     {
       "id": "obj_spear_lugh",
@@ -272,7 +392,13 @@
           "text": "Cath Maige Tuired",
           "location": "Second Battle"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "La lance de Lugh",
+          "summary": "L'un des quatre trésors ; la lance clignotante qui garantit la victoire au combat ; Lugh l'a utilisé pour tuer Balor ; il faut le conserver dans un chaudron d'eau pour éviter qu'il ne s'enflamme."
+        }
+      }
     },
     {
       "id": "obj_sword_nuada",
@@ -285,7 +411,13 @@
           "text": "Cath Maige Tuired",
           "location": "First Battle"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "L'épée de Nuada",
+          "summary": "L'un des quatre trésors ; l'épée de Nuada ; personne n'y échappe une fois qu'il est tiré ; un symbole de royauté juste et de prouesse martiale."
+        }
+      }
     },
     {
       "id": "obj_stone_fal",
@@ -298,7 +430,13 @@
           "text": "Lebor Gabala Erenn",
           "location": "tradition"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "La pierre de Fal",
+          "summary": "L'un des quatre trésors ; le Lia Fail (Pierre du Destin) à Tara ; crie lorsque le roi légitime d'Irlande se tient dessus ; le fondement symbolique de la souveraineté irlandaise."
+        }
+      }
     },
     {
       "id": "obj_gae_bolga",
@@ -311,7 +449,13 @@
           "text": "Tain Bo Cuailnge",
           "location": "Ulster Cycle"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Le Gae Bolga",
+          "summary": "la terrible lance barbelée de Cuchulainn ; donné par son professeur Scathach; pénètre dans le corps et les barbes se propagent, rendant impossible son retrait sans couper la chair; avait l'habitude de tuer son frère adoptif Ferdiad."
+        }
+      }
     },
     {
       "id": "event_battle_mag_tuired_1",
@@ -324,7 +468,13 @@
           "text": "Cath Maige Tuired",
           "location": "First Battle"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Première bataille de Mag Tuired",
+          "summary": "Les Tuatha De Danann vainquirent les Fir Bolg et prirent l'Irlande ; Nuada a perdu son bras dans cette bataille et a été remplacé comme roi par Bres parce qu'un homme imparfait ne pouvait pas gouverner."
+        }
+      }
     },
     {
       "id": "event_battle_mag_tuired_2",
@@ -337,7 +487,13 @@
           "text": "Cath Maige Tuired",
           "location": "Second Battle"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Deuxième bataille de Mag Tuired",
+          "summary": "Les Tuatha De Danann ont vaincu les Fomoriens ; Lugh tua Balor avec une fronde à travers son œil destructeur ; l'oppression fomorienne du tribut prit fin ; les Tuatha ont établi leur règne."
+        }
+      }
     },
     {
       "id": "event_tain",
@@ -350,7 +506,13 @@
           "text": "Tain Bo Cuailnge",
           "location": "Ulster Cycle"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Tain Bo Cuailnge",
+          "summary": "Le raid du bétail de Cooley ; La reine Medb de Connacht cherchait le taureau brun de Cooley ; Cuchulainn défendit à lui seul l'Ulster contre les armées du Connacht ; le plus grand conte du cycle d'Ulster."
+        }
+      }
     },
     {
       "id": "event_children_lir",
@@ -363,7 +525,13 @@
           "text": "Aided Chlainne Lir",
           "location": "tradition"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Les enfants de Lir",
+          "summary": "Les quatre enfants de Lir (Fionnuala, Aodh, Fiachra, Conn) furent transformés en cygnes par leur belle-mère jalouse Aoife et condamnés à errer dans les eaux irlandaises pendant 900 ans ; l'une des Trois Douleurs de la narration irlandaise."
+        }
+      }
     },
     {
       "id": "concept_geis",
@@ -376,7 +544,13 @@
           "text": "Tain Bo Cuailnge",
           "location": "Ulster Cycle"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Geis (pluriel : Geasa)",
+          "summary": "Interdiction sacrée ou tabou liant une personne ; briser un geis entraîne une ruine surnaturelle ; Cuchulainn était lié par un geasa qu'il ne pouvait pas briser sans sa propre mort ; au cœur du récit tragique celtique."
+        }
+      }
     },
     {
       "id": "concept_otherworld",
@@ -389,7 +563,13 @@
           "text": "Mythological Cycle",
           "location": "tradition"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "L'Autre Monde",
+          "summary": "Le royaume celtique des dieux et des morts ; accessible par les monticules Sidhe, l'eau ou les voyages vers l'ouest ; un lieu de jeunesse éternelle, de fête et de musique ; où les Tuatha De Danann se retirèrent."
+        }
+      }
     },
     {
       "id": "concept_tuatha",
@@ -402,7 +582,13 @@
           "text": "Lebor Gabala Erenn",
           "location": "tradition"
         }
-      ]
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Tuatha De Danann",
+          "summary": "Le Peuple de la Déesse Danu ; les dieux préchrétiens de l'Irlande ; dirigeants de l'Irlande avant les Milésiens ; doué en magie, en druiderie et en arts ; ils se retirèrent dans le sidhe et devinrent les aos si (les fées)."
+        }
+      }
     }
   ],
   "edges": [
@@ -419,7 +605,12 @@
           "location": "Second Battle"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Enfant de"
+        }
+      }
     },
     {
       "id": "edge_brigid_child",
@@ -434,7 +625,12 @@
           "location": "tradition"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Enfant de"
+        }
+      }
     },
     {
       "id": "edge_aengus_child",
@@ -449,7 +645,12 @@
           "location": "tradition"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Enfant de"
+        }
+      }
     },
     {
       "id": "edge_ogma_child",
@@ -464,7 +665,12 @@
           "location": "tradition"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Enfant de"
+        }
+      }
     },
     {
       "id": "edge_lugh_balor",
@@ -479,7 +685,12 @@
           "location": "Second Battle"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Enfant de"
+        }
+      }
     },
     {
       "id": "edge_lugh_fought_balor",
@@ -494,7 +705,12 @@
           "location": "Second Battle"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Combattu"
+        }
+      }
     },
     {
       "id": "edge_battle2_place",
@@ -509,7 +725,12 @@
           "location": "Second Battle"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "A eu lieu à"
+        }
+      }
     },
     {
       "id": "edge_battle1_place",
@@ -524,7 +745,12 @@
           "location": "First Battle"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "A eu lieu à"
+        }
+      }
     },
     {
       "id": "edge_dagda_ruler",
@@ -539,7 +765,12 @@
           "location": "tradition"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Souverain de"
+        }
+      }
     },
     {
       "id": "edge_nuada_ruler",
@@ -554,7 +785,12 @@
           "location": "First Battle"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Souverain de"
+        }
+      }
     },
     {
       "id": "edge_dagda_cauldron",
@@ -569,7 +805,12 @@
           "location": "Second Battle"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
     },
     {
       "id": "edge_lugh_spear",
@@ -584,7 +825,12 @@
           "location": "Second Battle"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
     },
     {
       "id": "edge_nuada_sword",
@@ -599,7 +845,12 @@
           "location": "First Battle"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
     },
     {
       "id": "edge_stone_fal_tara",
@@ -614,7 +865,12 @@
           "location": "tradition"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
     },
     {
       "id": "edge_cuchulainn_child",
@@ -629,7 +885,12 @@
           "location": "Ulster Cycle"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Enfant de"
+        }
+      }
     },
     {
       "id": "edge_cuchulainn_spear",
@@ -644,7 +905,12 @@
           "location": "Ulster Cycle"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
     },
     {
       "id": "edge_cuchulainn_medb",
@@ -659,7 +925,12 @@
           "location": "Ulster Cycle"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Combattu"
+        }
+      }
     },
     {
       "id": "edge_tain_place",
@@ -674,7 +945,12 @@
           "location": "Ulster Cycle"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "A eu lieu à"
+        }
+      }
     },
     {
       "id": "edge_dagda_bru",
@@ -689,7 +965,12 @@
           "location": "tradition"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
     },
     {
       "id": "edge_aengus_bru",
@@ -704,7 +985,12 @@
           "location": "tradition"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
     },
     {
       "id": "edge_morrigan_battle",
@@ -719,7 +1005,12 @@
           "location": "Second Battle"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
     },
     {
       "id": "edge_manannan_otherworld",
@@ -734,7 +1025,12 @@
           "location": "tradition"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
     },
     {
       "id": "edge_bres_fought",
@@ -749,7 +1045,12 @@
           "location": "Second Battle"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Combattu"
+        }
+      }
     },
     {
       "id": "edge_bres_ruler",
@@ -764,7 +1065,12 @@
           "location": "First Battle"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Souverain de"
+        }
+      }
     },
     {
       "id": "edge_tuatha_concept",
@@ -779,7 +1085,12 @@
           "location": "tradition"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
     },
     {
       "id": "edge_danu_tuatha",
@@ -794,7 +1105,12 @@
           "location": "tradition"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
     },
     {
       "id": "edge_otherworld_sidhe",
@@ -809,7 +1125,12 @@
           "location": "tradition"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
     },
     {
       "id": "edge_tir_na_nog_otherworld",
@@ -824,7 +1145,12 @@
           "location": "tradition"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
     },
     {
       "id": "edge_cuchulainn_geis",
@@ -839,7 +1165,12 @@
           "location": "Ulster Cycle"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
     },
     {
       "id": "edge_morrigan_cuchulainn",
@@ -854,7 +1185,12 @@
           "location": "Ulster Cycle"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Rencontré"
+        }
+      }
     },
     {
       "id": "edge_oghaam_obj",
@@ -869,7 +1205,12 @@
           "location": "tradition"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
     },
     {
       "id": "edge_dian_cecht_nuada",
@@ -884,7 +1225,12 @@
           "location": "First Battle"
         }
       ],
-      "summary": ""
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Rencontré"
+        }
+      }
     }
   ]
 }

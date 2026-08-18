@@ -55,7 +55,7 @@ def generate_podcast(
         ) from e
 
     store = get_store()
-    node = store.get_node(req.corpus_id, req.entity_id)
+    node = store.get_node(req.corpus_id, req.entity_id, locale=locale)
     if node is None:
         raise HTTPException(
             status_code=404,
@@ -79,7 +79,7 @@ def generate_podcast(
         if cached is not None:
             return cached.model_copy(update={"cached": True})
 
-    subgraph = store.get_subgraph(req.corpus_id, req.entity_id, radius=1)
+    subgraph = store.get_subgraph(req.corpus_id, req.entity_id, radius=1, locale=locale)
     generator = generator_for(manifest)
     script = generator.generate(manifest, node, subgraph, locale=locale)
 

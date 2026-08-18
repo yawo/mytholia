@@ -29,7 +29,7 @@ export default function App() {
   const { t, locale, setLocale } = useI18n();
   const { data: corpora, loading: corporaLoading, error: corporaError } = useCorpora();
   const [corpusId, setCorpusId] = useState<string | null>(null);
-  const { data: graph, loading: graphLoading, error: graphError } = useGraph(corpusId);
+  const { data: graph, loading: graphLoading, error: graphError } = useGraph(corpusId, locale);
   const [selectedNode, setSelectedNode] = useState<GraphNode | null>(null);
   const [theme, setTheme] = useState<Theme>(getInitialTheme);
 
@@ -37,6 +37,12 @@ export default function App() {
     document.documentElement.dataset.theme = theme;
     window.localStorage.setItem(THEME_STORAGE_KEY, theme);
   }, [theme]);
+
+  useEffect(() => {
+    if (!selectedNode || !graph) return;
+    const localizedNode = graph.nodes.find((node) => node.id === selectedNode.id);
+    if (localizedNode) setSelectedNode(localizedNode);
+  }, [graph, selectedNode]);
 
   const toggleTheme = () => setTheme((currentTheme) => (currentTheme === "dark" ? "light" : "dark"));
 
