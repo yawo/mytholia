@@ -1,0 +1,1105 @@
+{
+  "corpus_id": "vodou",
+  "nodes": [
+    {
+      "id": "char_legba",
+      "type": "Character",
+      "corpus_id": "vodou",
+      "label": "Papa Legba",
+      "summary": "Le gardien lwa qui se tient au carrefour spirituel ; intermédiaire entre l'humanité et le monde des esprits; invoqué en premier dans chaque cérémonie; associé aux chiens et au carrefour.",
+      "source_refs": [
+        {
+          "text": "Lwa",
+          "location": "Rada"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Papa Legba",
+          "summary": "Le gardien lwa qui se tient au carrefour spirituel ; intermédiaire entre l'humanité et le monde des esprits; invoqué en premier dans chaque cérémonie; associé aux chiens et au carrefour."
+        }
+      }
+    },
+    {
+      "id": "char_damballa",
+      "type": "Character",
+      "corpus_id": "vodou",
+      "label": "Damballah Wedo",
+      "summary": "Créateur lwa de la famille Rada ; esprit serpent du ciel et des eaux; associé à la sagesse, à la pureté et à la création; les offres comprennent des aliments blancs et des œufs.",
+      "source_refs": [
+        {
+          "text": "Lwa",
+          "location": "Rada"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Damballah Wedo",
+          "summary": "Créateur lwa de la famille Rada ; esprit serpent du ciel et des eaux; associé à la sagesse, à la pureté et à la création; les offres comprennent des aliments blancs et des œufs."
+        }
+      }
+    },
+    {
+      "id": "char_erzulie_freda",
+      "type": "Character",
+      "corpus_id": "vodou",
+      "label": "Erzulie Freda",
+      "summary": "Rada lwa d'amour, de beauté et de luxe ; associé aux pleurs, aux bijoux et à la couleur rose ; syncrétisé avec la Mater Dolorosa.",
+      "source_refs": [
+        {
+          "text": "Lwa",
+          "location": "Rada"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Erzulie Freda",
+          "summary": "Rada lwa d'amour, de beauté et de luxe ; associé aux pleurs, aux bijoux et à la couleur rose ; syncrétisé avec la Mater Dolorosa."
+        }
+      }
+    },
+    {
+      "id": "char_erzulie_dantor",
+      "type": "Character",
+      "corpus_id": "vodou",
+      "label": "Erzulie Dantor",
+      "summary": "Petwo lwa de protection farouche et de maternité ; esprit guerrier; syncrétisé avec Notre-Dame des Douleurs; protecteur des femmes et des enfants.",
+      "source_refs": [
+        {
+          "text": "Lwa",
+          "location": "Petwo"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Erzulie Dantor",
+          "summary": "Petwo lwa de protection farouche et de maternité ; esprit guerrier; syncrétisé avec Notre-Dame des Douleurs; protecteur des femmes et des enfants."
+        }
+      }
+    },
+    {
+      "id": "char_baron_samedi",
+      "type": "Character",
+      "corpus_id": "vodou",
+      "label": "Baron Samedi",
+      "summary": "Chef de la famille Gede ; lwa de la mort et le cimetière ; gardien du carrefour entre la vie et la mort ; représenté dans un chapeau haut de forme et des lunettes noires.",
+      "source_refs": [
+        {
+          "text": "Lwa",
+          "location": "Gede"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Baron Samedi",
+          "summary": "Chef de la famille Gede ; lwa de la mort et le cimetière ; gardien du carrefour entre la vie et la mort ; représenté dans un chapeau haut de forme et des lunettes noires."
+        }
+      }
+    },
+    {
+      "id": "char_maman_brigitte",
+      "type": "Character",
+      "corpus_id": "vodou",
+      "label": "Maman Brigitte",
+      "summary": "Épouse du Baron Samedi; lwa des cimetières et de la mort ; garde les tombes et les morts; associé au rhum au piment fort.",
+      "source_refs": [
+        {
+          "text": "Lwa",
+          "location": "Gede"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Maman Brigitte",
+          "summary": "Épouse du Baron Samedi; lwa des cimetières et de la mort ; garde les tombes et les morts; associé au rhum au piment fort."
+        }
+      }
+    },
+    {
+      "id": "char_ogou",
+      "type": "Character",
+      "corpus_id": "vodou",
+      "label": "Ogou",
+      "summary": "Lwa de guerre, de fer et de feu ; défenseur des valeurs de la Rada bien qu'il porte des armes ; syncrétisé avec Saint Jacques le Majeur.",
+      "source_refs": [
+        {
+          "text": "Lwa",
+          "location": "Rada"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Ogou",
+          "summary": "Lwa de guerre, de fer et de feu ; défenseur des valeurs de la Rada bien qu'il porte des armes ; syncrétisé avec Saint Jacques le Majeur."
+        }
+      }
+    },
+    {
+      "id": "char_kalfu",
+      "type": "Character",
+      "corpus_id": "vodou",
+      "label": "Kalfou (Kalfu Legba)",
+      "summary": "Petwo homologue de Papa Legba; le filou lwa qui contrôle les carrefours et les forces du mal ; provoque des accidents qui changent le destin.",
+      "source_refs": [
+        {
+          "text": "Lwa",
+          "location": "Petwo"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Kalfou (Kalfu Legba)",
+          "summary": "Petwo homologue de Papa Legba; le filou lwa qui contrôle les carrefours et les forces du mal ; provoque des accidents qui changent le destin."
+        }
+      }
+    },
+    {
+      "id": "char_agwe",
+      "type": "Character",
+      "corpus_id": "vodou",
+      "label": "Agwe",
+      "summary": "Rada lwa of the sea and marine life ; sovereign of the waters ; associé aux navires, à l’océan et aux âmes noyées.",
+      "source_refs": [
+        {
+          "text": "Lwa",
+          "location": "Rada"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Agwe",
+          "summary": "Rada lwa of the sea and marine life ; sovereign of the waters ; associé aux navires, à l’océan et aux âmes noyées."
+        }
+      }
+    },
+    {
+      "id": "place_ginen",
+      "type": "Place",
+      "corpus_id": "vodou",
+      "label": "Ginène",
+      "summary": "La patrie spirituelle d’outre-mer dans la cosmologie vaudou ; origine et destination des lwa et des ancêtres ; L'Afrique comme source sacrée.",
+      "source_refs": [
+        {
+          "text": "Lwa",
+          "location": "afterlife"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Ginène",
+          "summary": "La patrie spirituelle d’outre-mer dans la cosmologie vaudou ; origine et destination des lwa et des ancêtres ; L'Afrique comme source sacrée."
+        }
+      }
+    },
+    {
+      "id": "place_peristil",
+      "type": "Place",
+      "corpus_id": "vodou",
+      "label": "Péristil",
+      "summary": "Le temple Vodou où se déroulent les cérémonies ; contient le poto mitan (poteau central) par lequel le lwa descend pendant la possession.",
+      "source_refs": [
+        {
+          "text": "Lwa",
+          "location": "temple"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Péristil",
+          "summary": "Le temple Vodou où se déroulent les cérémonies ; contient le poto mitan (poteau central) par lequel le lwa descend pendant la possession."
+        }
+      }
+    },
+    {
+      "id": "place_crossroads",
+      "type": "Place",
+      "corpus_id": "vodou",
+      "label": "Le carrefour",
+      "summary": "L'espace liminal entre les mondes où se trouvent Legba et Kalfu ; le seuil entre les royaumes visibles et invisibles.",
+      "source_refs": [
+        {
+          "text": "Lwa",
+          "location": "ritual"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Le carrefour",
+          "summary": "L'espace liminal entre les mondes où se trouvent Legba et Kalfu ; le seuil entre les royaumes visibles et invisibles."
+        }
+      }
+    },
+    {
+      "id": "obj_poto_mitan",
+      "type": "Object",
+      "corpus_id": "vodou",
+      "label": "Poto Mitan",
+      "summary": "Le pilier central du péristile ; l'axis mundi par lequel les lwa descendent pour monter leurs fidèles lors des cérémonies.",
+      "source_refs": [
+        {
+          "text": "Lwa",
+          "location": "temple"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Poto Mitan",
+          "summary": "Le pilier central du péristile ; l'axis mundi par lequel les lwa descendent pour monter leurs fidèles lors des cérémonies."
+        }
+      }
+    },
+    {
+      "id": "obj_veve",
+      "type": "Object",
+      "corpus_id": "vodou",
+      "label": "Vève",
+      "summary": "Dessins rituels réalisés au sol avec de la semoule de maïs pour invoquer un lwa spécifique ; chaque lwa a un motif veve distinctif.",
+      "source_refs": [
+        {
+          "text": "Lwa",
+          "location": "ritual"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Vève",
+          "summary": "Dessins rituels réalisés au sol avec de la semoule de maïs pour invoquer un lwa spécifique ; chaque lwa a un motif veve distinctif."
+        }
+      }
+    },
+    {
+      "id": "event_possession",
+      "type": "Event",
+      "corpus_id": "vodou",
+      "label": "Possession spirituelle",
+      "summary": "L'événement rituel central du Vodou dans lequel un lwa monte un pratiquant (le cheval) ; la personne possédée devient le vaisseau de l'esprit.",
+      "source_refs": [
+        {
+          "text": "Divine Horsemen",
+          "location": "ritual"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Possession spirituelle",
+          "summary": "L'événement rituel central du Vodou dans lequel un lwa monte un pratiquant (le cheval) ; la personne possédée devient le vaisseau de l'esprit."
+        }
+      }
+    },
+    {
+      "id": "event_transatlantic",
+      "type": "Event",
+      "corpus_id": "vodou",
+      "label": "Le passage du milieu",
+      "summary": "Le voyage transatlantique qui a amené les esclaves africains à Saint-Domingue (Haïti) ; le creuset dans lequel le Vodou s’est forgé à partir des religions ouest-africaines et du catholicisme.",
+      "source_refs": [
+        {
+          "text": "Divine Horsemen",
+          "location": "history"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Le passage du milieu",
+          "summary": "Le voyage transatlantique qui a amené les esclaves africains à Saint-Domingue (Haïti) ; le creuset dans lequel le Vodou s’est forgé à partir des religions ouest-africaines et du catholicisme."
+        }
+      }
+    },
+    {
+      "id": "concept_rada",
+      "type": "Concept",
+      "corpus_id": "vodou",
+      "label": "Rada",
+      "summary": "La famille cool et douce des lwa, enracinée dans les traditions ouest-africaines (Dahomey); comprend Legba, Damballah et Agwe ; lwa rasin (racine lwa).",
+      "source_refs": [
+        {
+          "text": "Lwa",
+          "location": "nanchon"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Rada",
+          "summary": "La famille cool et douce des lwa, enracinée dans les traditions ouest-africaines (Dahomey); comprend Legba, Damballah et Agwe ; lwa rasin (racine lwa)."
+        }
+      }
+    },
+    {
+      "id": "concept_petwo",
+      "type": "Concept",
+      "corpus_id": "vodou",
+      "label": "Petwo",
+      "summary": "La famille chaude et instable des lwa, enracinée dans l’expérience créole de l’esclavage et de la révolution ; comprend Erzulie Dantor et Kalfou ; associé au feu et au pouvoir.",
+      "source_refs": [
+        {
+          "text": "Lwa",
+          "location": "nanchon"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Petwo",
+          "summary": "La famille chaude et instable des lwa, enracinée dans l’expérience créole de l’esclavage et de la révolution ; comprend Erzulie Dantor et Kalfou ; associé au feu et au pouvoir."
+        }
+      }
+    },
+    {
+      "id": "concept_gede",
+      "type": "Concept",
+      "corpus_id": "vodou",
+      "label": "Gédé",
+      "summary": "La famille des lwa associée à la mort, au cimetière et à la sexualité ; dirigé par Baron Samedi et Maman Brigitte ; connu pour sa gaieté et son irrévérence.",
+      "source_refs": [
+        {
+          "text": "Lwa",
+          "location": "family"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Gédé",
+          "summary": "La famille des lwa associée à la mort, au cimetière et à la sexualité ; dirigé par Baron Samedi et Maman Brigitte ; connu pour sa gaieté et son irrévérence."
+        }
+      }
+    },
+    {
+      "id": "char_ayizan",
+      "type": "Character",
+      "corpus_id": "vodou",
+      "label": "Ayizan",
+      "summary": "Rada lwa de l'initiation, de la purification et du marché ; associé aux feuilles de palmier et à la première étape d'une cérémonie vaudou ; protecteur du péristile et de la pureté rituelle.",
+      "source_refs": [
+        {
+          "text": "Lwa",
+          "location": "Rada"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Ayizan",
+          "summary": "Rada lwa de l'initiation, de la purification et du marché ; associé aux feuilles de palmier et à la première étape d'une cérémonie vaudou ; protecteur du péristile et de la pureté rituelle."
+        }
+      }
+    },
+    {
+      "id": "char_azaka",
+      "type": "Character",
+      "corpus_id": "vodou",
+      "label": "Azaka Médé",
+      "summary": "Lwa de l'agriculture, de la campagne et des agriculteurs ; représenté comme un paysan avec un chapeau de paille et un makout (sac de paille) ; doux et généreux; associé à Saint Isidore.",
+      "source_refs": [
+        {
+          "text": "Lwa",
+          "location": "Rada"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Azaka Médé",
+          "summary": "Lwa de l'agriculture, de la campagne et des agriculteurs ; représenté comme un paysan avec un chapeau de paille et un makout (sac de paille) ; doux et généreux; associé à Saint Isidore."
+        }
+      }
+    },
+    {
+      "id": "char_simbi",
+      "type": "Character",
+      "corpus_id": "vodou",
+      "label": "Simbi",
+      "summary": "Lwa d'eau douce, de magie et de sorcellerie ; associé aux sources et aux rivières ; appears as a water snake ; patron des herboristes et devins ; un lwa de la famille Rada.",
+      "source_refs": [
+        {
+          "text": "Lwa",
+          "location": "Rada"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Simbi",
+          "summary": "Lwa d'eau douce, de magie et de sorcellerie ; associé aux sources et aux rivières ; appears as a water snake ; patron des herboristes et devins ; un lwa de la famille Rada."
+        }
+      }
+    },
+    {
+      "id": "char_marassa",
+      "type": "Character",
+      "corpus_id": "vodou",
+      "label": "Le Marassa",
+      "summary": "Les jumeaux divins du Vodou ; lwa des enfants, de la dualité et de l'abondance ; représenté par trois bras croisés ; le premier à recevoir des offrandes après Legba ; incarner la nature sacrée du doublement.",
+      "source_refs": [
+        {
+          "text": "Lwa",
+          "location": "Rada"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Le Marassa",
+          "summary": "Les jumeaux divins du Vodou ; lwa des enfants, de la dualité et de l'abondance ; représenté par trois bras croisés ; le premier à recevoir des offrandes après Legba ; incarner la nature sacrée du doublement."
+        }
+      }
+    },
+    {
+      "id": "event_haitian_revolution",
+      "type": "Event",
+      "corpus_id": "vodou",
+      "label": "La révolution haïtienne",
+      "summary": "La révolution de 1791-1804 qui mit fin à l'esclavage à Saint-Domingue et créa Haïti ; La cérémonie vaudou au Bois Caïman a joué un rôle catalyseur ; Ogou et Erzulie Dantor sont associés à la lutte révolutionnaire.",
+      "source_refs": [
+        {
+          "text": "Divine Horsemen",
+          "location": "history"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "La révolution haïtienne",
+          "summary": "La révolution de 1791-1804 qui mit fin à l'esclavage à Saint-Domingue et créa Haïti ; La cérémonie vaudou au Bois Caïman a joué un rôle catalyseur ; Ogou et Erzulie Dantor sont associés à la lutte révolutionnaire."
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge_legba_guards_crossroads",
+      "source": "char_legba",
+      "target": "place_crossroads",
+      "relation": "GUARDS",
+      "corpus_id": "vodou",
+      "label": "Gardes",
+      "source_refs": [
+        {
+          "text": "Lwa",
+          "location": "Rada"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Gardes"
+        }
+      }
+    },
+    {
+      "id": "edge_baron_guards_cemetery",
+      "source": "char_baron_samedi",
+      "target": "place_ginen",
+      "relation": "GUARDS",
+      "corpus_id": "vodou",
+      "label": "Gardes",
+      "source_refs": [
+        {
+          "text": "Lwa",
+          "location": "Gede"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Gardes"
+        }
+      }
+    },
+    {
+      "id": "edge_baron_spouse",
+      "source": "char_baron_samedi",
+      "target": "char_maman_brigitte",
+      "relation": "SPOUSE_OF",
+      "corpus_id": "vodou",
+      "label": "Conjoint de",
+      "source_refs": [
+        {
+          "text": "Lwa",
+          "location": "Gede"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Conjoint de"
+        }
+      }
+    },
+    {
+      "id": "edge_damballa_spouse",
+      "source": "char_damballa",
+      "target": "char_erzulie_freda",
+      "relation": "SPOUSE_OF",
+      "corpus_id": "vodou",
+      "label": "Conjoint de",
+      "source_refs": [
+        {
+          "text": "Lwa",
+          "location": "Rada"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Conjoint de"
+        }
+      }
+    },
+    {
+      "id": "edge_legba_worshipped",
+      "source": "char_legba",
+      "target": "char_agwe",
+      "relation": "WORSHIPPED_AS",
+      "corpus_id": "vodou",
+      "label": "Adoré comme",
+      "source_refs": [
+        {
+          "text": "Lwa",
+          "location": "syncretism"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Adoré comme"
+        }
+      }
+    },
+    {
+      "id": "edge_legba_met",
+      "source": "char_legba",
+      "target": "char_damballa",
+      "relation": "MET",
+      "corpus_id": "vodou",
+      "label": "Rencontré",
+      "source_refs": [
+        {
+          "text": "Lwa",
+          "location": "Rada"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Rencontré"
+        }
+      }
+    },
+    {
+      "id": "edge_legba_fought",
+      "source": "char_legba",
+      "target": "char_kalfu",
+      "relation": "FOUGHT",
+      "corpus_id": "vodou",
+      "label": "Combattu",
+      "source_refs": [
+        {
+          "text": "Lwa",
+          "location": "crossroads"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Combattu"
+        }
+      }
+    },
+    {
+      "id": "edge_kalfu_guards",
+      "source": "char_kalfu",
+      "target": "place_crossroads",
+      "relation": "GUARDS",
+      "corpus_id": "vodou",
+      "label": "Gardes",
+      "source_refs": [
+        {
+          "text": "Lwa",
+          "location": "Petwo"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Gardes"
+        }
+      }
+    },
+    {
+      "id": "edge_possession_place",
+      "source": "event_possession",
+      "target": "place_peristil",
+      "relation": "TOOK_PLACE_AT",
+      "corpus_id": "vodou",
+      "label": "A eu lieu à",
+      "source_refs": [
+        {
+          "text": "Divine Horsemen",
+          "location": "ritual"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "A eu lieu à"
+        }
+      }
+    },
+    {
+      "id": "edge_poto_mitan_event",
+      "source": "obj_poto_mitan",
+      "target": "event_possession",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "vodou",
+      "label": "Associé à",
+      "source_refs": [
+        {
+          "text": "Divine Horsemen",
+          "location": "ritual"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
+    },
+    {
+      "id": "edge_veve_associated",
+      "source": "obj_veve",
+      "target": "char_legba",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "vodou",
+      "label": "Associé à",
+      "source_refs": [
+        {
+          "text": "Lwa",
+          "location": "ritual"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
+    },
+    {
+      "id": "edge_rada_concept",
+      "source": "char_legba",
+      "target": "concept_rada",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "vodou",
+      "label": "Associé à",
+      "source_refs": [
+        {
+          "text": "Lwa",
+          "location": "nanchon"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
+    },
+    {
+      "id": "edge_petwo_concept",
+      "source": "char_kalfu",
+      "target": "concept_petwo",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "vodou",
+      "label": "Associé à",
+      "source_refs": [
+        {
+          "text": "Lwa",
+          "location": "nanchon"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
+    },
+    {
+      "id": "edge_gede_concept",
+      "source": "char_baron_samedi",
+      "target": "concept_gede",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "vodou",
+      "label": "Associé à",
+      "source_refs": [
+        {
+          "text": "Lwa",
+          "location": "family"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
+    },
+    {
+      "id": "edge_damballa_rada",
+      "source": "char_damballa",
+      "target": "concept_rada",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "vodou",
+      "label": "Associé à",
+      "source_refs": [
+        {
+          "text": "Lwa",
+          "location": "Rada"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
+    },
+    {
+      "id": "edge_erzulie_dantor_petwo",
+      "source": "char_erzulie_dantor",
+      "target": "concept_petwo",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "vodou",
+      "label": "Associé à",
+      "source_refs": [
+        {
+          "text": "Lwa",
+          "location": "Petwo"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
+    },
+    {
+      "id": "edge_ogou_met",
+      "source": "char_ogou",
+      "target": "char_legba",
+      "relation": "MET",
+      "corpus_id": "vodou",
+      "label": "Rencontré",
+      "source_refs": [
+        {
+          "text": "Lwa",
+          "location": "Rada"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Rencontré"
+        }
+      }
+    },
+    {
+      "id": "edge_agwe_ruler",
+      "source": "char_agwe",
+      "target": "place_ginen",
+      "relation": "RULER_OF",
+      "corpus_id": "vodou",
+      "label": "Souverain de",
+      "source_refs": [
+        {
+          "text": "Lwa",
+          "location": "sea"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Souverain de"
+        }
+      }
+    },
+    {
+      "id": "edge_transatlantic_concept",
+      "source": "event_transatlantic",
+      "target": "concept_petwo",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "vodou",
+      "label": "Associé à",
+      "source_refs": [
+        {
+          "text": "Divine Horsemen",
+          "location": "history"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
+    },
+    {
+      "id": "edge_legba_rada",
+      "source": "char_legba",
+      "target": "concept_rada",
+      "relation": "CHILD_OF",
+      "corpus_id": "vodou",
+      "label": "Enfant de",
+      "source_refs": [
+        {
+          "text": "Lwa",
+          "location": "nanchon"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Enfant de"
+        }
+      }
+    },
+    {
+      "id": "edge_ayizan_rada",
+      "source": "char_ayizan",
+      "target": "concept_rada",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "vodou",
+      "label": "Associé à",
+      "source_refs": [
+        {
+          "text": "Lwa",
+          "location": "Rada"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
+    },
+    {
+      "id": "edge_azaka_rada",
+      "source": "char_azaka",
+      "target": "concept_rada",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "vodou",
+      "label": "Associé à",
+      "source_refs": [
+        {
+          "text": "Lwa",
+          "location": "Rada"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
+    },
+    {
+      "id": "edge_simbi_water",
+      "source": "char_simbi",
+      "target": "place_ginen",
+      "relation": "RULER_OF",
+      "corpus_id": "vodou",
+      "label": "Souverain de",
+      "source_refs": [
+        {
+          "text": "Lwa",
+          "location": "Rada"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Souverain de"
+        }
+      }
+    },
+    {
+      "id": "edge_marassa_legba",
+      "source": "char_marassa",
+      "target": "char_legba",
+      "relation": "MET",
+      "corpus_id": "vodou",
+      "label": "Rencontré",
+      "source_refs": [
+        {
+          "text": "Lwa",
+          "location": "Rada"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Rencontré"
+        }
+      }
+    },
+    {
+      "id": "edge_ayizan_peristil",
+      "source": "char_ayizan",
+      "target": "place_peristil",
+      "relation": "GUARDS",
+      "corpus_id": "vodou",
+      "label": "Gardes",
+      "source_refs": [
+        {
+          "text": "Lwa",
+          "location": "Rada"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Gardes"
+        }
+      }
+    },
+    {
+      "id": "edge_ogou_revolution",
+      "source": "char_ogou",
+      "target": "event_haitian_revolution",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "vodou",
+      "label": "Associé à",
+      "source_refs": [
+        {
+          "text": "Divine Horsemen",
+          "location": "history"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
+    },
+    {
+      "id": "edge_erzulie_dantor_revolution",
+      "source": "char_erzulie_dantor",
+      "target": "event_haitian_revolution",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "vodou",
+      "label": "Associé à",
+      "source_refs": [
+        {
+          "text": "Divine Horsemen",
+          "location": "history"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
+    },
+    {
+      "id": "edge_revolution_place",
+      "source": "event_haitian_revolution",
+      "target": "place_ginen",
+      "relation": "TOOK_PLACE_AT",
+      "corpus_id": "vodou",
+      "label": "A eu lieu à",
+      "source_refs": [
+        {
+          "text": "Divine Horsemen",
+          "location": "history"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "A eu lieu à"
+        }
+      }
+    },
+    {
+      "id": "edge_simbi_rada",
+      "source": "char_simbi",
+      "target": "concept_rada",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "vodou",
+      "label": "Associé à",
+      "source_refs": [
+        {
+          "text": "Lwa",
+          "location": "Rada"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
+    },
+    {
+      "id": "edge_marassa_children",
+      "source": "char_marassa",
+      "target": "concept_rada",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "vodou",
+      "label": "Associé à",
+      "source_refs": [
+        {
+          "text": "Lwa",
+          "location": "Rada"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
+    },
+    {
+      "id": "edge_azaka_met",
+      "source": "char_azaka",
+      "target": "char_legba",
+      "relation": "MET",
+      "corpus_id": "vodou",
+      "label": "Rencontré",
+      "source_refs": [
+        {
+          "text": "Lwa",
+          "location": "Rada"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Rencontré"
+        }
+      }
+    },
+    {
+      "id": "edge_simbi_met",
+      "source": "char_simbi",
+      "target": "char_agwe",
+      "relation": "MET",
+      "corpus_id": "vodou",
+      "label": "Rencontré",
+      "source_refs": [
+        {
+          "text": "Lwa",
+          "location": "Rada"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Rencontré"
+        }
+      }
+    }
+  ],
+  "locale": "fr",
+  "source_locale": "en"
+}

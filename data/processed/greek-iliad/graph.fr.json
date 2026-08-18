@@ -1,0 +1,613 @@
+{
+  "corpus_id": "greek-iliad",
+  "nodes": [
+    {
+      "id": "char_achilles",
+      "type": "Character",
+      "corpus_id": "greek-iliad",
+      "label": "Achille",
+      "summary": "Le plus grand guerrier grec de la guerre de Troie, fils de la déesse Thétis et du mortel Pélée ; sa colère est le sujet de l'Iliade.",
+      "source_refs": [
+        {
+          "text": "Iliad",
+          "location": "book 1"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Achille",
+          "summary": "Le plus grand guerrier grec de la guerre de Troie, fils de la déesse Thétis et du mortel Pélée ; sa colère est le sujet de l'Iliade."
+        }
+      }
+    },
+    {
+      "id": "char_hector",
+      "type": "Character",
+      "corpus_id": "greek-iliad",
+      "label": "Hector",
+      "summary": "Prince de Troie et son plus grand défenseur ; fils de Priam, tué par Achille en combat singulier.",
+      "source_refs": [
+        {
+          "text": "Iliad",
+          "location": "book 6"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Hector",
+          "summary": "Prince de Troie et son plus grand défenseur ; fils de Priam, tué par Achille en combat singulier."
+        }
+      }
+    },
+    {
+      "id": "char_priam",
+      "type": "Character",
+      "corpus_id": "greek-iliad",
+      "label": "Priam",
+      "summary": "Roi de Troie pendant la guerre ; père d'Hector et de Paris ; il rachète le corps de son fils à Achille.",
+      "source_refs": [
+        {
+          "text": "Iliad",
+          "location": "book 24"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Priam",
+          "summary": "Roi de Troie pendant la guerre ; père d'Hector et de Paris ; il rachète le corps de son fils à Achille."
+        }
+      }
+    },
+    {
+      "id": "char_paris",
+      "type": "Character",
+      "corpus_id": "greek-iliad",
+      "label": "Paris",
+      "summary": "Prince troyen dont l'enlèvement d'Hélène a déclenché la guerre de Troie ; a jugé le concours de beauté qui a tout déclenché.",
+      "source_refs": [
+        {
+          "text": "Iliad",
+          "location": "book 3"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Paris",
+          "summary": "Prince troyen dont l'enlèvement d'Hélène a déclenché la guerre de Troie ; a jugé le concours de beauté qui a tout déclenché."
+        }
+      }
+    },
+    {
+      "id": "char_helen",
+      "type": "Character",
+      "corpus_id": "greek-iliad",
+      "label": "Hélène",
+      "summary": "Épouse de Ménélas, emmenée à Troie par Paris ; son visage lançait mille navires.",
+      "source_refs": [
+        {
+          "text": "Iliad",
+          "location": "book 3"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Hélène",
+          "summary": "Épouse de Ménélas, emmenée à Troie par Paris ; son visage lançait mille navires."
+        }
+      }
+    },
+    {
+      "id": "char_agamemnon",
+      "type": "Character",
+      "corpus_id": "greek-iliad",
+      "label": "Agamemnon",
+      "summary": "Roi de Mycènes et commandant des forces grecques ; sa querelle avec Achille est à l'origine de l'intrigue de l'Iliade.",
+      "source_refs": [
+        {
+          "text": "Iliad",
+          "location": "book 1"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Agamemnon",
+          "summary": "Roi de Mycènes et commandant des forces grecques ; sa querelle avec Achille est à l'origine de l'intrigue de l'Iliade."
+        }
+      }
+    },
+    {
+      "id": "char_thetis",
+      "type": "Character",
+      "corpus_id": "greek-iliad",
+      "label": "Thétis",
+      "summary": "Déesse de la mer, mère d'Achille ; intercède auprès de Zeus en faveur de son fils.",
+      "source_refs": [
+        {
+          "text": "Iliad",
+          "location": "book 1"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Thétis",
+          "summary": "Déesse de la mer, mère d'Achille ; intercède auprès de Zeus en faveur de son fils."
+        }
+      }
+    },
+    {
+      "id": "char_zeus",
+      "type": "Character",
+      "corpus_id": "greek-iliad",
+      "label": "Zeus",
+      "summary": "King of the gods who weighs the fates of Greeks and Trojans on his golden scales.",
+      "source_refs": [
+        {
+          "text": "Iliad",
+          "location": "book 1"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Zeus",
+          "summary": "King of the gods who weighs the fates of Greeks and Trojans on his golden scales."
+        }
+      }
+    },
+    {
+      "id": "char_athena",
+      "type": "Character",
+      "corpus_id": "greek-iliad",
+      "label": "Athéna",
+      "summary": "Déesse de la sagesse et de la guerre ; champion des Grecs, notamment Achille et Diomède.",
+      "source_refs": [
+        {
+          "text": "Iliad",
+          "location": "book 1"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Athéna",
+          "summary": "Déesse de la sagesse et de la guerre ; champion des Grecs, notamment Achille et Diomède."
+        }
+      }
+    },
+    {
+      "id": "char_patroclus",
+      "type": "Character",
+      "corpus_id": "greek-iliad",
+      "label": "Patrocle",
+      "summary": "Le compagnon le plus proche d'Achille; portait l'armure d'Achille au combat et fut tué par Hector.",
+      "source_refs": [
+        {
+          "text": "Iliad",
+          "location": "book 16"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Patrocle",
+          "summary": "Le compagnon le plus proche d'Achille; portait l'armure d'Achille au combat et fut tué par Hector."
+        }
+      }
+    },
+    {
+      "id": "place_troy",
+      "type": "Place",
+      "corpus_id": "greek-iliad",
+      "label": "Troie",
+      "summary": "The walled city of King Priam, besieged by the Greeks for ten years.",
+      "source_refs": [
+        {
+          "text": "Iliad",
+          "location": "book 1"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Troie",
+          "summary": "The walled city of King Priam, besieged by the Greeks for ten years."
+        }
+      }
+    },
+    {
+      "id": "place_mycenae",
+      "type": "Place",
+      "corpus_id": "greek-iliad",
+      "label": "Mycènes",
+      "summary": "La ville fortifiée d'Agamemnon, point de rassemblement de l'expédition grecque.",
+      "source_refs": [
+        {
+          "text": "Iliad",
+          "location": "book 1"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Mycènes",
+          "summary": "La ville fortifiée d'Agamemnon, point de rassemblement de l'expédition grecque."
+        }
+      }
+    },
+    {
+      "id": "event_trojan_war",
+      "type": "Event",
+      "corpus_id": "greek-iliad",
+      "label": "La guerre de Troie",
+      "summary": "Un siège de Troie de dix ans par les forces grecques, déclenché par l'enlèvement d'Hélène par Paris.",
+      "source_refs": [
+        {
+          "text": "Iliad",
+          "location": "book 1"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "La guerre de Troie",
+          "summary": "Un siège de Troie de dix ans par les forces grecques, déclenché par l'enlèvement d'Hélène par Paris."
+        }
+      }
+    },
+    {
+      "id": "event_duel_hector",
+      "type": "Event",
+      "corpus_id": "greek-iliad",
+      "label": "Duel of Achilles and Hector",
+      "summary": "Le combat singulier culminant hors des murs de Troie dans lequel Achille tue Hector.",
+      "source_refs": [
+        {
+          "text": "Iliad",
+          "location": "book 22"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Duel of Achilles and Hector",
+          "summary": "Le combat singulier culminant hors des murs de Troie dans lequel Achille tue Hector."
+        }
+      }
+    },
+    {
+      "id": "obj_armor",
+      "type": "Object",
+      "corpus_id": "greek-iliad",
+      "label": "Armure d'Achille",
+      "summary": "Armure divine forgée par Héphaïstos pour Achille après la chute de Patrocle portant son ensemble d'origine.",
+      "source_refs": [
+        {
+          "text": "Iliad",
+          "location": "book 18"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Armure d'Achille",
+          "summary": "Armure divine forgée par Héphaïstos pour Achille après la chute de Patrocle portant son ensemble d'origine."
+        }
+      }
+    },
+    {
+      "id": "concept_kleos",
+      "type": "Concept",
+      "corpus_id": "greek-iliad",
+      "label": "Cléos",
+      "summary": "Le concept grec de gloire et de renommée immortelle conquise grâce à des actes héroïques au combat.",
+      "source_refs": [
+        {
+          "text": "Iliad",
+          "location": "book 9"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Cléos",
+          "summary": "Le concept grec de gloire et de renommée immortelle conquise grâce à des actes héroïques au combat."
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge_achilles_child",
+      "source": "char_achilles",
+      "target": "char_thetis",
+      "relation": "CHILD_OF",
+      "corpus_id": "greek-iliad",
+      "label": "Enfant de",
+      "source_refs": [
+        {
+          "text": "Iliad",
+          "location": "book 1"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Enfant de"
+        }
+      }
+    },
+    {
+      "id": "edge_hector_child",
+      "source": "char_hector",
+      "target": "char_priam",
+      "relation": "CHILD_OF",
+      "corpus_id": "greek-iliad",
+      "label": "Enfant de",
+      "source_refs": [
+        {
+          "text": "Iliad",
+          "location": "book 6"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Enfant de"
+        }
+      }
+    },
+    {
+      "id": "edge_paris_child",
+      "source": "char_paris",
+      "target": "char_priam",
+      "relation": "CHILD_OF",
+      "corpus_id": "greek-iliad",
+      "label": "Enfant de",
+      "source_refs": [
+        {
+          "text": "Iliad",
+          "location": "book 3"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Enfant de"
+        }
+      }
+    },
+    {
+      "id": "edge_paris_spouse",
+      "source": "char_paris",
+      "target": "char_helen",
+      "relation": "SPOUSE_OF",
+      "corpus_id": "greek-iliad",
+      "label": "Conjoint de",
+      "source_refs": [
+        {
+          "text": "Iliad",
+          "location": "book 3"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Conjoint de"
+        }
+      }
+    },
+    {
+      "id": "edge_trojan_war_place",
+      "source": "event_trojan_war",
+      "target": "place_troy",
+      "relation": "TOOK_PLACE_AT",
+      "corpus_id": "greek-iliad",
+      "label": "A eu lieu à",
+      "source_refs": [
+        {
+          "text": "Iliad",
+          "location": "book 1"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "A eu lieu à"
+        }
+      }
+    },
+    {
+      "id": "edge_agamemnon_ruler",
+      "source": "char_agamemnon",
+      "target": "place_mycenae",
+      "relation": "RULER_OF",
+      "corpus_id": "greek-iliad",
+      "label": "Souverain de",
+      "source_refs": [
+        {
+          "text": "Iliad",
+          "location": "book 1"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Souverain de"
+        }
+      }
+    },
+    {
+      "id": "edge_priam_ruler",
+      "source": "char_priam",
+      "target": "place_troy",
+      "relation": "RULER_OF",
+      "corpus_id": "greek-iliad",
+      "label": "Souverain de",
+      "source_refs": [
+        {
+          "text": "Iliad",
+          "location": "book 6"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Souverain de"
+        }
+      }
+    },
+    {
+      "id": "edge_achilles_fought",
+      "source": "char_achilles",
+      "target": "char_hector",
+      "relation": "FOUGHT",
+      "corpus_id": "greek-iliad",
+      "label": "Combattu",
+      "source_refs": [
+        {
+          "text": "Iliad",
+          "location": "book 22"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Combattu"
+        }
+      }
+    },
+    {
+      "id": "edge_duel_place",
+      "source": "event_duel_hector",
+      "target": "place_troy",
+      "relation": "TOOK_PLACE_AT",
+      "corpus_id": "greek-iliad",
+      "label": "A eu lieu à",
+      "source_refs": [
+        {
+          "text": "Iliad",
+          "location": "book 22"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "A eu lieu à"
+        }
+      }
+    },
+    {
+      "id": "edge_achilles_associated_armor",
+      "source": "char_achilles",
+      "target": "obj_armor",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "greek-iliad",
+      "label": "Associé à",
+      "source_refs": [
+        {
+          "text": "Iliad",
+          "location": "book 18"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
+    },
+    {
+      "id": "edge_achilles_kleos",
+      "source": "char_achilles",
+      "target": "concept_kleos",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "greek-iliad",
+      "label": "Associé à",
+      "source_refs": [
+        {
+          "text": "Iliad",
+          "location": "book 9"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
+    },
+    {
+      "id": "edge_patroclus_met",
+      "source": "char_patroclus",
+      "target": "char_achilles",
+      "relation": "MET",
+      "corpus_id": "greek-iliad",
+      "label": "Rencontré",
+      "source_refs": [
+        {
+          "text": "Iliad",
+          "location": "book 16"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Rencontré"
+        }
+      }
+    },
+    {
+      "id": "edge_athena_met",
+      "source": "char_athena",
+      "target": "char_achilles",
+      "relation": "MET",
+      "corpus_id": "greek-iliad",
+      "label": "Rencontré",
+      "source_refs": [
+        {
+          "text": "Iliad",
+          "location": "book 1"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Rencontré"
+        }
+      }
+    },
+    {
+      "id": "edge_thetis_met",
+      "source": "char_thetis",
+      "target": "char_zeus",
+      "relation": "MET",
+      "corpus_id": "greek-iliad",
+      "label": "Rencontré",
+      "source_refs": [
+        {
+          "text": "Iliad",
+          "location": "book 1"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Rencontré"
+        }
+      }
+    },
+    {
+      "id": "edge_patroclus_fought",
+      "source": "char_patroclus",
+      "target": "char_hector",
+      "relation": "FOUGHT",
+      "corpus_id": "greek-iliad",
+      "label": "Combattu",
+      "source_refs": [
+        {
+          "text": "Iliad",
+          "location": "book 16"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Combattu"
+        }
+      }
+    }
+  ],
+  "locale": "fr",
+  "source_locale": "en"
+}

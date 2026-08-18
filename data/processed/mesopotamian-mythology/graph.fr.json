@@ -1,0 +1,1201 @@
+{
+  "corpus_id": "mesopotamian-mythology",
+  "nodes": [
+    {
+      "id": "char_marduk",
+      "type": "Character",
+      "corpus_id": "mesopotamian-mythology",
+      "label": "Mardouk",
+      "summary": "Dieu patron de Babylone et roi des dieux ; fils d'Ea et Damkina; tua le dragon du chaos Tiamat et créa le monde à partir de son corps ; porteur des vents et de l'arc; assigné les destins.",
+      "source_refs": [
+        {
+          "text": "Enuma Elish",
+          "location": "Tablet IV"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Mardouk",
+          "summary": "Dieu patron de Babylone et roi des dieux ; fils d'Ea et Damkina; tua le dragon du chaos Tiamat et créa le monde à partir de son corps ; porteur des vents et de l'arc; assigné les destins."
+        }
+      }
+    },
+    {
+      "id": "char_tiamat",
+      "type": "Character",
+      "corpus_id": "mesopotamian-mythology",
+      "label": "Tiamat",
+      "summary": "Le dragon d'eau salée primitif du chaos ; mère des premiers dieux ; son massacre par Marduk a créé le ciel et la terre ; la personnification du chaos primordial.",
+      "source_refs": [
+        {
+          "text": "Enuma Elish",
+          "location": "Tablet I"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Tiamat",
+          "summary": "Le dragon d'eau salée primitif du chaos ; mère des premiers dieux ; son massacre par Marduk a créé le ciel et la terre ; la personnification du chaos primordial."
+        }
+      }
+    },
+    {
+      "id": "char_ea",
+      "type": "Character",
+      "corpus_id": "mesopotamian-mythology",
+      "label": "Ea (Enki)",
+      "summary": "Dieu de la sagesse, de l'eau douce et de la création ; fils d'Anu; père de Mardouk ; il tua Apsu (l'océan d'eau douce) et construisit son temple en lui ; protecteur de l’humanité et donateur des arts.",
+      "source_refs": [
+        {
+          "text": "Enuma Elish",
+          "location": "Tablet I"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Ea (Enki)",
+          "summary": "Dieu de la sagesse, de l'eau douce et de la création ; fils d'Anu; père de Mardouk ; il tua Apsu (l'océan d'eau douce) et construisit son temple en lui ; protecteur de l’humanité et donateur des arts."
+        }
+      }
+    },
+    {
+      "id": "char_anu",
+      "type": "Character",
+      "corpus_id": "mesopotamian-mythology",
+      "label": "Anou",
+      "summary": "Dieu du ciel et ancien roi des dieux ; fils d'Anshar et Kishar; père d'Ea; sa ville était Uruk ; progressivement remplacé par Enlil puis Marduk dans la hiérarchie du panthéon.",
+      "source_refs": [
+        {
+          "text": "Enuma Elish",
+          "location": "Tablet I"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Anou",
+          "summary": "Dieu du ciel et ancien roi des dieux ; fils d'Anshar et Kishar; père d'Ea; sa ville était Uruk ; progressivement remplacé par Enlil puis Marduk dans la hiérarchie du panthéon."
+        }
+      }
+    },
+    {
+      "id": "char_enlil",
+      "type": "Character",
+      "corpus_id": "mesopotamian-mythology",
+      "label": "Enlil",
+      "summary": "Dieu du vent, de la tempête et de la Tablette des Destins ; seigneur de l'air; dieu principal du panthéon sumérien ; séparé le ciel de la terre; a provoqué la grande inondation à Atrahasis.",
+      "source_refs": [
+        {
+          "text": "Mesopotamian mythology",
+          "location": "tradition"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Enlil",
+          "summary": "Dieu du vent, de la tempête et de la Tablette des Destins ; seigneur de l'air; dieu principal du panthéon sumérien ; séparé le ciel de la terre; a provoqué la grande inondation à Atrahasis."
+        }
+      }
+    },
+    {
+      "id": "char_ishtar",
+      "type": "Character",
+      "corpus_id": "mesopotamian-mythology",
+      "label": "Ishtar (Inanna)",
+      "summary": "Déesse de l'amour, de la guerre et de la fertilité ; l'étoile du matin et du soir ; fille d'Anu; est descendu aux enfers et a été retenu mort jusqu'à ce qu'il soit libéré par l'intervention d'Ea ; le nom akkadien du sumérien Inanna.",
+      "source_refs": [
+        {
+          "text": "Descent of Ishtar",
+          "location": "Tablet I"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Ishtar (Inanna)",
+          "summary": "Déesse de l'amour, de la guerre et de la fertilité ; l'étoile du matin et du soir ; fille d'Anu; est descendu aux enfers et a été retenu mort jusqu'à ce qu'il soit libéré par l'intervention d'Ea ; le nom akkadien du sumérien Inanna."
+        }
+      }
+    },
+    {
+      "id": "char_gilgamesh",
+      "type": "Character",
+      "corpus_id": "mesopotamian-mythology",
+      "label": "Gilgamesh",
+      "summary": "Roi d'Uruk, aux deux tiers divin et à un tiers humain ; héros de la plus ancienne épopée du monde ; construit les murs d'Uruk; a cherché l'immortalité après la mort de son compagnon Enkidu et a échoué.",
+      "source_refs": [
+        {
+          "text": "Epic of Gilgamesh",
+          "location": "Tablet I"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Gilgamesh",
+          "summary": "Roi d'Uruk, aux deux tiers divin et à un tiers humain ; héros de la plus ancienne épopée du monde ; construit les murs d'Uruk; a cherché l'immortalité après la mort de son compagnon Enkidu et a échoué."
+        }
+      }
+    },
+    {
+      "id": "char_enkidu",
+      "type": "Character",
+      "corpus_id": "mesopotamian-mythology",
+      "label": "Enkidu",
+      "summary": "Homme sauvage créé par les dieux pour égaler Gilgamesh ; civilisé par la prêtresse Shamhat ; est devenu le compagnon le plus proche de Gilgamesh ; tua Humbaba et le Taureau du Ciel ; est mort par décret divin.",
+      "source_refs": [
+        {
+          "text": "Epic of Gilgamesh",
+          "location": "Tablet I"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Enkidu",
+          "summary": "Homme sauvage créé par les dieux pour égaler Gilgamesh ; civilisé par la prêtresse Shamhat ; est devenu le compagnon le plus proche de Gilgamesh ; tua Humbaba et le Taureau du Ciel ; est mort par décret divin."
+        }
+      }
+    },
+    {
+      "id": "char_shamash",
+      "type": "Character",
+      "corpus_id": "mesopotamian-mythology",
+      "label": "Shamash (Outou)",
+      "summary": "Sun god, god of justice and truth ; patron of Gilgamesh and Enkidu in their quest ; illuminé le chemin vers la forêt de cèdres ; le sumérien Utu.",
+      "source_refs": [
+        {
+          "text": "Epic of Gilgamesh",
+          "location": "Tablet III"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Shamash (Outou)",
+          "summary": "Sun god, god of justice and truth ; patron of Gilgamesh and Enkidu in their quest ; illuminé le chemin vers la forêt de cèdres ; le sumérien Utu."
+        }
+      }
+    },
+    {
+      "id": "char_utnapishtim",
+      "type": "Character",
+      "corpus_id": "mesopotamian-mythology",
+      "label": "Utnapishtim",
+      "summary": "Le survivant du déluge mésopotamien, analogue à Noé ; averti par Ea de construire un grand bateau; a survécu au Grand Déluge et a obtenu l'immortalité ; a révélé à Gilgamesh le secret de l'usine d'inondation.",
+      "source_refs": [
+        {
+          "text": "Epic of Gilgamesh",
+          "location": "Tablet X"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Utnapishtim",
+          "summary": "Le survivant du déluge mésopotamien, analogue à Noé ; averti par Ea de construire un grand bateau; a survécu au Grand Déluge et a obtenu l'immortalité ; a révélé à Gilgamesh le secret de l'usine d'inondation."
+        }
+      }
+    },
+    {
+      "id": "char_ereshkigal",
+      "type": "Character",
+      "corpus_id": "mesopotamian-mythology",
+      "label": "Ereshkigal",
+      "summary": "Reine des enfers (Kur/Irkalla) ; sœur d'Ishtar; gouverne le pays des morts où tous finissent par aller ; épouse de Nergal; a exigé qu'Ishtar soit détenu dans le monde souterrain.",
+      "source_refs": [
+        {
+          "text": "Descent of Ishtar",
+          "location": "Tablet I"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Ereshkigal",
+          "summary": "Reine des enfers (Kur/Irkalla) ; sœur d'Ishtar; gouverne le pays des morts où tous finissent par aller ; épouse de Nergal; a exigé qu'Ishtar soit détenu dans le monde souterrain."
+        }
+      }
+    },
+    {
+      "id": "char_nergal",
+      "type": "Character",
+      "corpus_id": "mesopotamian-mythology",
+      "label": "Nergal",
+      "summary": "Dieu de la guerre, de la peste et des enfers ; époux d'Ereshkigal; est devenu le seigneur des morts après être descendu aux enfers et avoir refusé de partir.",
+      "source_refs": [
+        {
+          "text": "Mesopotamian mythology",
+          "location": "tradition"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Nergal",
+          "summary": "Dieu de la guerre, de la peste et des enfers ; époux d'Ereshkigal; est devenu le seigneur des morts après être descendu aux enfers et avoir refusé de partir."
+        }
+      }
+    },
+    {
+      "id": "char_kingu",
+      "type": "Character",
+      "corpus_id": "mesopotamian-mythology",
+      "label": "Kingu",
+      "summary": "Époux et général de Tiamat ; donné la Tablette des Destinées par Tiamat ; vaincu par Marduk; son sang a été utilisé pour créer l’humanité en tant que serviteurs des dieux.",
+      "source_refs": [
+        {
+          "text": "Enuma Elish",
+          "location": "Tablet I"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Kingu",
+          "summary": "Époux et général de Tiamat ; donné la Tablette des Destinées par Tiamat ; vaincu par Marduk; son sang a été utilisé pour créer l’humanité en tant que serviteurs des dieux."
+        }
+      }
+    },
+    {
+      "id": "char_humbaba",
+      "type": "Character",
+      "corpus_id": "mesopotamian-mythology",
+      "label": "Humbaba",
+      "summary": "Le terrifiant gardien de la Forêt des Cèdres, nommé par Enlil ; tué par Gilgamesh et Enkidu qui coupèrent les cèdres sacrés ; sa mort a irrité les dieux.",
+      "source_refs": [
+        {
+          "text": "Epic of Gilgamesh",
+          "location": "Tablet V"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Humbaba",
+          "summary": "Le terrifiant gardien de la Forêt des Cèdres, nommé par Enlil ; tué par Gilgamesh et Enkidu qui coupèrent les cèdres sacrés ; sa mort a irrité les dieux."
+        }
+      }
+    },
+    {
+      "id": "char_bull_heaven",
+      "type": "Character",
+      "corpus_id": "mesopotamian-mythology",
+      "label": "Taureau du Ciel",
+      "summary": "Une bête divine envoyée par Ishtar pour punir Gilgamesh pour avoir rejeté ses avances ; provoqué la sécheresse et la destruction à Uruk ; tué par Gilgamesh et Enkidu, provoquant la colère des dieux.",
+      "source_refs": [
+        {
+          "text": "Epic of Gilgamesh",
+          "location": "Tablet VI"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Taureau du Ciel",
+          "summary": "Une bête divine envoyée par Ishtar pour punir Gilgamesh pour avoir rejeté ses avances ; provoqué la sécheresse et la destruction à Uruk ; tué par Gilgamesh et Enkidu, provoquant la colère des dieux."
+        }
+      }
+    },
+    {
+      "id": "place_uruk",
+      "type": "Place",
+      "corpus_id": "mesopotamian-mythology",
+      "label": "Uruk",
+      "summary": "La grande ville fortifiée dirigée par Gilgamesh ; l'une des plus anciennes villes du monde ; maison du temple d'Ishtar (Eanna) ; ses murs ont été construits par Gilgamesh lui-même.",
+      "source_refs": [
+        {
+          "text": "Epic of Gilgamesh",
+          "location": "Tablet I"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Uruk",
+          "summary": "La grande ville fortifiée dirigée par Gilgamesh ; l'une des plus anciennes villes du monde ; maison du temple d'Ishtar (Eanna) ; ses murs ont été construits par Gilgamesh lui-même."
+        }
+      }
+    },
+    {
+      "id": "place_cedar_forest",
+      "type": "Place",
+      "corpus_id": "mesopotamian-mythology",
+      "label": "La forêt de cèdres",
+      "summary": "Une forêt sacrée gardée par Humbaba ; situé dans la Montagne des Cèdres (Liban) ; Gilgamesh et Enkidu s'y rendirent pour couper du bois et prouver leur héroïsme.",
+      "source_refs": [
+        {
+          "text": "Epic of Gilgamesh",
+          "location": "Tablet V"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "La forêt de cèdres",
+          "summary": "Une forêt sacrée gardée par Humbaba ; situé dans la Montagne des Cèdres (Liban) ; Gilgamesh et Enkidu s'y rendirent pour couper du bois et prouver leur héroïsme."
+        }
+      }
+    },
+    {
+      "id": "place_abzu",
+      "type": "Place",
+      "corpus_id": "mesopotamian-mythology",
+      "label": "Abzu (Apsu)",
+      "summary": "L'océan d'eau douce primordial sous la terre ; personnifié comme le dieu Apsu; demeure d'Ea/Enki; la source de toute eau douce et de toute sagesse.",
+      "source_refs": [
+        {
+          "text": "Enuma Elish",
+          "location": "Tablet I"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Abzu (Apsu)",
+          "summary": "L'océan d'eau douce primordial sous la terre ; personnifié comme le dieu Apsu; demeure d'Ea/Enki; la source de toute eau douce et de toute sagesse."
+        }
+      }
+    },
+    {
+      "id": "place_kur",
+      "type": "Place",
+      "corpus_id": "mesopotamian-mythology",
+      "label": "Kur (Irkalla)",
+      "summary": "La pègre mésopotamienne ; gouverné par Ereshkigal ; un royaume sombre et poussiéreux où les morts mangent de la poussière et portent des plumes ; toutes les âmes descendent ici quels que soient leurs actes.",
+      "source_refs": [
+        {
+          "text": "Descent of Ishtar",
+          "location": "Tablet I"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Kur (Irkalla)",
+          "summary": "La pègre mésopotamienne ; gouverné par Ereshkigal ; un royaume sombre et poussiéreux où les morts mangent de la poussière et portent des plumes ; toutes les âmes descendent ici quels que soient leurs actes."
+        }
+      }
+    },
+    {
+      "id": "obj_tablet_destinies",
+      "type": "Object",
+      "corpus_id": "mesopotamian-mythology",
+      "label": "Tablette des Destins",
+      "summary": "Une tablette d'argile inscrite en caractères cunéiformes qui confère l'autorité suprême sur l'univers ; détenu par Enlil, puis par Tiamat (donné à Kingu), et enfin saisi par Marduk après sa victoire.",
+      "source_refs": [
+        {
+          "text": "Enuma Elish",
+          "location": "Tablet IV"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Tablette des Destins",
+          "summary": "Une tablette d'argile inscrite en caractères cunéiformes qui confère l'autorité suprême sur l'univers ; détenu par Enlil, puis par Tiamat (donné à Kingu), et enfin saisi par Marduk après sa victoire."
+        }
+      }
+    },
+    {
+      "id": "obj_marduk_bow",
+      "type": "Object",
+      "corpus_id": "mesopotamian-mythology",
+      "label": "Arc de Marduk",
+      "summary": "Le grand arc de Marduk, conçu pour tuer Tiamat ; un filet pour la piéger et des vents pour gonfler son corps ; son arme principale dans la bataille cosmique de la création.",
+      "source_refs": [
+        {
+          "text": "Enuma Elish",
+          "location": "Tablet IV"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Arc de Marduk",
+          "summary": "Le grand arc de Marduk, conçu pour tuer Tiamat ; un filet pour la piéger et des vents pour gonfler son corps ; son arme principale dans la bataille cosmique de la création."
+        }
+      }
+    },
+    {
+      "id": "event_marduk_tiamat",
+      "type": "Event",
+      "corpus_id": "mesopotamian-mythology",
+      "label": "Bataille de Marduk et Tiamat",
+      "summary": "Marduk a piégé Tiamat dans son filet, l'a remplie de vent et lui a tiré dessus avec une flèche ; À partir de son corps divisé, il façonna le ciel et la terre, établissant ainsi l'ordre cosmique.",
+      "source_refs": [
+        {
+          "text": "Enuma Elish",
+          "location": "Tablet IV"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Bataille de Marduk et Tiamat",
+          "summary": "Marduk a piégé Tiamat dans son filet, l'a remplie de vent et lui a tiré dessus avec une flèche ; À partir de son corps divisé, il façonna le ciel et la terre, établissant ainsi l'ordre cosmique."
+        }
+      }
+    },
+    {
+      "id": "event_gilgamesh_cedar",
+      "type": "Event",
+      "corpus_id": "mesopotamian-mythology",
+      "label": "Voyage dans la forêt de cèdres",
+      "summary": "La quête de Gilgamesh et Enkidu dans la forêt de cèdres pour tuer Humbaba et couper les cèdres sacrés ; béni par Shamash; ils ont tué Humbaba et ont mis Enlil en colère.",
+      "source_refs": [
+        {
+          "text": "Epic of Gilgamesh",
+          "location": "Tablet III"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Voyage dans la forêt de cèdres",
+          "summary": "La quête de Gilgamesh et Enkidu dans la forêt de cèdres pour tuer Humbaba et couper les cèdres sacrés ; béni par Shamash; ils ont tué Humbaba et ont mis Enlil en colère."
+        }
+      }
+    },
+    {
+      "id": "event_flood",
+      "type": "Event",
+      "corpus_id": "mesopotamian-mythology",
+      "label": "La grande inondation",
+      "summary": "Les dieux ont envoyé un déluge pour détruire l’humanité ; Ea avertit Utnapishtim, qui construisit un bateau et sauva tous les êtres vivants ; après le déluge, les dieux regrettèrent leur décision et accordèrent l'immortalité à Utnapishtim.",
+      "source_refs": [
+        {
+          "text": "Epic of Gilgamesh",
+          "location": "Tablet XI"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "La grande inondation",
+          "summary": "Les dieux ont envoyé un déluge pour détruire l’humanité ; Ea avertit Utnapishtim, qui construisit un bateau et sauva tous les êtres vivants ; après le déluge, les dieux regrettèrent leur décision et accordèrent l'immortalité à Utnapishtim."
+        }
+      }
+    },
+    {
+      "id": "event_ishtar_descent",
+      "type": "Event",
+      "corpus_id": "mesopotamian-mythology",
+      "label": "Descente d'Ishtar",
+      "summary": "Ishtar descendit aux enfers pour défier sa sœur Ereshkigal ; a été dépouillé et tenu mort, provoquant la cessation de toute fertilité sur terre ; libérés par la création d'Ea, le kurgarru et le kalaturru.",
+      "source_refs": [
+        {
+          "text": "Descent of Ishtar",
+          "location": "Tablet I"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Descente d'Ishtar",
+          "summary": "Ishtar descendit aux enfers pour défier sa sœur Ereshkigal ; a été dépouillé et tenu mort, provoquant la cessation de toute fertilité sur terre ; libérés par la création d'Ea, le kurgarru et le kalaturru."
+        }
+      }
+    },
+    {
+      "id": "event_creation",
+      "type": "Event",
+      "corpus_id": "mesopotamian-mythology",
+      "label": "Création de l'humanité",
+      "summary": "Marduk a créé les humains à partir du sang de Kingu tué, mélangé à de l'argile. ; les humains ont été créés pour servir les dieux et alléger leur travail ; cet acte a établi la relation homme-dieu.",
+      "source_refs": [
+        {
+          "text": "Enuma Elish",
+          "location": "Tablet VI"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Création de l'humanité",
+          "summary": "Marduk a créé les humains à partir du sang de Kingu tué, mélangé à de l'argile. ; les humains ont été créés pour servir les dieux et alléger leur travail ; cet acte a établi la relation homme-dieu."
+        }
+      }
+    },
+    {
+      "id": "concept_me",
+      "type": "Concept",
+      "corpus_id": "mesopotamian-mythology",
+      "label": "Moi (Décrets Divins)",
+      "summary": "Les décrets et lois divins qui régissent la civilisation ; les dons des dieux qui structurent la société, la royauté, les arts et l'artisanat ; Inanna/Ishtar m'a amené à Uruk depuis Enki.",
+      "source_refs": [
+        {
+          "text": "Mesopotamian mythology",
+          "location": "tradition"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Moi (Décrets Divins)",
+          "summary": "Les décrets et lois divins qui régissent la civilisation ; les dons des dieux qui structurent la société, la royauté, les arts et l'artisanat ; Inanna/Ishtar m'a amené à Uruk depuis Enki."
+        }
+      }
+    },
+    {
+      "id": "concept_kingship",
+      "type": "Concept",
+      "corpus_id": "mesopotamian-mythology",
+      "label": "Royauté",
+      "summary": "Le droit divin de gouverner, descendu du ciel ; les rois sont choisis par les dieux (notamment Enlil et Marduk) ; le roi est l'intendant des dieux sur terre et maintient l'ordre.",
+      "source_refs": [
+        {
+          "text": "Mesopotamian mythology",
+          "location": "tradition"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Royauté",
+          "summary": "Le droit divin de gouverner, descendu du ciel ; les rois sont choisis par les dieux (notamment Enlil et Marduk) ; le roi est l'intendant des dieux sur terre et maintient l'ordre."
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge_marduk_child",
+      "source": "char_marduk",
+      "target": "char_ea",
+      "relation": "CHILD_OF",
+      "corpus_id": "mesopotamian-mythology",
+      "label": "Enfant de",
+      "source_refs": [
+        {
+          "text": "Enuma Elish",
+          "location": "Tablet I"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Enfant de"
+        }
+      }
+    },
+    {
+      "id": "edge_ea_child",
+      "source": "char_ea",
+      "target": "char_anu",
+      "relation": "CHILD_OF",
+      "corpus_id": "mesopotamian-mythology",
+      "label": "Enfant de",
+      "source_refs": [
+        {
+          "text": "Enuma Elish",
+          "location": "Tablet I"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Enfant de"
+        }
+      }
+    },
+    {
+      "id": "edge_kingu_spouse",
+      "source": "char_tiamat",
+      "target": "char_kingu",
+      "relation": "SPOUSE_OF",
+      "corpus_id": "mesopotamian-mythology",
+      "label": "Conjoint de",
+      "source_refs": [
+        {
+          "text": "Enuma Elish",
+          "location": "Tablet I"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Conjoint de"
+        }
+      }
+    },
+    {
+      "id": "edge_ereshkigal_spouse",
+      "source": "char_ereshkigal",
+      "target": "char_nergal",
+      "relation": "SPOUSE_OF",
+      "corpus_id": "mesopotamian-mythology",
+      "label": "Conjoint de",
+      "source_refs": [
+        {
+          "text": "Mesopotamian mythology",
+          "location": "tradition"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Conjoint de"
+        }
+      }
+    },
+    {
+      "id": "edge_ishtar_child",
+      "source": "char_ishtar",
+      "target": "char_anu",
+      "relation": "CHILD_OF",
+      "corpus_id": "mesopotamian-mythology",
+      "label": "Enfant de",
+      "source_refs": [
+        {
+          "text": "Descent of Ishtar",
+          "location": "Tablet I"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Enfant de"
+        }
+      }
+    },
+    {
+      "id": "edge_gilgamesh_enkidu",
+      "source": "char_gilgamesh",
+      "target": "char_enkidu",
+      "relation": "MET",
+      "corpus_id": "mesopotamian-mythology",
+      "label": "Rencontré",
+      "source_refs": [
+        {
+          "text": "Epic of Gilgamesh",
+          "location": "Tablet II"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Rencontré"
+        }
+      }
+    },
+    {
+      "id": "edge_gilgamesh_fought_humbaba",
+      "source": "char_gilgamesh",
+      "target": "char_humbaba",
+      "relation": "FOUGHT",
+      "corpus_id": "mesopotamian-mythology",
+      "label": "Combattu",
+      "source_refs": [
+        {
+          "text": "Epic of Gilgamesh",
+          "location": "Tablet V"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Combattu"
+        }
+      }
+    },
+    {
+      "id": "edge_enkidu_fought_humbaba",
+      "source": "char_enkidu",
+      "target": "char_humbaba",
+      "relation": "FOUGHT",
+      "corpus_id": "mesopotamian-mythology",
+      "label": "Combattu",
+      "source_refs": [
+        {
+          "text": "Epic of Gilgamesh",
+          "location": "Tablet V"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Combattu"
+        }
+      }
+    },
+    {
+      "id": "edge_cedar_place",
+      "source": "event_gilgamesh_cedar",
+      "target": "place_cedar_forest",
+      "relation": "TOOK_PLACE_AT",
+      "corpus_id": "mesopotamian-mythology",
+      "label": "A eu lieu à",
+      "source_refs": [
+        {
+          "text": "Epic of Gilgamesh",
+          "location": "Tablet III"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "A eu lieu à"
+        }
+      }
+    },
+    {
+      "id": "edge_humbaba_guards",
+      "source": "char_humbaba",
+      "target": "place_cedar_forest",
+      "relation": "GUARDS",
+      "corpus_id": "mesopotamian-mythology",
+      "label": "Gardes",
+      "source_refs": [
+        {
+          "text": "Epic of Gilgamesh",
+          "location": "Tablet V"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Gardes"
+        }
+      }
+    },
+    {
+      "id": "edge_gilgamesh_ruler",
+      "source": "char_gilgamesh",
+      "target": "place_uruk",
+      "relation": "RULER_OF",
+      "corpus_id": "mesopotamian-mythology",
+      "label": "Souverain de",
+      "source_refs": [
+        {
+          "text": "Epic of Gilgamesh",
+          "location": "Tablet I"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Souverain de"
+        }
+      }
+    },
+    {
+      "id": "edge_gilgamesh_bull",
+      "source": "char_gilgamesh",
+      "target": "char_bull_heaven",
+      "relation": "FOUGHT",
+      "corpus_id": "mesopotamian-mythology",
+      "label": "Combattu",
+      "source_refs": [
+        {
+          "text": "Epic of Gilgamesh",
+          "location": "Tablet VI"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Combattu"
+        }
+      }
+    },
+    {
+      "id": "edge_enkidu_bull",
+      "source": "char_enkidu",
+      "target": "char_bull_heaven",
+      "relation": "FOUGHT",
+      "corpus_id": "mesopotamian-mythology",
+      "label": "Combattu",
+      "source_refs": [
+        {
+          "text": "Epic of Gilgamesh",
+          "location": "Tablet VI"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Combattu"
+        }
+      }
+    },
+    {
+      "id": "edge_gilgamesh_utnapishtim",
+      "source": "char_gilgamesh",
+      "target": "char_utnapishtim",
+      "relation": "MET",
+      "corpus_id": "mesopotamian-mythology",
+      "label": "Rencontré",
+      "source_refs": [
+        {
+          "text": "Epic of Gilgamesh",
+          "location": "Tablet X"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Rencontré"
+        }
+      }
+    },
+    {
+      "id": "edge_ea_abzu",
+      "source": "char_ea",
+      "target": "place_abzu",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "mesopotamian-mythology",
+      "label": "Associé à",
+      "source_refs": [
+        {
+          "text": "Enuma Elish",
+          "location": "Tablet I"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
+    },
+    {
+      "id": "edge_ereshkigal_ruler",
+      "source": "char_ereshkigal",
+      "target": "place_kur",
+      "relation": "RULER_OF",
+      "corpus_id": "mesopotamian-mythology",
+      "label": "Souverain de",
+      "source_refs": [
+        {
+          "text": "Descent of Ishtar",
+          "location": "Tablet I"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Souverain de"
+        }
+      }
+    },
+    {
+      "id": "edge_ishtar_descent_event",
+      "source": "char_ishtar",
+      "target": "event_ishtar_descent",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "mesopotamian-mythology",
+      "label": "Associé à",
+      "source_refs": [
+        {
+          "text": "Descent of Ishtar",
+          "location": "Tablet I"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
+    },
+    {
+      "id": "edge_ishtar_descent_place",
+      "source": "event_ishtar_descent",
+      "target": "place_kur",
+      "relation": "TOOK_PLACE_AT",
+      "corpus_id": "mesopotamian-mythology",
+      "label": "A eu lieu à",
+      "source_refs": [
+        {
+          "text": "Descent of Ishtar",
+          "location": "Tablet I"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "A eu lieu à"
+        }
+      }
+    },
+    {
+      "id": "edge_marduk_tiamat_event",
+      "source": "char_marduk",
+      "target": "event_marduk_tiamat",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "mesopotamian-mythology",
+      "label": "Associé à",
+      "source_refs": [
+        {
+          "text": "Enuma Elish",
+          "location": "Tablet IV"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
+    },
+    {
+      "id": "edge_marduk_bow_obj",
+      "source": "char_marduk",
+      "target": "obj_marduk_bow",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "mesopotamian-mythology",
+      "label": "Associé à",
+      "source_refs": [
+        {
+          "text": "Enuma Elish",
+          "location": "Tablet IV"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
+    },
+    {
+      "id": "edge_tablet_destinies_marduk",
+      "source": "char_marduk",
+      "target": "obj_tablet_destinies",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "mesopotamian-mythology",
+      "label": "Associé à",
+      "source_refs": [
+        {
+          "text": "Enuma Elish",
+          "location": "Tablet IV"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
+    },
+    {
+      "id": "edge_enlil_tablet",
+      "source": "char_enlil",
+      "target": "obj_tablet_destinies",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "mesopotamian-mythology",
+      "label": "Associé à",
+      "source_refs": [
+        {
+          "text": "Mesopotamian mythology",
+          "location": "tradition"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
+    },
+    {
+      "id": "edge_kingu_tablet",
+      "source": "char_kingu",
+      "target": "obj_tablet_destinies",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "mesopotamian-mythology",
+      "label": "Associé à",
+      "source_refs": [
+        {
+          "text": "Enuma Elish",
+          "location": "Tablet I"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
+    },
+    {
+      "id": "edge_creation_event",
+      "source": "event_creation",
+      "target": "place_uruk",
+      "relation": "TOOK_PLACE_AT",
+      "corpus_id": "mesopotamian-mythology",
+      "label": "A eu lieu à",
+      "source_refs": [
+        {
+          "text": "Enuma Elish",
+          "location": "Tablet VI"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "A eu lieu à"
+        }
+      }
+    },
+    {
+      "id": "edge_flood_event",
+      "source": "event_flood",
+      "target": "place_uruk",
+      "relation": "TOOK_PLACE_AT",
+      "corpus_id": "mesopotamian-mythology",
+      "label": "A eu lieu à",
+      "source_refs": [
+        {
+          "text": "Epic of Gilgamesh",
+          "location": "Tablet XI"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "A eu lieu à"
+        }
+      }
+    },
+    {
+      "id": "edge_utnapishtim_flood",
+      "source": "char_utnapishtim",
+      "target": "event_flood",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "mesopotamian-mythology",
+      "label": "Associé à",
+      "source_refs": [
+        {
+          "text": "Epic of Gilgamesh",
+          "location": "Tablet XI"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
+    },
+    {
+      "id": "edge_shamash_gilgamesh",
+      "source": "char_shamash",
+      "target": "char_gilgamesh",
+      "relation": "MET",
+      "corpus_id": "mesopotamian-mythology",
+      "label": "Rencontré",
+      "source_refs": [
+        {
+          "text": "Epic of Gilgamesh",
+          "location": "Tablet III"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Rencontré"
+        }
+      }
+    },
+    {
+      "id": "edge_ishtar_me",
+      "source": "char_ishtar",
+      "target": "concept_me",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "mesopotamian-mythology",
+      "label": "Associé à",
+      "source_refs": [
+        {
+          "text": "Mesopotamian mythology",
+          "location": "tradition"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
+    },
+    {
+      "id": "edge_ea_me",
+      "source": "char_ea",
+      "target": "concept_me",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "mesopotamian-mythology",
+      "label": "Associé à",
+      "source_refs": [
+        {
+          "text": "Mesopotamian mythology",
+          "location": "tradition"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
+    },
+    {
+      "id": "edge_marduk_kingship",
+      "source": "char_marduk",
+      "target": "concept_kingship",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "mesopotamian-mythology",
+      "label": "Associé à",
+      "source_refs": [
+        {
+          "text": "Enuma Elish",
+          "location": "Tablet VI"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
+    },
+    {
+      "id": "edge_enlil_flood",
+      "source": "char_enlil",
+      "target": "event_flood",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "mesopotamian-mythology",
+      "label": "Associé à",
+      "source_refs": [
+        {
+          "text": "Epic of Gilgamesh",
+          "location": "Tablet XI"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
+    },
+    {
+      "id": "edge_marduk_fought",
+      "source": "char_marduk",
+      "target": "char_tiamat",
+      "relation": "FOUGHT",
+      "corpus_id": "mesopotamian-mythology",
+      "label": "Combattu",
+      "source_refs": [
+        {
+          "text": "Enuma Elish",
+          "location": "Tablet IV"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Combattu"
+        }
+      }
+    },
+    {
+      "id": "edge_ishtar_ereshkigal",
+      "source": "char_ishtar",
+      "target": "char_ereshkigal",
+      "relation": "MET",
+      "corpus_id": "mesopotamian-mythology",
+      "label": "Rencontré",
+      "source_refs": [
+        {
+          "text": "Descent of Ishtar",
+          "location": "Tablet I"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Rencontré"
+        }
+      }
+    }
+  ],
+  "locale": "fr",
+  "source_locale": "en"
+}
