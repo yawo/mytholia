@@ -1,0 +1,1316 @@
+{
+  "corpus_id": "hindu-mythology",
+  "nodes": [
+    {
+      "id": "char_rama",
+      "type": "Character",
+      "corpus_id": "hindu-mythology",
+      "label": "Rama",
+      "summary": "Septième avatar de Vishnu ; prince d'Ayodhya ; héros du Ramayana, exilé dans la forêt avec sa femme Sita.",
+      "source_refs": [
+        {
+          "text": "Ramayana",
+          "location": "Bala Kanda"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Rama",
+          "summary": "Septième avatar de Vishnu ; prince d'Ayodhya ; héros du Ramayana, exilé dans la forêt avec sa femme Sita."
+        }
+      }
+    },
+    {
+      "id": "char_sita",
+      "type": "Character",
+      "corpus_id": "hindu-mythology",
+      "label": "Sita",
+      "summary": "Épouse de Rama et avatar de Lakshmi ; enlevé par Ravana et sauvé après une grande guerre; incarnation de la dévotion et de la pureté.",
+      "source_refs": [
+        {
+          "text": "Ramayana",
+          "location": "Aranya Kanda"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Sita",
+          "summary": "Épouse de Rama et avatar de Lakshmi ; enlevé par Ravana et sauvé après une grande guerre; incarnation de la dévotion et de la pureté."
+        }
+      }
+    },
+    {
+      "id": "char_hanuman",
+      "type": "Character",
+      "corpus_id": "hindu-mythology",
+      "label": "Hanuman",
+      "summary": "Vanara (singe) dévot de Rama ; fils de Vayu; il sauta sur Lanka et trouva Sita ; incarnation de la bhakti (dévotion).",
+      "source_refs": [
+        {
+          "text": "Ramayana",
+          "location": "Kishkindha Kanda"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Hanuman",
+          "summary": "Vanara (singe) dévot de Rama ; fils de Vayu; il sauta sur Lanka et trouva Sita ; incarnation de la bhakti (dévotion)."
+        }
+      }
+    },
+    {
+      "id": "char_ravana",
+      "type": "Character",
+      "corpus_id": "hindu-mythology",
+      "label": "Ravana",
+      "summary": "Roi démon à dix têtes de Lanka ; dévot de Shiva; enlevé Sita, provoquant la guerre avec Rama.",
+      "source_refs": [
+        {
+          "text": "Ramayana",
+          "location": "Aranya Kanda"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Ravana",
+          "summary": "Roi démon à dix têtes de Lanka ; dévot de Shiva; enlevé Sita, provoquant la guerre avec Rama."
+        }
+      }
+    },
+    {
+      "id": "char_krishna",
+      "type": "Character",
+      "corpus_id": "hindu-mythology",
+      "label": "Krishna",
+      "summary": "Huitième avatar de Vishnu ; conducteur de char et guide d'Arjuna; orateur de la Bhagavad Gita; figure centrale de la dévotion hindoue.",
+      "source_refs": [
+        {
+          "text": "Mahabharata",
+          "location": "Bhagavad Gita"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Krishna",
+          "summary": "Huitième avatar de Vishnu ; conducteur de char et guide d'Arjuna; orateur de la Bhagavad Gita; figure centrale de la dévotion hindoue."
+        }
+      }
+    },
+    {
+      "id": "char_arjuna",
+      "type": "Character",
+      "corpus_id": "hindu-mythology",
+      "label": "Arjuna",
+      "summary": "Le plus grand archer des Pandavas ; cousin et ami de Krishna; fait face à une crise morale avant la guerre de Kurukshetra, résolue par l'enseignement de Krishna.",
+      "source_refs": [
+        {
+          "text": "Mahabharata",
+          "location": "Bhagavad Gita"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Arjuna",
+          "summary": "Le plus grand archer des Pandavas ; cousin et ami de Krishna; fait face à une crise morale avant la guerre de Kurukshetra, résolue par l'enseignement de Krishna."
+        }
+      }
+    },
+    {
+      "id": "char_shiva",
+      "type": "Character",
+      "corpus_id": "hindu-mythology",
+      "label": "Shiva",
+      "summary": "Le Destructeur dans la Trimurti ; seigneur de la méditation, du yoga et de la transformation ; sa danse (tandava) soutient et détruit le cosmos.",
+      "source_refs": [
+        {
+          "text": "Puranas",
+          "location": "Shiva Purana"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Shiva",
+          "summary": "Le Destructeur dans la Trimurti ; seigneur de la méditation, du yoga et de la transformation ; sa danse (tandava) soutient et détruit le cosmos."
+        }
+      }
+    },
+    {
+      "id": "char_vishnu",
+      "type": "Character",
+      "corpus_id": "hindu-mythology",
+      "label": "Vishnu",
+      "summary": "Le conservateur dans la Trimurti ; descend sous forme d'avatars (Rama, Krishna) pour restaurer le dharma ; s'allonge sur le serpent cosmique Shesha.",
+      "source_refs": [
+        {
+          "text": "Puranas",
+          "location": "Vishnu Purana"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Vishnu",
+          "summary": "Le conservateur dans la Trimurti ; descend sous forme d'avatars (Rama, Krishna) pour restaurer le dharma ; s'allonge sur le serpent cosmique Shesha."
+        }
+      }
+    },
+    {
+      "id": "char_brahma",
+      "type": "Character",
+      "corpus_id": "hindu-mythology",
+      "label": "Brahma",
+      "summary": "Le Créateur dans la Trimurti ; émergé du lotus poussant du nombril de Vishnu ; père des Védas.",
+      "source_refs": [
+        {
+          "text": "Puranas",
+          "location": "Brahma Purana"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Brahma",
+          "summary": "Le Créateur dans la Trimurti ; émergé du lotus poussant du nombril de Vishnu ; père des Védas."
+        }
+      }
+    },
+    {
+      "id": "char_indra",
+      "type": "Character",
+      "corpus_id": "hindu-mythology",
+      "label": "Indra",
+      "summary": "Roi des dieux et dieu du tonnerre et de la guerre dans les Vedas ; porteur du vajra (coup de foudre); tueur du serpent Vritra.",
+      "source_refs": [
+        {
+          "text": "Rig Veda",
+          "location": "Mandala 1"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Indra",
+          "summary": "Roi des dieux et dieu du tonnerre et de la guerre dans les Vedas ; porteur du vajra (coup de foudre); tueur du serpent Vritra."
+        }
+      }
+    },
+    {
+      "id": "char_vasuki",
+      "type": "Character",
+      "corpus_id": "hindu-mythology",
+      "label": "Vasuki",
+      "summary": "Roi des nagas (serpents) ; utilisé comme corde de barattage dans le barattage de l'océan de lait (Samudra Manthan).",
+      "source_refs": [
+        {
+          "text": "Mahabharata",
+          "location": "Adi Parva"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Vasuki",
+          "summary": "Roi des nagas (serpents) ; utilisé comme corde de barattage dans le barattage de l'océan de lait (Samudra Manthan)."
+        }
+      }
+    },
+    {
+      "id": "place_ayodhya",
+      "type": "Place",
+      "corpus_id": "hindu-mythology",
+      "label": "Ayodhya",
+      "summary": "Ville sacrée et lieu de naissance de Rama ; capitale du royaume de Kosala ; l'une des sept villes saintes de l'hindouisme.",
+      "source_refs": [
+        {
+          "text": "Ramayana",
+          "location": "Bala Kanda"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Ayodhya",
+          "summary": "Ville sacrée et lieu de naissance de Rama ; capitale du royaume de Kosala ; l'une des sept villes saintes de l'hindouisme."
+        }
+      }
+    },
+    {
+      "id": "place_lanka",
+      "type": "Place",
+      "corpus_id": "hindu-mythology",
+      "label": "Lanka",
+      "summary": "Royaume insulaire de Ravana ; site de la grande bataille où Rama et son armée ont vaincu Ravana pour sauver Sita.",
+      "source_refs": [
+        {
+          "text": "Ramayana",
+          "location": "Yuddha Kanda"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Lanka",
+          "summary": "Royaume insulaire de Ravana ; site de la grande bataille où Rama et son armée ont vaincu Ravana pour sauver Sita."
+        }
+      }
+    },
+    {
+      "id": "place_bhogavati",
+      "type": "Place",
+      "corpus_id": "hindu-mythology",
+      "label": "Bhogavati",
+      "summary": "Capitale souterraine des nagas à Patala ; gouverné par Vasuki; décrite comme une ville joyau du Mahabharata.",
+      "source_refs": [
+        {
+          "text": "Mahabharata",
+          "location": "Adi Parva"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Bhogavati",
+          "summary": "Capitale souterraine des nagas à Patala ; gouverné par Vasuki; décrite comme une ville joyau du Mahabharata."
+        }
+      }
+    },
+    {
+      "id": "place_kurukshetra",
+      "type": "Place",
+      "corpus_id": "hindu-mythology",
+      "label": "Kurukshetra",
+      "summary": "Le champ de bataille où s'est déroulée la guerre de Kurukshetra entre les Pandavas et les Kauravas ; Krishna a livré la Bhagavad Gita ici.",
+      "source_refs": [
+        {
+          "text": "Mahabharata",
+          "location": "Bhagavad Gita"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Kurukshetra",
+          "summary": "Le champ de bataille où s'est déroulée la guerre de Kurukshetra entre les Pandavas et les Kauravas ; Krishna a livré la Bhagavad Gita ici."
+        }
+      }
+    },
+    {
+      "id": "event_kurukshetra_war",
+      "type": "Event",
+      "corpus_id": "hindu-mythology",
+      "label": "Guerre de Kurukshetra",
+      "summary": "La grande guerre entre les Pandavas et les Kauravas ; événement central du Mahabharata ; La Bhagavad Gita de Krishna précède la bataille.",
+      "source_refs": [
+        {
+          "text": "Mahabharata",
+          "location": "Bhishma Parva"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Guerre de Kurukshetra",
+          "summary": "La grande guerre entre les Pandavas et les Kauravas ; événement central du Mahabharata ; La Bhagavad Gita de Krishna précède la bataille."
+        }
+      }
+    },
+    {
+      "id": "event_abduction_sita",
+      "type": "Event",
+      "corpus_id": "hindu-mythology",
+      "label": "Enlèvement de Sita",
+      "summary": "L'enlèvement de Sita par Ravana dans la forêt, déguisé en ruse de cerf doré ; a déclenché la guerre du Ramayana.",
+      "source_refs": [
+        {
+          "text": "Ramayana",
+          "location": "Aranya Kanda"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Enlèvement de Sita",
+          "summary": "L'enlèvement de Sita par Ravana dans la forêt, déguisé en ruse de cerf doré ; a déclenché la guerre du Ramayana."
+        }
+      }
+    },
+    {
+      "id": "event_samudra_manthan",
+      "type": "Event",
+      "corpus_id": "hindu-mythology",
+      "label": "Barattage de l'océan de lait",
+      "summary": "Les dieux et les asuras barattaient l'océan cosmique en utilisant Vasuki et le mont Mandara pour obtenir l'amrita (le nectar de l'immortalité).",
+      "source_refs": [
+        {
+          "text": "Mahabharata",
+          "location": "Adi Parva"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Barattage de l'océan de lait",
+          "summary": "Les dieux et les asuras barattaient l'océan cosmique en utilisant Vasuki et le mont Mandara pour obtenir l'amrita (le nectar de l'immortalité)."
+        }
+      }
+    },
+    {
+      "id": "obj_chakra",
+      "type": "Object",
+      "corpus_id": "hindu-mythology",
+      "label": "Chakra Sudarshana",
+      "summary": "L'arme à disque tournant de Vishnu, brandie par Krishna ; un symbole de l'ordre cosmique et de la puissance divine.",
+      "source_refs": [
+        {
+          "text": "Mahabharata",
+          "location": "Vishnu Purana"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Chakra Sudarshana",
+          "summary": "L'arme à disque tournant de Vishnu, brandie par Krishna ; un symbole de l'ordre cosmique et de la puissance divine."
+        }
+      }
+    },
+    {
+      "id": "obj_bow_rama",
+      "type": "Object",
+      "corpus_id": "hindu-mythology",
+      "label": "Arc de Rama",
+      "summary": "L'arc divin (Sharanga/Kodanda) brandi par Rama ; utilisé pour vaincre Ravana et achever son exil.",
+      "source_refs": [
+        {
+          "text": "Ramayana",
+          "location": "Bala Kanda"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Arc de Rama",
+          "summary": "L'arc divin (Sharanga/Kodanda) brandi par Rama ; utilisé pour vaincre Ravana et achever son exil."
+        }
+      }
+    },
+    {
+      "id": "concept_dharma",
+      "type": "Concept",
+      "corpus_id": "hindu-mythology",
+      "label": "Dharma",
+      "summary": "La loi cosmique de la justice, du devoir et de l'ordre moral ; le concept éthique central que Krishna enseigne à Arjuna.",
+      "source_refs": [
+        {
+          "text": "Mahabharata",
+          "location": "Bhagavad Gita"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Dharma",
+          "summary": "La loi cosmique de la justice, du devoir et de l'ordre moral ; le concept éthique central que Krishna enseigne à Arjuna."
+        }
+      }
+    },
+    {
+      "id": "concept_karma",
+      "type": "Concept",
+      "corpus_id": "hindu-mythology",
+      "label": "Karma",
+      "summary": "La loi de cause à effet tout au long de la vie ; l'action et ses conséquences liant l'âme au samsara.",
+      "source_refs": [
+        {
+          "text": "Bhagavad Gita",
+          "location": "chapter 2"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Karma",
+          "summary": "La loi de cause à effet tout au long de la vie ; l'action et ses conséquences liant l'âme au samsara."
+        }
+      }
+    },
+    {
+      "id": "concept_trimurti",
+      "type": "Concept",
+      "corpus_id": "hindu-mythology",
+      "label": "Trimurti",
+      "summary": "La triade de Brahma (créateur), Vishnu (préservateur) et Shiva (destructeur) qui régit le cycle de création et de dissolution cosmiques.",
+      "source_refs": [
+        {
+          "text": "Puranas",
+          "location": "cosmology"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Trimurti",
+          "summary": "La triade de Brahma (créateur), Vishnu (préservateur) et Shiva (destructeur) qui régit le cycle de création et de dissolution cosmiques."
+        }
+      }
+    },
+    {
+      "id": "char_durga",
+      "type": "Character",
+      "corpus_id": "hindu-mythology",
+      "label": "Durga",
+      "summary": "La déesse guerrière ; une forme de Devi/Shakti ; monté sur un lion ou un tigre ; il a tué le démon buffle Mahishasura alors qu'aucun dieu mâle ne le pouvait ; incarnation du pouvoir féminin divin.",
+      "source_refs": [
+        {
+          "text": "Devi Mahatmya",
+          "location": "chapter 2"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Durga",
+          "summary": "La déesse guerrière ; une forme de Devi/Shakti ; monté sur un lion ou un tigre ; il a tué le démon buffle Mahishasura alors qu'aucun dieu mâle ne le pouvait ; incarnation du pouvoir féminin divin."
+        }
+      }
+    },
+    {
+      "id": "char_ganesha",
+      "type": "Character",
+      "corpus_id": "hindu-mythology",
+      "label": "Ganesh",
+      "summary": "Dieu à tête d'éléphant des commencements, de la sagesse et de l'élimination des obstacles ; fils de Shiva et Parvati; invoqué au début de tout engagement ; scribe du Mahabharata.",
+      "source_refs": [
+        {
+          "text": "Ganesha Purana",
+          "location": "tradition"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Ganesh",
+          "summary": "Dieu à tête d'éléphant des commencements, de la sagesse et de l'élimination des obstacles ; fils de Shiva et Parvati; invoqué au début de tout engagement ; scribe du Mahabharata."
+        }
+      }
+    },
+    {
+      "id": "char_parvati",
+      "type": "Character",
+      "corpus_id": "hindu-mythology",
+      "label": "Parvati",
+      "summary": "Fille de la montagne Himalaya ; épouse de Shiva; mère de Ganesha et Kartikeya ; l'aspect bienveillant de la Grande Déesse (Devi) ; incarnation du pouvoir ascétique et de la dévotion.",
+      "source_refs": [
+        {
+          "text": "Shiva Purana",
+          "location": "tradition"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Parvati",
+          "summary": "Fille de la montagne Himalaya ; épouse de Shiva; mère de Ganesha et Kartikeya ; l'aspect bienveillant de la Grande Déesse (Devi) ; incarnation du pouvoir ascétique et de la dévotion."
+        }
+      }
+    },
+    {
+      "id": "char_kartikeya",
+      "type": "Character",
+      "corpus_id": "hindu-mythology",
+      "label": "Kartikeya (Murugan)",
+      "summary": "Dieu de la guerre ; fils de Shiva et Parvati; commandant de l'armée divine; monte un paon; tua le démon Tarakasura ; largement vénéré dans le sud de l’Inde.",
+      "source_refs": [
+        {
+          "text": "Skanda Purana",
+          "location": "tradition"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Kartikeya (Murugan)",
+          "summary": "Dieu de la guerre ; fils de Shiva et Parvati; commandant de l'armée divine; monte un paon; tua le démon Tarakasura ; largement vénéré dans le sud de l’Inde."
+        }
+      }
+    },
+    {
+      "id": "char_mahishasura",
+      "type": "Character",
+      "corpus_id": "hindu-mythology",
+      "label": "Mahishasura",
+      "summary": "Démon buffle ; reçu une bénédiction qu'aucun homme ne pouvait tuer; conquis les trois mondes; tué par la déesse Durga dans une grande bataille ; incarnation de l’arrogance démoniaque.",
+      "source_refs": [
+        {
+          "text": "Devi Mahatmya",
+          "location": "chapter 2"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Mahishasura",
+          "summary": "Démon buffle ; reçu une bénédiction qu'aucun homme ne pouvait tuer; conquis les trois mondes; tué par la déesse Durga dans une grande bataille ; incarnation de l’arrogance démoniaque."
+        }
+      }
+    },
+    {
+      "id": "char_tarakasura",
+      "type": "Character",
+      "corpus_id": "hindu-mythology",
+      "label": "Tarakasura",
+      "summary": "Démon qui a reçu une aubaine selon laquelle seul un fils de Shiva pouvait le tuer ; conquis les cieux; tué par Kartikeya, né spécifiquement pour le vaincre.",
+      "source_refs": [
+        {
+          "text": "Skanda Purana",
+          "location": "tradition"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Tarakasura",
+          "summary": "Démon qui a reçu une aubaine selon laquelle seul un fils de Shiva pouvait le tuer ; conquis les cieux; tué par Kartikeya, né spécifiquement pour le vaincre."
+        }
+      }
+    },
+    {
+      "id": "char_bhishma",
+      "type": "Character",
+      "corpus_id": "hindu-mythology",
+      "label": "Bhishma",
+      "summary": "Grand patriarche de la dynastie Kuru ; a fait vœu de célibat à vie (brahmacharya) pour que son père puisse se marier ; commandant de l'armée Kaurava ; est tombé sur un lit de flèches.",
+      "source_refs": [
+        {
+          "text": "Mahabharata",
+          "location": "Bhishma Parva"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Bhishma",
+          "summary": "Grand patriarche de la dynastie Kuru ; a fait vœu de célibat à vie (brahmacharya) pour que son père puisse se marier ; commandant de l'armée Kaurava ; est tombé sur un lit de flèches."
+        }
+      }
+    },
+    {
+      "id": "char_draupadi",
+      "type": "Character",
+      "corpus_id": "hindu-mythology",
+      "label": "Draupadi",
+      "summary": "Épouse des cinq frères Pandava ; né du feu; princesse de Panchala ; son humiliation dans le jeu de dés a déclenché la guerre de Kurukshetra ; incarnation de l'honneur féminin.",
+      "source_refs": [
+        {
+          "text": "Mahabharata",
+          "location": "Adi Parva"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Draupadi",
+          "summary": "Épouse des cinq frères Pandava ; né du feu; princesse de Panchala ; son humiliation dans le jeu de dés a déclenché la guerre de Kurukshetra ; incarnation de l'honneur féminin."
+        }
+      }
+    },
+    {
+      "id": "place_patala",
+      "type": "Place",
+      "corpus_id": "hindu-mythology",
+      "label": "Patala",
+      "summary": "Le monde souterrain dans la cosmologie hindoue ; royaume souterrain des nagas; sept couches sous la terre ; où se trouve Bhogavati.",
+      "source_refs": [
+        {
+          "text": "Mahabharata",
+          "location": "Adi Parva"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Patala",
+          "summary": "Le monde souterrain dans la cosmologie hindoue ; royaume souterrain des nagas; sept couches sous la terre ; où se trouve Bhogavati."
+        }
+      }
+    },
+    {
+      "id": "obj_gada",
+      "type": "Object",
+      "corpus_id": "hindu-mythology",
+      "label": "Gada de Bhima",
+      "summary": "La puissante masse brandie par Bhima, le plus fort des Pandavas ; utilisé dans la guerre de Kurukshetra ; symbole de force physique brute.",
+      "source_refs": [
+        {
+          "text": "Mahabharata",
+          "location": "tradition"
+        }
+      ],
+      "i18n": {
+        "fr": {
+          "label": "Gada de Bhima",
+          "summary": "La puissante masse brandie par Bhima, le plus fort des Pandavas ; utilisé dans la guerre de Kurukshetra ; symbole de force physique brute."
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge_rama_spouse",
+      "source": "char_rama",
+      "target": "char_sita",
+      "relation": "SPOUSE_OF",
+      "corpus_id": "hindu-mythology",
+      "label": "Conjoint de",
+      "source_refs": [
+        {
+          "text": "Ramayana",
+          "location": "Bala Kanda"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Conjoint de"
+        }
+      }
+    },
+    {
+      "id": "edge_rama_child",
+      "source": "char_rama",
+      "target": "char_vishnu",
+      "relation": "CHILD_OF",
+      "corpus_id": "hindu-mythology",
+      "label": "Enfant de",
+      "source_refs": [
+        {
+          "text": "Ramayana",
+          "location": "avatar"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Enfant de"
+        }
+      }
+    },
+    {
+      "id": "edge_sita_child",
+      "source": "char_sita",
+      "target": "char_vishnu",
+      "relation": "CHILD_OF",
+      "corpus_id": "hindu-mythology",
+      "label": "Enfant de",
+      "source_refs": [
+        {
+          "text": "Ramayana",
+          "location": "avatar"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Enfant de"
+        }
+      }
+    },
+    {
+      "id": "edge_hanuman_child",
+      "source": "char_hanuman",
+      "target": "char_vishnu",
+      "relation": "CHILD_OF",
+      "corpus_id": "hindu-mythology",
+      "label": "Enfant de",
+      "source_refs": [
+        {
+          "text": "Ramayana",
+          "location": "Vayu"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Enfant de"
+        }
+      }
+    },
+    {
+      "id": "edge_krishna_child",
+      "source": "char_krishna",
+      "target": "char_vishnu",
+      "relation": "CHILD_OF",
+      "corpus_id": "hindu-mythology",
+      "label": "Enfant de",
+      "source_refs": [
+        {
+          "text": "Mahabharata",
+          "location": "avatar"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Enfant de"
+        }
+      }
+    },
+    {
+      "id": "edge_rama_fought",
+      "source": "char_rama",
+      "target": "char_ravana",
+      "relation": "FOUGHT",
+      "corpus_id": "hindu-mythology",
+      "label": "Combattu",
+      "source_refs": [
+        {
+          "text": "Ramayana",
+          "location": "Yuddha Kanda"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Combattu"
+        }
+      }
+    },
+    {
+      "id": "edge_hanuman_fought",
+      "source": "char_hanuman",
+      "target": "char_ravana",
+      "relation": "FOUGHT",
+      "corpus_id": "hindu-mythology",
+      "label": "Combattu",
+      "source_refs": [
+        {
+          "text": "Ramayana",
+          "location": "Yuddha Kanda"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Combattu"
+        }
+      }
+    },
+    {
+      "id": "edge_abduction_place",
+      "source": "event_abduction_sita",
+      "target": "place_lanka",
+      "relation": "TOOK_PLACE_AT",
+      "corpus_id": "hindu-mythology",
+      "label": "A eu lieu à",
+      "source_refs": [
+        {
+          "text": "Ramayana",
+          "location": "Aranya Kanda"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "A eu lieu à"
+        }
+      }
+    },
+    {
+      "id": "edge_war_place",
+      "source": "event_kurukshetra_war",
+      "target": "place_kurukshetra",
+      "relation": "TOOK_PLACE_AT",
+      "corpus_id": "hindu-mythology",
+      "label": "A eu lieu à",
+      "source_refs": [
+        {
+          "text": "Mahabharata",
+          "location": "Bhishma Parva"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "A eu lieu à"
+        }
+      }
+    },
+    {
+      "id": "edge_krishna_met",
+      "source": "char_krishna",
+      "target": "char_arjuna",
+      "relation": "MET",
+      "corpus_id": "hindu-mythology",
+      "label": "Rencontré",
+      "source_refs": [
+        {
+          "text": "Mahabharata",
+          "location": "Bhagavad Gita"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Rencontré"
+        }
+      }
+    },
+    {
+      "id": "edge_rama_ruler",
+      "source": "char_rama",
+      "target": "place_ayodhya",
+      "relation": "RULER_OF",
+      "corpus_id": "hindu-mythology",
+      "label": "Souverain de",
+      "source_refs": [
+        {
+          "text": "Ramayana",
+          "location": "Bala Kanda"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Souverain de"
+        }
+      }
+    },
+    {
+      "id": "edge_ravana_ruler",
+      "source": "char_ravana",
+      "target": "place_lanka",
+      "relation": "RULER_OF",
+      "corpus_id": "hindu-mythology",
+      "label": "Souverain de",
+      "source_refs": [
+        {
+          "text": "Ramayana",
+          "location": "Aranya Kanda"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Souverain de"
+        }
+      }
+    },
+    {
+      "id": "edge_vasuki_ruler",
+      "source": "char_vasuki",
+      "target": "place_bhogavati",
+      "relation": "RULER_OF",
+      "corpus_id": "hindu-mythology",
+      "label": "Souverain de",
+      "source_refs": [
+        {
+          "text": "Mahabharata",
+          "location": "Adi Parva"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Souverain de"
+        }
+      }
+    },
+    {
+      "id": "edge_rama_bow",
+      "source": "char_rama",
+      "target": "obj_bow_rama",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "hindu-mythology",
+      "label": "Associé à",
+      "source_refs": [
+        {
+          "text": "Ramayana",
+          "location": "Bala Kanda"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
+    },
+    {
+      "id": "edge_krishna_chakra",
+      "source": "char_krishna",
+      "target": "obj_chakra",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "hindu-mythology",
+      "label": "Associé à",
+      "source_refs": [
+        {
+          "text": "Mahabharata",
+          "location": "Vishnu Purana"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
+    },
+    {
+      "id": "edge_arjuna_dharma",
+      "source": "char_arjuna",
+      "target": "concept_dharma",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "hindu-mythology",
+      "label": "Associé à",
+      "source_refs": [
+        {
+          "text": "Bhagavad Gita",
+          "location": "chapter 2"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
+    },
+    {
+      "id": "edge_arjuna_karma",
+      "source": "char_arjuna",
+      "target": "concept_karma",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "hindu-mythology",
+      "label": "Associé à",
+      "source_refs": [
+        {
+          "text": "Bhagavad Gita",
+          "location": "chapter 2"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
+    },
+    {
+      "id": "edge_trimurti",
+      "source": "char_brahma",
+      "target": "concept_trimurti",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "hindu-mythology",
+      "label": "Associé à",
+      "source_refs": [
+        {
+          "text": "Puranas",
+          "location": "cosmology"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
+    },
+    {
+      "id": "edge_churning_event",
+      "source": "char_vasuki",
+      "target": "event_samudra_manthan",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "hindu-mythology",
+      "label": "Associé à",
+      "source_refs": [
+        {
+          "text": "Mahabharata",
+          "location": "Adi Parva"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
+    },
+    {
+      "id": "edge_indra_met",
+      "source": "char_indra",
+      "target": "char_vishnu",
+      "relation": "MET",
+      "corpus_id": "hindu-mythology",
+      "label": "Rencontré",
+      "source_refs": [
+        {
+          "text": "Rig Veda",
+          "location": "Mandala 1"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Rencontré"
+        }
+      }
+    },
+    {
+      "id": "edge_shiva_worshipped",
+      "source": "char_shiva",
+      "target": "char_ravana",
+      "relation": "WORSHIPPED_AS",
+      "corpus_id": "hindu-mythology",
+      "label": "Adoré comme",
+      "source_refs": [
+        {
+          "text": "Ramayana",
+          "location": "devotion"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Adoré comme"
+        }
+      }
+    },
+    {
+      "id": "edge_ganesha_child",
+      "source": "char_ganesha",
+      "target": "char_shiva",
+      "relation": "CHILD_OF",
+      "corpus_id": "hindu-mythology",
+      "label": "Enfant de",
+      "source_refs": [
+        {
+          "text": "Ganesha Purana",
+          "location": "tradition"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Enfant de"
+        }
+      }
+    },
+    {
+      "id": "edge_ganesha_mother",
+      "source": "char_ganesha",
+      "target": "char_parvati",
+      "relation": "CHILD_OF",
+      "corpus_id": "hindu-mythology",
+      "label": "Enfant de",
+      "source_refs": [
+        {
+          "text": "Ganesha Purana",
+          "location": "tradition"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Enfant de"
+        }
+      }
+    },
+    {
+      "id": "edge_kartikeya_child",
+      "source": "char_kartikeya",
+      "target": "char_shiva",
+      "relation": "CHILD_OF",
+      "corpus_id": "hindu-mythology",
+      "label": "Enfant de",
+      "source_refs": [
+        {
+          "text": "Skanda Purana",
+          "location": "tradition"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Enfant de"
+        }
+      }
+    },
+    {
+      "id": "edge_parvati_spouse",
+      "source": "char_parvati",
+      "target": "char_shiva",
+      "relation": "SPOUSE_OF",
+      "corpus_id": "hindu-mythology",
+      "label": "Conjoint de",
+      "source_refs": [
+        {
+          "text": "Shiva Purana",
+          "location": "tradition"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Conjoint de"
+        }
+      }
+    },
+    {
+      "id": "edge_durga_fought",
+      "source": "char_durga",
+      "target": "char_mahishasura",
+      "relation": "FOUGHT",
+      "corpus_id": "hindu-mythology",
+      "label": "Combattu",
+      "source_refs": [
+        {
+          "text": "Devi Mahatmya",
+          "location": "chapter 2"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Combattu"
+        }
+      }
+    },
+    {
+      "id": "edge_kartikeya_fought",
+      "source": "char_kartikeya",
+      "target": "char_tarakasura",
+      "relation": "FOUGHT",
+      "corpus_id": "hindu-mythology",
+      "label": "Combattu",
+      "source_refs": [
+        {
+          "text": "Skanda Purana",
+          "location": "tradition"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Combattu"
+        }
+      }
+    },
+    {
+      "id": "edge_durga_worshipped",
+      "source": "char_durga",
+      "target": "char_parvati",
+      "relation": "WORSHIPPED_AS",
+      "corpus_id": "hindu-mythology",
+      "label": "Adoré comme",
+      "source_refs": [
+        {
+          "text": "Devi Mahatmya",
+          "location": "tradition"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Adoré comme"
+        }
+      }
+    },
+    {
+      "id": "edge_draupadi_spouse",
+      "source": "char_draupadi",
+      "target": "char_arjuna",
+      "relation": "SPOUSE_OF",
+      "corpus_id": "hindu-mythology",
+      "label": "Conjoint de",
+      "source_refs": [
+        {
+          "text": "Mahabharata",
+          "location": "Adi Parva"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Conjoint de"
+        }
+      }
+    },
+    {
+      "id": "edge_bhishma_met",
+      "source": "char_bhishma",
+      "target": "char_krishna",
+      "relation": "MET",
+      "corpus_id": "hindu-mythology",
+      "label": "Rencontré",
+      "source_refs": [
+        {
+          "text": "Mahabharata",
+          "location": "Bhishma Parva"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Rencontré"
+        }
+      }
+    },
+    {
+      "id": "edge_krishna_draupadi",
+      "source": "char_krishna",
+      "target": "char_draupadi",
+      "relation": "MET",
+      "corpus_id": "hindu-mythology",
+      "label": "Rencontré",
+      "source_refs": [
+        {
+          "text": "Mahabharata",
+          "location": "Adi Parva"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Rencontré"
+        }
+      }
+    },
+    {
+      "id": "edge_patala_bhogavati",
+      "source": "place_patala",
+      "target": "place_bhogavati",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "hindu-mythology",
+      "label": "Associé à",
+      "source_refs": [
+        {
+          "text": "Mahabharata",
+          "location": "Adi Parva"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
+    },
+    {
+      "id": "edge_ganesha_wisdom",
+      "source": "char_ganesha",
+      "target": "concept_dharma",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "hindu-mythology",
+      "label": "Associé à",
+      "source_refs": [
+        {
+          "text": "Ganesha Purana",
+          "location": "tradition"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
+    },
+    {
+      "id": "edge_durga_krishna",
+      "source": "char_durga",
+      "target": "char_vishnu",
+      "relation": "ASSOCIATED_WITH",
+      "corpus_id": "hindu-mythology",
+      "label": "Associé à",
+      "source_refs": [
+        {
+          "text": "Devi Mahatmya",
+          "location": "tradition"
+        }
+      ],
+      "summary": "",
+      "i18n": {
+        "fr": {
+          "label": "Associé à"
+        }
+      }
+    }
+  ],
+  "locale": "fr",
+  "source_locale": "en"
+}
