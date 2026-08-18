@@ -70,7 +70,13 @@ let locale = "fr", corpora = [], graph = { nodes: [], edges: [] }, selected = nu
 let simulation = null;
 const $ = (id) => document.getElementById(id);
 const esc = (value = "") => String(value).replace(/[&<>'"]/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", "'": "&#39;", '"': "&quot;" })[char]);
-async function json(path, opts){ const res = await fetch(`${API}${path}`, opts); if(!res.ok) throw new Error(await res.text()); return res.json(); }
+async function json(path, opts = {}){
+  const headers = new Headers(opts.headers || {});
+  headers.set("Accept-Language", locale);
+  const res = await fetch(`${API}${path}`, { ...opts, headers });
+  if(!res.ok) throw new Error(await res.text());
+  return res.json();
+}
 function setMessage(text){ const el=$("message"); el.textContent=text||""; el.hidden=!text; }
 function typeLabel(type){ return labels[locale].nodeTypes[type] || type; }
 function renderChrome(){

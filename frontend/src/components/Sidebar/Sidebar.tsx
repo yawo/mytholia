@@ -15,7 +15,7 @@ interface SidebarProps {
 }
 
 export function Sidebar({ corpusId, node }: SidebarProps) {
-  const { t } = useI18n();
+  const { t, locale } = useI18n();
   const [loading, setLoading] = useState(false);
   const [podcast, setPodcast] = useState<PodcastResponse | null>(null);
   const [error, setError] = useState<string | null>(null);
@@ -55,7 +55,7 @@ export function Sidebar({ corpusId, node }: SidebarProps) {
     setError(null);
     setPodcast(null);
     try {
-      const res = await generatePodcast(corpusId, node.id, undefined, false, selectedEngine);
+      const res = await generatePodcast(corpusId, node.id, undefined, false, selectedEngine, locale);
       setPodcast(res);
     } catch (e: unknown) {
       setError(String(e));

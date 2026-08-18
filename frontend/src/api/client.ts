@@ -37,10 +37,12 @@ async function getJSON<T>(
   return (await res.json()) as T;
 }
 
-async function postJSON<T>(path: string, body: unknown): Promise<T> {
+async function postJSON<T>(path: string, body: unknown, locale?: string): Promise<T> {
+  const headers: Record<string, string> = { "Content-Type": "application/json" };
+  if (locale) headers["Accept-Language"] = locale;
   const res = await fetch(`${API_BASE}${path}`, {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
+    headers,
     body: JSON.stringify(body),
   });
   if (!res.ok) {
@@ -212,7 +214,8 @@ export async function generatePodcast(
   entityId: string,
   lengthSeconds?: number,
   force = false,
-  engine?: PodcastEngine
+  engine?: PodcastEngine,
+  locale?: string
 ): Promise<PodcastResponse> {
   return postJSON<PodcastResponse>("/podcast", {
     corpus_id: corpusId,
@@ -220,7 +223,7 @@ export async function generatePodcast(
     length_seconds: lengthSeconds ?? null,
     force,
     engine: engine ?? null,
-  });
+  }, locale);
 }
 
 export async function fetchPodcastEngines(corpusId: string): Promise<TTSEnginesResponse> {
